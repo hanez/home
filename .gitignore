@@ -1,5 +1,8 @@
 *
 
 !.gitignore
+!.gnupg
+.gnupg/*
+!.gnupg/hanez.asc
 
 !bin
