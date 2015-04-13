@@ -4,5 +4,6 @@
 !.gnupg
 .gnupg/*
 !.gnupg/hanez.asc
+!.signature
 
 !bin
