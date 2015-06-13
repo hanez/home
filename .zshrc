@@ -1,26 +1,28 @@
+# Extend my $PATH to $PATH/bin
+export PATH=$PATH:$HOME/bin
+
+# Now source some stuff that should not be public
+source ~/.zshprivate
+
 # History settings
 HISTSIZE=100000
 SAVEHIST=100000
 HISTFILE=~/.zsh_history
 
-# Source some stuff that should not be public
-source ~/.zshprivate 
-
 export EDITOR=vim
 
+# Some aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias l='ls --color'
 alias ls='ls --color'
 alias lsa='ls -a --color'
 alias ll='ls --color -l'
 alias lla='ls -la --color'
 alias lsd='ls -ld --color'
-
 alias xterm='uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange'
-
-alias    ..='cd ..'
-alias   ...='cd ../..'
-alias  ....='cd ../../..'
-alias .....='cd ../../../..'
 
 # Set up the Zsh
 setopt extendedhistory
