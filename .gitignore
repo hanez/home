@@ -5,5 +5,8 @@
 .gnupg/*
 !.gnupg/hanez.asc
 !.signature
+!.vimrc
+!.zshrc
 
 !bin
+!README.md
