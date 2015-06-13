@@ -2,7 +2,10 @@
 export PATH=$PATH:$HOME/bin
 
 # Now source some stuff that should not be public
+if [ -e ~/.zshprivate ]
+then
 source ~/.zshprivate
+fi
 
 # History settings
 HISTSIZE=100000
