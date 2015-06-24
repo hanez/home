@@ -4,7 +4,9 @@
 !.gnupg
 .gnupg/*
 !.gnupg/hanez.asc
+!.oh-my-zsh
 !.signature
 !.vimrc
 !.zshrc
+
 !README.md
