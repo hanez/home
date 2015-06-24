@@ -5,7 +5,7 @@ export ZSH=/home/hanez/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="jnrowe"
+ZSH_THEME="hanez"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -30,7 +30,7 @@ ZSH_THEME="jnrowe"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -82,3 +82,38 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Extend my $PATH to $PATH/bin
+export PATH=$PATH:$HOME/bin
+
+# Now source some stuff that should not be public
+if [ -e ~/.zshprivate ]
+then
+source ~/.zshprivate
+fi
+
+# History settings
+HISTSIZE=100000
+SAVEHIST=100000
+HISTFILE=~/.zsh_history
+
+# Some aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias l='ls --color'
+alias ls='ls --color'
+alias lsa='ls -a --color'
+alias ll='ls --color -l'
+alias lla='ls -la --color'
+alias lsd='ls -ld --color'
+alias xterm='uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange'
+
+# I use xterm and this sets a nice title with hostname and cwd in it.
+case $TERM in
+    xterm*)
+        precmd () {print -Pn "\e]0;%n@%m: %~\a"}
+        ;;
+esac
+
