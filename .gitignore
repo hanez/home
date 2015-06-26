@@ -4,6 +4,9 @@
 !.gnupg
 .gnupg/*
 !.gnupg/hanez.asc
+!.mc
+!.mc/ini
+!.mc/panels.ini
 !.oh-my-zsh
 !.signature
 !.vimrc
