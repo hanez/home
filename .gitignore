@@ -8,6 +8,8 @@
 !.signature
 !.vimrc
 !.Xresources
+!.zsh
+!.zsh/**
 !.zshrc
 
 !README.md

@@ -49,9 +49,14 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man zsh-syntax-highlighting)
+plugins=(colored-man)
 
 # User configuration
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+if [ -e ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]
+then
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
 # Extend my $PATH to $PATH/bin
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin:$PATH:$HOME/bin
