@@ -7,6 +7,8 @@
 !.signature
 !.vimrc
 !.Xresources
+!.vim
+!.vim/**
 !.zsh
 !.zsh/**
 !.zshrc

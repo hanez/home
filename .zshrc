@@ -91,7 +91,12 @@ alias xterm='uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange'
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
 case $TERM in
-    xterm*)
+    xterm)
+        export TERM=xterm-256color
+        precmd () {print -Pn "\e]0;%n@%m: %~\a"}
+        ;;
+    screen)
+        export TERM=screen-256color
         precmd () {print -Pn "\e]0;%n@%m: %~\a"}
         ;;
 esac
