@@ -9,6 +9,7 @@
 !.Xresources
 !.vim
 !.vim/**
+.vim/.netrwhist
 !.zsh
 !.zsh/**
 !.zshrc
