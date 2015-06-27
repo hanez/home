@@ -1,5 +1,5 @@
 [submodule "oh-my-zsh"]
-	path = .oh-my-zsh
+	path = .zsh/oh-my-zsh
 	url = https://github.com/hanez/oh-my-zsh.git
 
 [submodule "zsh-syntax-highlighting"]
