@@ -1,10 +1,10 @@
 " Execute pathogen
 execute pathogen#infect()
 
-" Load NERDTree plugin
+" Load NERDTree plugin only if opening vim without a file
 "autocmd VimEnter * NERDTree
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Remember position in file
 if has("autocmd")
@@ -13,6 +13,24 @@ endif
 
 " Enable syntax highlighting
 syntax on
+
+" Show line numbers
+set number
+" Set line number color
+" Get colors here:
+" http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
+highlight LineNr ctermfg=220 guifg=#ffd700
+
+" Highlight current line and disable highlighting in insert mode
+set cursorline 
+hi CursorLine   cterm=NONE ctermbg=17 ctermfg=white guibg=#00005f guifg=white
+"hi CursorColumn cterm=NONE ctermbg=17 ctermfg=white guibg=#00005f guifg=white
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au InsertEnter * setlocal nocursorline
+  au InsertLeave * setlocal cursorline
+augroup END
 
 " Set 'nocompatible' to ward off unexpected things that your distro might
 " have made, as well as sanely reset options when re-sourcing .vimrc
