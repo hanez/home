@@ -67,7 +67,7 @@ source $ZSH/oh-my-zsh.sh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 if [ -e ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]
 then
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
 # Now source some stuff that should not be public
@@ -91,7 +91,7 @@ alias xterm='uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange'
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
 case $TERM in
-    xterm)
+    xterm*)
         export TERM=xterm-256color
         precmd () {print -Pn "\e]0;%n@%m: %~\a"}
         ;;
