@@ -13,5 +13,6 @@ Clone to your $HOME
     git init .
     git remote add -t \* -f origin https://github.com/hanez/home.git
     git checkout master
+    git submodule update --init --recursive
 
 Existing files will not be overwritten!
