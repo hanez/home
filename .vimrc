@@ -17,6 +17,9 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+" Set the clipboard so all vim instances share the same copy/paste buffer
+set clipboard=unnamed
+
 " Enable syntax highlighting
 syntax on
 
@@ -37,6 +40,10 @@ augroup CursorLine
   au InsertEnter * setlocal nocursorline
   au InsertLeave * setlocal cursorline
 augroup END
+
+
+" 256 bit color support
+set t_Co=256
 
 " Set 'nocompatible' to ward off unexpected things that your distro might
 " have made, as well as sanely reset options when re-sourcing .vimrc
