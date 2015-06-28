@@ -1,10 +1,6 @@
 *
 
 !.gitignore
-!.gnupg
-.gnupg/*
-!.gnupg/hanez.asc
-!.signature
 !.vimrc
 !.Xresources
 !.vim
