@@ -1,3 +1,10 @@
+# Extend my $PATH to $PATH/bin
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin:$PATH:$HOME/bin
+
+# Export the $EDITOR and $TERMINAL
+export EDITOR=/usr/bin/vim
+export TERMINAL="uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange"
+
 # Path to your oh-my-zsh installation.
 export ZSH=~/.zsh/oh-my-zsh
 
@@ -73,7 +80,7 @@ fi
 # Now source some stuff that should not be public
 if [ -e ~/.zshprivate ]
 then
-source ~/.zshprivate
+    source ~/.zshprivate
 fi
 
 # Some aliases
@@ -89,7 +96,7 @@ alias lla='ls -la --color'
 alias llh='ls -lh --color'
 alias llah='ls -lah --color'
 alias lsd='ls -ld --color'
-alias xterm='uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange'
+alias xterm=$TERMINAL
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
 case $TERM in
