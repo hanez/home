@@ -86,6 +86,8 @@ alias ls='ls --color'
 alias lsa='ls -a --color'
 alias ll='ls --color -l'
 alias lla='ls -la --color'
+alias llh='ls -lh --color'
+alias llah='ls -lah --color'
 alias lsd='ls -ld --color'
 alias xterm='uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange'
 
