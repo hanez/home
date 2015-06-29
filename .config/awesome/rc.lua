@@ -65,9 +65,6 @@ end
 run_once("nm-applet")
 run_once("pasystray")
 
---awful.util.spawn_with_shell("/usr/bin/nm-applet")
---awful.util.spawn_with_shell("/usr/bin/pasystray")
-
 -- Table of layouts to cover with awful.layout.inc, order matters.
 local layouts =
 {
