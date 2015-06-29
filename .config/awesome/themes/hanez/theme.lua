@@ -79,10 +79,14 @@ theme.titlebar_maximized_button_focus_active  = "~/.config/awesome/themes/hanez/
 
 -- Dont add wallpapers to the repo because of licensing issues; you need to set
 -- this yourself.
+if file_exists("~/images/background.jpg") then
+    theme.wallpaper = "~/images/background.jpg"
+end
 if file_exists("~/images/background.png") then
     theme.wallpaper = "~/images/background.png"
 end
 
+    theme.wallpaper = "~/images/background.jpg"
 -- You can use your own layout icons like this:
 theme.layout_fairh = "~/.config/awesome/themes/hanez/layouts/fairhw.png"
 theme.layout_fairv = "~/.config/awesome/themes/hanez/layouts/fairvw.png"
