@@ -1,6 +1,10 @@
 -------------------------
 -- Hanez awesome theme --
 -------------------------
+function file_exists(name)
+   local f=io.open(name,"r")
+   if f~=nil then io.close(f) return true else return false end
+end
 
 theme = {}
 
@@ -75,7 +79,9 @@ theme.titlebar_maximized_button_focus_active  = "~/.config/awesome/themes/hanez/
 
 -- Dont add wallpapers to the repo because of licensing issues; you need to set
 -- this yourself.
-theme.wallpaper = "~/images/31c3-saal-3.jpg"
+if file_exists("~/images/background.png") then
+    theme.wallpaper = "~/images/background.png"
+end
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = "~/.config/awesome/themes/hanez/layouts/fairhw.png"
