@@ -11,6 +11,7 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 require('naughty')
+vicious = require("vicious")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -99,6 +100,23 @@ for s = 1, screen.count() do
     tags[s] = awful.tag({ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
 end
 -- }}}
+
+-- Initialize widgets
+
+local batwidget  = wibox.widget.textbox()
+vicious.register(batwidget, vicious.widgets.bat, "BAT: $1C | ", 20, "BAT0" )
+
+local thermalwidget  = wibox.widget.textbox()
+vicious.register(thermalwidget, vicious.widgets.thermal, "CPU: $1C | ", 20, "thermal_zone0" )
+
+cpuwidget = awful.widget.graph()
+-- Graph properties
+cpuwidget:set_width(50)
+cpuwidget:set_background_color("#222222")
+cpuwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = { {0, "#FF5656"}, {0.5, "#88A175"}, 
+                    {1, "#AECF96" }}})
+                     -- Register widget
+                    vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
 
 -- {{{ Menu
 -- Create a laucher widget and a main menu
@@ -251,6 +269,9 @@ for s = 1, screen.count() do
 
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
+    right_layout:add(batwidget)
+    right_layout:add(thermalwidget)
+    right_layout:add(cpuwidget)
     if s == 1 then right_layout:add(wibox.widget.systray()) end
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
