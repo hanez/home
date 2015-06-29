@@ -103,10 +103,10 @@ end
 
 -- Initialize widgets
 local batwidget  = wibox.widget.textbox()
-vicious.register(batwidget, vicious.widgets.bat, "$2%/$3H | ", 20, "BAT0" )
+vicious.register(batwidget, vicious.widgets.bat, " $2%/$3H | ", 20, "BAT0" )
 
 local thermalwidget  = wibox.widget.textbox()
-vicious.register(thermalwidget, vicious.widgets.thermal, "$1C | ", 20, "thermal_zone0" )
+vicious.register(thermalwidget, vicious.widgets.thermal, "$1C ", 20, "thermal_zone0" )
 
 cpuwidget = awful.widget.graph()
 cpuwidget:set_width(50)
@@ -265,9 +265,9 @@ for s = 1, screen.count() do
 
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
+    right_layout:add(cpuwidget)
     right_layout:add(batwidget)
     right_layout:add(thermalwidget)
-    right_layout:add(cpuwidget)
     if s == 1 then right_layout:add(wibox.widget.systray()) end
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
