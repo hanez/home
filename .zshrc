@@ -83,7 +83,7 @@ then
     source ~/.zshprivate
 fi
 
-function home_help() {
+function _home_help() {
     echo "available commands:"
     echo ""
     echo "help:        show this help text"
@@ -94,12 +94,20 @@ function home_help() {
 
 function home() {
     case $1 in
+        diff)
+            cd ~
+            git diff
+            ;;
         help)
-            home_help
+            _home_help
             ;;
         pull)
             cd ~
             git pull
+            ;;
+        status)
+            cd ~
+            git status
             ;;
         sub)
             cd ~
@@ -113,7 +121,7 @@ function home() {
         *)
             echo "command not found!"
             echo ""
-            home_help
+            _home_help
             ;;
     esac
 }
