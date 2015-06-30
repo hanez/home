@@ -65,6 +65,7 @@ function run_once(cmd)
 end
 run_once("nm-applet")
 run_once("pasystray")
+run_once("xfsettingsd")
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 local layouts =
@@ -103,7 +104,7 @@ end
 
 -- Initialize widgets
 local batwidget  = wibox.widget.textbox()
-vicious.register(batwidget, vicious.widgets.bat, " $2%/$3H | ", 20, "BAT0" )
+vicious.register(batwidget, vicious.widgets.bat, " $2%/$3 | ", 20, "BAT0" )
 
 local thermalwidget  = wibox.widget.textbox()
 vicious.register(thermalwidget, vicious.widgets.thermal, "$1C ", 20, "thermal_zone0" )
@@ -118,32 +119,39 @@ cpuwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = {
 -- {{{ Menu
 -- Create a laucher widget and a main menu
 accessoriesmenu = {
-   { "calculator", "/usr/bin/galculator" },
+   { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
 }
 developmentmenu = {
-   { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/16x16/apps/anjuta.png" },
-   { "pycharm", "/usr/bin/pycharm" }
+   { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/"..theme.icon_size.."/apps/anjuta.png" },
+   { "pycharm", "/usr/bin/pycharm", "/opt/pycharm-community/bin/pycharm.png" },
 }
 engineeringmenu = {
    
 }
 gamesmenu = {
-   { "vba-m", "/usr/bin/gvbam" },
+   { "vba-m", "/usr/bin/gvbam", "/usr/share/icons/hicolor/"..theme.icon_size.."/apps/vbam.png" },
 }
 graphicsmenu = {
-   { "gimp", "/usr/bin/gimp" },
+   { "gimp", "/usr/bin/gimp", "/usr/share/icons/hicolor/"..theme.icon_size.."/apps/gimp.png" },
 }
 internetmenu = {
-   { "chromium", "/usr/bin/chromium" },
-   { "firefox", "/usr/bin/firefox" }
+   { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/"..theme.icon_size.."/apps/chromium.png" },
+   { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
+   { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/"..theme.icon_size.."/apps/firefox.png" },
+   { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/"..theme.icon_size.."/apps/pidgin.png" },
 }
 multimediamenu = {
-   { "kaffeine", "/usr/bin/kaffeine" },
-   { "spotify", "/usr/bin/spotify" },
-   { "vlc", "/usr/bin/vlc" },
+   { "kaffeine", "/usr/bin/kaffeine", "/usr/share/icons/hicolor/"..theme.icon_size.."/apps/kaffeine.png" },
+   { "spotify", "/usr/bin/spotify", "/usr/share/spotify/spotify-client/Icons/spotify-linux-22.png" },
+   { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
 }
 officemenu = {
-   
+   { "libreoffice base", "/usr/bin/libreoffice --base", "/usr/share/icons/hicolor/48x48/apps/libreoffice-base.png" },
+   { "libreoffice calc", "/usr/bin/libreoffice --calc", "/usr/share/icons/hicolor/48x48/apps/libreoffice-calc.png" },
+   { "libreoffice draw", "/usr/bin/libreoffice --draw", "/usr/share/icons/hicolor/48x48/apps/libreoffice-draw.png" },
+   { "libreoffice impress", "/usr/bin/libreoffice --impress", "/usr/share/icons/hicolor/48x48/apps/libreoffice-impress.png" },
+   { "libreoffice math", "/usr/bin/libreoffice --math", "/usr/share/icons/hicolor/48x48/apps/libreoffice-math.png" },
+   { "libreoffice writer", "/usr/bin/libreoffice --writer", "/usr/share/icons/hicolor/48x48/apps/libreoffice-writer.png" },
 }
 othermenu = {
    
@@ -152,28 +160,30 @@ sciencemenu = {
    
 }
 systemmenu = {
-    { "virtualbox", "/usr/bin/virtualbox" },
+--    { "gufw", "/usr/bin/gufw" },
+    { "virtualbox", "/usr/bin/virtualbox", "/usr/share/icons/hicolor/48x48/apps/virtualbox.png" },
 }
 utilitiesmenu = {
    
 }
 mymainmenu = awful.menu({ items = { 
-    { "accessories", accessoriesmenu, "/usr/share/icons/Adwaita/16x16/categories/applications-accessories.png" },
-    { "development", developmentmenu, "/usr/share/icons/Adwaita/16x16/categories/applications-development.png" },
-    { "engineering", engineeringmenu, "/usr/share/icons/Adwaita/16x16/categories/applications-engineering.png" },
-    { "games", gamesmenu, "/usr/share/icons/Adwaita/16x16/categories/applications-gamesmenu.png" },
-    { "graphics", graphicsmenu, "/usr/share/icons/Adwaita/16x16/categories/applications-graphics.png" },
-    { "internet", internetmenu, "/usr/share/icons/Adwaita/16x16/categories/applications-internet.png" },
-    { "multimedia", multimediamenu, "/usr/share/icons/Adwaita/16x16/categories/applications-multimedia.png" },
-    { "office", officemenu, "/usr/share/icons/Adwaita/16x16/categories/applications-office.png" },
-    { "other", othermenu, "/usr/share/icons/Adwaita/16x16/categories/applications-other.png" },
-    { "science", sciencemenu, "/usr/share/icons/Adwaita/16x16/categories/applications-science.png" },
-    { "system", systemmenu, "/usr/share/icons/Adwaita/16x16/categories/applications-system.png" },
-    { "utilities", utilitiesmenu, "/usr/share/icons/Adwaita/16x16/categories/applications-utilities.png" },
-    { "open terminal", terminal, "/usr/share/icons/Adwaita/16x16/apps/utilities-terminal.png" },
-    { "edit config", editor_cmd .. " " .. awesome.conffile, "/usr/share/icons/Adwaita/16x16/categories/preferences-other.png" },
-    { "restart", awesome.restart, "/usr/share/icons/Adwaita/16x16/actions/view-refresh.png" },
-    { "quit", awesome.quit, "/usr/share/icons/Adwaita/16x16/actions/system-log-out.png" }
+    { "accessories", accessoriesmenu, beautiful.icon_path.."categories/applications-accessories.png" },
+    { "development", developmentmenu, beautiful.icon_path.."categories/applications-development.png" },
+    { "engineering", engineeringmenu, beautiful.icon_path.."categories/applications-engineering.png" },
+    { "games", gamesmenu, beautiful.icon_path.."categories/applications-games.png" },
+    { "graphics", graphicsmenu, beautiful.icon_path.."categories/applications-graphics.png" },
+    { "internet", internetmenu, beautiful.icon_path.."categories/applications-internet.png" },
+    { "multimedia", multimediamenu, beautiful.icon_path.."categories/applications-multimedia.png" },
+    { "office", officemenu, beautiful.icon_path.."categories/applications-office.png" },
+    { "other", othermenu, beautiful.icon_path.."categories/applications-other.png" },
+    { "science", sciencemenu, beautiful.icon_path.."categories/applications-science.png" },
+    { "system", systemmenu, beautiful.icon_path.."categories/applications-system.png" },
+    { "utilities", utilitiesmenu, beautiful.icon_path.."categories/applications-utilities.png" },
+    { "filemanager", "/usr/bin/thunar", beautiful.icon_path.."apps/system-file-manager.png" },
+    { "open terminal", terminal, beautiful.icon_path.."apps/utilities-terminal.png" },
+    { "edit config", editor_cmd .. " " .. awesome.conffile, beautiful.icon_path.."categories/preferences-other.png" },
+    { "reload", awesome.restart, beautiful.icon_path.."actions/view-refresh.png" },
+    { "quit", awesome.quit, beautiful.icon_path.."actions/system-log-out.png" }
   }
 })
 
@@ -323,6 +333,7 @@ globalkeys = awful.util.table.join(
         end),
 
     awful.key({ modkey            }, ",", function() awful.util.spawn("/usr/bin/wmgo") end),
+    awful.key({ modkey            }, "b", function() awful.util.spawn("/usr/bin/chromium") end),
 
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),

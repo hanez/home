@@ -26,6 +26,11 @@ theme.border_normal = "#000000"
 theme.border_focus  = "#ffa500"
 theme.border_marked = "#91231c"
 
+-- Set the icon theme and size
+theme.icon_theme = "Adwaita"
+theme.icon_size = "22x22"
+theme.icon_path = "/usr/share/icons/"..theme.icon_theme.."/"..theme.icon_size.."/"
+
 -- There are other variable sets
 -- overriding the default one when
 -- defined, the sets are:
@@ -44,8 +49,8 @@ theme.taglist_squares_unsel = "~/.config/awesome/themes/hanez/taglist/squarew.pn
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
-theme.menu_submenu_icon = "~/.config/awesome/themes/hanez/submenu.png"
-theme.menu_height = 18
+theme.menu_submenu_icon = theme.icon_path.."actions/media-playback-start.png"
+theme.menu_height = 22
 theme.menu_width  = 120
 
 -- You can add as many variables as
@@ -77,16 +82,10 @@ theme.titlebar_maximized_button_focus_inactive  = "~/.config/awesome/themes/hane
 theme.titlebar_maximized_button_normal_active = "~/.config/awesome/themes/hanez/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = "~/.config/awesome/themes/hanez/titlebar/maximized_focus_active.png"
 
--- Dont add wallpapers to the repo because of licensing issues; you need to set
+-- I Don't add wallpapers to the repo because of licensing issues; you need to set
 -- this yourself.
-if file_exists("~/images/background.jpg") then
-    theme.wallpaper = "~/images/background.jpg"
-end
-if file_exists("~/images/background.png") then
-    theme.wallpaper = "~/images/background.png"
-end
+theme.wallpaper = "~/images/background.jpg"
 
-    theme.wallpaper = "~/images/background.jpg"
 -- You can use your own layout icons like this:
 theme.layout_fairh = "~/.config/awesome/themes/hanez/layouts/fairhw.png"
 theme.layout_fairv = "~/.config/awesome/themes/hanez/layouts/fairvw.png"
@@ -102,10 +101,6 @@ theme.layout_spiral  = "~/.config/awesome/themes/hanez/layouts/spiralw.png"
 theme.layout_dwindle = "~/.config/awesome/themes/hanez/layouts/dwindlew.png"
 
 theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
-
--- Define the icon theme for application icons. If not set then the icons 
--- from ~/.icons and ~/.icons/hicolor will be used.
-theme.icon_theme = nil
 
 return theme
 -- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80
