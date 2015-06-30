@@ -66,6 +66,8 @@ end
 run_once("nm-applet")
 run_once("pasystray")
 run_once("xfsettingsd")
+run_once("xfce4-clipman")
+run_once("xfce4-notes")
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 local layouts =
@@ -121,6 +123,8 @@ cpuwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = {
 accessoriesmenu = {
    { "calculator", "/usr/bin/galculator",
    "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
+   { "pluma", "/usr/bin/pluma",
+   "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
 }
 developmentmenu = {
    { "anjuta", "/usr/bin/anjuta",
@@ -150,12 +154,17 @@ internetmenu = {
    "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
 }
 multimediamenu = {
+   { "alsamixer", terminal.." -e alsamixer",
+   "/usr/share/icons/hicolor/48x48/apps/xfce-sound.png" },
+   { "cmus", terminal.." -e cmus" },
    { "kaffeine", "/usr/bin/kaffeine",
    "/usr/share/icons/hicolor/48x48/apps/kaffeine.png" },
    { "spotify", "/usr/bin/spotify",
    "/usr/share/spotify/spotify-client/Icons/spotify-linux-22.png" },
    { "vlc", "/usr/bin/vlc",
    "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
+   { "xfce4 mixer", "/usr/bin/xfce4-mixer",
+   "/usr/share/icons/Adwaita/48x48/apps/multimedia-volume-control.png" },
 }
 officemenu = {
    { "libreoffice base", "/usr/bin/libreoffice --base",
@@ -372,6 +381,7 @@ globalkeys = awful.util.table.join(
 
     awful.key({ modkey            }, ",", function() awful.util.spawn("/usr/bin/wmgo") end),
     awful.key({ modkey            }, "b", function() awful.util.spawn("/usr/bin/chromium") end),
+    awful.key({ modkey            }, "y", function() awful.util.spawn("/usr/bin/thunar") end),
 
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
