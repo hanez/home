@@ -194,7 +194,8 @@ systemmenu = {
     "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
 }
 utilitiesmenu = {
-   
+    { "gsshfs", "/usr/bin/gsshfs",
+    "/usr/share/pixmaps/gsshfs.png" },
 }
 mymainmenu = awful.menu({ items = { 
     { "accessories", accessoriesmenu,
