@@ -13,6 +13,13 @@ local menubar = require("menubar")
 require('naughty')
 vicious = require("vicious")
 
+
+function file_exists(name)
+       local f=io.open(name,"r")
+          if f~=nil then io.close(f) return true else return false end 
+      end
+
+
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -41,6 +48,17 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(".config/awesome/themes/hanez/theme.lua")
+
+-- I Don't add wallpapers to the theme because of licensing issues; you need to set
+-- this yourself. I recommend to symlink your wallpaper image to
+-- ~/images/background.png. I will change this at some time to become more
+-- flexible. If you do not add this symlink or file, the awesome's default background 
+-- image will be used.
+name = os.getenv("HOME").."/images/background.png"
+if file_exists(name) then 
+    beautiful.wallpaper = name  
+end
+
 
 -- This is used later as the default terminal and editor to run.
 terminal = "uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange"
