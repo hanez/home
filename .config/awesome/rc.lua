@@ -165,7 +165,7 @@ gamesmenu = {
    "/usr/share/icons/hicolor/48x48/apps/vbam.png" },
 }
 graphicsmenu = {
-   { "gimp", "/usr/bin/gimp",
+   { "Gimp", "/usr/bin/gimp",
    "/usr/share/icons/hicolor/48x48/apps/gimp.png" },
 }
 internetmenu = {
@@ -213,7 +213,7 @@ sciencemenu = {
 }
 systemmenu = {
 --    { "gufw", "/usr/bin/gufw" },
-    { "VirtualBox", "/usr/bin/virtualbox",
+    { "virtualbox", "/usr/bin/virtualbox",
     "/usr/share/icons/hicolor/48x48/apps/virtualbox.png" },
     { "wireshark", "/usr/bin/wireshark",
     "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
