@@ -382,6 +382,8 @@ globalkeys = awful.util.table.join(
 
     awful.key({ modkey            }, ",", function() awful.util.spawn("/usr/bin/wmgo") end),
     awful.key({ modkey            }, "b", function() awful.util.spawn("/usr/bin/chromium") end),
+    awful.key({ modkey            }, "c", function()
+                                              awful.util.spawn(editor_cmd .. " " .. awesome.conffile) end),
     awful.key({ modkey            }, "y", function() awful.util.spawn("/usr/bin/thunar") end),
 
     -- Standard program
