@@ -165,7 +165,7 @@ gamesmenu = {
    "/usr/share/icons/hicolor/48x48/apps/vbam.png" },
 }
 graphicsmenu = {
-   { "Gimp", "/usr/bin/gimp",
+   { "gimp", "/usr/bin/gimp",
    "/usr/share/icons/hicolor/48x48/apps/gimp.png" },
 }
 internetmenu = {
