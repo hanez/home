@@ -13,12 +13,31 @@ local menubar = require("menubar")
 require('naughty')
 vicious = require("vicious")
 
+-- Set programs to autostart. They will only runce once even when reloading awesome.
+local autostart = {
+    "nm-applet",
+    "pasystray",
+    "xfsettingsd",
+    "xfce4-clipman",
+    "xfce4-notes",
+    "pluma",
+}
 
+-- Function definitions.
 function file_exists(name)
-       local f=io.open(name,"r")
-          if f~=nil then io.close(f) return true else return false end 
-      end
+    local f=io.open(name,"r")
+    if f~=nil then io.close(f) return true else return false end 
+end
 
+-- Check if a program already runs, else start the program.
+function run_once(cmd)
+  findme = cmd
+  firstspace = cmd:find(" ")
+  if firstspace then
+    findme = cmd:sub(0, firstspace-1)
+  end
+  awful.util.spawn_with_shell("pgrep -u $USER -x " .. findme .. " > /dev/null || (" .. cmd .. ")")
+end
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -59,7 +78,6 @@ if file_exists(name) then
     beautiful.wallpaper = name  
 end
 
-
 -- This is used later as the default terminal and editor to run.
 terminal = "uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange"
 editor = "/usr/bin/vim"
@@ -72,20 +90,10 @@ editor_cmd = terminal .. " -e " .. editor
 -- However, you can use another modifier like Mod1, but it may interact with others.
 modkey = "Mod4"
 
--- Make sure some programs are only running once when restating awesome 
-function run_once(cmd)
-  findme = cmd
-  firstspace = cmd:find(" ")
-  if firstspace then
-    findme = cmd:sub(0, firstspace-1)
-  end
-  awful.util.spawn_with_shell("pgrep -u $USER -x " .. findme .. " > /dev/null || (" .. cmd .. ")")
+-- Autostart programs and make sure  they only run once. 
+for i, program in ipairs(autostart) do
+    run_once(program)
 end
-run_once("nm-applet")
-run_once("pasystray")
-run_once("xfsettingsd")
-run_once("xfce4-clipman")
-run_once("xfce4-notes")
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 local layouts =
