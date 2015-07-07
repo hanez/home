@@ -213,7 +213,7 @@ sciencemenu = {
 }
 systemmenu = {
 --    { "gufw", "/usr/bin/gufw" },
-    { "virtualbox", "/usr/bin/virtualbox",
+    { "VirtualBox", "/usr/bin/virtualbox",
     "/usr/share/icons/hicolor/48x48/apps/virtualbox.png" },
     { "wireshark", "/usr/bin/wireshark",
     "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
