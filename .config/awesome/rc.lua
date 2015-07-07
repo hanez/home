@@ -20,7 +20,6 @@ local autostart = {
     "xfsettingsd",
     "xfce4-clipman",
     "xfce4-notes",
-    "pluma",
 }
 
 -- Function definitions.
