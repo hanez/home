@@ -188,6 +188,10 @@ alias xterm=$TERMINAL
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
 case $TERM in
+    linux)
+        export TERM=linux-16color
+        precmd () {print -Pn "\e]0;%n@%m: %~\a"}
+        ;;
     xterm*)
         export TERM=xterm-256color
         precmd () {print -Pn "\e]0;%n@%m: %~\a"}
