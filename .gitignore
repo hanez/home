@@ -3,8 +3,8 @@
 !.config
 !.config/awesome
 !.config/awesome/**
-!.config/mc
-!.config/mc/ini
+#!.config/mc
+#!.config/mc/ini
 !.gitignore
 !.vimrc
 !.Xresources
