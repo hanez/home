@@ -1,5 +1,5 @@
 # Extend my $PATH to $PATH/bin
-export PATH=/bin:/sbin:/usr/bin:/usr/sbin:$PATH:$HOME/bin
+export PATH=$HOME/bin:$PATH
 
 # Export the $EDITOR and $TERMINAL
 export EDITOR=/usr/bin/vim
