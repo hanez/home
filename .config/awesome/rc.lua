@@ -151,6 +151,8 @@ accessoriesmenu = {
    "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
    { "pluma", "/usr/bin/pluma",
    "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
+   { "vim", terminal.." -e /usr/bin/vim",
+   os.getenv("HOME").."/.config/awesome/icons/vim32x32.png" },
 }
 developmentmenu = {
    { "anjuta", "/usr/bin/anjuta",
