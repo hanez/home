@@ -16,7 +16,7 @@ vicious = require("vicious")
 -- Set programs to autostart. They will only runce once even when reloading awesome.
 local autostart = {
     "cbatticon",
-    "brightnessicon",
+    "python3 /usr/bin/brightnessicon",
     "nm-applet",
     "pasystray",
     "xfce4-clipman",
