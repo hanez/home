@@ -154,8 +154,12 @@ accessoriesmenu = {
 developmentmenu = {
    { "anjuta", "/usr/bin/anjuta",
    "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
+   { "intellij", "/usr/bin/idea.sh",
+   "/usr/share/pixmaps/idea.png" },
    { "pycharm", "/usr/bin/pycharm",
    "/opt/pycharm-community/bin/pycharm.png" },
+   { "wxglade", "/usr/bin/wxglade",
+   "/usr/share/pixmaps/wxglade.png" },
 }
 engineeringmenu = {
    
