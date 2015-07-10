@@ -155,6 +155,8 @@ accessoriesmenu = {
 developmentmenu = {
    { "anjuta", "/usr/bin/anjuta",
    "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
+   { "eclipse", "/usr/bin/eclipse",
+   "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
    { "intellij", "/usr/bin/idea.sh",
    "/usr/share/pixmaps/idea.png" },
    { "netbeans", "/usr/bin/netbeans",
