@@ -18,7 +18,7 @@ local autostart = {
     "cbatticon",
     "nm-applet",
     "pasystray",
-    "xfsettingsd",
+--    "xfsettingsd",
     "xfce4-clipman",
     "xfce4-notes",
 }
