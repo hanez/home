@@ -15,6 +15,7 @@ vicious = require("vicious")
 
 -- Set programs to autostart. They will only runce once even when reloading awesome.
 local autostart = {
+    "cbatticon",
     "nm-applet",
     "pasystray",
     "xfsettingsd",
@@ -130,8 +131,8 @@ end
 -- }}}
 
 -- Initialize widgets
-local batwidget  = wibox.widget.textbox()
-vicious.register(batwidget, vicious.widgets.bat, " $2%/$3 | ", 20, "BAT0" )
+--local batwidget  = wibox.widget.textbox()
+--vicious.register(batwidget, vicious.widgets.bat, " $2%/$3 | ", 20, "BAT0" )
 
 local thermalwidget  = wibox.widget.textbox()
 vicious.register(thermalwidget, vicious.widgets.thermal, "$1C ", 20, "thermal_zone0" )
@@ -353,7 +354,7 @@ for s = 1, screen.count() do
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
     right_layout:add(cpuwidget)
-    right_layout:add(batwidget)
+--    right_layout:add(batwidget)
     right_layout:add(thermalwidget)
     if s == 1 then right_layout:add(wibox.widget.systray()) end
     right_layout:add(mytextclock)
