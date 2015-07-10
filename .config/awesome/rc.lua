@@ -157,6 +157,8 @@ developmentmenu = {
    "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
    { "intellij", "/usr/bin/idea.sh",
    "/usr/share/pixmaps/idea.png" },
+   { "netbeans", "/usr/bin/netbeans",
+   "/usr/share/pixmaps/netbeans.png" },
    { "pycharm", "/usr/bin/pycharm",
    "/opt/pycharm-community/bin/pycharm.png" },
    { "wxglade", "/usr/bin/wxglade",
