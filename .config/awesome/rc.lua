@@ -169,8 +169,10 @@ developmentmenu = {
    "/usr/share/pixmaps/wxglade.png" },
 }
 engineeringmenu = {
-   
+   { "arduino", "/usr/bin/arduino", 
+   "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
 }
+
 gamesmenu = {
    { "vba-m", "/usr/bin/gvbam", 
    "/usr/share/icons/hicolor/48x48/apps/vbam.png" },
@@ -250,10 +252,10 @@ mymainmenu = awful.menu({ items = {
     beautiful.icon_path.."categories/applications-multimedia.png" },
     { "office", officemenu,
     beautiful.icon_path.."categories/applications-office.png" },
-    { "other", othermenu,
-    beautiful.icon_path.."categories/applications-other.png" },
-    { "science", sciencemenu,
-    beautiful.icon_path.."categories/applications-science.png" },
+--    { "other", othermenu,
+--    beautiful.icon_path.."categories/applications-other.png" },
+--    { "science", sciencemenu,
+--    beautiful.icon_path.."categories/applications-science.png" },
     { "system", systemmenu,
     beautiful.icon_path.."categories/applications-system.png" },
     { "utilities", utilitiesmenu,
