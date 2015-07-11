@@ -205,6 +205,8 @@ multimediamenu = {
    "/usr/share/icons/Adwaita/48x48/apps/multimedia-volume-control.png" },
 }
 officemenu = {
+   { "dia", "/usr/bin/dia",
+   "/usr/share/icons/hicolor/48x48/apps/dia.png" },
    { "libreoffice base", "/usr/bin/libreoffice --base",
    "/usr/share/icons/hicolor/48x48/apps/libreoffice-base.png" },
    { "libreoffice calc", "/usr/bin/libreoffice --calc",
