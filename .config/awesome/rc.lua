@@ -165,6 +165,8 @@ developmentmenu = {
    "/usr/share/pixmaps/netbeans.png" },
    { "pycharm", "/usr/bin/pycharm",
    "/opt/pycharm-community/bin/pycharm.png" },
+   { "umongo", "/usr/bin/umongo.sh",
+   "/usr/share/pixmaps/umongo.png" },
    { "wxglade", "/usr/bin/wxglade",
    "/usr/share/pixmaps/wxglade.png" },
 }
