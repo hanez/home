@@ -98,6 +98,7 @@ alias lla='ls -la --color'
 alias llh='ls -lh --color'
 alias llah='ls -lah --color'
 alias lsd='ls -ld --color'
+alias vi=vim
 alias xterm=$TERMINAL
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
