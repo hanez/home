@@ -161,6 +161,8 @@ developmentmenu = {
    "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
    { "intellij", "/usr/bin/idea.sh",
    "/usr/share/pixmaps/idea.png" },
+   { "monodevelop", "/usr/bin/monodevelop",
+   "/usr/share/icons/hicolor/48x48/apps/monodevelop.png" },
    { "netbeans", "/usr/bin/netbeans",
    "/usr/share/pixmaps/netbeans.png" },
    { "pycharm", "/usr/bin/pycharm",
@@ -182,6 +184,8 @@ gamesmenu = {
 graphicsmenu = {
    { "gimp", "/usr/bin/gimp",
    "/usr/share/icons/hicolor/48x48/apps/gimp.png" },
+   { "inkscape", "/usr/bin/inkscape",
+   "/usr/share/icons/hicolor/48x48/apps/inkscape.png" },
 }
 internetmenu = {
    { "chromium", "/usr/bin/chromium",
@@ -229,9 +233,11 @@ sciencemenu = {
    
 }
 systemmenu = {
+    { "apache directory studio", "/usr/bin/apachedirectorystudio",
+    "/opt/ApacheDirectoryStudio/ApacheDirectoryStudio.xpm" },
 --    { "gufw", "/usr/bin/gufw" },
     { "virtualbox", "/usr/bin/virtualbox",
-    "/usr/share/icons/hicolor/48x48/apps/virtualbox.png" },
+    "/usr/share/pixmaps/VBox.png" },
     { "wireshark", "/usr/bin/wireshark",
     "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
 }

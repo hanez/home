@@ -46,7 +46,7 @@ theme.taglist_squares_unsel = "~/.config/awesome/themes/hanez/taglist/squarew.pn
 -- menu_[border_color|border_width]
 theme.menu_submenu_icon = theme.icon_path.."actions/media-playback-start.png"
 theme.menu_height = 22
-theme.menu_width  = 140
+theme.menu_width  = 162
 
 -- You can add as many variables as
 -- you wish and access them by using
