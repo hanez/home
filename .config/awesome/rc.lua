@@ -140,146 +140,96 @@ vicious.register(thermalwidget, vicious.widgets.thermal, "$1C ", 20, "thermal_zo
 cpuwidget = awful.widget.graph()
 cpuwidget:set_width(50)
 cpuwidget:set_background_color("#222222")
-cpuwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = { {0, "#FF5656"},
-{0.5, "#88A175"}, {1, "#AECF96" }}})
- vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
+cpuwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = { {0, "#FF5656"}, {0.5, "#88A175"}, {1, "#AECF96" }}})
+vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
 
 -- {{{ Menu
 -- Create a laucher widget and a main menu
 accessoriesmenu = {
-   { "calculator", "/usr/bin/galculator",
-   "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
-   { "pluma", "/usr/bin/pluma",
-   "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
-   { "vim", terminal.." -e /usr/bin/vim",
-   os.getenv("HOME").."/.config/awesome/icons/vim32x32.png" },
+    { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
+    { "pluma", "/usr/bin/pluma", "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
+    { "vim", terminal.." -e /usr/bin/vim", os.getenv("HOME").."/.config/awesome/icons/vim32x32.png" },
 }
 developmentmenu = {
-   { "anjuta", "/usr/bin/anjuta",
-   "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
-   { "eclipse", "/usr/bin/eclipse",
-   "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
-   { "intellij", "/usr/bin/idea.sh",
-   "/usr/share/pixmaps/idea.png" },
-   { "monodevelop", "/usr/bin/monodevelop",
-   "/usr/share/icons/hicolor/48x48/apps/monodevelop.png" },
-   { "netbeans", "/usr/bin/netbeans",
-   "/usr/share/pixmaps/netbeans.png" },
-   { "pycharm", "/usr/bin/pycharm",
-   "/opt/pycharm-community/bin/pycharm.png" },
-   { "umongo", "/usr/bin/umongo.sh",
-   "/usr/share/pixmaps/umongo.png" },
-   { "wxglade", "/usr/bin/wxglade",
-   "/usr/share/pixmaps/wxglade.png" },
+    { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
+    { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
+    { "intellij", "/usr/bin/idea.sh", "/usr/share/pixmaps/idea.png" },
+    { "monodevelop", "/usr/bin/monodevelop", "/usr/share/icons/hicolor/48x48/apps/monodevelop.png" },
+    { "netbeans", "/usr/bin/netbeans", "/usr/share/pixmaps/netbeans.png" },
+    { "pycharm", "/usr/bin/pycharm", "/opt/pycharm-community/bin/pycharm.png" },
+    { "wxglade", "/usr/bin/wxglade", "/usr/share/pixmaps/wxglade.png" },
 }
 engineeringmenu = {
-   { "arduino", "/usr/bin/arduino", 
-   "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
+    { "arduino", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
+    { "fritzing", "/usr/bin/Fritzing", "/usr/share/icons/fritzing.png" },
 }
 
 gamesmenu = {
-   { "vba-m", "/usr/bin/gvbam", 
-   "/usr/share/icons/hicolor/48x48/apps/vbam.png" },
+    { "vba-m", "/usr/bin/gvbam", "/usr/share/icons/hicolor/48x48/apps/vbam.png" },
 }
 graphicsmenu = {
-   { "gimp", "/usr/bin/gimp",
-   "/usr/share/icons/hicolor/48x48/apps/gimp.png" },
-   { "inkscape", "/usr/bin/inkscape",
-   "/usr/share/icons/hicolor/48x48/apps/inkscape.png" },
+    { "gimp", "/usr/bin/gimp", "/usr/share/icons/hicolor/48x48/apps/gimp.png" },
+    { "inkscape", "/usr/bin/inkscape", "/usr/share/icons/hicolor/48x48/apps/inkscape.png" },
+    { "viewnior", "/usr/bin/viewnior", "/usr/share/icons/hicolor/48x48/apps/viewnior.png" },
 }
 internetmenu = {
-   { "chromium", "/usr/bin/chromium",
-   "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
-   { "claws", "/usr/bin/claws-mail",
-   "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
-   { "firefox", "/usr/bin/firefox",
-   "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
-   { "pidgin", "/usr/bin/pidgin",
-   "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
+    { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
+    { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
+    { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
+    { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
 }
 multimediamenu = {
-   { "alsamixer", terminal.." -e alsamixer",
-   "/usr/share/icons/hicolor/48x48/apps/xfce-sound.png" },
-   { "cmus", terminal.." -e cmus" },
-   { "kaffeine", "/usr/bin/kaffeine",
-   "/usr/share/icons/hicolor/48x48/apps/kaffeine.png" },
-   { "spotify", "/usr/bin/spotify",
-   "/usr/share/spotify/spotify-client/Icons/spotify-linux-22.png" },
-   { "vlc", "/usr/bin/vlc",
-   "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
-   { "xfce4 mixer", "/usr/bin/xfce4-mixer",
-   "/usr/share/icons/Adwaita/48x48/apps/multimedia-volume-control.png" },
+    { "alsamixer", terminal.." -e alsamixer" },
+    { "cmus", terminal.." -e cmus" },
+    { "kaffeine", "/usr/bin/kaffeine", "/usr/share/icons/hicolor/48x48/apps/kaffeine.png" },
+    { "spotify", "/usr/bin/spotify", "/usr/share/spotify/spotify-client/Icons/spotify-linux-22.png" },
+    { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
+    { "xfce4 mixer", "/usr/bin/xfce4-mixer", "/usr/share/icons/Adwaita/48x48/apps/multimedia-volume-control.png" },
 }
 officemenu = {
-   { "dia", "/usr/bin/dia",
-   "/usr/share/icons/hicolor/48x48/apps/dia.png" },
-   { "libreoffice base", "/usr/bin/libreoffice --base",
-   "/usr/share/icons/hicolor/48x48/apps/libreoffice-base.png" },
-   { "libreoffice calc", "/usr/bin/libreoffice --calc",
-   "/usr/share/icons/hicolor/48x48/apps/libreoffice-calc.png" },
-   { "libreoffice draw", "/usr/bin/libreoffice --draw",
-   "/usr/share/icons/hicolor/48x48/apps/libreoffice-draw.png" },
-   { "libreoffice impress", "/usr/bin/libreoffice --impress",
-   "/usr/share/icons/hicolor/48x48/apps/libreoffice-impress.png" },
-   { "libreoffice math", "/usr/bin/libreoffice --math", 
-   "/usr/share/icons/hicolor/48x48/apps/libreoffice-math.png" },
-   { "libreoffice writer", "/usr/bin/libreoffice --writer", 
-   "/usr/share/icons/hicolor/48x48/apps/libreoffice-writer.png" },
+    { "dia", "/usr/bin/dia", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
+    { "libreoffice base", "/usr/bin/libreoffice --base", "/usr/share/icons/hicolor/48x48/apps/libreoffice-base.png" },
+    { "libreoffice calc", "/usr/bin/libreoffice --calc", "/usr/share/icons/hicolor/48x48/apps/libreoffice-calc.png" },
+    { "libreoffice draw", "/usr/bin/libreoffice --draw", "/usr/share/icons/hicolor/48x48/apps/libreoffice-draw.png" },
+    { "libreoffice impress", "/usr/bin/libreoffice --impress", "/usr/share/icons/hicolor/48x48/apps/libreoffice-impress.png" },
+    { "libreoffice math", "/usr/bin/libreoffice --math", "/usr/share/icons/hicolor/48x48/apps/libreoffice-math.png" },
+    { "libreoffice writer", "/usr/bin/libreoffice --writer", "/usr/share/icons/hicolor/48x48/apps/libreoffice-writer.png" },
 }
 othermenu = {
    
 }
 sciencemenu = {
-   
+    { "stellarium", "/usr/bin/stellarium", "/usr/share/icons/hicolor/48x48/apps/stellarium.png" },
 }
 systemmenu = {
-    { "apache directory studio", "/usr/bin/apachedirectorystudio",
-    "/opt/ApacheDirectoryStudio/ApacheDirectoryStudio.xpm" },
---    { "gufw", "/usr/bin/gufw" },
-    { "virtualbox", "/usr/bin/virtualbox",
-    "/usr/share/pixmaps/VBox.png" },
-    { "wireshark", "/usr/bin/wireshark",
-    "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
+    { "apache directory studio", "/usr/bin/apachedirectorystudio", "/opt/ApacheDirectoryStudio/ApacheDirectoryStudio.xpm" },
+    { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
+--   { "gufw", "/usr/bin/gufw" },
+    { "umongo", "/usr/bin/umongo.sh", "/usr/share/pixmaps/umongo.png" },
+    { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
+    { "wireshark", "/usr/bin/wireshark", "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
 }
 utilitiesmenu = {
-    { "gsshfs", "/usr/bin/gsshfs",
-    "/usr/share/pixmaps/gsshfs.png" },
+    { "gsshfs", "/usr/bin/gsshfs", "/usr/share/pixmaps/gsshfs.png" },
 }
 mymainmenu = awful.menu({ items = { 
-    { "accessories", accessoriesmenu,
-    beautiful.icon_path.."categories/applications-accessories.png" },
-    { "development", developmentmenu,
-    beautiful.icon_path.."categories/applications-development.png" },
-    { "engineering", engineeringmenu,
-    beautiful.icon_path.."categories/applications-engineering.png" },
-    { "games", gamesmenu,
-    beautiful.icon_path.."categories/applications-games.png" },
-    { "graphics", graphicsmenu,
-    beautiful.icon_path.."categories/applications-graphics.png" },
-    { "internet", internetmenu,
-    beautiful.icon_path.."categories/applications-internet.png" },
-    { "multimedia", multimediamenu,
-    beautiful.icon_path.."categories/applications-multimedia.png" },
-    { "office", officemenu,
-    beautiful.icon_path.."categories/applications-office.png" },
---    { "other", othermenu,
---    beautiful.icon_path.."categories/applications-other.png" },
---    { "science", sciencemenu,
---    beautiful.icon_path.."categories/applications-science.png" },
-    { "system", systemmenu,
-    beautiful.icon_path.."categories/applications-system.png" },
-    { "utilities", utilitiesmenu,
-    beautiful.icon_path.."categories/applications-utilities.png" },
-    { "filemanager", "/usr/bin/thunar",
-    beautiful.icon_path.."apps/system-file-manager.png" },
-    { "open terminal", terminal,
-    beautiful.icon_path.."apps/utilities-terminal.png" },
-    { "edit config", editor_cmd .. " " .. awesome.conffile,
-    beautiful.icon_path.."categories/preferences-other.png" },
-    { "reload", awesome.restart,
-    beautiful.icon_path.."actions/view-refresh.png" },
-    { "quit", awesome.quit,
-    beautiful.icon_path.."actions/system-log-out.png" }
+    { "accessories", accessoriesmenu, beautiful.icon_path.."categories/applications-accessories.png" },
+    { "development", developmentmenu, beautiful.icon_path.."categories/applications-development.png" },
+    { "engineering", engineeringmenu, beautiful.icon_path.."categories/applications-engineering.png" },
+    { "games", gamesmenu, beautiful.icon_path.."categories/applications-games.png" },
+    { "graphics", graphicsmenu, beautiful.icon_path.."categories/applications-graphics.png" },
+    { "internet", internetmenu, beautiful.icon_path.."categories/applications-internet.png" },
+    { "multimedia", multimediamenu, beautiful.icon_path.."categories/applications-multimedia.png" },
+    { "office", officemenu, beautiful.icon_path.."categories/applications-office.png" },
+--   { "other", othermenu, beautiful.icon_path.."categories/applications-other.png" },
+    { "science", sciencemenu, beautiful.icon_path.."categories/applications-science.png" },
+    { "system", systemmenu, beautiful.icon_path.."categories/applications-system.png" },
+    { "utilities", utilitiesmenu, beautiful.icon_path.."categories/applications-utilities.png" },
+    { "filemanager", "/usr/bin/thunar", beautiful.icon_path.."apps/system-file-manager.png" },
+    { "open terminal", terminal, beautiful.icon_path.."apps/utilities-terminal.png" },
+    { "edit config", editor_cmd .. " " .. awesome.conffile, beautiful.icon_path.."categories/preferences-other.png" },
+    { "reload", awesome.restart, beautiful.icon_path.."actions/view-refresh.png" },
+    { "quit", awesome.quit, beautiful.icon_path.."actions/system-log-out.png" }
   }
 })
 
