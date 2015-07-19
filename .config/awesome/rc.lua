@@ -165,7 +165,7 @@ engineeringmenu = {
 }
 
 gamesmenu = {
-    { "vba-m", "/usr/bin/gvbam", "/usr/share/icons/hicolor/48x48/apps/vbam.png" },
+    { "gvbam", "/usr/bin/gvbam", "/usr/share/icons/hicolor/48x48/apps/vbam.png" },
 }
 graphicsmenu = {
     { "gimp", "/usr/bin/gimp", "/usr/share/icons/hicolor/48x48/apps/gimp.png" },
