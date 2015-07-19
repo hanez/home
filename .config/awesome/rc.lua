@@ -226,8 +226,8 @@ mymainmenu = awful.menu({ items = {
     { "system", systemmenu, beautiful.icon_path.."categories/applications-system.png" },
     { "utilities", utilitiesmenu, beautiful.icon_path.."categories/applications-utilities.png" },
     { "filemanager", "/usr/bin/thunar", beautiful.icon_path.."apps/system-file-manager.png" },
-    { "open terminal", terminal, beautiful.icon_path.."apps/utilities-terminal.png" },
-    { "edit config", editor_cmd .. " " .. awesome.conffile, beautiful.icon_path.."categories/preferences-other.png" },
+    { "terminal", terminal, beautiful.icon_path.."apps/utilities-terminal.png" },
+    { "configuration", editor_cmd .. " " .. awesome.conffile, beautiful.icon_path.."categories/preferences-other.png" },
     { "reload", awesome.restart, beautiful.icon_path.."actions/view-refresh.png" },
     { "quit", awesome.quit, beautiful.icon_path.."actions/system-log-out.png" }
   }
