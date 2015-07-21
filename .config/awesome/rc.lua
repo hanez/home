@@ -154,6 +154,7 @@ developmentmenu = {
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
     { "intellij", "/usr/bin/idea.sh", "/usr/share/pixmaps/idea.png" },
+    { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
     { "monodevelop", "/usr/bin/monodevelop", "/usr/share/icons/hicolor/48x48/apps/monodevelop.png" },
     { "netbeans", "/usr/bin/netbeans", "/usr/share/pixmaps/netbeans.png" },
     { "pycharm", "/usr/bin/pycharm", "/opt/pycharm-community/bin/pycharm.png" },
