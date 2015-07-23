@@ -177,8 +177,10 @@ internetmenu = {
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
     { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
+    { "google chrome", "/usr/bin/google-chrome-stable", "/opt/google/chrome/product_logo_32.xpm" },
     { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
     { "tor browser", "/usr/bin/tor-browser-en", "/usr/share/pixmaps/tor-browser-en.png" },
+    { "vivaldi preview", "/usr/bin/vivaldi-preview", "/opt/vivaldi/product_logo_48.png" },
 }
 multimediamenu = {
     { "alsamixer", terminal.." -e alsamixer" },
