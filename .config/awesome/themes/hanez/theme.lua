@@ -77,7 +77,7 @@ theme.titlebar_maximized_button_focus_inactive  = "~/.config/awesome/themes/hane
 theme.titlebar_maximized_button_normal_active = "~/.config/awesome/themes/hanez/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = "~/.config/awesome/themes/hanez/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = "/usr/share/awesome/themes/default/background.png"
+theme.wallpaper = "~/.config/awesome/themes/hanez/31c3-saal-3.jpg"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = "~/.config/awesome/themes/hanez/layouts/fairhw.png"
