@@ -211,6 +211,7 @@ systemmenu = {
     { "apache directory studio", "/usr/bin/apachedirectorystudio", "/opt/ApacheDirectoryStudio/ApacheDirectoryStudio.xpm" },
     { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
 --   { "gufw", "/usr/bin/gufw" },
+    { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
     { "umongo", "/usr/bin/umongo.sh", "/usr/share/pixmaps/umongo.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
     { "wireshark", "/usr/bin/wireshark", "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
