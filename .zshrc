@@ -5,6 +5,10 @@ export PATH=$HOME/bin:$PATH
 export EDITOR=/usr/bin/vim
 export TERMINAL="uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange"
 
+# Fix to make JAVA applications behave more friendly in awesome. Still many JAVA apps
+# suck in awesome. PyCharm works perfect, Arduino does not!
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 # Path to your oh-my-zsh installation.
 export ZSH=~/.zsh/oh-my-zsh
 
