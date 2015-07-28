@@ -162,6 +162,7 @@ developmentmenu = {
 }
 engineeringmenu = {
     { "arduino", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
+    { "eagle", "/usr/bin/eagle", "/usr/share/pixmaps/eagle.png" },
     { "fritzing", "/usr/bin/Fritzing", "/usr/share/icons/fritzing.png" },
 }
 
