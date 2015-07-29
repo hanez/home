@@ -3,7 +3,7 @@ export PATH=$HOME/bin:$PATH
 
 # Export the $EDITOR and $TERMINAL
 export EDITOR=/usr/bin/vim
-export TERMINAL="uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange"
+export TERMINAL="/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange"
 
 # Fix to make JAVA applications behave more friendly in awesome. Still many JAVA apps
 # suck in awesome. PyCharm works perfect, Arduino does not!
