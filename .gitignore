@@ -6,7 +6,7 @@
 #!.config/mc
 #!.config/mc/ini
 !.gitignore
-!.toprc
+#!.toprc
 !.vimrc
 !.Xresources
 !.vim
