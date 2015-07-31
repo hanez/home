@@ -153,6 +153,7 @@ accessoriesmenu = {
 developmentmenu = {
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
+    { "glade", "/usr/bin/glade", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
     { "intellij", "/usr/bin/idea.sh", "/usr/share/pixmaps/idea.png" },
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
     { "monodevelop", "/usr/bin/monodevelop", "/usr/share/icons/hicolor/48x48/apps/monodevelop.png" },
