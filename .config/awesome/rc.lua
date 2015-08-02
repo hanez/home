@@ -160,6 +160,7 @@ developmentmenu = {
     { "netbeans", "/usr/bin/netbeans", "/usr/share/pixmaps/netbeans.png" },
     { "pycharm", "/usr/bin/pycharm", "/opt/pycharm-community/bin/pycharm.png" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/pixmaps/wxglade.png" },
+    { "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
 }
 engineeringmenu = {
     { "arduino", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
