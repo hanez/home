@@ -2,6 +2,7 @@
 export PATH=$HOME/bin:$PATH
 
 # Export the $EDITOR and $TERMINAL
+export BROWSER=/usr/bin/firefox
 export EDITOR=/usr/bin/vim
 export TERMINAL="/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange"
 
