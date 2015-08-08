@@ -1,5 +1,5 @@
 # Extend my $PATH to $PATH/bin
-export PATH=$HOME/bin:$PATH
+export PATH=$HOME/bin:/home/hanez/.gem/ruby/2.2.0/bin:$PATH
 
 # Export the $EDITOR and $TERMINAL
 export BROWSER=/usr/bin/firefox
