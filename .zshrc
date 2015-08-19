@@ -1,5 +1,5 @@
 # Extend my $PATH to $PATH/bin
-export PATH=$HOME/bin:$PATH
+export PATH=$HOME/bin:/home/hanez/.gem/ruby/2.2.0/bin:$PATH
 
 # Export the $EDITOR and $TERMINAL
 export BROWSER=/usr/bin/firefox
@@ -107,6 +107,12 @@ alias vi=vim
 alias xterm=$TERMINAL
 alias backup_t410='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/t410/'
 alias backup_11s='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/11s/'
+
+# Some Git aliases
+alias gitc='git commit'
+alias gitd='git diff'
+alias gitp='git push'
+alias gits='git status'
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
 case $TERM in
