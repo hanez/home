@@ -163,6 +163,7 @@ developmentmenu = {
     { "netbeans", "/usr/bin/netbeans", "/usr/share/pixmaps/netbeans.png" },
     { "processing", "/usr/bin/processing", "/usr/share/pixmaps/processing.png" },
     { "pycharm", "/usr/bin/pycharm", "/opt/pycharm-community/bin/pycharm.png" },
+    { "qtcreator", "/usr/bin/qtcreator", "/usr/share/icons/hicolor/48x48/apps/QtProject-qtcreator.png" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/pixmaps/wxglade.png" },
     { "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
 }
