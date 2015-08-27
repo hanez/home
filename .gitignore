@@ -3,6 +3,7 @@
 !.config
 !.config/awesome
 !.config/awesome/**
+!.config.lua
 #!.config/mc
 #!.config/mc/ini
 !.gitignore

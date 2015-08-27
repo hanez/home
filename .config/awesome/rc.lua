@@ -13,6 +13,8 @@ local menubar = require("menubar")
 require('naughty')
 vicious = require("vicious")
 
+--require(os.getenv("HOME").."/.config.lua")
+
 -- Set programs to autostart. They will only runce once even when reloading awesome.
 local autostart = {
     "cbatticon",
