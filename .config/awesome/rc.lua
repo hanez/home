@@ -154,23 +154,24 @@ accessoriesmenu = {
 }
 developmentmenu = {
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
-    { "arduino", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
-    { "eagle", "/usr/bin/eagle", "/usr/share/pixmaps/eagle.png" },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
-    { "fritzing", "/usr/bin/Fritzing", "/usr/share/icons/fritzing.png" },
     { "glade", "/usr/bin/glade", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
     { "intellij", "/usr/bin/idea.sh", "/usr/share/pixmaps/idea.png" },
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
     { "monodevelop", "/usr/bin/monodevelop", "/usr/share/icons/hicolor/48x48/apps/monodevelop.png" },
     { "netbeans", "/usr/bin/netbeans", "/usr/share/pixmaps/netbeans.png" },
-    { "processing", "/usr/bin/processing", "/usr/share/pixmaps/processing.png" },
     { "pycharm", "/usr/bin/pycharm", "/opt/pycharm-community/bin/pycharm.png" },
     { "qtcreator", "/usr/bin/qtcreator", "/usr/share/icons/hicolor/48x48/apps/QtProject-qtcreator.png" },
-    { "qucs", "/usr/bin/qucs", "/usr/share/icons/hicolor/48x48/apps/qucs.png" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/pixmaps/wxglade.png" },
     { "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
 }
 engineeringmenu = {
+    { "arduino", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
+    { "eagle", "/usr/bin/eagle", "/usr/share/pixmaps/eagle.png" },
+    { "fritzing", "/usr/bin/Fritzing", "/usr/share/icons/fritzing.png" },
+    { "gqrx", "/usr/bin/gqrx", "/usr/share/pixmaps/gqrx.png" },
+    { "processing", "/usr/bin/processing", "/usr/share/pixmaps/processing.png" },
+    { "qucs", "/usr/bin/qucs", "/usr/share/icons/hicolor/48x48/apps/qucs.png" },
 }
 
 gamesmenu = {
@@ -236,7 +237,7 @@ utilitiesmenu = {
 mymainmenu = awful.menu({ items = { 
     { "accessories", accessoriesmenu, beautiful.icon_path.."categories/applications-accessories.png" },
     { "development", developmentmenu, beautiful.icon_path.."categories/applications-development.png" },
---    { "engineering", engineeringmenu, beautiful.icon_path.."categories/applications-engineering.png" },
+    { "engineering", engineeringmenu, beautiful.icon_path.."categories/applications-engineering.png" },
     { "games", gamesmenu, beautiful.icon_path.."categories/applications-games.png" },
     { "graphics", graphicsmenu, beautiful.icon_path.."categories/applications-graphics.png" },
     { "internet", internetmenu, beautiful.icon_path.."categories/applications-internet.png" },
