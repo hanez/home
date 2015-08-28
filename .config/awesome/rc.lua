@@ -197,6 +197,7 @@ internetmenu = {
 }
 multimediamenu = {
     { "alsamixer", terminal.." -e alsamixer" },
+    { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/48x48/apps/audacity.png" },
     { "cmus", terminal.." -e cmus" },
     { "kaffeine", "/usr/bin/kaffeine", "/usr/share/icons/hicolor/48x48/apps/kaffeine.png" },
     { "spotify", "/usr/bin/spotify", "/usr/share/spotify/spotify-client/Icons/spotify-linux-22.png" },
