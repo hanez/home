@@ -209,6 +209,8 @@ officemenu = {
     { "acrobat reader", "/usr/bin/acroread", "/usr/share/pixmaps/acroread.png" },
     { "dia", "/usr/bin/dia", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
     { "epdfview", "/usr/bin/epdfview", "/usr/share/icons/hicolor/48x48/apps/epdfview.png" },
+    { "gnucash", "/home/hanez/bin/gnucash", "/usr/share/icons/hicolor/48x48/apps/gnucash-icon.png" },
+    { "hibiscus", "/usr/bin/jameica", "/opt/jameica/plugins/hibiscus/icons/hibiscus-icon-32x32.png" },
     { "libreoffice base", "/usr/bin/libreoffice --base", "/usr/share/icons/hicolor/48x48/apps/libreoffice-base.png" },
     { "libreoffice calc", "/usr/bin/libreoffice --calc", "/usr/share/icons/hicolor/48x48/apps/libreoffice-calc.png" },
     { "libreoffice draw", "/usr/bin/libreoffice --draw", "/usr/share/icons/hicolor/48x48/apps/libreoffice-draw.png" },
