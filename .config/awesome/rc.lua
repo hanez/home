@@ -167,9 +167,11 @@ developmentmenu = {
 }
 engineeringmenu = {
     { "arduino", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
-    { "eagle", "/usr/bin/eagle", "/usr/share/pixmaps/eagle.png" },
+    { "eagle", "/home/hanez/bin/eagle", "/usr/share/pixmaps/eagle.png" },
     { "fritzing", "/usr/bin/Fritzing", "/usr/share/icons/fritzing.png" },
     { "gqrx", "/usr/bin/gqrx", "/usr/share/pixmaps/gqrx.png" },
+    { "kicad", "/usr/bin/kicad", "/usr/share/icons/hicolor/48x48/apps/kicad.png" },
+    { "openscad", "/usr/bin/openscad", "/usr/share/pixmaps/openscad.png" },
     { "processing", "/usr/bin/processing", "/usr/share/pixmaps/processing.png" },
     { "qucs", "/usr/bin/qucs", "/usr/share/icons/hicolor/48x48/apps/qucs.png" },
 }
