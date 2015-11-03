@@ -155,6 +155,7 @@ accessoriesmenu = {
 developmentmenu = {
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
+    { "energia", "/usr/bin/energia", "/usr/share/pixmaps/energia_48.png" },
     { "glade", "/usr/bin/glade", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
     { "intellij", "/usr/bin/idea.sh", "/usr/share/pixmaps/idea.png" },
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
@@ -187,6 +188,7 @@ graphicsmenu = {
     { "gimp", "/usr/bin/gimp", "/usr/share/icons/hicolor/48x48/apps/gimp.png" },
     { "inkscape", "/usr/bin/inkscape", "/usr/share/icons/hicolor/48x48/apps/inkscape.png" },
     { "scribus", "/usr/bin/scribus", "/usr/share/icons/oxygen/48x48/apps/scribus.png" },
+    { "sk1", "/usr/bin/sk1", "/usr/share/pixmaps/sk1.png" },
     { "viewnior", "/usr/bin/viewnior", "/usr/share/icons/hicolor/48x48/apps/viewnior.png" },
 }
 internetmenu = {
