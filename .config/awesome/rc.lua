@@ -172,8 +172,11 @@ engineeringmenu = {
     { "fritzing", "/usr/bin/Fritzing", "/usr/share/icons/fritzing.png" },
     { "gqrx", "/usr/bin/gqrx", "/usr/share/pixmaps/gqrx.png" },
     { "kicad", "/usr/bin/kicad", "/usr/share/icons/hicolor/48x48/apps/kicad.png" },
+    { "leocad", "/usr/bin/leocad", "/usr/share/icons/hicolor/scalable/mimetypes/application-vnd.leocad.svg" },
+    { "librecad", "/usr/bin/librecad", "/usr/share/icons/hicolor/scalable/apps/librecad.svg" },
     { "openscad", "/usr/bin/openscad", "/usr/share/pixmaps/openscad.png" },
     { "processing", "/usr/bin/processing", "/usr/share/pixmaps/processing.png" },
+    { "qcad", "/usr/bin/qcad", "/usr/share/pixmaps/qcad_icon.png" },
     { "qucs", "/usr/bin/qucs", "/usr/share/icons/hicolor/48x48/apps/qucs.png" },
 }
 
