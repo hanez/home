@@ -187,6 +187,7 @@ gamesmenu = {
 graphicsmenu = {
     { "gimp", "/usr/bin/gimp", "/usr/share/icons/hicolor/48x48/apps/gimp.png" },
     { "inkscape", "/usr/bin/inkscape", "/usr/share/icons/hicolor/48x48/apps/inkscape.png" },
+    { "pinta", "/usr/bin/pinta", "/usr/share/pixmaps/pinta.xpm" },
     { "scribus", "/usr/bin/scribus", "/usr/share/icons/oxygen/48x48/apps/scribus.png" },
     { "sk1", "/usr/bin/sk1", "/usr/share/pixmaps/sk1.png" },
     { "viewnior", "/usr/bin/viewnior", "/usr/share/icons/hicolor/48x48/apps/viewnior.png" },
