@@ -136,6 +136,23 @@ end
 --local batwidget  = wibox.widget.textbox()
 --vicious.register(batwidget, vicious.widgets.bat, " $2%/$3 | ", 20, "BAT0" )
 
+
+function o_temp(widget)
+--local handle = io.popen("rtl_433 -f 433980000 -q | grep Temp")
+--local result = handle:read("*a")
+--handle:close()i
+--result = "foo"
+--widget.set_text(result)
+end
+--local otermwidget  = wibox.widget.textbox()
+--mytimer = timer({ timeout = 30 })
+--mytimer:connect_signal("timeout", o_temp(otermwidget))
+--mytimer:start()
+
+--local otermwidget = wibox.widget.textbox()
+--otermwidget:set_text("Hello, world!")
+--vicious.register(otermwidget, vicious.widgets.textbox) 
+
 local thermalwidget  = wibox.widget.textbox()
 vicious.register(thermalwidget, vicious.widgets.thermal, "$1C ", 20, "thermal_zone0" )
 
@@ -155,9 +172,9 @@ accessoriesmenu = {
 developmentmenu = {
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
-    { "energia", "/usr/bin/energia", "/usr/share/pixmaps/energia_48.png" },
     { "glade", "/usr/bin/glade", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
     { "intellij", "/usr/bin/idea.sh", "/usr/share/pixmaps/idea.png" },
+    { "lazarus", "/usr/bin/lazarus", "/usr/share/pixmaps/lazarus.png" },
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
     { "monodevelop", "/usr/bin/monodevelop", "/usr/share/icons/hicolor/48x48/apps/monodevelop.png" },
     { "netbeans", "/usr/bin/netbeans", "/usr/share/pixmaps/netbeans.png" },
@@ -169,6 +186,7 @@ developmentmenu = {
 engineeringmenu = {
     { "arduino", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
     { "eagle", "/home/hanez/bin/eagle", "/usr/share/pixmaps/eagle.png" },
+    { "energia", "/usr/bin/energia", "/usr/share/pixmaps/energia_48.png" },
     { "freecad", "/usr/bin/freecad", "/usr/share/freecad/freecad-icon-48.png" },
     { "fritzing", "/usr/bin/Fritzing", "/usr/share/icons/fritzing.png" },
     { "gqrx", "/usr/bin/gqrx", "/usr/share/pixmaps/gqrx.png" },
@@ -185,6 +203,7 @@ gamesmenu = {
     { "gvbam", "/usr/bin/gvbam", "/usr/share/icons/hicolor/48x48/apps/vbam.png" },
 }
 graphicsmenu = {
+    { "blender", "/usr/bin/blender", "/usr/share/icons/hicolor/48x48/apps/blender.png" },
     { "gimp", "/usr/bin/gimp", "/usr/share/icons/hicolor/48x48/apps/gimp.png" },
     { "inkscape", "/usr/bin/inkscape", "/usr/share/icons/hicolor/48x48/apps/inkscape.png" },
     { "pinta", "/usr/bin/pinta", "/usr/share/pixmaps/pinta.xpm" },
@@ -203,7 +222,7 @@ internetmenu = {
     { "opera", "/usr/bin/opera", "/usr/share/pixmaps/opera.xpm" },
     { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
     { "tor browser", "/usr/bin/tor-browser-en", "/usr/share/pixmaps/tor-browser-en.png" },
-    { "vivaldi preview", "/usr/bin/vivaldi-preview", "/opt/vivaldi/product_logo_48.png" },
+    { "vivaldi", "/usr/bin/vivaldi-preview", "/opt/vivaldi/product_logo_48.png" },
 }
 multimediamenu = {
     { "alsamixer", terminal.." -e alsamixer" },
@@ -361,6 +380,7 @@ for s = 1, screen.count() do
     right_layout:add(cpuwidget)
 --    right_layout:add(batwidget)
     right_layout:add(thermalwidget)
+--    right_layout:add(otermwidget)
     if s == 1 then right_layout:add(wibox.widget.systray()) end
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
