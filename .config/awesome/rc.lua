@@ -162,7 +162,7 @@ end
 --net_wired = net_widgets.indicator({ interfaces = { "enp0s25" }, timeout = 5 })
 
 local netwidget = wibox.widget.textbox()
-vicious.register(netwidget, vicious.widgets.net, '<span color="green">⇩${enp0s25 down_kb}</span> / <span color="red">${enp0s25 up_kb}⇧</span> ', 1)
+vicious.register(netwidget, vicious.widgets.net, '<span color="green">⇩${'..private.net_device..' down_kb}</span> / <span color="red">${'..private.net_device..' up_kb}⇧</span> ', 1)
 
 local thermalwidget  = wibox.widget.textbox()
 vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, private.thermal_zone )
