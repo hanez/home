@@ -3,6 +3,7 @@
 !.config
 !.config/awesome
 !.config/awesome/**
+.config/awesome/private.lua
 !.config.lua
 #!.config/mc
 #!.config/mc/ini

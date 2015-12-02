@@ -12,8 +12,9 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 require('naughty')
 vicious = require("vicious")
-local lain        = require("lain")
+local lain = require("lain")
 --local net_widgets = require("net_widgets")
+require("private")
 
 --require(os.getenv("HOME").."/.config.lua")
 
@@ -164,7 +165,7 @@ local netwidget = wibox.widget.textbox()
 vicious.register(netwidget, vicious.widgets.net, '<span color="green">⇩${enp0s25 down_kb}</span> / <span color="red">${enp0s25 up_kb}⇧</span> ', 1)
 
 local thermalwidget  = wibox.widget.textbox()
-vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, "thermal_zone0" )
+vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, private.thermal_zone )
 --vicious.register(thermalwidget, vicious.widgets.thermal, "CPU: $1°C ", 20, { "coretemp.1", "core"} )
 
 cpuwidget = awful.widget.graph()
