@@ -12,6 +12,8 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 require('naughty')
 vicious = require("vicious")
+local lain        = require("lain")
+--local net_widgets = require("net_widgets")
 
 --require(os.getenv("HOME").."/.config.lua")
 
@@ -153,8 +155,17 @@ end
 --otermwidget:set_text("Hello, world!")
 --vicious.register(otermwidget, vicious.widgets.textbox) 
 
+
+-- Widgets
+--net_wireless = net_widgets.wireless({ interface = "wlp2s0", popup_signal = true })
+--net_wired = net_widgets.indicator({ interfaces = { "enp0s25" }, timeout = 5 })
+
+local netwidget = wibox.widget.textbox()
+vicious.register(netwidget, vicious.widgets.net, '<span color="green">⇩${enp0s25 down_kb}</span> / <span color="red">${enp0s25 up_kb}⇧</span> ', 1)
+
 local thermalwidget  = wibox.widget.textbox()
-vicious.register(thermalwidget, vicious.widgets.thermal, "$1C ", 20, "thermal_zone0" )
+vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, "thermal_zone0" )
+--vicious.register(thermalwidget, vicious.widgets.thermal, "CPU: $1°C ", 20, { "coretemp.1", "core"} )
 
 cpuwidget = awful.widget.graph()
 cpuwidget:set_width(50)
@@ -166,19 +177,28 @@ vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
 -- Create a laucher widget and a main menu
 accessoriesmenu = {
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
+    { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/48x48/apps/ghex.png" },
+    { "gnu privacy agent", "/usr/bin/gpa", "/usr/share/pixmaps/gpa.png" },
     { "pluma", "/usr/bin/pluma", "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
+    { "retext", "/usr/bin/retext ", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
+    { "seahorse", "/usr/bin/seahorse", "/usr/share/icons/hicolor/48x48/apps/seahorse.png" },
     { "vim", terminal.." -e /usr/bin/vim", os.getenv("HOME").."/.config/awesome/icons/vim32x32.png" },
+    { "xarchiver", "xarchiver", "/usr/share/icons/hicolor/48x48/apps/xarchiver.png" },
 }
 developmentmenu = {
+    { "android studio", "/usr/bin/android-studio ", "/usr/share/pixmaps/android-studio.png" },
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
+    { "clion", "/usr/bin/clion", "/usr/share/pixmaps/clion.svg" },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
     { "glade", "/usr/bin/glade", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
+    { "glade2", "/usr/bin/glade-2 ", "/usr/share/pixmaps/glade-2.png" },
     { "intellij", "/usr/bin/idea.sh", "/usr/share/pixmaps/idea.png" },
     { "lazarus", "/usr/bin/lazarus", "/usr/share/pixmaps/lazarus.png" },
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
     { "monodevelop", "/usr/bin/monodevelop", "/usr/share/icons/hicolor/48x48/apps/monodevelop.png" },
     { "netbeans", "/usr/bin/netbeans", "/usr/share/pixmaps/netbeans.png" },
     { "pycharm", "/usr/bin/pycharm", "/opt/pycharm-community/bin/pycharm.png" },
+    { "qgit", "/usr/bin/qgit", "/usr/share/pixmaps/qgit.png" },
     { "qtcreator", "/usr/bin/qtcreator", "/usr/share/icons/hicolor/48x48/apps/QtProject-qtcreator.png" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/pixmaps/wxglade.png" },
     { "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
@@ -204,12 +224,16 @@ gamesmenu = {
 }
 graphicsmenu = {
     { "blender", "/usr/bin/blender", "/usr/share/icons/hicolor/48x48/apps/blender.png" },
+    { "font manager", "/usr/bin/font-manager", "/usr/share/icons/gnome/48x48/apps/preferences-desktop-font.png" },
     { "gimp", "/usr/bin/gimp", "/usr/share/icons/hicolor/48x48/apps/gimp.png" },
+    { "gpick", "/usr/bin/gpick", "/usr/share/icons/hicolor/48x48/apps/gpick.png" },
+    { "image scan!", "/usr/bin/iscan", "/usr/share/icons/gnome/48x48/devices/scanner.png" },    
     { "inkscape", "/usr/bin/inkscape", "/usr/share/icons/hicolor/48x48/apps/inkscape.png" },
     { "pinta", "/usr/bin/pinta", "/usr/share/pixmaps/pinta.xpm" },
     { "scribus", "/usr/bin/scribus", "/usr/share/icons/oxygen/48x48/apps/scribus.png" },
     { "sk1", "/usr/bin/sk1", "/usr/share/pixmaps/sk1.png" },
     { "viewnior", "/usr/bin/viewnior", "/usr/share/icons/hicolor/48x48/apps/viewnior.png" },
+    { "xsane scanning", "/usr/bin/xsane", "/usr/share/pixmaps/xsane.xpm" },
 }
 internetmenu = {
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
@@ -221,15 +245,17 @@ internetmenu = {
     { "konqueror", "/usr/bin/konqueror", "/usr/share/icons/hicolor/48x48/apps/konqueror.png" },
     { "opera", "/usr/bin/opera", "/usr/share/pixmaps/opera.xpm" },
     { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
+    { "skype", "skype ", "/usr/share/icons/hicolor/48x48/apps/skype.png" },
     { "tor browser", "/usr/bin/tor-browser-en", "/usr/share/pixmaps/tor-browser-en.png" },
     { "vivaldi", "/usr/bin/vivaldi-preview", "/opt/vivaldi/product_logo_48.png" },
 }
 multimediamenu = {
     { "alsamixer", terminal.." -e alsamixer" },
     { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/48x48/apps/audacity.png" },
+    { "brasero", "/usr/bin/brasero ", "/usr/share/icons/hicolor/48x48/apps/brasero.png" },
     { "cmus", terminal.." -e cmus" },
     { "kaffeine", "/usr/bin/kaffeine", "/usr/share/icons/hicolor/48x48/apps/kaffeine.png" },
-    { "spotify", "/usr/bin/spotify", "/usr/share/spotify/spotify-client/Icons/spotify-linux-22.png" },
+    { "spotify", "/usr/bin/spotify", "/usr/local/share/icons/hicolor/16x16/apps/spotify-client.png" },
     { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
     { "xfce4 mixer", "/usr/bin/xfce4-mixer", "/usr/share/icons/Adwaita/48x48/apps/multimedia-volume-control.png" },
 }
@@ -257,6 +283,8 @@ sciencemenu = {
 }
 systemmenu = {
     { "apache directory studio", "/usr/bin/apachedirectorystudio", "/opt/ApacheDirectoryStudio/ApacheDirectoryStudio.xpm" },
+    { "gparted", "sudo /usr/bin/gparted_polkit ", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
+    { "hardinfo", "hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
     { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
 --   { "gufw", "/usr/bin/gufw" },
     { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
@@ -297,7 +325,11 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 
 -- {{{ Wibox
 -- Create a textclock widget
-mytextclock = awful.widget.textclock("%a %b %d, %H:%M:%S ", 1)
+mytextclock = awful.widget.textclock(" %a %b %d, %H:%M:%S ", 1)
+-- Calendar
+xxx = {}
+xxx.cal = "/usr/bin/cal -m"
+lain.widgets.calendar:attach(mytextclock, xxx)
 
 -- Create a wibox for each screen and add it
 mywibox = {}
@@ -377,6 +409,7 @@ for s = 1, screen.count() do
 
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
+    right_layout:add(netwidget)
     right_layout:add(cpuwidget)
 --    right_layout:add(batwidget)
     right_layout:add(thermalwidget)
@@ -565,6 +598,8 @@ awful.rules.rules = {
     --{ rule = { class = "pinentry" },
     --  properties = { floating = true } },
     { rule = { class = "gimp" },
+      properties = { floating = true } },
+    { rule = { instance = "plugin-container" },
       properties = { floating = true } },
     --{ rule = { instance = "urxvt" },
     --  properties = { floating = true } },
