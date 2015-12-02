@@ -1,22 +1,20 @@
--- Standard awesome library
+-- Require some basic stuff
 local gears = require("gears")
 local awful = require("awful")
 awful.rules = require("awful.rules")
 require("awful.autofocus")
--- Widget and layout library
 local wibox = require("wibox")
--- Theme handling library
 local beautiful = require("beautiful")
--- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
-require('naughty')
 vicious = require("vicious")
 local lain = require("lain")
---local net_widgets = require("net_widgets")
-require("private")
 
---require(os.getenv("HOME").."/.config.lua")
+-- require $HOME/.config/awesome/private.lua for including variables that are different on 
+-- my systems like private.thermal_zone or private.net_device; this makes sure that widgets
+-- are displaying the right value... ;)
+-- This file needs to exist. You need to explore this if You want to use my widget stuff!
+require("private")
 
 -- Set programs to autostart. They will only runce once even when reloading awesome.
 local autostart = {
@@ -28,13 +26,11 @@ local autostart = {
     "xfce4-notes",
 }
 
--- Function definitions.
 function file_exists(name)
     local f=io.open(name,"r")
     if f~=nil then io.close(f) return true else return false end 
 end
 
--- Check if a program already runs, else start the program.
 function run_once(cmd)
   findme = cmd
   firstspace = cmd:find(" ")
@@ -44,20 +40,15 @@ function run_once(cmd)
   awful.util.spawn_with_shell("pgrep -u $USER -x " .. findme .. " > /dev/null || (" .. cmd .. ")")
 end
 
--- {{{ Error handling
--- Check if awesome encountered an error during startup and fell back to
--- another config (This code will only ever execute for the fallback config)
 if awesome.startup_errors then
     naughty.notify({ preset = naughty.config.presets.critical,
                      title = "Oops, there were errors during startup!",
                      text = awesome.startup_errors })
 end
 
--- Handle runtime errors after startup
 do
     local in_error = false
     awesome.connect_signal("debug::error", function (err)
-        -- Make sure we don't go into an endless error loop
         if in_error then return end
         in_error = true
 
@@ -67,40 +58,27 @@ do
         in_error = false
     end)
 end
--- }}}
 
--- {{{ Variable definitions
--- Themes define colours, icons, font and wallpapers.
 beautiful.init(".config/awesome/themes/hanez/theme.lua")
 
--- I Don't add wallpapers to the theme because of licensing issues; you need to set
--- this yourself. I recommend to symlink your wallpaper image to
--- ~/images/background.png. I will change this at some time to become more
--- flexible. If you do not add this symlink or file, the awesome's default background 
--- image will be used.
+-- To override the wallpaper provided by the them you can just add a file named
+-- ~/images/background.png and then this file will be used as wallpaper. No need
+-- to change the theme or this file for that... ;)
 name = os.getenv("HOME").."/images/background.png"
 if file_exists(name) then 
     beautiful.wallpaper = name  
 end
 
--- This is used later as the default terminal and editor to run.
 terminal = "/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange" 
 editor = "/usr/bin/vim"
 editor_cmd = terminal .. " -e " .. editor
 
--- Default modkey.
--- Usually, Mod4 is the key with a logo between Control and Alt.
--- If you do not like this or do not have such a key,
--- I suggest you to remap Mod4 to another key using xmodmap or other tools.
--- However, you can use another modifier like Mod1, but it may interact with others.
 modkey = "Mod4"
 
--- Autostart programs and make sure  they only run once. 
 for i, program in ipairs(autostart) do
     run_once(program)
 end
 
--- Table of layouts to cover with awful.layout.inc, order matters.
 local layouts =
 {
     awful.layout.suit.tile,
@@ -116,66 +94,18 @@ local layouts =
     awful.layout.suit.magnifier,
     awful.layout.suit.floating
 }
--- }}}
 
--- {{{ Wallpaper
 if beautiful.wallpaper then
     for s = 1, screen.count() do
         gears.wallpaper.maximized(beautiful.wallpaper, s, true)
     end
 end
--- }}}
 
--- {{{ Tags
--- Define a tag table which hold all screen tags.
 tags = {}
 for s = 1, screen.count() do
-    -- Each screen has its own tag table.
     tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
 end
--- }}}
 
--- Initialize widgets
---local batwidget  = wibox.widget.textbox()
---vicious.register(batwidget, vicious.widgets.bat, " $2%/$3 | ", 20, "BAT0" )
-
-
-function o_temp(widget)
---local handle = io.popen("rtl_433 -f 433980000 -q | grep Temp")
---local result = handle:read("*a")
---handle:close()i
---result = "foo"
---widget.set_text(result)
-end
---local otermwidget  = wibox.widget.textbox()
---mytimer = timer({ timeout = 30 })
---mytimer:connect_signal("timeout", o_temp(otermwidget))
---mytimer:start()
-
---local otermwidget = wibox.widget.textbox()
---otermwidget:set_text("Hello, world!")
---vicious.register(otermwidget, vicious.widgets.textbox) 
-
-
--- Widgets
---net_wireless = net_widgets.wireless({ interface = "wlp2s0", popup_signal = true })
---net_wired = net_widgets.indicator({ interfaces = { "enp0s25" }, timeout = 5 })
-
-local netwidget = wibox.widget.textbox()
-vicious.register(netwidget, vicious.widgets.net, '<span color="green">⇩${'..private.net_device..' down_kb}</span> / <span color="red">${'..private.net_device..' up_kb}⇧</span> ', 1)
-
-local thermalwidget  = wibox.widget.textbox()
-vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, private.thermal_zone )
---vicious.register(thermalwidget, vicious.widgets.thermal, "CPU: $1°C ", 20, { "coretemp.1", "core"} )
-
-cpuwidget = awful.widget.graph()
-cpuwidget:set_width(50)
-cpuwidget:set_background_color("#222222")
-cpuwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = { {0, "#FF5656"}, {0.5, "#88A175"}, {1, "#AECF96" }}})
-vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
-
--- {{{ Menu
--- Create a laucher widget and a main menu
 accessoriesmenu = {
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
     { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/48x48/apps/ghex.png" },
@@ -256,7 +186,7 @@ multimediamenu = {
     { "brasero", "/usr/bin/brasero ", "/usr/share/icons/hicolor/48x48/apps/brasero.png" },
     { "cmus", terminal.." -e cmus" },
     { "kaffeine", "/usr/bin/kaffeine", "/usr/share/icons/hicolor/48x48/apps/kaffeine.png" },
-    { "spotify", "/usr/bin/spotify", "/usr/local/share/icons/hicolor/16x16/apps/spotify-client.png" },
+    { "spotify", "/usr/bin/spotify", "/usr/share/pixmaps/spotify-client.png" },
     { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
     { "xfce4 mixer", "/usr/bin/xfce4-mixer", "/usr/share/icons/Adwaita/48x48/apps/multimedia-volume-control.png" },
 }
@@ -320,17 +250,52 @@ mymainmenu = awful.menu({ items = {
 
 mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon, menu = mymainmenu })
 
--- Menubar configuration
-menubar.utils.terminal = terminal -- Set the terminal for applications that require it
--- }}}
+-- Initialize widgets
+--local batwidget  = wibox.widget.textbox()
+--vicious.register(batwidget, vicious.widgets.bat, " $2%/$3 | ", 20, "BAT0" )
 
--- {{{ Wibox
+--function o_temp(widget)
+--local handle = io.popen("rtl_433 -f 433980000 -q | grep Temp")
+--local result = handle:read("*a")
+--handle:close()i
+--result = "foo"
+--widget.set_text(result)
+--end
+--local otermwidget  = wibox.widget.textbox()
+--mytimer = timer({ timeout = 30 })
+--mytimer:connect_signal("timeout", o_temp(otermwidget))
+--mytimer:start()
+
+--local otermwidget = wibox.widget.textbox()
+--otermwidget:set_text("Hello, world!")
+--vicious.register(otermwidget, vicious.widgets.textbox) 
+
+--net_wireless = net_widgets.wireless({ interface = "wlp2s0", popup_signal = true })
+--net_wired = net_widgets.indicator({ interfaces = { "enp0s25" }, timeout = 5 })
+
+local netwidget = wibox.widget.textbox()
+vicious.register(netwidget, vicious.widgets.net, '<span color="green">⇩${'..private.net_device..' down_kb}</span> / <span color="red">${'..private.net_device..' up_kb}⇧</span> ', 1)
+
+local thermalwidget  = wibox.widget.textbox()
+vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, private.thermal_zone )
+--vicious.register(thermalwidget, vicious.widgets.thermal, "CPU: $1°C ", 20, { "coretemp.1", "core"} )
+
+cpuwidget = awful.widget.graph()
+cpuwidget:set_width(50)
+cpuwidget:set_background_color("#222222")
+cpuwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = { {0, "#FF5656"}, {0.5, "#88A175"}, {1, "#AECF96" }}})
+vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
+
 -- Create a textclock widget
 mytextclock = awful.widget.textclock(" %a %b %d, %H:%M:%S ", 1)
 -- Calendar
 xxx = {}
 xxx.cal = "/usr/bin/cal -m"
 lain.widgets.calendar:attach(mytextclock, xxx)
+
+-- Menubar configuration
+menubar.utils.terminal = terminal -- Set the terminal for applications that require it
+-- }}}
 
 -- Create a wibox for each screen and add it
 mywibox = {}
