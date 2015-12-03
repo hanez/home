@@ -253,7 +253,7 @@ mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon, menu = myma
 
 -- Initialize widgets
 local batwidget  = wibox.widget.textbox()
-vicious.register(batwidget, vicious.widgets.bat, " $1$2% | ", 20, "BAT0" )
+vicious.register(batwidget, vicious.widgets.bat, " $1$2% | ", 20, private.battery )
 
 local netwidget = wibox.widget.textbox()
 vicious.register(netwidget, vicious.widgets.net, '<span color="green">⇩${'..private.net_device..' down_kb}</span> / <span color="#C83321">${'..private.net_device..' up_kb}⇧</span> ', 1)
