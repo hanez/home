@@ -151,6 +151,7 @@ engineeringmenu = {
 }
 
 gamesmenu = {
+    { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
     { "gvbam", "/usr/bin/gvbam", "/usr/share/icons/hicolor/48x48/apps/vbam.png" },
 }
 graphicsmenu = {
@@ -251,34 +252,14 @@ mymainmenu = awful.menu({ items = {
 mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon, menu = mymainmenu })
 
 -- Initialize widgets
---local batwidget  = wibox.widget.textbox()
---vicious.register(batwidget, vicious.widgets.bat, " $2%/$3 | ", 20, "BAT0" )
-
---function o_temp(widget)
---local handle = io.popen("rtl_433 -f 433980000 -q | grep Temp")
---local result = handle:read("*a")
---handle:close()i
---result = "foo"
---widget.set_text(result)
---end
---local otermwidget  = wibox.widget.textbox()
---mytimer = timer({ timeout = 30 })
---mytimer:connect_signal("timeout", o_temp(otermwidget))
---mytimer:start()
-
---local otermwidget = wibox.widget.textbox()
---otermwidget:set_text("Hello, world!")
---vicious.register(otermwidget, vicious.widgets.textbox) 
-
---net_wireless = net_widgets.wireless({ interface = "wlp2s0", popup_signal = true })
---net_wired = net_widgets.indicator({ interfaces = { "enp0s25" }, timeout = 5 })
+local batwidget  = wibox.widget.textbox()
+vicious.register(batwidget, vicious.widgets.bat, " $1$2% | ", 20, "BAT0" )
 
 local netwidget = wibox.widget.textbox()
-vicious.register(netwidget, vicious.widgets.net, '<span color="green">⇩${'..private.net_device..' down_kb}</span> / <span color="red">${'..private.net_device..' up_kb}⇧</span> ', 1)
+vicious.register(netwidget, vicious.widgets.net, '<span color="green">⇩${'..private.net_device..' down_kb}</span> / <span color="#C83321">${'..private.net_device..' up_kb}⇧</span> ', 1)
 
 local thermalwidget  = wibox.widget.textbox()
 vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, private.thermal_zone )
---vicious.register(thermalwidget, vicious.widgets.thermal, "CPU: $1°C ", 20, { "coretemp.1", "core"} )
 
 cpuwidget = awful.widget.graph()
 cpuwidget:set_width(50)
@@ -377,9 +358,8 @@ for s = 1, screen.count() do
     local right_layout = wibox.layout.fixed.horizontal()
     right_layout:add(netwidget)
     right_layout:add(cpuwidget)
---    right_layout:add(batwidget)
+    right_layout:add(batwidget)
     right_layout:add(thermalwidget)
---    right_layout:add(otermwidget)
     if s == 1 then right_layout:add(wibox.widget.systray()) end
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
