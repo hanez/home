@@ -1,4 +1,4 @@
-# Extend my $PATH to $PATH/bin
+# Extend my $PATH to $HOME/bin
 export PATH=$HOME/bin:/home/hanez/.gem/ruby/2.2.0/bin:$PATH
 
 # Export the $EDITOR and $TERMINAL
@@ -72,13 +72,6 @@ HISTFILE=~/.zsh_history
 # Load oh-my-zsh stuff
 source $ZSH/oh-my-zsh.sh
 
-# Stuff thats needs to be done after sourcing oh-my-zsh
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
-if [ -e ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]
-then
-    source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
-
 # Now source some stuff that should not be public
 if [ -e ~/.zshprivate ]
 then
@@ -129,4 +122,3 @@ case $TERM in
         precmd () {print -Pn "\e]0;%n@%m: %~\a"}
         ;;
 esac
-
