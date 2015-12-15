@@ -107,6 +107,7 @@ end
 
 accessoriesmenu = {
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
+    { "engrampa", "/usr/bin/engrampa", "/usr/share/icons/hicolor/32x32/apps/engrampa.png" },
     { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/48x48/apps/ghex.png" },
     { "gnu privacy agent", "/usr/bin/gpa", "/usr/share/pixmaps/gpa.png" },
     { "pluma", "/usr/bin/pluma", "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
@@ -152,7 +153,7 @@ gamesmenu = {
     { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
     { "extreme tux racer", "/usr/bin/etr", "/usr/share/pixmaps/etr.png" },
     { "gvbam", "/usr/bin/gvbam", "/usr/share/icons/hicolor/48x48/apps/vbam.png" },
-    { "supertux2", "/usr/bin/supertux2", "/usr/share/pixmaps/supertux.png" },
+    { "supertux 2", "/usr/bin/supertux2", "/usr/share/pixmaps/supertux.png" },
 }
 graphicsmenu = {
     { "blender", "/usr/bin/blender", "/usr/share/icons/hicolor/48x48/apps/blender.png" },
@@ -206,7 +207,10 @@ officemenu = {
     { "pdfshuffler", "/usr/bin/pdfshuffler", "/usr/share/pixmaps/pdfshuffler.png" },
 }
 othermenu = {
-   
+    { "apache directory studio", "/usr/bin/apachedirectorystudio", "/opt/ApacheDirectoryStudio/icon.xpm" },
+    { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
+    { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
+    { "umongo", "/usr/bin/umongo.sh", "/usr/share/pixmaps/umongo.png" },
 }
 sciencemenu = {
     { "cantor", "/usr/bin/cantor", "/usr/share/icons/hicolor/48x48/apps/cantor.png" },
@@ -214,13 +218,10 @@ sciencemenu = {
     { "stellarium", "/usr/bin/stellarium", "/usr/share/icons/hicolor/48x48/apps/stellarium.png" },
 }
 systemmenu = {
-    { "apache directory studio", "/usr/bin/apachedirectorystudio", "/opt/ApacheDirectoryStudio/ApacheDirectoryStudio.xpm" },
+    { "control center", "/usr/bin/mate-control-center", "/usr/share/icons/mate/48x48/categories/gnome-control-center.png" },
     { "gparted", "sudo /usr/bin/gparted_polkit ", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
     { "hardinfo", "hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
-    { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
 --   { "gufw", "/usr/bin/gufw" },
-    { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
-    { "umongo", "/usr/bin/umongo.sh", "/usr/share/pixmaps/umongo.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
     { "wireshark", "/usr/bin/wireshark", "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
 }
@@ -237,7 +238,7 @@ mymainmenu = awful.menu({ items = {
     { "internet", internetmenu, beautiful.icon_path.."categories/applications-internet.png" },
     { "multimedia", multimediamenu, beautiful.icon_path.."categories/applications-multimedia.png" },
     { "office", officemenu, beautiful.icon_path.."categories/applications-office.png" },
---   { "other", othermenu, beautiful.icon_path.."categories/applications-other.png" },
+    { "other", othermenu, beautiful.icon_path.."categories/applications-other.png" },
     { "science", sciencemenu, beautiful.icon_path.."categories/applications-science.png" },
     { "system", systemmenu, beautiful.icon_path.."categories/applications-system.png" },
     { "utilities", utilitiesmenu, beautiful.icon_path.."categories/applications-utilities.png" },
