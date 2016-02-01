@@ -124,6 +124,7 @@ developmentmenu = {
     { "glade", "/usr/bin/glade", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
     { "glade2", "/usr/bin/glade-2 ", "/usr/share/pixmaps/glade-2.png" },
     { "intellij", "/usr/bin/idea.sh", "/usr/share/pixmaps/idea.png" },
+    { "ipython qtconsole", "/usr/bin/ipython qtconsole", "/usr/share/pixmaps/ipython.png" },
     { "lazarus", "/usr/bin/lazarus", "/usr/share/pixmaps/lazarus.png" },
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
     { "monodevelop", "/usr/bin/monodevelop", "/usr/share/icons/hicolor/48x48/apps/monodevelop.png" },
