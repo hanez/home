@@ -1,5 +1,5 @@
 # Extend my $PATH to $HOME/bin
-export PATH=$HOME/bin:$HOME/.gem/ruby/2.2.0/bin:$PATH
+export PATH=$HOME/bin:$HOME/.gem/ruby/2.2.0/bin:$HOME/.gem/ruby/2.3.0/bin:$PATH
 
 # Export the $EDITOR and $TERMINAL
 export BROWSER=/usr/bin/firefox
@@ -100,6 +100,7 @@ alias vi=vim
 alias xterm=$TERMINAL
 alias backup_t410='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/t410/'
 alias backup_11s='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/11s/'
+alias spamup='rsync -avr .bogofilter/* b.systemchaos.org:/var/bogofilter'
 
 # Some Git aliases
 alias gitc='git commit'
