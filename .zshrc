@@ -100,7 +100,7 @@ alias vi=vim
 alias xterm=$TERMINAL
 alias backup_t410='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/t410/'
 alias backup_11s='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/11s/'
-alias spamup='rsync -avr .bogofilter/* b.systemchaos.org:/var/bogofilter'
+alias spamup='rsync -avr --delete ~/.bogofilter/* b.systemchaos.org:/var/bogofilter'
 
 # Some Git aliases
 alias gitc='git commit'
