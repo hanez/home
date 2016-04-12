@@ -4,7 +4,7 @@ export PATH=$HOME/bin:$HOME/.gem/ruby/2.2.0/bin:$HOME/.gem/ruby/2.3.0/bin:$PATH
 # Export the $EDITOR and $TERMINAL
 export BROWSER=/usr/bin/firefox
 export EDITOR=/usr/bin/vim
-export TERMINAL="/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange"
+export TERMINAL='/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange -fa "Noto Mono" -fs 13'
 
 # Fix to make JAVA applications behave more friendly in awesome. Still many JAVA apps
 # suck in awesome. PyCharm works perfect, Arduino does not!
@@ -107,6 +107,11 @@ alias gitc='git commit'
 alias gitd='git diff'
 alias gitp='git push'
 alias gits='git status'
+
+# SSH Host aliases
+alias a.systemchaos.org='ssh a.systemchaos.org'
+alias b.systemchaos.org='ssh b.systemchaos.org'
+alias c.systemchaos.org='ssh c.systemchaos.org'
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
 case $TERM in

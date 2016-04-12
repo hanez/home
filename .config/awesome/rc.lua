@@ -17,12 +17,12 @@ require("private")
 
 -- Set programs to autostart. They will only runce once even when reloading awesome.
 local autostart = {
-    "cbatticon",
-    "python3 /usr/bin/brightnessicon",
+    --"cbatticon",
     "nm-applet",
     "pasystray",
     "xfce4-clipman",
     "xfce4-notes",
+    "xautolock -locker slock -time 5",
 }
 
 function file_exists(name)
@@ -37,6 +37,12 @@ function run_once(cmd)
         findme = cmd:sub(0, firstspace-1)
     end
     awful.util.spawn_with_shell("pgrep -u $USER -x " .. findme .. " > /dev/null || (" .. cmd .. ")")
+end
+
+function tablelength(T)
+    local count = 0
+    for _ in pairs(T) do count = count + 1 end
+    return count
 end
 
 if awesome.startup_errors then
@@ -68,7 +74,7 @@ if file_exists(name) then
     beautiful.wallpaper = name  
 end
 
-terminal = "/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange" 
+terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange  -fa "Noto Mono" -fs 13' 
 editor = "/usr/bin/vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -107,9 +113,12 @@ end
 
 accessoriesmenu = {
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
+    { "emacs", "/usr/bin/emacs", "/usr/share/icons/hicolor/scalable/apps/emacs.svg" },
     { "engrampa", "/usr/bin/engrampa", "/usr/share/icons/hicolor/32x32/apps/engrampa.png" },
     { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/48x48/apps/ghex.png" },
     { "gnu privacy agent", "/usr/bin/gpa", "/usr/share/pixmaps/gpa.png" },
+    { "gscriptor", "/usr/bin/gscriptor", "/usr/share/icons/hicolor/48x48/categories/applications-other.png" },
+    { "gvim", "/usr/bin/gvim", "/usr/share/pixmaps/gvim.png" },
     { "pluma", "/usr/bin/pluma", "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
     { "retext", "/usr/bin/retext ", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
     { "seahorse", "/usr/bin/seahorse", "/usr/share/icons/hicolor/48x48/apps/seahorse.png" },
@@ -174,6 +183,7 @@ internetmenu = {
     { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
     { "evolution", "/usr/bin/evolution", "/usr/share/icons/hicolor/48x48/apps/evolution.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
+    { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/64x64/apps/gajim.png" },
     { "google chrome", "/usr/bin/google-chrome-stable", "/opt/google/chrome/product_logo_32.xpm" },
     { "google earth", "/usr/bin/google-earth", "/opt/google/earth/free/product_logo_32.xpm" },
     { "konqueror", "/usr/bin/konqueror", "/usr/share/icons/hicolor/48x48/apps/konqueror.png" },
@@ -184,10 +194,10 @@ internetmenu = {
     { "vivaldi", "/usr/bin/vivaldi-preview", "/opt/vivaldi/product_logo_48.png" },
 }
 multimediamenu = {
-    { "alsamixer", terminal.." -e alsamixer" },
+    { "alsamixer", terminal.." -e alsamixer", "/usr/share/icons/hicolor/48x48/categories/applications-other.png" },
     { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/48x48/apps/audacity.png" },
     { "brasero", "/usr/bin/brasero ", "/usr/share/icons/hicolor/48x48/apps/brasero.png" },
-    { "cmus", terminal.." -e cmus" },
+    { "cmus", terminal.." -e cmus", "/usr/share/icons/hicolor/48x48/categories/applications-other.png" },
     { "kaffeine", "/usr/bin/kaffeine", "/usr/share/icons/hicolor/48x48/apps/kaffeine.png" },
     { "spotify", "/usr/bin/spotify", "/usr/share/pixmaps/spotify-client.png" },
     { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
@@ -227,7 +237,7 @@ systemmenu = {
     { "wireshark", "/usr/bin/wireshark", "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
 }
 utilitiesmenu = {
-    { "arandr", "/usr/bin/arandr" },
+    { "arandr", "/usr/bin/arandr", "/usr/share/icons/hicolor/scalable/status/video-display.svg" },
     { "gsshfs", "/usr/bin/gsshfs", "/usr/share/pixmaps/gsshfs.png" },
 }
 mymainmenu = awful.menu({ items = { 
@@ -253,8 +263,11 @@ mymainmenu = awful.menu({ items = {
 
 mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon, menu = mymainmenu })
 
-local batwidget  = wibox.widget.textbox()
-vicious.register(batwidget, vicious.widgets.bat, " $1$2% / ", 20, private.battery )
+local batterywidgets = {}
+for i=1, tablelength(private.battery) do
+    batterywidgets[i] = wibox.widget.textbox()
+    vicious.register(batterywidgets[i], vicious.widgets.bat, "$1$2% / ", 20, private.battery[i])
+end
 
 local netwidget = wibox.widget.textbox()
 vicious.register(netwidget, vicious.widgets.net, '<span color="green">⇩${'..private.net_device..' down_kb}</span> / <span color="#C83321">${'..private.net_device..' up_kb}⇧</span> ', 1)
@@ -351,7 +364,10 @@ for s = 1, screen.count() do
     local right_layout = wibox.layout.fixed.horizontal()
     right_layout:add(netwidget)
     right_layout:add(cpuwidget)
-    right_layout:add(batwidget)
+    for i=1, tablelength(batterywidgets) do
+        right_layout:add(batterywidgets[i])
+    end
+
     right_layout:add(thermalwidget)
     if s == 1 then right_layout:add(wibox.widget.systray()) end
     right_layout:add(mytextclock)
@@ -407,7 +423,37 @@ globalkeys = awful.util.table.join(
             end
         end),
 
-    awful.key({ modkey            }, ",", function() awful.util.spawn("/usr/bin/wmgo") end),
+    -- Set backlight
+    awful.key({ modkey, "Mod1"    }, "1", function() awful.util.spawn("/usr/bin/xbacklight -set 10") end),
+    awful.key({ modkey, "Mod1"    }, "2", function() awful.util.spawn("/usr/bin/xbacklight -set 20") end),
+    awful.key({ modkey, "Mod1"    }, "3", function() awful.util.spawn("/usr/bin/xbacklight -set 30") end),
+    awful.key({ modkey, "Mod1"    }, "4", function() awful.util.spawn("/usr/bin/xbacklight -set 40") end),
+    awful.key({ modkey, "Mod1"    }, "5", function() awful.util.spawn("/usr/bin/xbacklight -set 50") end),
+    awful.key({ modkey, "Mod1"    }, "6", function() awful.util.spawn("/usr/bin/xbacklight -set 60") end),
+    awful.key({ modkey, "Mod1"    }, "7", function() awful.util.spawn("/usr/bin/xbacklight -set 70") end),
+    awful.key({ modkey, "Mod1"    }, "8", function() awful.util.spawn("/usr/bin/xbacklight -set 80") end),
+    awful.key({ modkey, "Mod1"    }, "9", function() awful.util.spawn("/usr/bin/xbacklight -set 90") end),
+    awful.key({ modkey, "Mod1"    }, "0", function() awful.util.spawn("/usr/bin/xbacklight -set 100") end),
+
+    awful.key({ modkey, "Mod1"    }, "o", function()
+                                            local handle = io.popen("/usr/bin/xbacklight -get")
+                                            local result = handle:read("*a")
+                                            handle:close()
+                                            result = math.floor(result)
+                                            local newval = tonumber(result) - 5
+                                            awful.util.spawn("/usr/bin/xbacklight -set "..newval)
+                                          end),
+
+    awful.key({ modkey, "Mod1"    }, "p", function()
+                                            local handle = io.popen("/usr/bin/xbacklight -get")
+                                            local result = handle:read("*a")
+                                            handle:close()
+                                            result = math.floor(result)
+                                            local newval = tonumber(result) + 5
+                                            awful.util.spawn("/usr/bin/xbacklight -set "..newval)
+                                          end),
+
+    -- Some Application shortcuts
     awful.key({ modkey            }, "v", function() awful.util.spawn("/usr/bin/chromium") end),
     awful.key({ modkey            }, "b", function() awful.util.spawn("/usr/bin/firefox") end),
     awful.key({ modkey            }, "m", function() awful.util.spawn("/usr/bin/claws-mail") end),
