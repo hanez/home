@@ -1,0 +1,7 @@
+private = {}
+
+private.thermal_zone = "thermal_zone1"
+
+private.net_device = "wlp3s0"
+
+private.battery = {"BAT0", "BAT1"}
