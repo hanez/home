@@ -183,6 +183,7 @@ internetmenu = {
     { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
     { "evolution", "/usr/bin/evolution", "/usr/share/icons/hicolor/48x48/apps/evolution.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
+    { "firefox dev", "/usr/local/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/64x64/apps/gajim.png" },
     { "google chrome", "/usr/bin/google-chrome-stable", "/opt/google/chrome/product_logo_32.xpm" },
     { "google earth", "/usr/bin/google-earth", "/opt/google/earth/free/product_logo_32.xpm" },
