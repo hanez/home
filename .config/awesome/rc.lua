@@ -182,7 +182,7 @@ internetmenu = {
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
     { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
-    { "firefox dev", "/usr/local/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
+    { "firefox dev", "/usr/local/bin/firefox --new-instance", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/64x64/apps/gajim.png" },
     { "google chrome", "/usr/bin/google-chrome-stable", "/opt/google/chrome/product_logo_32.xpm" },
     { "google earth", "/usr/bin/google-earth", "/opt/google/earth/free/product_logo_32.xpm" },
@@ -458,7 +458,9 @@ globalkeys = awful.util.table.join(
     -- Some Application shortcuts
     awful.key({ modkey            }, "v", function() awful.util.spawn("/usr/bin/chromium") end),
     awful.key({ modkey            }, "b", function() awful.util.spawn("/usr/bin/firefox") end),
+    awful.key({ modkey            }, "n", function() awful.util.spawn("/usr/bin/thunderbird") end),
     awful.key({ modkey            }, "m", function() awful.util.spawn("/usr/bin/claws-mail") end),
+
     awful.key({ modkey            }, "c", function()
                                               awful.util.spawn(editor_cmd .. " " .. awesome.conffile) end),
     awful.key({ modkey            }, "z", function()
