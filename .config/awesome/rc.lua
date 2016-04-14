@@ -181,7 +181,6 @@ graphicsmenu = {
 internetmenu = {
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
     { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
-    { "evolution", "/usr/bin/evolution", "/usr/share/icons/hicolor/48x48/apps/evolution.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "firefox dev", "/usr/local/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/64x64/apps/gajim.png" },
@@ -192,6 +191,7 @@ internetmenu = {
     { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
     { "seamonkey", "seamonkey", "/usr/share/pixmaps/seamonkey.png" },
     { "skype", "skype", "/usr/share/icons/hicolor/48x48/apps/skype.png" },
+    { "thunderbird", "/usr/bin/thunderbird", "/usr/share/icons/hicolor/48x48/apps/thunderbird.png" },
     { "tor browser", "/usr/bin/tor-browser-en", "/usr/share/pixmaps/tor-browser-en.png" },
     { "vivaldi", "/usr/bin/vivaldi-preview", "/opt/vivaldi/product_logo_48.png" },
 }
