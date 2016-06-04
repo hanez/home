@@ -17,12 +17,14 @@ require("private")
 
 -- Set programs to autostart. They will only runce once even when reloading awesome.
 local autostart = {
+    "synclient TouchpadOff=1",
     --"cbatticon",
     "nm-applet",
     "pasystray",
     "xfce4-clipman",
     "xfce4-notes",
     "xautolock -locker slock -time 5",
+    "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1",
 }
 
 function file_exists(name)
@@ -120,7 +122,8 @@ accessoriesmenu = {
     { "gscriptor", "/usr/bin/gscriptor", "/usr/share/icons/hicolor/48x48/categories/applications-other.png" },
     { "gvim", "/usr/bin/gvim", "/usr/share/pixmaps/gvim.png" },
     { "pluma", "/usr/bin/pluma", "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
-    { "retext", "/usr/bin/retext ", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
+    { "regexxer", "/usr/bin/regexxer", "/usr/share/icons/hicolor/48x48/apps/regexxer.png" },
+    { "retext", "/usr/bin/retext", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
     { "seahorse", "/usr/bin/seahorse", "/usr/share/icons/hicolor/48x48/apps/seahorse.png" },
     { "vim", terminal.." -e /usr/bin/vim", os.getenv("HOME").."/.config/awesome/icons/vim32x32.png" },
     { "xarchiver", "xarchiver", "/usr/share/icons/hicolor/48x48/apps/xarchiver.png" },
@@ -182,7 +185,6 @@ internetmenu = {
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
     { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
-    { "firefox dev", "/usr/local/bin/firefox --new-instance", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/64x64/apps/gajim.png" },
     { "google chrome", "/usr/bin/google-chrome-stable", "/opt/google/chrome/product_logo_32.xpm" },
     { "google earth", "/usr/bin/google-earth", "/opt/google/earth/free/product_logo_32.xpm" },
@@ -232,7 +234,7 @@ sciencemenu = {
 }
 systemmenu = {
     { "control center", "/usr/bin/mate-control-center", "/usr/share/icons/mate/48x48/categories/gnome-control-center.png" },
-    { "gparted", "sudo /usr/bin/gparted_polkit ", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
+    { "gparted", "/usr/bin/gparted_polkit ", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
     { "hardinfo", "hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
 --   { "gufw", "/usr/bin/gufw" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
@@ -241,6 +243,7 @@ systemmenu = {
 utilitiesmenu = {
     { "arandr", "/usr/bin/arandr", "/usr/share/icons/hicolor/scalable/status/video-display.svg" },
     { "gsshfs", "/usr/bin/gsshfs", "/usr/share/pixmaps/gsshfs.png" },
+    { "unetbootin", "/usr/bin/unetbootin_polkit", "/usr/share/icons/hicolor/48x48/apps/unetbootin.png" },
 }
 mymainmenu = awful.menu({ items = { 
     { "accessories", accessoriesmenu, beautiful.icon_path.."categories/applications-accessories.png" },
@@ -278,7 +281,7 @@ local thermalwidget  = wibox.widget.textbox()
 vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, private.thermal_zone )
 
 cpuwidget = awful.widget.graph()
-cpuwidget:set_width(50)
+cpuwidget:set_width(100)
 cpuwidget:set_background_color("#222222")
 cpuwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = { {0, "#FF5656"}, {0.5, "#88A175"}, {1, "#AECF96" }}})
 vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
