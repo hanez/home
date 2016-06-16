@@ -6,6 +6,8 @@
 .config/awesome/private.lua
 #!.config/mc
 #!.config/mc/ini
+!.config/user-dirs.dirs
+!.config/user-dirs.locale
 !.gitignore
 #!.toprc
 !.vimrc
