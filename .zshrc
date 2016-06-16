@@ -129,5 +129,9 @@ case $TERM in
         ;;
 esac
 
-[ -f /usr/bin/shellpic ] && [ -f ~/images/tux.png ] /usr/bin/shellpic --shell24 --scale-x 50 ~/images/tux.png
+if [ -f /usr/bin/shellpic ]; then 
+    if [ -f ~/images/tux.png ]; then
+        /usr/bin/shellpic --shell24 --scale-x 50 ~/images/tux.png
+    fi
+fi
 
