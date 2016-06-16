@@ -25,6 +25,7 @@ local autostart = {
     "xfce4-notes",
     "xautolock -locker slock -time 5",
     "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1",
+    "redshift",
 }
 
 function file_exists(name)
@@ -133,17 +134,20 @@ developmentmenu = {
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "clion", "/usr/bin/clion", "/usr/share/pixmaps/clion.svg" },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
-    { "glade", "/usr/bin/glade", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
-    { "glade2", "/usr/bin/glade-2 ", "/usr/share/pixmaps/glade-2.png" },
+    { "glade", "/usr/bin/glade", "/usr/share/icons/hicolor/48x48/apps/glade-3.png" },
+    { "glade2", "/usr/bin/glade-2 ", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
+    { "gps", "/usr/bin/gps", "/usr/share/gps/icons/hicolor/32x32/apps/gps_32.png" },
     { "intellij", "/usr/bin/idea.sh", "/usr/share/pixmaps/idea.png" },
     { "ipython qtconsole", "/usr/bin/ipython qtconsole", "/usr/share/pixmaps/ipython.png" },
-    { "lazarus", "/usr/bin/lazarus", "/usr/share/pixmaps/lazarus.png" },
+    { "kdevelop", "/usr/bin/kdevelop", "/usr/share/icons/hicolor/48x48/apps/kdevelop.png" },
+    { "lazarus", "/usr/bin/lazarus", "/usr/lib/lazarus/images/ide_icon48x48.png" },
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
     { "monodevelop", "/usr/bin/monodevelop", "/usr/share/icons/hicolor/48x48/apps/monodevelop.png" },
-    { "netbeans", "/usr/bin/netbeans", "/usr/share/pixmaps/netbeans.png" },
+    { "netbeans", "/usr/bin/netbeans -J-Xmx4096m", "/usr/share/pixmaps/netbeans.png" },
     { "pycharm", "/usr/bin/pycharm", "/opt/pycharm-community/bin/pycharm.png" },
     { "qgit", "/usr/bin/qgit", "/usr/share/pixmaps/qgit.png" },
     { "qtcreator", "/usr/bin/qtcreator", "/usr/share/icons/hicolor/48x48/apps/QtProject-qtcreator.png" },
+    { "tortoisehg", "/usr/bin/thg", "/usr/share/pixmaps/thg_logo.svg" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/pixmaps/wxglade.png" },
     { "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
 }
@@ -175,6 +179,7 @@ graphicsmenu = {
     { "gpick", "/usr/bin/gpick", "/usr/share/icons/hicolor/48x48/apps/gpick.png" },
     { "image scan!", "/usr/bin/iscan", "/usr/share/icons/gnome/48x48/devices/scanner.png" },    
     { "inkscape", "/usr/bin/inkscape", "/usr/share/icons/hicolor/48x48/apps/inkscape.png" },
+    { "krita", "/usr/bin/krita", "/usr/share/icons/hicolor/48x48/apps/calligrakrita.png" },
     { "pinta", "/usr/bin/pinta", "/usr/share/pixmaps/pinta.xpm" },
     { "scribus", "/usr/bin/scribus", "/usr/share/icons/oxygen/48x48/apps/scribus.png" },
     { "sk1", "/usr/bin/sk1", "/usr/share/pixmaps/sk1.png" },
@@ -195,7 +200,6 @@ internetmenu = {
     { "skype", "skype", "/usr/share/icons/hicolor/48x48/apps/skype.png" },
     { "thunderbird", "/usr/bin/thunderbird", "/usr/share/icons/hicolor/48x48/apps/thunderbird.png" },
     { "tor browser", "/usr/bin/tor-browser-en", "/usr/share/pixmaps/tor-browser-en.png" },
-    { "vivaldi", "/usr/bin/vivaldi-stable", "/opt/vivaldi/product_logo_48.png" },
 }
 multimediamenu = {
     { "alsamixer", terminal.." -e alsamixer", "/usr/share/icons/hicolor/48x48/categories/applications-other.png" },
@@ -457,6 +461,9 @@ globalkeys = awful.util.table.join(
                                             local newval = tonumber(result) + 5
                                             awful.util.spawn("/usr/bin/xbacklight -set "..newval)
                                           end),
+    
+    awful.key({ modkey, "Mod1"    }, "y", function() awful.util.spawn("/usr/bin/killall xautolock") end),
+    awful.key({ modkey, "Mod1"    }, "x", function() awful.util.spawn("/usr/bin/xautolock -locker slock -time 5") end),
 
     -- Some Application shortcuts
     awful.key({ modkey            }, "v", function() awful.util.spawn("/usr/bin/chromium") end),

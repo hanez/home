@@ -128,3 +128,6 @@ case $TERM in
         precmd () {print -Pn "\e]0;%n@%m: %~\a"}
         ;;
 esac
+
+/usr/bin/shellpic --shell24 --scale-x 50 ~/images/tux.png
+
