@@ -1,3 +1,9 @@
+-- require $HOME/.config/awesome/private.lua for including variables that are different on 
+-- my systems like private.thermal_zone or private.net_device; this makes sure that widgets
+-- are displaying the right value... ;)
+-- This file needs to exist. You need to explore this if you want to use my widget stuff!
+require("private")
+
 -- Require some basic stuff
 local gears = require("gears")
 local awful = require("awful")
@@ -8,12 +14,6 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 vicious = require("vicious")
-
--- require $HOME/.config/awesome/private.lua for including variables that are different on 
--- my systems like private.thermal_zone or private.net_device; this makes sure that widgets
--- are displaying the right value... ;)
--- This file needs to exist. You need to explore this if you want to use my widget stuff!
-require("private")
 
 -- Set programs to autostart. They will only runce once even when reloading awesome.
 local autostart = {
@@ -77,7 +77,7 @@ if file_exists(name) then
     beautiful.wallpaper = name  
 end
 
-terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange  -fa "Noto Mono" -fs 13' 
+terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange  -fa "Noto Mono" -fs '..private.font_xterm 
 editor = "/usr/bin/vim"
 editor_cmd = terminal .. " -e " .. editor
 

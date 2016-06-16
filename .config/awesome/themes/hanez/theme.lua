@@ -3,7 +3,7 @@
 -------------------------
 theme = {}
 
-theme.font          = "sans 10"
+theme.font          = "sans "..private.font_awesome
 
 theme.bg_normal     = "#222222"
 theme.bg_focus      = "#222222"
