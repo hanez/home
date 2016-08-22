@@ -133,6 +133,7 @@ developmentmenu = {
     { "android studio", "/usr/bin/android-studio ", "/usr/share/pixmaps/android-studio.png" },
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "clion", "/usr/bin/clion", "/usr/share/pixmaps/clion.svg" },
+    { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
     { "glade", "/usr/bin/glade", "/usr/share/icons/hicolor/48x48/apps/glade-3.png" },
     { "glade2", "/usr/bin/glade-2 ", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
