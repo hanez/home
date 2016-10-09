@@ -17,6 +17,7 @@ vicious = require("vicious")
 
 -- Set programs to autostart. They will only runce once even when reloading awesome.
 local autostart = {
+    "amor",
     "synclient TouchpadOff=1",
     --"cbatticon",
     "nm-applet",
@@ -121,7 +122,8 @@ accessoriesmenu = {
     { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/48x48/apps/ghex.png" },
     { "gnu privacy agent", "/usr/bin/gpa", "/usr/share/pixmaps/gpa.png" },
     { "gscriptor", "/usr/bin/gscriptor", "/usr/share/icons/hicolor/48x48/categories/applications-other.png" },
-    { "gvim", "/usr/bin/gvim", "/usr/share/pixmaps/gvim.png" },
+    { "gvim", "/usr/bin/gvim", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
+    { "kleopatra", "/usr/bin/kleopatra", "/usr/share/icons/hicolor/48x48/apps/kleopatra.png" },
     { "pluma", "/usr/bin/pluma", "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
     { "regexxer", "/usr/bin/regexxer", "/usr/share/icons/hicolor/48x48/apps/regexxer.png" },
     { "retext", "/usr/bin/retext", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
@@ -171,6 +173,7 @@ gamesmenu = {
     { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
     { "extreme tux racer", "/usr/bin/etr", "/usr/share/pixmaps/etr.png" },
     { "gvbam", "/usr/bin/gvbam", "/usr/share/icons/hicolor/48x48/apps/vbam.png" },
+    { "steam", "/usr/bin/steam", "/usr/share/pixmaps/steam.png" },
     { "supertux 2", "/usr/bin/supertux2", "/usr/share/pixmaps/supertux.png" },
 }
 graphicsmenu = {
@@ -182,7 +185,7 @@ graphicsmenu = {
     { "inkscape", "/usr/bin/inkscape", "/usr/share/icons/hicolor/48x48/apps/inkscape.png" },
     { "krita", "/usr/bin/krita", "/usr/share/icons/hicolor/48x48/apps/calligrakrita.png" },
     { "pinta", "/usr/bin/pinta", "/usr/share/pixmaps/pinta.xpm" },
-    { "scribus", "/usr/bin/scribus", "/usr/share/icons/oxygen/48x48/apps/scribus.png" },
+    { "scribus", "/usr/bin/scribus", "/usr/share/icons/hicolor/32x32/apps/scribus.png" },
     { "sk1", "/usr/bin/sk1", "/usr/share/pixmaps/sk1.png" },
     { "viewnior", "/usr/bin/viewnior", "/usr/share/icons/hicolor/48x48/apps/viewnior.png" },
     { "xsane scanning", "/usr/bin/xsane", "/usr/share/pixmaps/xsane.xpm" },
@@ -207,7 +210,7 @@ multimediamenu = {
     { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/48x48/apps/audacity.png" },
     { "brasero", "/usr/bin/brasero ", "/usr/share/icons/hicolor/48x48/apps/brasero.png" },
     { "cmus", terminal.." -e cmus", "/usr/share/icons/hicolor/48x48/categories/applications-other.png" },
-    { "kaffeine", "/usr/bin/kaffeine", "/usr/share/icons/hicolor/48x48/apps/kaffeine.png" },
+    { "kaffeine", "/usr/bin/kaffeine", "/usr/share/icons/hicolor/scalable/apps/kaffeine.svg" },
     { "spotify", "/usr/bin/spotify", "/usr/share/pixmaps/spotify-client.png" },
     { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
     { "xfce4 mixer", "/usr/bin/xfce4-mixer", "/usr/share/icons/Adwaita/48x48/apps/multimedia-volume-control.png" },
