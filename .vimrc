@@ -25,7 +25,7 @@ set clipboard=unnamed
 syntax on
 
 " Show line numbers
-set number
+"set number
 " Set line number color
 " Get colors here:
 " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim

@@ -131,6 +131,13 @@ accessoriesmenu = {
     { "vim", terminal.." -e /usr/bin/vim", os.getenv("HOME").."/.config/awesome/icons/vim32x32.png" },
     { "xarchiver", "xarchiver", "/usr/share/icons/hicolor/48x48/apps/xarchiver.png" },
 }
+dbmenu = {
+    { "dbeaver", "/usr/bin/dbeaver", "/usr/share/icons/hicolor/48x48/apps/dbeaver.xpm" },
+    { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
+    { "sql workbench", "/usr/bin/sqlworkbench", "/usr/share/icons/hicolor/32x32/apps/workbench32.png" },
+    { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
+    { "umongo", "/usr/bin/umongo.sh", "/usr/share/pixmaps/umongo.png" },
+}
 developmentmenu = {
     { "android studio", "/usr/bin/android-studio ", "/usr/share/pixmaps/android-studio.png" },
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
@@ -139,7 +146,6 @@ developmentmenu = {
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
     { "glade", "/usr/bin/glade", "/usr/share/icons/hicolor/48x48/apps/glade-3.png" },
     { "glade2", "/usr/bin/glade-2 ", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
-    { "gps", "/usr/bin/gps", "/usr/share/gps/icons/hicolor/32x32/apps/gps_32.png" },
     { "intellij", "/usr/bin/idea.sh", "/usr/share/pixmaps/idea.png" },
     { "ipython qtconsole", "/usr/bin/ipython qtconsole", "/usr/share/pixmaps/ipython.png" },
     { "kdevelop", "/usr/bin/kdevelop", "/usr/share/icons/hicolor/48x48/apps/kdevelop.png" },
@@ -147,7 +153,6 @@ developmentmenu = {
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
     { "monodevelop", "/usr/bin/monodevelop", "/usr/share/icons/hicolor/48x48/apps/monodevelop.png" },
     { "netbeans", "/usr/bin/netbeans -J-Xmx4096m", "/usr/share/pixmaps/netbeans.png" },
-    { "pycharm", "/usr/bin/pycharm", "/opt/pycharm-community/bin/pycharm.png" },
     { "qgit", "/usr/bin/qgit", "/usr/share/pixmaps/qgit.png" },
     { "qtcreator", "/usr/bin/qtcreator", "/usr/share/icons/hicolor/48x48/apps/QtProject-qtcreator.png" },
     { "tortoisehg", "/usr/bin/thg", "/usr/share/pixmaps/thg_logo.svg" },
@@ -156,11 +161,13 @@ developmentmenu = {
 }
 engineeringmenu = {
     { "arduino", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
+    { "cubicsdr", "/usr/bin/cubicsdr", "/usr/share/cubicsdr/CubicSDR.png" },
     { "eagle", "/home/hanez/bin/eagle", "/usr/share/pixmaps/eagle.png" },
-    { "energia", "/usr/bin/energia", "/usr/share/pixmaps/energia_48.png" },
+    { "energia", "/usr/bin/energia", "/usr/share/pixmaps/energia.png" },
     { "freecad", "/usr/bin/freecad", "/usr/share/freecad/freecad-icon-48.png" },
     { "fritzing", "/usr/bin/Fritzing", "/usr/share/icons/fritzing.png" },
-    { "gqrx", "/usr/bin/gqrx", "/usr/share/pixmaps/gqrx.png" },
+    { "gnuradio", "/usr/bin/gnuradio-companion", "/usr/share/gnuradio/grc/freedesktop/grc-icon-48.png" },
+    { "gqrx", "/usr/bin/gqrx", "/usr/share/pixmaps/gqrx.svg" },
     { "kicad", "/usr/bin/kicad", "/usr/share/icons/hicolor/48x48/apps/kicad.png" },
     { "leocad", "/usr/bin/leocad", "/usr/share/icons/hicolor/scalable/mimetypes/application-vnd.leocad.svg" },
     { "librecad", "/usr/bin/librecad", "/usr/share/icons/hicolor/scalable/apps/librecad.svg" },
@@ -194,7 +201,7 @@ internetmenu = {
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
     { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
-    { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/64x64/apps/gajim.png" },
+    { "franz", "/usr/bin/franz-bin", "/usr/share/pixmaps/franz.png" },
     { "google chrome", "/usr/bin/google-chrome-stable", "/opt/google/chrome/product_logo_32.xpm" },
     { "google earth", "/usr/bin/google-earth", "/opt/google/earth/free/product_logo_32.xpm" },
     { "konqueror", "/usr/bin/konqueror", "/usr/share/icons/hicolor/48x48/apps/konqueror.png" },
@@ -203,7 +210,7 @@ internetmenu = {
     { "seamonkey", "seamonkey", "/usr/share/pixmaps/seamonkey.png" },
     { "skype", "skype", "/usr/share/icons/hicolor/48x48/apps/skype.png" },
     { "thunderbird", "/usr/bin/thunderbird", "/usr/share/icons/hicolor/48x48/apps/thunderbird.png" },
-    { "tor browser", "/usr/bin/tor-browser-en", "/usr/share/pixmaps/tor-browser-en.png" },
+    { "tor browser", "/usr/bin/tor-browser", "/usr/share/pixmaps/tor-browser.png" },
 }
 multimediamenu = {
     { "alsamixer", terminal.." -e alsamixer", "/usr/share/icons/hicolor/48x48/categories/applications-other.png" },
@@ -231,9 +238,7 @@ officemenu = {
 }
 othermenu = {
     { "apache directory studio", "/usr/bin/apachedirectorystudio", "/opt/ApacheDirectoryStudio/icon.xpm" },
-    { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
-    { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
-    { "umongo", "/usr/bin/umongo.sh", "/usr/share/pixmaps/umongo.png" },
+    { "soapui", "/usr/bin/soapui", "/usr/share/icons/hicolor/48x48/apps/soapui.png" },
 }
 sciencemenu = {
     { "cantor", "/usr/bin/cantor", "/usr/share/icons/hicolor/48x48/apps/cantor.png" },
@@ -241,20 +246,21 @@ sciencemenu = {
     { "stellarium", "/usr/bin/stellarium", "/usr/share/icons/hicolor/48x48/apps/stellarium.png" },
 }
 systemmenu = {
-    { "control center", "/usr/bin/mate-control-center", "/usr/share/icons/mate/48x48/categories/gnome-control-center.png" },
+    { "appearance", "/usr/bin/lxappearance", "/usr/share/icons/Adwaita/48x48/categories/preferences-desktop.png" },
     { "gparted", "/usr/bin/gparted_polkit ", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
     { "hardinfo", "hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
---   { "gufw", "/usr/bin/gufw" },
+    { "gufw", "/usr/bin/gufw", "/usr/share/icons/hicolor/scalable/apps/gufw.svg" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
     { "wireshark", "/usr/bin/wireshark", "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
 }
 utilitiesmenu = {
-    { "arandr", "/usr/bin/arandr", "/usr/share/icons/hicolor/scalable/status/video-display.svg" },
-    { "gsshfs", "/usr/bin/gsshfs", "/usr/share/pixmaps/gsshfs.png" },
+    { "arandr", "/usr/bin/arandr", "/usr/share/icons/hicolor/scalable/devices/video-television.svg" },
+    { "qsshfs", "/usr/bin/qsshfs", "/usr/share/icons/hicolor/32x32/apps/qsshfs.png" },
     { "unetbootin", "/usr/bin/unetbootin_polkit", "/usr/share/icons/hicolor/48x48/apps/unetbootin.png" },
 }
 mymainmenu = awful.menu({ items = { 
     { "accessories", accessoriesmenu, beautiful.icon_path.."categories/applications-accessories.png" },
+    { "database", dbmenu, "/usr/share/icons/oxygen/base/48x48/places/server-database.png" },
     { "development", developmentmenu, beautiful.icon_path.."categories/applications-development.png" },
     { "engineering", engineeringmenu, beautiful.icon_path.."categories/applications-engineering.png" },
     { "games", gamesmenu, beautiful.icon_path.."categories/applications-games.png" },
