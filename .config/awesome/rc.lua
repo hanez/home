@@ -3,6 +3,7 @@
 -- are displaying the right value... ;)
 -- This file needs to exist. You need to explore this if you want to use my widget stuff!
 require("private")
+require("functions")
 
 -- Require some basic stuff
 local gears = require("gears")
@@ -14,8 +15,6 @@ beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 vicious = require("vicious")
-
-require("functions")
 
 if awesome.startup_errors then
     naughty.notify({ preset = naughty.config.presets.critical,
@@ -83,8 +82,8 @@ for s = 1, screen.count() do
     tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
 end
 
+-- Include the mainmenu from external file to make customisation easier
 require("mymainmenu")
-
 mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon, menu = mymainmenu })
 
 local batterywidgets = {}
