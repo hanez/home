@@ -11,7 +11,7 @@ accessoriesmenu = {
     { "regexxer", "/usr/bin/regexxer", "/usr/share/icons/hicolor/48x48/apps/regexxer.png" },
     { "retext", "/usr/bin/retext", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
     { "seahorse", "/usr/bin/seahorse", "/usr/share/icons/hicolor/48x48/apps/seahorse.png" },
-    { "vim", terminal.." -e /usr/bin/vim", os.getenv("HOME").."/.config/awesome/icons/vim32x32.png" },
+    { "vim", terminal.." -e /usr/bin/vim", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
     { "xarchiver", "xarchiver", "/usr/share/icons/hicolor/48x48/apps/xarchiver.png" },
 }
 dbmenu = {
