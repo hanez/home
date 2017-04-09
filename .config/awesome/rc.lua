@@ -16,19 +16,7 @@ local menubar = require("menubar")
 vicious = require("vicious")
 
 -- Set programs to autostart. They will only runce once even when reloading awesome.
-local autostart = {
-    "kalu",
-    "amor",
-    "synclient TouchpadOff=1",
-    --"cbatticon",
-    "nm-applet",
-    "pasystray",
-    "xfce4-clipman",
-    "xfce4-notes",
-    "xautolock -locker slock -time 5",
-    "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1",
-    "redshift",
-}
+-- local autostart = private.autostart
 
 function file_exists(name)
     local f = io.open(name, "r")
@@ -85,7 +73,7 @@ editor_cmd = terminal .. " -e " .. editor
 
 modkey = "Mod4"
 
-for i, program in ipairs(autostart) do
+for i, program in ipairs(private.autostart) do
     run_once(program)
 end
 
