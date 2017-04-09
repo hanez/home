@@ -17,6 +17,7 @@ vicious = require("vicious")
 
 -- Set programs to autostart. They will only runce once even when reloading awesome.
 local autostart = {
+    "kalu",
     "amor",
     "synclient TouchpadOff=1",
     --"cbatticon",
