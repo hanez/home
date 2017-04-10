@@ -45,7 +45,7 @@ if file_exists(name) then
     beautiful.wallpaper = name  
 end
 
-terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange  -fa "Noto Mono" -fs '..private.font_xterm 
+terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange  -fa "'..private.font_xterm..'" -fs '..private.font_xterm_size 
 editor = "/usr/bin/vim"
 editor_cmd = terminal .. " -e " .. editor
 

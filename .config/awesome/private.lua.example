@@ -2,8 +2,10 @@ private = {}
 private.thermal_zone = "thermal_zone1"
 private.net_device = "wlp4s0"
 private.battery = {"BAT0", "BAT1"}
-private.font_awesome = "11"
-private.font_xterm = "13"
+private.font_awesome = "Source Code Pro"
+private.font_awesome_size = "10"
+private.font_xterm = "Source Code Pro Semibold"
+private.font_xterm_size = "13"
 private.autostart = {
     "kalu",
     "amor",
