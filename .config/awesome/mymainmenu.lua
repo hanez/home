@@ -87,6 +87,7 @@ internetmenu = {
     { "google chrome", "/usr/bin/google-chrome-stable", "/opt/google/chrome/product_logo_32.xpm" },
     { "google earth", "/usr/bin/google-earth", "/opt/google/earth/free/product_logo_32.xpm" },
     { "konqueror", "/usr/bin/konqueror", "/usr/share/icons/hicolor/48x48/apps/konqueror.png" },
+    { "mumble", "/usr/bin/mumble", "/usr/share/icons/hicolor/scalable/apps/mumble.svg" },
     { "opera", "/usr/bin/opera", "/usr/share/pixmaps/opera.xpm" },
     { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
     { "seamonkey", "seamonkey", "/usr/share/pixmaps/seamonkey.png" },
@@ -129,6 +130,7 @@ sciencemenu = {
 }
 systemmenu = {
     { "appearance", "/usr/bin/lxappearance", "/usr/share/icons/Adwaita/48x48/categories/preferences-desktop.png" },
+    { "bitdefender", "/usr/bin/bdgui", "/opt/BitDefender-scanner/share/doc/examples/icons/hicolor/48x48/apps/bitdefender.png" },
     { "gparted", "/usr/bin/gparted_polkit ", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
     { "hardinfo", "hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
     { "gufw", "/usr/bin/gufw", "/usr/share/icons/hicolor/scalable/apps/gufw.svg" },

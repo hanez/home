@@ -79,7 +79,7 @@ end
 
 tags = {}
 for s = 1, screen.count() do
-    tags[s] = awful.tag({ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D' }, s, layouts[1])
+    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
 end
 
 -- Include the mainmenu from external file to make customisation easier
