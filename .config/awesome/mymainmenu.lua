@@ -94,6 +94,7 @@ internetmenu = {
     { "skype", "skype", "/usr/share/icons/hicolor/48x48/apps/skype.png" },
     { "thunderbird", "/usr/bin/thunderbird", "/usr/share/icons/hicolor/48x48/apps/thunderbird.png" },
     { "tor browser", "/usr/bin/tor-browser", "/usr/share/pixmaps/tor-browser.png" },
+    { "vivaldi", "/usr/bin/vivaldi-stable", "/usr/share/icons/hicolor/48x48/apps/vivaldi.png" },
 }
 multimediamenu = {
     { "alsamixer", terminal.." -e alsamixer", "/usr/share/icons/hicolor/48x48/categories/applications-other.png" },
