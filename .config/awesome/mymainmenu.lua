@@ -1,5 +1,6 @@
 accessoriesmenu = {
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
+    { "cr3", "/usr/bin/cr3", "/usr/share/pixmaps/cr3.png" },
     { "emacs", "/usr/bin/emacs", "/usr/share/icons/hicolor/scalable/apps/emacs.svg" },
     { "engrampa", "/usr/bin/engrampa", "/usr/share/icons/hicolor/32x32/apps/engrampa.png" },
     { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/48x48/apps/ghex.png" },
@@ -43,13 +44,10 @@ developmentmenu = {
 }
 engineeringmenu = {
     { "arduino", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
-    { "cubicsdr", "/usr/bin/cubicsdr", "/usr/share/cubicsdr/CubicSDR.png" },
     { "eagle", "/home/hanez/bin/eagle", "/usr/share/pixmaps/eagle.png" },
     { "energia", "/usr/bin/energia", "/usr/share/pixmaps/energia.png" },
     { "freecad", "/usr/bin/freecad", "/usr/share/freecad/freecad-icon-48.png" },
     { "fritzing", "/usr/bin/Fritzing", "/usr/share/icons/fritzing.png" },
-    { "gnuradio", "/usr/bin/gnuradio-companion", "/usr/share/gnuradio/grc/freedesktop/grc-icon-48.png" },
-    { "gqrx", "/usr/bin/gqrx", "/usr/share/pixmaps/gqrx.svg" },
     { "kicad", "/usr/bin/kicad", "/usr/share/icons/hicolor/48x48/apps/kicad.png" },
     { "leocad", "/usr/bin/leocad", "/usr/share/icons/hicolor/scalable/mimetypes/application-vnd.leocad.svg" },
     { "librecad", "/usr/bin/librecad", "/usr/share/icons/hicolor/scalable/apps/librecad.svg" },
@@ -124,6 +122,13 @@ othermenu = {
     { "apache directory studio", "/usr/bin/apachedirectorystudio", "/opt/ApacheDirectoryStudio/icon.xpm" },
     { "soapui", "/usr/bin/soapui", "/usr/share/icons/hicolor/48x48/apps/soapui.png" },
 }
+radiomenu = {
+    { "cubicsdr", "/usr/bin/cubicsdr", "/usr/share/cubicsdr/CubicSDR.png" },
+    { "gnuradio", "/usr/bin/gnuradio-companion", "/usr/share/gnuradio/grc/freedesktop/grc-icon-48.png" },
+    { "gqrx", "/usr/bin/gqrx", "/usr/share/pixmaps/gqrx.svg" },
+    { "pothos", "/usr/bin/PothosGui", "/usr/share/Pothos/Desktop/pothos-gui-48.png" },
+    { "urh", "/usr/bin/urh", "/usr/share/pixmaps/urh.png" },
+}
 sciencemenu = {
     { "cantor", "/usr/bin/cantor", "/usr/share/icons/hicolor/48x48/apps/cantor.png" },
     { "octave", "/usr/bin/octave --force-gui", "/usr/share/icons/hicolor/48x48/apps/octave.png" },
@@ -154,6 +159,7 @@ mymainmenu = awful.menu({ items = {
     { "multimedia", multimediamenu, beautiful.icon_path.."categories/applications-multimedia.png" },
     { "office", officemenu, beautiful.icon_path.."categories/applications-office.png" },
     { "other", othermenu, beautiful.icon_path.."categories/applications-other.png" },
+    { "radio", radiomenu, "/usr/share/icons/matefaenza/apps/48/radio.png" },
     { "science", sciencemenu, beautiful.icon_path.."categories/applications-science.png" },
     { "system", systemmenu, beautiful.icon_path.."categories/applications-system.png" },
     { "utilities", utilitiesmenu, beautiful.icon_path.."categories/applications-utilities.png" },
