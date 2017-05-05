@@ -58,10 +58,8 @@ engineeringmenu = {
 }
 gamesmenu = {
     { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
-    { "extreme tux racer", "/usr/bin/etr", "/usr/share/pixmaps/etr.png" },
-    { "gvbam", "/usr/bin/gvbam", "/usr/share/icons/hicolor/48x48/apps/vbam.png" },
+    { "emulationstation", "/usr/bin/emulationstation", "/usr/share/pixmaps/retroarch.svg" },
     { "steam", "/usr/bin/steam", "/usr/share/pixmaps/steam.png" },
-    { "supertux 2", "/usr/bin/supertux2", "/usr/share/pixmaps/supertux.png" },
 }
 graphicsmenu = {
     { "blender", "/usr/bin/blender", "/usr/share/icons/hicolor/48x48/apps/blender.png" },
