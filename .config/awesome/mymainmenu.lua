@@ -143,6 +143,7 @@ systemmenu = {
 }
 utilitiesmenu = {
     { "arandr", "/usr/bin/arandr", "/usr/share/icons/hicolor/scalable/devices/video-television.svg" },
+    { "bluetooth", "/usr/bin/blueman-manager", "/usr/share/icons/hicolor/48x48/apps/blueman.png" },
     { "qsshfs", "/usr/bin/qsshfs", "/usr/share/icons/hicolor/32x32/apps/qsshfs.png" },
     { "unetbootin", "/usr/bin/unetbootin_polkit", "/usr/share/icons/hicolor/48x48/apps/unetbootin.png" },
 }
