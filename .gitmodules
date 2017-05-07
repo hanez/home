@@ -1,6 +1,9 @@
 [submodule "es-theme-carbon"]
     path = .config/emulationstation/themes/es-theme-carbon
     url = https://github.com/RetroPie/es-theme-carbon.git
+[submodule "es-theme-simple"]
+    path = .config/emulationstation/themes/simple
+    url = https://github.com/nilsbyte/simple.git
 [submodule "oh-my-zsh"]
     path = .zsh/oh-my-zsh
     url = https://github.com/hanez/oh-my-zsh.git
