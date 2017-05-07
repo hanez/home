@@ -4,6 +4,12 @@
 !.config/awesome
 !.config/awesome/**
 .config/awesome/private.lua
+!.config/emulationstation
+!.config/emulationstation/**
+.config/emulationstation/downloaded_images
+.config/emulationstation/es_log.txt
+.config/emulationstation/gamelists
+.config/emulationstation/themes
 #!.config/mc
 #!.config/mc/ini
 !.config/user-dirs.dirs
