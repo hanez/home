@@ -5,8 +5,8 @@
 	path = .config/emulationstation/themes/simple
 	url = https://github.com/nilsbyte/simple.git
 [submodule ".zsh/oh-my-zsh"]
-    path = .zsh/oh-my-zsh
-    url = https://github.com/hanez/oh-my-zsh.git
+	path = .zsh/oh-my-zsh
+	url = https://github.com/hanez/oh-my-zsh.git
 [submodule ".vim/bundle/nerdtree"]
     path = .vim/bundle/nerdtree
     url = https://github.com/scrooloose/nerdtree.git
