@@ -122,6 +122,7 @@ internetmenu = {
     { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "franz", "/usr/bin/franz-bin", "/usr/share/pixmaps/franz.png" },
+    { "gftp", "/usr/bin/gftp", "/usr/share/pixmaps/gftp.png" },
     { "google chrome", "/usr/bin/google-chrome-stable", "/opt/google/chrome/product_logo_32.xpm" },
     { "google earth", "/usr/bin/google-earth", "/opt/google/earth/free/product_logo_32.xpm" },
     { "konqueror", "/usr/bin/konqueror", "/usr/share/icons/hicolor/48x48/apps/konqueror.png" },
