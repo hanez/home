@@ -12,13 +12,13 @@ theme.bg_minimize   = "#444444"
 theme.bg_systray    = theme.bg_normal
 
 theme.fg_normal     = "#aaaaaa"
-theme.fg_focus      = "#ffa500"
+theme.fg_focus      = "#e95421"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
 theme.border_width  = 1
 theme.border_normal = "#000000"
-theme.border_focus  = "#ffa500"
+theme.border_focus  = "#e95421"
 theme.border_marked = "#91231c"
 
 -- Set the icon theme and size
