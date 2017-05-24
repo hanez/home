@@ -181,6 +181,7 @@ systemmenu = {
     { "gparted", "/usr/bin/gparted_polkit ", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
     { "hardinfo", "hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
     { "gufw", "/usr/bin/gufw", "/usr/share/icons/hicolor/scalable/apps/gufw.svg" },
+    { "virtual machine manager", "/usr/bin/virt-manager", "/usr/share/icons/hicolor/48x48/apps/virt-manager.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
     { "wireshark", "/usr/bin/wireshark", "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
 }
@@ -209,6 +210,6 @@ mymainmenu = awful.menu({ items = {
     { "terminal", terminal, beautiful.icon_path.."apps/utilities-terminal.png" },
     { "configuration", editor_cmd .. " " .. awesome.conffile, beautiful.icon_path.."categories/preferences-other.png" },
     { "reload", awesome.restart, beautiful.icon_path.."actions/view-refresh.png" },
-    { "quit", awesome.quit, beautiful.icon_path.."actions/system-log-out.png" }
+    { "quit", function () awesome.quit() end, beautiful.icon_path.."actions/system-log-out.png" }
   }
 })
