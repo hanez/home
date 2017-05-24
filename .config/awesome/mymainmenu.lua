@@ -181,7 +181,7 @@ systemmenu = {
     { "gparted", "/usr/bin/gparted_polkit ", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
     { "hardinfo", "hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
     { "gufw", "/usr/bin/gufw", "/usr/share/icons/hicolor/scalable/apps/gufw.svg" },
-    { "virtual machine manager", "/usr/bin/virt-manager", "/usr/share/icons/hicolor/48x48/apps/virt-manager.png" },
+    { "virt-manager", "/usr/bin/virt-manager", "/usr/share/icons/hicolor/48x48/apps/virt-manager.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
     { "wireshark", "/usr/bin/wireshark", "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
 }
