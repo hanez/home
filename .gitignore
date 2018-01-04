@@ -7,8 +7,8 @@
 .config/awesome/private.lua
 
 !.emulationstation
-!.emulationstation/es_input.cfg
-!.emulationstation/es_settings.cfg
+#!.emulationstation/es_input.cfg
+#!.emulationstation/es_settings.cfg
 !.emulationstation/es_systems.cfg
 #!.emulationstation/themes
 #!.emulationstation/themes/**
