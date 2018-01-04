@@ -1,0 +1,600 @@
+/home/hanez/roms/gb/007 - The World is Not Enough.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/atari2600/Freeway.7z
+
+/usr/lib/libretro/stella_libretro.so
+Stella
+
+
+/home/hanez/roms/atari2600/Football.7z
+
+/usr/lib/libretro/stella_libretro.so
+Stella
+
+
+/home/hanez/roms/atari7800/Ms. Pac-Man (1987) (Atari).7z
+
+/usr/lib/libretro/prosystem_libretro.so
+ProSystem
+
+
+/home/hanez/roms/atari7800/3D Asteroids (1987) (Atari).7z
+
+/usr/lib/libretro/prosystem_libretro.so
+ProSystem
+
+
+/home/hanez/roms/atari5200/Ms. Pac-Man (1982) (Atari).7z
+
+/usr/lib/libretro/atari800_libretro.so
+Atari800
+
+
+/home/hanez/roms/atari5200/Pac-Man (1982) (Atari).7z
+
+/usr/lib/libretro/atari800_libretro.so
+Atari800
+
+
+/home/hanez/roms/atari2600/A-Team, The.7z
+
+/usr/lib/libretro/stella_libretro.so
+Stella
+
+
+/home/hanez/roms/gamegear/Sonic The Hedgehog (U) (V1.1).zip
+
+/usr/lib/libretro/genesis_plus_gx_libretro.so
+Genesis Plus GX
+
+
+/home/hanez/roms/gamegear/Aladdin (U).zip
+
+/usr/lib/libretro/genesis_plus_gx_libretro.so
+Genesis Plus GX
+
+
+/home/hanez/roms/atarilynx/Alien Vs Predator (1993).7z
+
+/usr/lib/libretro/handy_libretro.so
+Handy
+
+
+/home/hanez/roms/gamegear/Spider-Man vs. The Kingpin (U).zip
+
+/usr/lib/libretro/picodrive_libretro.so
+PicoDrive
+
+
+/home/hanez/roms/gamegear/Sonic The Hedgehog (U) (V1.1).zip
+
+/usr/lib/libretro/picodrive_libretro.so
+PicoDrive
+
+
+/home/hanez/roms/gb/10-Pin Bowling.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/nes/USA/Arkanoid (U).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Translated/Arkanoid (J) [T-Port].nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Trained Hacks/Super Mario Bros (JU) [t1].nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Trained Hacks/Super Mario Bros (JU) (PRG 0) [t1].nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Trained Hacks/Dr Mario (JU) [t1].nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Pirate/Super Mario Bros (JU) (PRG 1) [p1].nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Pirate/Super Mario Bros (JU) [p1].nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/PC10/Super Mario Bros (PC10).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Hacks M-Z/Super Mario Happy Clouds (SMB1 Hack).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Hacks M-Z/Super Mario Bros Xtreme (SMB1 Hack).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Hacks M-Z/Super Mario Pro (SMB1 Hack).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Hacks M-Z/Super Mario Remix - Toad Bros (Beta 90) (Hack).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/mastersystem/Addams Family, The.7z
+
+/usr/lib/libretro/picodrive_libretro.so
+PicoDrive
+
+
+/home/hanez/roms/megadrive/Sonic The Hedgehog.7z
+
+/usr/lib/libretro/picodrive_libretro.so
+PicoDrive
+
+
+/home/hanez/roms/megadrive/Sensible Soccer.7z
+
+/usr/lib/libretro/picodrive_libretro.so
+PicoDrive
+
+
+/home/hanez/roms/megadrive/Sega Top 5.7z
+
+/usr/lib/libretro/picodrive_libretro.so
+PicoDrive
+
+
+/home/hanez/roms/megadrive/4-in-1.7z
+
+/usr/lib/libretro/picodrive_libretro.so
+PicoDrive
+
+
+/home/hanez/roms/megadrive/Sonic The Hedgehog 3.7z
+
+/usr/lib/libretro/genesis_plus_gx_libretro.so
+Genesis Plus GX
+
+
+/home/hanez/roms/megadrive/Sonic The Hedgehog 2.7z
+
+/usr/lib/libretro/genesis_plus_gx_libretro.so
+Genesis Plus GX
+
+
+/home/hanez/roms/megadrive/Sonic Classics (Compilation).7z
+
+/usr/lib/libretro/genesis_plus_gx_libretro.so
+Genesis Plus GX
+
+
+/home/hanez/roms/megadrive/Sonic The Hedgehog.7z
+
+/usr/lib/libretro/genesis_plus_gx_libretro.so
+Genesis Plus GX
+
+
+/home/hanez/roms/mastersystem/Sonic Blast.7z
+
+/usr/lib/libretro/picodrive_libretro.so
+PicoDrive
+
+
+/home/hanez/roms/mastersystem/Sonic the Hedgehog.7z
+
+/usr/lib/libretro/picodrive_libretro.so
+PicoDrive
+
+
+/home/hanez/roms/mastersystem/Ace of Aces.7z
+
+/usr/lib/libretro/picodrive_libretro.so
+PicoDrive
+
+
+/home/hanez/roms/nes/World/Super Mario Bros (JU) (PRG 1).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/World/Super Mario Bros (JU) (PRG 0).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Trolls in Crazyland (E).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Trojan (E).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Super Mario Bros 3 (E).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Super Mario Bros 2 (E) [!].nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Super Mario Bros (E) [a1].nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Super Mario Bros (E).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Simpsons - Bart Vs the Space Mutants, The (E) [!].nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Pro Action Replay (E) [!].nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Pinball (E) [!].nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Pac-Man (Namco) (E) [!].nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Mega Man (E) [!].nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Dynablaster (E).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Dr Mario (E).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Boulder Dash (E) [!].nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/nes/Battletoads (E).nes
+
+/usr/lib/libretro/quicknes_libretro.so
+QuickNES
+
+
+/home/hanez/roms/gb/Navy Seals.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Castlevania Adventure, The.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Burger Paradise.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Bubble Bobble.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Bomberman Quest.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Bomberman Max.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Bomberman Selection.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Bomberman Collection.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Blades of Steel.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Asteroids & Missile Command.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Asteroids.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Space Invaders [C].7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Tony Hawk's Pro Skater.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Alien 3.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Zool.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/X-Men - Mutant Academy.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Urban Strike.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Ultraman.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Turok - Rage Wars.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Top Gun - Guts & Glory.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Top Gun - Fire Storm.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Tetris (JUE) (V1.1) [!].zip
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/T2 - The Arcade Game.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Super R.C. Pro-Am.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Space Invaders [S].7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Sonic 7.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Simpsons, The - Escape from Camp Deadly.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Robocop.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/R-Type DX.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/R-Type II.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/R-Type.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Pinball Deluxe.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Pac-Man.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Micro Machines.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Metal Gear Solid.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Megaman Xtreme.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Megaman II.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Megaman - Dr. Wily's Revenge.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Mario Golf.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Kwirk.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Konami GB Collection Vol.2.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Konami GB Collection Vol.1.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/snes/Super Mario World 2 - Yoshi's Island.zip
+
+/usr/lib/libretro/snes9x_libretro.so
+Snes9x
+
+
+/home/hanez/roms/gb/Hunt for Red October, The.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
+/home/hanez/roms/gb/Hugo 2.7z
+
+/usr/lib/libretro/gambatte_libretro.so
+Gambatte
+
+
