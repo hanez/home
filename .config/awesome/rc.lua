@@ -140,7 +140,8 @@ vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
 
 -- {{{ Wibar
 -- Create a textclock widget
-mytextclock = wibox.widget.textclock()
+--mytextclock = wibox.widget.textclock()
+mytextclock = awful.widget.textclock(" %a %b %d, %H:%M:%S ", 1)
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
