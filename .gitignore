@@ -15,19 +15,9 @@
 #!.emulationstation/themes/es-theme-carbon
 #!.emulationstation/themes/es-theme-carbon/**
 #!.emulationstation/themes/simple/**
-!.config/retroarch
-!.config/retroarch/**
-!.config/retroarch/retroarch.cfg
 
-#!.config/mc
-#!.config/mc/ini
-
-!.config/user-dirs.dirs
-!.config/user-dirs.locale
-
-!.gitignore
-#!.toprc
-!.config/retroarch/retroarch.cfg
+#!.config/retroarch
+#!.config/retroarch/retroarch.cfg
 
 #!.config/mc
 #!.config/mc/ini
