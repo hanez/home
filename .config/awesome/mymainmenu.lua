@@ -70,7 +70,6 @@ graphicsmenu = {
     { "inkscape", "/usr/bin/inkscape", "/usr/share/icons/hicolor/48x48/apps/inkscape.png" },
     { "krita", "/usr/bin/krita", "/usr/share/icons/hicolor/48x48/apps/calligrakrita.png" },
     { "mtpaint", "/usr/bin/mtpaint", "/usr/share/pixmaps/mtpaint.png" },
-    { "pinta", "/usr/bin/pinta", "/usr/share/pixmaps/pinta.xpm" },
     { "scribus", "/usr/bin/scribus", "/usr/share/icons/hicolor/32x32/apps/scribus.png" },
     { "sk1", "/usr/bin/sk1", "/usr/share/pixmaps/sk1.png" },
     { "viewnior", "/usr/bin/viewnior", "/usr/share/icons/hicolor/48x48/apps/viewnior.png" },
