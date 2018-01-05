@@ -86,7 +86,6 @@ internetmenu = {
     { "opera", "/usr/bin/opera", "/usr/share/pixmaps/opera.xpm" },
     { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
     { "seamonkey", "seamonkey", "/usr/share/pixmaps/seamonkey.png" },
-    { "thunderbird", "/usr/bin/thunderbird", "/usr/share/icons/hicolor/48x48/apps/thunderbird.png" },
     { "tor browser", "/usr/bin/tor-browser-en", "/usr/share/icons/breeze/apps/48/tor-browser.svg" },
     { "vivaldi", "/usr/bin/vivaldi-stable", "/usr/share/icons/hicolor/48x48/apps/vivaldi.png" },
 }
