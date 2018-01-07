@@ -133,6 +133,8 @@ systemmenu = {
     { "hardinfo", "hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
     { "gufw", "/usr/bin/gufw", "/usr/share/icons/hicolor/scalable/apps/gufw.svg" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
+    { "vmware player", "/usr/bin/vmplayer", "/usr/share/icons/hicolor/48x48/apps/vmware-player.png" },
+    { "vmware workstation", "/usr/bin/vmware", "/usr/share/icons/hicolor/48x48/apps/vmware-workstation.png" },
     { "wireshark", "/usr/bin/wireshark", "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
 }
 utilitiesmenu = {
