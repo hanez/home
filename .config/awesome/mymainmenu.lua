@@ -29,7 +29,6 @@ developmentmenu = {
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
     { "glade gtk2", "/usr/bin/glade-3", "/usr/share/icons/hicolor/48x48/apps/glade-3.png" },
     { "glade gtk3", "/usr/bin/glade ", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
-    { "goland", "/usr/bin/goland ", "/usr/share/pixmaps/goland.png" },
     { "intellij", "/usr/bin/idea.sh", "/usr/share/pixmaps/idea.png" },
     { "kdevelop", "/usr/bin/kdevelop", "/usr/share/icons/hicolor/48x48/apps/kdevelop.png" },
     { "lazarus", "/usr/bin/lazarus", "/usr/lib/lazarus/images/ide_icon48x48.png" },
