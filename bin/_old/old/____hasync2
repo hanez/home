@@ -1,3 +1,0 @@
-#!/bin/bash
-
-rsync -r -v -z hanez.org:/var/www/hanez.org/www/htdocs/ /home/www/hanez.org/htdocs/  --exclude=wp-config.php --exclude=*~ --exclude=.svn --exclude=tmp.txt --exclude=cache/* --perms --group --times
