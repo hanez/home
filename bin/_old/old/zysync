@@ -1,3 +1,0 @@
-#!/bin/bash
-
-rsync --delete -r -v -z /home/www/zynk.org/ zynk.org:/var/www/zynk.org/www/ --exclude=*~ --exclude=.svn --exclude=tmp.txt --exclude=cache/* --exclude=comments/* --perms --group --times

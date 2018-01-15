@@ -1,4 +1,0 @@
-#!/bin/sh
-
-xterm -bg black -fg grey -sb -leftbar -si -bc -cr orange
-

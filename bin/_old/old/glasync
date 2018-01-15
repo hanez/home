@@ -1,9 +1,0 @@
-#!/bin/bash
-
-rsync --delete -r -v -z /mnt/shared/www/wordpress/ \
-  -e ssh \ 
-  glashoffs.de:/var/www/glashoffs.de/www/htdocs/ \
-  --exclude='*~' \
-  --exclude='wp-config.php' \
-  --delete-excluded --perms --group
-  

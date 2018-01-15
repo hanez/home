@@ -1,3 +1,0 @@
-#!/bin/bash
-
-pacmd "set-default-sink alsa_output.usb-Roland_UA-1G-00-UA1G.analog-stereo"

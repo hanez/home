@@ -1,5 +1,0 @@
-#!/bin/sh
-
-
-tail -f $1 | perl -pe $reg "s/$2/\e[1;31;43m$&\e[0m/g"
-

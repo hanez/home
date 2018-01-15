@@ -1,3 +1,0 @@
-#!/bin/bash
-
-rsync --delete -r -v -z /data/hanez/unixpeople.org/ hanez.org:/var/www/unixpeople.org/www/ --exclude=*~ --exclude=.svn --delete-excluded --perms --group --times
