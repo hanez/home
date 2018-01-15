@@ -1,8 +1,14 @@
 *
 
 !bin
-!bin/**
-bin/steam.sh
+#!bin/**
+!bin/eagle.sh
+!bin/gnucash.sh
+!bin/steam.sh
+!bin/myip.sh
+!bin/nas-boot.sh
+!bin/nas-reboot.sh
+!bin/nas-shutdown.sh
 
 !.config
 
