@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Prepare dirs
+rm -rf ~/tmp/.hanez_org
+
+mkdir ~/tmp/.hanez_org
+
+cd ~/tmp/.hanez_org
+
+# wget all that needs to generated
+#wget -U "Hannes/1.0" -X photos -X photo -m http://hanez
+wget -U "Bing/23.42" -m http://hanez
+
+#wget http://hanez/error404.html -O hanez/error404.html
+
+#wget http://hanez/feed/ -O hanez/feed.xml
+#wget http://hanez/feed/atom/ -O hanez/atom.xml
+#wget http://www.jabz.de/robots.txt -O hanez/robots.txt
+
+# Local Foo
+rsync --delete -avr --times --exclude=.svn ~/www/hanez.org/htdocs/files/ ~/tmp/.hanez_org/hanez/files/
+
+cp ~/.gnupg/hanez.asc ~/www/hanez.org/htdocs/files/hanez.asc
+
+rsync --delete -avr --times --exclude=.svn ~/www/hanez.org/htdocs/css/ ~/tmp/.hanez_org/hanez/css/
+
+#rsync --delete -avr --times --exclude=.svn ~/www/hanez.org/htdocs/fonts/ ~/tmp/.hanez_org/hanez/fonts/
+
+rsync --delete -avr --times --exclude=.svn ~/www/hanez.org/htdocs/images/ ~/tmp/.hanez_org/hanez/images/
+
+rsync --delete -avr --times --exclude=.svn ~/www/hanez.org/htdocs/js/ ~/tmp/.hanez_org/hanez/js/
+
+rsync --delete -avr --times --exclude=.svn --exclude=.git --delete-excluded ~/www/hanez.org/htdocs/reveal.js/ ~/tmp/.hanez_org/hanez/reveal.js/
+
+#cp -R ~/www/hanez.org/htdocs/x356g ~/tmp/.hanez_org/hanez/x356g
+
+#cp ~/www/hanez.org/htdocs/sitemap.xml ~/tmp/.hanez_org/hanez/sitemap.xml
+
+#cp ~/tmp/.hanez_org/hanez/images/index.html ~/tmp/.hanez_org/hanez/photo/index.html
+
+mv ~/tmp/.hanez_org/hanez/feed/index.html ~/tmp/.hanez_org/hanez/feed/index.rss
+
+mv ~/tmp/.hanez_org/hanez/feed/atom/index.html ~/tmp/.hanez_org/hanez/feed/atom/index.rss
+
+# Server Foo
+rsync --delete -r -v -z --perms --group --times ~/tmp/.hanez_org/hanez/ hanez.org:/var/www/hanez.org/www/htdocs/
+
+#scp ~/www/hanez.org/htdocs/htaccess hanez.org:/var/www/hanez.org/.htaccess
+
+# Cleanup
+rm -rf ~/tmp/.hanez_org
+

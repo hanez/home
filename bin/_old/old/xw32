@@ -1,0 +1,79 @@
+#!/bin/bash
+
+# The XW3 website generator.
+#
+# This scipts generates a complete website in plain HTML from a source-
+# directory containing all content.
+#
+# You don't need Apache when using this Software.
+#
+# Licensed under the GNU Public License (GPL)
+#
+# Copyright: Johannes Findeisen <you@hanez.org>
+
+# Commandline parameter / .xw3 settings
+#PROJECTDIR - use this if .xw3 exists
+PROJECTPATH=/home/hanez/wg
+OUTPUTEXTENSION=html
+#UPLOAD=ssh,scp,ftp
+#HOST=hanez.org
+#USERNAME=Foo
+#PASSWORD=Bar
+
+# LANGUAGE FORMAT
+# 0 = /path/to/file/filename.LN.html (default)
+# 1 = /LN/path/to/file/filename.html
+# LN = the language code you use e.g. en, de etc.
+LANGUAGE_FORMAT=0
+
+# Static configuration variables
+OUTPUTDIR=$PROJECTPATH/output
+PHPBIN=/usr/bin/php
+PERLBIN=/usr/bin/perl
+PYTHONBIN=/usr/bin/python
+
+# Execute 
+rm -Rf $OUTPUTDIR/*
+if [ ! -e $dirname ]; then
+  mkdir $OUTPUTDIR
+fi
+
+for file in `find $PROJECTPATH/input/ -type f -print`
+do
+ 
+  filename=`basename $file`
+  dirname=`dirname $file`
+  dirextension=`echo $dirname | sed -e "s|\${PROJECTPATH}\/input||"`
+  #if [ -z $dirextension ]; then
+  #  dirextension="."
+  #fi
+  ext=${filename##*.}
+  filenamewoext=${filename%.*}
+  newname=$filenamewoext.$OUTPUTEXTENSION
+
+  if [ -d $PROJECTPATH/input$dirextension ]; then
+    mkdir -p $OUTPUTDIR$dirextension
+  fi
+
+  if [ $ext = php ]; then
+    cat $PROJECTPATH/head.html > $OUTPUTDIR$dirextension/$newname
+    echo `$PHPBIN $file` >> $OUTPUTDIR$dirextension/$newname
+    cat $PROJECTPATH/foot.html >> $OUTPUTDIR$dirextension/$newname
+  elif [ $ext = html ] || [ $ext = htm ]; then
+    cat $PROJECTPATH/head.html > $OUTPUTDIR$dirextension/$newname
+    cat $PROJECTPATH/input$dirextension/$filename >> $OUTPUTDIR$dirextension/$newname
+    cat $PROJECTPATH/foot.html >> $OUTPUTDIR$dirextension/$newname
+  elif [ $ext = jpeg ] || [ $ext = jpg ] || [ $ext = png ] || [ $ext = gif ]; then
+    cp $PROJECTPATH/input$dirextension/$filename $OUTPUTDIR$dirextension/$filename
+  elif [ $ext = "" ]; then
+    cat $PROJECTPATH/head.html > $OUTPUTDIR$dirextension/$newname
+    echo `sh -c $PROJECTPATH/input$dirextension/$filename` >> $OUTPUTDIR$dirextension/$newname
+    cat $PROJECTPATH/foot.html >> $OUTPUTDIR$dirextension/$newname
+  fi
+  # if --verbose
+  echo $dirextension/$newname"... Finished!"
+done
+
+cp -r $PROJECTPATH/content/* $OUTPUTDIR/
+
+echo "Finished... ;)"

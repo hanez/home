@@ -1,0 +1,4 @@
+#!/bin/sh
+
+rsync -av --delete /home/ /media/DATA_400GB-2/homebackup/
+

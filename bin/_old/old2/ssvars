@@ -1,0 +1,30 @@
+#!/bin/bash
+
+
+
+
+BACKUP_USER=backup
+BACKUP_DIR=/home/backup
+BACKUP_BIN_DIR=/home/backup/bin
+
+GAME_NAME=PirateGalaxy
+
+SYSTEM_USERNAME=pirategalaxy
+
+DB_USERNAME=$GAME_NAME
+DB_PASSWORD=zpd7hq9sN28hEDUd
+
+DB_HOST=localhost
+
+# List of DBNAMES for Daily/Weekly Backup e.g. "DB1 DB2 DB3"
+DB_NAMES_GLOBAL="PirateGalaxy_Global PirateGalaxy_Payment PirateGalaxy_News"
+DB_BACKUP_DIR_GLOBAL="/home/pirategalaxy/backup/sql"
+
+DB_NAMES_STATE="PirateGalaxy_State"
+DB_BACKUP_DIR_GLOBAL="/home/pirategalaxy/backup/$DB_NAMES_STATE"
+
+DB_NAMES_LOG="PirateGalaxy_Log"
+DB_BACKUP_DIR_LOG="/home/pirategalaxy/backup/history"
+
+
+MAILADDR="jf@splitscreenstudios.com"

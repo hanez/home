@@ -1,0 +1,80 @@
+#!/usr/bin/php
+
+<?php
+
+
+function returnSearchArray($command){
+  ob_start();
+  passthru($command);
+  $output = ob_get_contents();
+  ob_end_clean();
+  $slist = explode("\n", $output);
+  return $slist;
+}
+
+$max_slash = NULL;
+
+$min_slash = 1000;
+
+$list = returnSearchArray("find /data/mp3 -print");
+
+for($i=0;$i<sizeof($list);$i++) {
+  if (file_exists($list[$i])) {
+
+    $slashcount = substr_count($list[$i], '/');
+    $xlist[$slashcount][$i]['source'] = $list[$i];
+
+    $xlist[$slashcount][$i]['slashcount'] = $slashcount;
+    
+    if ($max_slash < $slashcount)
+      $max_slash = $slashcount;
+      
+    if ($min_slash > $slashcount)
+      $min_slash = $slashcount;
+    
+    $tfile = strrchr($list[$i], "/");
+    $xfile = substr($tfile, 1, strlen($tfile));
+    
+    if (is_dir($list[$i])) {
+      $xlist[$slashcount][$i]['fileextension'] = "";
+      $xlist[$slashcount][$i]['file'] = $xfile;
+      $tpath = $list[$i];
+    } 
+    else {
+      $xlist[$slashcount][$i]['fileextension'] = substr($list[$i], strlen($list[$i])-4 , 4);
+      $xlist[$slashcount][$i]['file'] = substr($xfile, 0, strlen($tfile)-5);
+      $tpath = substr($list[$i], 0, strlen($list[$i])-4);
+    }
+
+    $xpath = substr($tpath, 0, (strlen($tpath)-strlen($xlist[$slashcount][$i]['file'])));
+    
+    $xlist[$slashcount][$i]['path'] = $xpath;
+
+    $dfile = str_replace(". ", "_", $xlist[$slashcount][$i]['file']);
+    $dfile = str_replace("--", "_", $dfile);
+    $dfile = str_replace("  ", "_", $dfile);
+    $dfile = str_replace(" .", "_", $dfile);
+    $dfile = str_replace("( ", "(", $dfile);
+    $dfile = str_replace(" )", ")", $dfile);
+    $dfile = str_replace("'", "", $dfile);
+    $dfile = str_replace(" ", "_", $dfile);
+    $dfile = str_replace(".", "_", $dfile);
+    $dfile = str_replace("__", "_", $dfile);
+
+    $xlist[$slashcount][$i]['destination'] = $xlist[$slashcount][$i]['path'] . $dfile . $xlist[$slashcount][$i]['fileextension'];
+  }
+}
+
+for ($i=$max_slash;$i>=$min_slash;$i--) {
+  foreach ($xlist[$i] as $value) {
+    if ($value['source'] != $value['destination']) {
+      $com = "mv -f --verbose \"".$value['source']."' '".$value['destination']."\"";
+      echo $com;
+      #passthru($com);
+    }    
+  }
+}
+
+
+?>
+

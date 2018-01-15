@@ -1,0 +1,22 @@
+#!/bin/bash
+
+mkdir ~/tmp/.linspector_org
+
+cd ~/tmp/.linspector_org
+
+#rsync -avr hanez.org:/var/www/linspector.org/www/htdocs/wiki/conf/* ~/www/linspector.org/htdocs/wiki/conf/
+#rsync -avr hanez.org:/var/www/linspector.org/www/htdocs/wiki/data/* ~/www/linspector.org/htdocs/wiki/data/
+
+wget -m http://linspector
+
+#rm -rf ~/tmp/.linspector_org/linspector/wiki/*
+
+rsync --delete -avr ~/dev/linspector/docs/* ~/tmp/.linspector_org/linspector/docs/api/
+
+#rsync -avr --exclude=data/ ~/www/linspector.org/htdocs/wiki/* ~/tmp/.linspector_org/linspector/wiki/
+
+rsync --delete -r -v -z --perms --group --exclude=wiki/data/ ~/tmp/.linspector_org/linspector/ hanez.org:/var/www/linspector.org/www/htdocs/
+
+rm -rf ~/tmp/.linspector_org
+
+#rsync --delete -r -v -z /home/www/hanez.org/ hanez.org:/var/www/hanez.org/www/ --exclude=*~ --exclude=wp-config.php --exclude=.svn --exclude=tmp.txt --exclude=cache/* --exclude=comments/* --perms --group --times

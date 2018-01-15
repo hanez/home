@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "TODO...!"
+
+#cd /home/hanez/Desktop/neu/
+
+#for i in ./*; do
+#	echo $i
+#	pdf2ps $i
+#	mv *.ps ../ps/
+#done
+
+#cd /home/hanez/Desktop/ps/
+
+#for h in ./*; do
+#	cat $h > /dev/usb/lp0
+#	echo $h
+#	sleep 5
+#done
+
+
