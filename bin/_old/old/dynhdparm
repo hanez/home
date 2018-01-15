@@ -1,0 +1,33 @@
+#!/bin/sh
+
+# dynhdparm is a script to deactivate harddiscs with "hdparm -y" if
+# they are not used. I had this running as cron job on a fileserver.
+#
+# Author: Johannes Findeisen <you@hanez.org>
+#
+# Usage: dynhdparm /dev/hda
+# Or: dynhdparm /dev/hda /dev/hdb
+#
+# Note: This script will not work to disable devices where the root
+# partition resides on.
+
+if [ $# -lt 1 ]; then
+  echo "You need at least to set one device as paramater"
+  echo "Example: dynhdparm /dev/hdd /dev/sda"
+  echo ""
+  exit
+fi
+
+DEVICES=$@
+LSOFDATA=""
+
+for DEVICE in $DEVICES; do
+  PARTITIONS=`cat /etc/mtab | grep $DEVICE | cut -d " " -f 2`
+  for PARTITION in $PARTITIONS; do
+    LSOFDATA=$LSOFDATA`lsof | grep $PARTITION`
+  done
+  if [ ${#LSOFDATA} -lt 1 ]; then
+    HDPARMOUT=`hdparm -y $DEVICE`
+  fi
+done
+

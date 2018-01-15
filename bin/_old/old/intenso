@@ -1,0 +1,14 @@
+#!/bin/sh
+
+mencoder $1 \
+	-o $2 \
+	-ffourcc XVID \
+	-ofps 18 \
+	-vf-add scale=220:176, \
+	-vf-add expand=220:176:-1:-1:1,rotate=2,flip \
+	-srate 44100 \
+	-ovc xvid \
+	-xvidencopts bitrate=800:max_bframes=0:quant_type=h263:me_quality=0 \
+	-oac lavc \
+	-lavcopts acodec=mp2:abitrate=64
+

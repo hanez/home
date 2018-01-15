@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# install daemontools on fedora/redhat linux
+#
+# Mike Jackson <mj@sci.fi> 5 NOV 2005
+#
+#
+mkdir /package
+chmod 1755 /package
+cd /package
+wget http://cr.yp.to/daemontools/daemontools-0.76.tar.gz
+tar xzvf daemontools-0.76.tar.gz
+rm -f daemontools-0.76.tar.gz
+cd admin/daemontools-0.76/src
+wget http://www.qmailrocks.org/downloads/patches/daemontools-0.76.errno.patch
+patch < daemontools-0.76.errno.patch
+cd ..
+package/install

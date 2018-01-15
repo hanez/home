@@ -1,0 +1,33 @@
+#!/usr/bin/ruby
+
+f = 1..255
+
+#f.each do |line|
+#  puts line
+#	system("ping -c 1 192.168.0.#{line}")
+
+#pig = IO.popen("ping -c 1 192.168.0.#{line}")
+#puts pig.gets
+
+#end
+
+
+
+count = 0
+arr = []
+f.each do |i|
+  arr[i] = Thread.new {
+    #sleep(rand(0)/10.0)
+    
+	system("ping -c 1 192.168.0.#{i}")
+	#Thread.current["mycount"] = IO.popen("ping -c 1 192.168.0.#{i}")
+	#Thread.current["mycount"] = count
+    count += 1
+  }
+end
+#arr.each {|t| t.join; print t["mycount"], ", " }
+#puts "count = #{count}"
+
+
+
+

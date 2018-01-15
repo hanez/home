@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Backup MySQL Databases
+#/home/hanez/bin/automysqlbackup-2.5.1-01.sh
+
+# Backup HOME
+rsync -av --delete --delete-excluded --exclude=hanez/movies/.shared \
+/home/* /media/BACKUP_600GB/HOME/
+
+# Backup /
+rsync -av --delete \
+ --exclude=/dev --exclude=/tmp --exclude=/home --exclude=/sys \
+ --exclude=/var/log/wtmp --exclude=/media --exclude=/mnt --exclude=/proc \
+/* /media/BACKUP_600GB/ROOT/

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+foo=`dirname $0`
+
+echo $foo;
+

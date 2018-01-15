@@ -1,5 +1,9 @@
 *
 
+!bin
+!bin/**
+bin/steam.sh
+
 !.config
 
 !.config/awesome
@@ -7,20 +11,7 @@
 .config/awesome/private.lua
 
 !.emulationstation
-#!.emulationstation/es_input.cfg
-#!.emulationstation/es_settings.cfg
 !.emulationstation/es_systems.cfg
-#!.emulationstation/themes
-#!.emulationstation/themes/**
-#!.emulationstation/themes/es-theme-carbon
-#!.emulationstation/themes/es-theme-carbon/**
-#!.emulationstation/themes/simple/**
-
-#!.config/retroarch
-#!.config/retroarch/retroarch.cfg
-
-#!.config/mc
-#!.config/mc/ini
 
 !.config/user-dirs.dirs
 !.config/user-dirs.locale

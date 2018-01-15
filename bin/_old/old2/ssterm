@@ -1,0 +1,27 @@
+#!/bin/sh
+
+EU_HOSTS="eu-admin-01.splitscreenserver.com
+eu-db-01.splitscreenserver.com
+eu-db-02.splitscreenserver.com
+eu-gs-01.splitscreenserver.com
+eu-gs-02.splitscreenserver.com
+eu-gs-03.splitscreenserver.com
+eu-gs-04.splitscreenserver.com
+eu-gs-05.splitscreenserver.com
+eu-gs-06.splitscreenserver.com
+eu-gs-07.splitscreenserver.com
+eu-ptr-01.splitscreenserver.com
+eu-web-01.splitscreenserver.com"
+
+US_HOSTS="us-gs-01.splitscreenserver.com
+us-gs-02.splitscreenserver.com
+us-web-01.splitscreenserver.com"
+
+for HOST in $EU_HOSTS; do
+  uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange -e ssh $HOST & sleep 1
+done
+
+for HOST in $US_HOSTS; do
+  uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange -e ssh $HOST & sleep 1
+done
+

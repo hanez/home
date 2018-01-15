@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# $1 local host
+# $2 remote host
+
+
+mkdir ~/tmp/.hanez_org
+
+cd ~/tmp/.hanez_org
+
+wget -m http://hanez
+
+rsync --delete -avr --times --exclude=.svn ~/www/hanez.org/htdocs/files/ ~/tmp/.hanez_org/hanez/files/
+
+rsync --delete -avr --times --exclude=.svn ~/www/hanez.org/htdocs/images/ ~/tmp/.hanez_org/hanez/images/
+
+rsync --delete -r -v -z --perms --group --times ~/tmp/.hanez_org/hanez/ hanez.org:/var/www/hanez.org/www/htdocs/
+
+rm -rf ~/tmp/.hanez_org
+
+#rsync --delete -r -v -z /home/www/hanez.org/ hanez.org:/var/www/hanez.org/www/ --exclude=*~ --exclude=wp-config.php --exclude=.svn --exclude=tmp.txt --exclude=cache/* --exclude=comments/* --perms --group --times

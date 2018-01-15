@@ -1,0 +1,69 @@
+#!/bin/bash
+
+# Look at mkxpi!!! useful option code is there!!!
+
+# alle db backups als user backup machen!!!
+#
+# /home/backup/bin/ für alles scripts! auch die, die dann von root ausgeführt
+# werden um backups zu amchen
+#
+# wenn kein parameter:
+# ?? /home/§USER/.ssconfig für ALLE config variablen fürs backup. nochmal 
+# überlegen ob dies wirklich möglich ist mit einem script. sonst als parameter
+# übergeben
+
+# import global lib here; import special libs below where the options are
+# parsed.
+. `dirname $0`/sslib
+
+set -- `getopt -n$0 -u -a --longoptions="depth: adddays: topN:" "h" "$@"` || usage
+[ $# -eq 0 ] && usage
+
+while [ $# -gt 0 ]
+do
+    case "$1" in
+       --depth)   depth=$2;shift;;
+       --adddays) adddays=$2;shift;;
+       --topN)    topN=$2;shift;;
+       -h)        usage;;
+       --)        shift;break;;
+       -*)        usage;;
+       *)         break;;            #better be the crawl directory
+    esac
+    shift
+done
+echo $depth
+
+#aflag=
+#cflag=
+#while getopts 'ac:' OPTION
+#do
+#  case $OPTION in
+#  a)	
+#    aflag=1
+#    boo "hannes"
+#		;;
+#  c)	
+#    bflag=1
+#		cval="$OPTARG"
+#		;;
+#  ?)
+#    usage;
+#		exit 2
+#		;;
+#  esac
+#done
+#printf $OPTIND
+
+if [ "$aflag" ]
+then
+  printf "Option -a specified\n"
+fi
+if [ "$cflag" ]
+then
+  printf 'Option -c "%s" specified\n' "$cval"
+fi
+printf "Remaining arguments are: %s\n" "$*"
+
+
+

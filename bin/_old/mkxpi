@@ -1,0 +1,68 @@
+#!/bin/bash
+#
+# A simple script to make xpi files.
+# Version: 0.2
+#
+# Original Author: Gordon Luk
+# Website: http://www.getluky.net/projects/mkxpi
+#
+# Patched by Johannes Findeisen to work more usefull.
+# Website: http://hanez.org
+#
+# Notes:
+# It expects the following directory structure:
+# <Path_to_Project>/<project> - Project directory, will place finished xpi file here.
+# <Path_to_Project>/<project>/install.rdf - Installation RDF
+# <Path_to_Project>/<project>/install.js - Installation JavaSript
+# <Path_to_Project>/<project>/chrome/ - will make the <project>.jar file here.
+# <Path_to_Project>/<project>/chrome/content/ - project content files
+# <Path_to_Project>/<project>/chrome/locale/ - project locale files
+# <Path_to_Project>/<project>/chrome/skin/ - project skin files
+
+usage()
+{
+    echo "Usage: mkxpi <Path_to_Project> <Project_Name> <Version>"
+}
+
+path=$1
+
+project=$2 
+
+version=$3
+
+if [ "1$project" = "1" ]; then
+    usage
+    exit 1
+fi
+
+if [ "1$path" = "1" ]; then
+    usage
+    exit 1
+fi
+
+if [ "1$version" = "1" ]; then
+    usage
+    exit 1
+fi
+
+cd $path
+
+cd chrome
+
+jar -cfM $project.jar ./content ./skin ./locale
+
+cd $path
+
+jar -cfM $project-$version-fx.xpi ./chrome/$project.jar ./install.rdf 
+
+mv $project-$version-fx.xpi ../
+
+echo "Cleaning up..."
+
+cd $path
+
+rm ./chrome/$project.jar
+
+echo "Done!"
+
+exit 0
