@@ -37,6 +37,7 @@ developmentmenu = {
     { "netbeans", "/usr/bin/netbeans -J-Xmx4096m", "/usr/share/pixmaps/netbeans.png" },
     { "qgit", "/usr/bin/qgit", "/usr/share/icons/hicolor/48x48/apps/qgit.png" },
     { "qtcreator", "/usr/bin/qtcreator", "/usr/share/icons/hicolor/48x48/apps/QtProject-qtcreator.png" },
+    { "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/pixmaps/wxglade.png" },
     { "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
 }
