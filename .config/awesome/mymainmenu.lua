@@ -149,6 +149,7 @@ systemmenu = {
 utilitiesmenu = {
     { "qsshfs", "/usr/bin/qsshfs", "/usr/share/icons/hicolor/32x32/apps/qsshfs.png" },
     { "unetbootin", "/usr/bin/unetbootin", "/usr/share/icons/hicolor/48x48/apps/unetbootin.png" },
+    { "veracrypt", "/usr/bin/veracrypt", "/usr/share/pixmaps/veracrypt.xpm" },
 }
 mymainmenu = awful.menu({ items = { 
     { "accessories", accessoriesmenu, beautiful.icon_path.."categories/applications-accessories.png" },
