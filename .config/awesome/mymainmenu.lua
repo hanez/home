@@ -24,7 +24,6 @@ dbmenu = {
 developmentmenu = {
     { "android studio", "/usr/bin/android-studio ", "/usr/share/pixmaps/android-studio.png" },
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
-    { "clion", "/usr/bin/clion", "/usr/share/pixmaps/clion.svg" },
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/pixmaps/codeblocks.png" },
     { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
