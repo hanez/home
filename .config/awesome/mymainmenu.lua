@@ -82,7 +82,6 @@ hackingmenu = {
     { "wireshark", "/usr/bin/wireshark", "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
 }
 internetmenu = {
-    { "brave", "/usr/bin/brave", "/usr/share/pixmaps/brave.png" },
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
     { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
@@ -92,9 +91,8 @@ internetmenu = {
     { "konqueror", "/usr/bin/konqueror", "/usr/share/icons/hicolor/48x48/apps/konqueror.png" },
     { "opera", "/usr/bin/opera", "/usr/share/pixmaps/opera.xpm" },
     { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
-    { "seamonkey", "seamonkey", "/usr/share/pixmaps/seamonkey.png" },
+    { "seamonkey", "/usr/bin/seamonkey", "/usr/share/pixmaps/seamonkey.png" },
     { "tor browser", "/usr/bin/tor-browser-en", "/usr/share/icons/breeze/apps/48/tor-browser.svg" },
-    { "vivaldi", "/usr/bin/vivaldi-stable", "/usr/share/icons/hicolor/48x48/apps/vivaldi.png" },
 }
 multimediamenu = {
     { "alsamixer", terminal.." -e alsamixer", "/usr/share/icons/hicolor/48x48/categories/applications-other.png" },
