@@ -134,11 +134,9 @@ sciencemenu = {
 systemmenu = {
     { "arandr", "/usr/bin/arandr", "/usr/share/icons/hicolor/scalable/devices/video-television.svg" },
     { "appearance", "/usr/bin/lxappearance", "/usr/share/icons/Adwaita/48x48/categories/preferences-desktop.png" },
-    { "bluetooth", "/usr/bin/blueman-manager", "/usr/share/icons/hicolor/48x48/apps/blueman.png" },
-    { "bitdefender", "/usr/bin/bdgui", "/opt/BitDefender-scanner/share/doc/examples/icons/hicolor/48x48/apps/bitdefender.png" },
     { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
-    { "hardinfo", "hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
     { "gufw", "/usr/bin/gufw", "/usr/share/icons/hicolor/scalable/apps/gufw.svg" },
+    { "hardinfo", "hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
     { "vmware player", "/usr/bin/vmplayer", "/usr/share/icons/hicolor/48x48/apps/vmware-player.png" },
     { "vmware workstation", "/usr/bin/vmware", "/usr/share/icons/hicolor/48x48/apps/vmware-workstation.png" },
