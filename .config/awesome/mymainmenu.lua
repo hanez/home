@@ -27,6 +27,7 @@ developmentmenu = {
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/pixmaps/codeblocks.png" },
     { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
+    { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
     { "glade gtk2", "/usr/bin/glade-3", "/usr/share/icons/hicolor/48x48/apps/glade-3.png" },
     { "glade gtk3", "/usr/bin/glade ", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
     { "intellij", "/usr/bin/idea.sh", "/usr/share/pixmaps/idea.png" },
