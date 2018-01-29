@@ -42,8 +42,12 @@ theme.taglist_squares_sel   = "~/.config/awesome/themes/hanez/taglist/squarefw.p
 theme.taglist_squares_unsel = "~/.config/awesome/themes/hanez/taglist/squarew.png"
 
 -- Variables set for theming the menu:
--- menu_[bg|fg]_[normal|focus]
--- menu_[border_color|border_width]
+-- theme.menu_bg_normal = "#000000"
+theme.menu_bg_focus = "#e95421"
+-- theme.menu_fg_normal =
+theme.menu_fg_focus = "#222222" 
+-- theme.menu_border_color = "#e95421"
+-- theme.menu_border_width = 1
 theme.menu_submenu_icon = theme.icon_path.."actions/media-playback-start.png"
 theme.menu_height = 22
 theme.menu_width  = 182
