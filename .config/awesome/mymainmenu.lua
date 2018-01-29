@@ -2,6 +2,7 @@ accessoriesmenu = {
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
     { "emacs", "/usr/bin/emacs", "/usr/share/icons/hicolor/scalable/apps/emacs.svg" },
     { "engrampa", "/usr/bin/engrampa", "/usr/share/icons/hicolor/32x32/apps/engrampa.png" },
+    { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/48x48/apps/ghex.png" },
     { "gnu privacy agent", "/usr/bin/gpa", "/usr/share/pixmaps/gpa.png" },
     { "gscriptor", "/usr/bin/gscriptor", "/usr/share/icons/hicolor/48x48/apps/gcr-smart-card.png" },
     { "gtkman", "/usr/bin/gtkman", "/usr/share/icons/hicolor/scalable/apps/gtkman.svg" },
@@ -78,9 +79,6 @@ graphicsmenu = {
     { "xsane scanning", "/usr/bin/xsane", "/usr/share/pixmaps/xsane.xpm" },
 }
 hackingmenu = {
-    { "ettercap", "/usr/bin/ettercap -G", "/usr/share/pixmaps/ettercap.svg" },
-    { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/48x48/apps/ghex.png" },
-    { "wireshark", "/usr/bin/wireshark-gtk", "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
 }
 internetmenu = {
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
@@ -104,6 +102,12 @@ multimediamenu = {
     { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
     { "xfce4 mixer", "/usr/bin/xfce4-mixer", "/usr/share/icons/Adwaita/48x48/apps/multimedia-volume-control.png" },
     { "youtube viewer", "/usr/bin/gtk-youtube-viewer", "/usr/share/pixmaps/gtk-youtube-viewer.png" },
+}
+networkmenu = {
+    { "ettercap", "/usr/bin/ettercap -G", "/usr/share/pixmaps/ettercap.svg" },
+    { "gns3", "/usr/bin/gns3", "/usr/share/pixmaps/gns3.png" },
+    { "gufw", "/usr/bin/gufw_fixed", "/usr/share/icons/hicolor/scalable/apps/gufw.svg" },
+    { "wireshark", "/usr/bin/wireshark-gtk", "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
 }
 officemenu = {
     { "acrobat reader", "/usr/bin/acroread", "/usr/share/pixmaps/acroread.png" },
@@ -134,16 +138,15 @@ sciencemenu = {
     { "stellarium", "/usr/bin/stellarium", "/usr/share/icons/hicolor/48x48/apps/stellarium.png" },
 }
 systemmenu = {
-    { "arandr", "/usr/bin/arandr", "/usr/share/icons/hicolor/scalable/devices/video-television.svg" },
-    { "appearance", "/usr/bin/lxappearance", "/usr/share/icons/Adwaita/48x48/categories/preferences-desktop.png" },
-    { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
-    { "gufw", "/usr/bin/gufw_fixed", "/usr/share/icons/hicolor/scalable/apps/gufw.svg" },
     { "hardinfo", "hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
     { "vmware player", "/usr/bin/vmplayer", "/usr/share/icons/hicolor/48x48/apps/vmware-player.png" },
     { "vmware workstation", "/usr/bin/vmware", "/usr/share/icons/hicolor/48x48/apps/vmware-workstation.png" },
 }
 utilitiesmenu = {
+    { "arandr", "/usr/bin/arandr", "/usr/share/icons/hicolor/scalable/devices/video-television.svg" },
+    { "appearance", "/usr/bin/lxappearance", "/usr/share/icons/Adwaita/48x48/categories/preferences-desktop.png" },
+    { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
     { "qsshfs", "/usr/bin/qsshfs", "/usr/share/icons/hicolor/32x32/apps/qsshfs.png" },
     { "unetbootin", "/usr/bin/unetbootin", "/usr/share/icons/hicolor/48x48/apps/unetbootin.png" },
     { "veracrypt", "/usr/bin/veracrypt", "/usr/share/pixmaps/veracrypt.xpm" },
@@ -155,8 +158,9 @@ mymainmenu = awful.menu({ items = {
     { "engineering", engineeringmenu, beautiful.icon_path.."categories/applications-engineering.png" },
     { "games", gamesmenu, beautiful.icon_path.."categories/applications-games.png" },
     { "graphics", graphicsmenu, beautiful.icon_path.."categories/applications-graphics.png" },
-    { "hacking", hackingmenu, beautiful.icon_path.."emotes/face-devilish.png" },
+    --{ "hacking", hackingmenu, beautiful.icon_path.."emotes/face-devilish.png" },
     { "internet", internetmenu, beautiful.icon_path.."categories/applications-internet.png" },
+    { "network", networkmenu, beautiful.icon_path.."status/network-wired-disconnected.png" },
     { "multimedia", multimediamenu, beautiful.icon_path.."categories/applications-multimedia.png" },
     { "office", officemenu, beautiful.icon_path.."categories/applications-office.png" },
     { "other", othermenu, beautiful.icon_path.."categories/applications-other.png" },
