@@ -83,6 +83,7 @@ hackingmenu = {
 internetmenu = {
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
     { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
+    { "clawsker", "/usr/bin/clawsker", "/usr/share/icons/hicolor/48x48/apps/clawsker.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/64x64/apps/gajim.png" },
     { "google chrome", "/usr/bin/google-chrome-stable", "/opt/google/chrome/product_logo_32.xpm" },
