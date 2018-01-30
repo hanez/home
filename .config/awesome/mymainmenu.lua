@@ -32,7 +32,6 @@ dbmenu = {
     { "umongo", "/usr/bin/umongo.sh", "/usr/share/pixmaps/umongo.png" },
 }
 developmentmenu = {
-    { "android studio", "/usr/bin/android-studio ", "/usr/share/pixmaps/android-studio.png" },
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/pixmaps/codeblocks.png" },
     { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
