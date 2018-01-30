@@ -1,19 +1,28 @@
 accessoriesmenu = {
+    { "acrobat reader", "/usr/bin/acroread", "/usr/share/pixmaps/acroread.png" },
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
+    { "dia", "/usr/bin/dia", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
     { "emacs", "/usr/bin/emacs", "/usr/share/icons/hicolor/scalable/apps/emacs.svg" },
     { "engrampa", "/usr/bin/engrampa", "/usr/share/icons/hicolor/32x32/apps/engrampa.png" },
+    { "epdfview", "/usr/bin/epdfview", "/usr/share/icons/hicolor/48x48/apps/epdfview.png" },
     { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/48x48/apps/ghex.png" },
     { "gnu privacy agent", "/usr/bin/gpa", "/usr/share/pixmaps/gpa.png" },
     { "gscriptor", "/usr/bin/gscriptor", "/usr/share/icons/hicolor/48x48/apps/gcr-smart-card.png" },
     { "gtkman", "/usr/bin/gtkman", "/usr/share/icons/hicolor/scalable/apps/gtkman.svg" },
     { "gvim", "/usr/bin/gvim", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
     { "kleopatra", "/usr/bin/kleopatra", "/usr/share/icons/hicolor/48x48/apps/kleopatra.png" },
+    { "pdfshuffler", "/usr/bin/pdfshuffler", "/usr/share/pixmaps/pdfshuffler.png" },
     { "pluma", "/usr/bin/pluma", "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
     { "regexxer", "/usr/bin/regexxer", "/usr/share/icons/hicolor/48x48/apps/regexxer.png" },
     { "retext", "/usr/bin/retext", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
     { "seahorse", "/usr/bin/seahorse", "/usr/share/icons/hicolor/48x48/apps/seahorse.png" },
-    { "vim", terminal.." -e /usr/bin/vim", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
     { "xarchiver", "xarchiver", "/usr/share/icons/hicolor/48x48/apps/xarchiver.png" },
+}
+communicationmenu = {
+    { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
+    { "clawsker", "/usr/bin/clawsker", "/usr/share/icons/hicolor/48x48/apps/clawsker.png" },
+    { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/64x64/apps/gajim.png" },
+    { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
 }
 dbmenu = {
     { "dbeaver", "/usr/bin/dbeaver", "/usr/share/pixmaps/dbeaver.xpm" },
@@ -82,15 +91,11 @@ hackingmenu = {
 }
 internetmenu = {
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
-    { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
-    { "clawsker", "/usr/bin/clawsker", "/usr/share/icons/hicolor/48x48/apps/clawsker.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
-    { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/64x64/apps/gajim.png" },
     { "google chrome", "/usr/bin/google-chrome-stable", "/opt/google/chrome/product_logo_32.xpm" },
     { "google earth", "/usr/bin/google-earth", "/opt/google/earth/free/product_logo_32.xpm" },
     { "konqueror", "/usr/bin/konqueror", "/usr/share/icons/hicolor/48x48/apps/konqueror.png" },
     { "opera", "/usr/bin/opera", "/usr/share/pixmaps/opera.xpm" },
-    { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
     { "seamonkey", "/usr/bin/seamonkey", "/usr/share/pixmaps/seamonkey.png" },
     { "tor browser", "/usr/bin/tor-browser-en", "/usr/share/icons/breeze/apps/48/tor-browser.svg" },
 }
@@ -111,16 +116,12 @@ networkmenu = {
     { "wireshark", "/usr/bin/wireshark-gtk", "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
 }
 officemenu = {
-    { "acrobat reader", "/usr/bin/acroread", "/usr/share/pixmaps/acroread.png" },
-    { "dia", "/usr/bin/dia", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
-    { "epdfview", "/usr/bin/epdfview", "/usr/share/icons/hicolor/48x48/apps/epdfview.png" },
     { "libreoffice base", "/usr/bin/libreoffice --base", "/usr/share/icons/hicolor/48x48/apps/libreoffice-base.png" },
     { "libreoffice calc", "/usr/bin/libreoffice --calc", "/usr/share/icons/hicolor/48x48/apps/libreoffice-calc.png" },
     { "libreoffice draw", "/usr/bin/libreoffice --draw", "/usr/share/icons/hicolor/48x48/apps/libreoffice-draw.png" },
     { "libreoffice impress", "/usr/bin/libreoffice --impress", "/usr/share/icons/hicolor/48x48/apps/libreoffice-impress.png" },
     { "libreoffice math", "/usr/bin/libreoffice --math", "/usr/share/icons/hicolor/48x48/apps/libreoffice-math.png" },
     { "libreoffice writer", "/usr/bin/libreoffice --writer", "/usr/share/icons/hicolor/48x48/apps/libreoffice-writer.png" },
-    { "pdfshuffler", "/usr/bin/pdfshuffler", "/usr/share/pixmaps/pdfshuffler.png" },
 }
 othermenu = {
     { "apache directory studio", "/usr/bin/apachedirectorystudio", "/opt/ApacheDirectoryStudio/icon.xpm" },
@@ -154,6 +155,7 @@ utilitiesmenu = {
 }
 mymainmenu = awful.menu({ items = { 
     { "accessories", accessoriesmenu, beautiful.icon_path.."categories/applications-accessories.png" },
+    { "communication", communicationmenu, "/usr/share/icons/matefaenza/status/22/applications-chat-panel.png" },
     { "database", dbmenu, "/usr/share/icons/oxygen/base/48x48/places/server-database.png" },
     { "development", developmentmenu, beautiful.icon_path.."categories/applications-development.png" },
     { "engineering", engineeringmenu, beautiful.icon_path.."categories/applications-engineering.png" },
