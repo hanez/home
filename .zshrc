@@ -1,6 +1,12 @@
 # Extend my $PATH to $HOME/bin
 export PATH=$HOME/bin:$HOME/.gem/ruby/2.5.0/bin:$PATH
 
+# Android / Kivy Development Stuff
+export ANDROIDSDK="/opt/android-sdk"
+export ANDROIDNDK="/opt/android-ndk"
+export ANDROIDAPI="19"
+export ANDROIDNDKVER="r16b"
+
 # Export the $EDITOR and $TERMINAL
 export BROWSER=/usr/bin/firefox
 export EDITOR=/usr/bin/vim
