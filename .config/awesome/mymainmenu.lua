@@ -131,7 +131,6 @@ radiomenu = {
     { "cubicsdr", "/usr/bin/cubicsdr", "/usr/share/cubicsdr/CubicSDR.png" },
     { "gnuradio", "/usr/bin/gnuradio-companion", "/usr/share/gnuradio/grc/freedesktop/grc-icon-48.png" },
     { "gqrx", "/usr/bin/gqrx", "/usr/share/pixmaps/gqrx.svg" },
-    { "pothos", "/usr/bin/PothosFlow", "/usr/share/Pothos/Desktop/pothos-flow-48.png" },
     { "urh", "/usr/bin/urh", "/usr/share/pixmaps/urh.png" },
 }
 sciencemenu = {
