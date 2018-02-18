@@ -311,6 +311,8 @@ globalkeys = gears.table.join(
     awful.key({ modkey            }, "z", function()
                                               awful.util.spawn(editor_cmd .. " " .. os.getenv("HOME") .. "/.zshrc") end),
     awful.key({ modkey            }, "y", function() awful.util.spawn("/usr/bin/thunar") end),
+    awful.key({ modkey,           }, "u", function() awful.util.spawn("/usr/bin/xdotool click 2") end),
+    --awful.key({ modkey, "Mod1"    }, "space", function() awful.util.spawn("/usr/bin/xdotool click 2") end),
 
     -- Lock screen
     awful.key({ modkey, "Shift"   }, "Return", function () awful.util.spawn("/usr/bin/slock") end),
