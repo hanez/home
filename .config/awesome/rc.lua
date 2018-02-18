@@ -55,7 +55,7 @@ beautiful.init(os.getenv("HOME").."/.config/awesome/themes/hanez/theme.lua")
 -- To override the wallpaper provided by the theme you can just add a file named
 -- ~/images/background.png and then this file will be used as wallpaper. No need
 -- to change the theme or this file for that... ;)
-name = os.getenv("HOME").."/images/background.png"
+name = os.getenv("HOME").."/background.png"
 if file_exists(name) then 
     beautiful.wallpaper = name  
 end
