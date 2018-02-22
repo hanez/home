@@ -29,6 +29,7 @@ communicationmenu = {
 dbmenu = {
     { "dbeaver", "/usr/bin/dbeaver", "/usr/share/pixmaps/dbeaver.xpm" },
     { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
+    { "orbada", "/usr/bin/orbada", "/opt/orbada/doc/html/docs/orbada32.png" },
     { "sql workbench", "/usr/bin/sqlworkbench", "/usr/share/icons/hicolor/32x32/apps/workbench32.png" },
     { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
     { "umongo", "/usr/bin/umongo.sh", "/usr/share/pixmaps/umongo.png" },
