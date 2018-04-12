@@ -23,8 +23,8 @@ accessoriesmenu = {
 communicationmenu = {
     { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
     { "clawsker", "/usr/bin/clawsker", "/usr/share/icons/hicolor/48x48/apps/clawsker.png" },
-    { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/64x64/apps/gajim.png" },
     { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
+    { "corebird", "/usr/bin/corebird", "/usr/share/icons/hicolor/48x48/apps/corebird.png" },
 }
 dbmenu = {
     { "dbeaver", "/usr/bin/dbeaver", "/usr/share/pixmaps/dbeaver.xpm" },
