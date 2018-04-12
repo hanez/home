@@ -5,6 +5,7 @@ export PATH=$HOME/bin:$HOME/.gem/ruby/2.5.0/bin:$PATH
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
 # Android / Kivy Development Stuff
+export ANDROID_HOME=/home/hanez/.android/sdk
 export ANDROIDSDK="/opt/android-sdk"
 export ANDROIDNDK="/opt/android-ndk"
 export ANDROIDAPI="19"
