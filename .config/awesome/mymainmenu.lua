@@ -25,6 +25,7 @@ communicationmenu = {
     { "clawsker", "/usr/bin/clawsker", "/usr/share/icons/hicolor/48x48/apps/clawsker.png" },
     { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
     { "corebird", "/usr/bin/corebird", "/usr/share/icons/hicolor/48x48/apps/corebird.png" },
+    { "telegram", "/usr/bin/telegram-desktop", "/usr/share/icons/hicolor/48x48/apps/telegram.png" },
 }
 dbmenu = {
     { "dbeaver", "/usr/bin/dbeaver", "/usr/share/pixmaps/dbeaver.xpm" },
