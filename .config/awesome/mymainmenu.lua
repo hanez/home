@@ -7,16 +7,13 @@ accessoriesmenu = {
     { "epdfview", "/usr/bin/epdfview", "/usr/share/icons/hicolor/48x48/apps/epdfview.png" },
     { "freemind", "/usr/bin/freemind", "/usr/share/pixmaps/freemind.png" },
     { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/48x48/apps/ghex.png" },
-    { "gnu privacy agent", "/usr/bin/gpa", "/usr/share/pixmaps/gpa.png" },
     { "gscriptor", "/usr/bin/gscriptor", "/usr/share/icons/hicolor/48x48/apps/gcr-smart-card.png" },
     { "gtkman", "/usr/bin/gtkman", "/usr/share/icons/hicolor/scalable/apps/gtkman.svg" },
     { "gvim", "/usr/bin/gvim", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
-    { "kleopatra", "/usr/bin/kleopatra", "/usr/share/icons/hicolor/48x48/apps/kleopatra.png" },
     { "pdfshuffler", "/usr/bin/pdfshuffler", "/usr/share/pixmaps/pdfshuffler.png" },
     { "pluma", "/usr/bin/pluma", "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
     { "regexxer", "/usr/bin/regexxer", "/usr/share/icons/hicolor/48x48/apps/regexxer.png" },
     { "retext", "/usr/bin/retext", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
-    { "seahorse", "/usr/bin/seahorse", "/usr/share/icons/hicolor/48x48/apps/seahorse.png" },
     { "wxcam", "/usr/bin/wxcam", "/usr/share/icons/Adwaita/48x48/devices/camera-web.png" },
     { "xarchiver", "xarchiver", "/usr/share/icons/hicolor/48x48/apps/xarchiver.png" },
 }
@@ -132,6 +129,12 @@ othermenu = {
     { "apache directory studio", "/usr/bin/apachedirectorystudio", "/opt/ApacheDirectoryStudio/icon.xpm" },
     { "soapui", "/usr/bin/soapui", "/usr/share/icons/hicolor/48x48/apps/soapui.png" },
 }
+privacymenu = {
+    { "gnu privacy agent", "/usr/bin/gpa", "/usr/share/pixmaps/gpa.png" },
+    { "keepassxc", "/usr/bin/keepassxc", "/usr/share/icons/hicolor/48x48/apps/keepassxc.png" },
+    { "kleopatra", "/usr/bin/kleopatra", "/usr/share/icons/hicolor/48x48/apps/kleopatra.png" },
+    { "seahorse", "/usr/bin/seahorse", "/usr/share/icons/hicolor/48x48/apps/seahorse.png" },
+}
 radiomenu = {
     { "cubicsdr", "/usr/bin/cubicsdr", "/usr/share/cubicsdr/CubicSDR.png" },
     { "gnuradio", "/usr/bin/gnuradio-companion", "/usr/share/gnuradio/grc/freedesktop/grc-icon-48.png" },
@@ -171,6 +174,7 @@ mymainmenu = awful.menu({ items = {
     { "multimedia", multimediamenu, beautiful.icon_path.."categories/applications-multimedia.png" },
     { "office", officemenu, beautiful.icon_path.."categories/applications-office.png" },
     { "other", othermenu, beautiful.icon_path.."categories/applications-other.png" },
+    { "privacy", privacymenu, beautiful.icon_path.."categories/preferences-desktop-personal.png" },
     { "radio", radiomenu, "/usr/share/icons/matefaenza/apps/48/radio.png" },
     { "science", sciencemenu, beautiful.icon_path.."categories/applications-science.png" },
     { "system", systemmenu, beautiful.icon_path.."categories/applications-system.png" },
