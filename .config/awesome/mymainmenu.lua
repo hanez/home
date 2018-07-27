@@ -6,7 +6,6 @@ accessoriesmenu = {
     { "engrampa", "/usr/bin/engrampa", "/usr/share/icons/hicolor/32x32/apps/engrampa.png" },
     { "epdfview", "/usr/bin/epdfview", "/usr/share/icons/hicolor/48x48/apps/epdfview.png" },
     { "freemind", "/usr/bin/freemind", "/usr/share/pixmaps/freemind.png" },
-    { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/48x48/apps/ghex.png" },
     { "gscriptor", "/usr/bin/gscriptor", "/usr/share/icons/hicolor/48x48/apps/gcr-smart-card.png" },
     { "gtkman", "/usr/bin/gtkman", "/usr/share/icons/hicolor/scalable/apps/gtkman.svg" },
     { "gvim", "/usr/bin/gvim", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
@@ -88,6 +87,8 @@ graphicsmenu = {
     { "xsane scanning", "/usr/bin/xsane", "/usr/share/pixmaps/xsane.xpm" },
 }
 hackingmenu = {
+    { "cutter", "/usr/bin/Cutter", "/usr/share/icons/hicolor/scalable/apps/cutter.svg" },
+    { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/48x48/apps/ghex.png" },
 }
 internetmenu = {
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
@@ -168,7 +169,7 @@ mymainmenu = awful.menu({ items = {
     { "engineering", engineeringmenu, beautiful.icon_path.."categories/applications-engineering.png" },
     { "games", gamesmenu, beautiful.icon_path.."categories/applications-games.png" },
     { "graphics", graphicsmenu, beautiful.icon_path.."categories/applications-graphics.png" },
-    --{ "hacking", hackingmenu, beautiful.icon_path.."emotes/face-devilish.png" },
+    { "hacking", hackingmenu, beautiful.icon_path.."emotes/face-devilish.png" },
     { "internet", internetmenu, beautiful.icon_path.."categories/applications-internet.png" },
     { "network", networkmenu, beautiful.icon_path.."status/network-wired-disconnected.png" },
     { "multimedia", multimediamenu, beautiful.icon_path.."categories/applications-multimedia.png" },
