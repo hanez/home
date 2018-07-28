@@ -98,7 +98,6 @@ internetmenu = {
     { "google earth", "/usr/bin/google-earth", "/opt/google/earth/free/product_logo_32.xpm" },
     { "konqueror", "/usr/bin/konqueror", "/usr/share/icons/hicolor/48x48/apps/konqueror.png" },
     { "opera", "/usr/bin/opera", "/usr/share/pixmaps/opera.xpm" },
-    { "pale moon", "/usr/bin/palemoon", "/usr/share/icons/hicolor/48x48/apps/palemoon.png" },
     { "seamonkey", "/usr/bin/seamonkey", "/usr/share/pixmaps/seamonkey.png" },
     { "tor browser", "/usr/bin/tor-browser", "/usr/share/icons/breeze/apps/48/tor-browser.svg" },
 }
