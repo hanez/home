@@ -109,6 +109,7 @@ multimediamenu = {
     { "k3b", "/usr/bin/k3b", "/usr/share/icons/hicolor/48x48/apps/k3b.png" },
     { "k9copy", "/usr/bin/k9copy", "/usr/share/icons/hicolor/48x48/actions/k9copy.png" },
     { "kaffeine", "/usr/bin/kaffeine", "/usr/share/icons/hicolor/scalable/apps/kaffeine.svg" },
+    { "mediathek", "/usr/bin/mediathek", "/usr/share/pixmaps/MediathekView.svg" },
     { "spotify", "/usr/bin/spotify", "/usr/share/pixmaps/spotify-client.png" },
     { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
     { "xfce4 mixer", "/usr/bin/xfce4-mixer", "/usr/share/icons/Adwaita/48x48/apps/multimedia-volume-control.png" },
