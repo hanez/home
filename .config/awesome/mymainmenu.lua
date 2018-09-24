@@ -151,6 +151,8 @@ sciencemenu = {
     { "stellarium", "/usr/bin/stellarium", "/usr/share/icons/hicolor/48x48/apps/stellarium.png" },
 }
 systemmenu = {
+    { "anydesk", "/usr/bin/anydesk", "/usr/share/icons/48x48/apps/anydesk.png" },
+    { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
     { "hardinfo", "hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
     { "vmware player", "/usr/bin/vmplayer", "/usr/share/icons/hicolor/48x48/apps/vmware-player.png" },
@@ -159,7 +161,6 @@ systemmenu = {
 utilitiesmenu = {
     { "arandr", "/usr/bin/arandr", "/usr/share/icons/hicolor/scalable/devices/video-television.svg" },
     { "appearance", "/usr/bin/lxappearance", "/usr/share/icons/Adwaita/48x48/categories/preferences-desktop.png" },
-    { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
     { "qsshfs", "/usr/bin/qsshfs", "/usr/share/icons/hicolor/32x32/apps/qsshfs.png" },
     { "unetbootin", "/usr/bin/unetbootin", "/usr/share/icons/hicolor/48x48/apps/unetbootin.png" },
     { "veracrypt", "/usr/bin/veracrypt", "/usr/share/pixmaps/veracrypt.xpm" },
