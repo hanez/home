@@ -154,8 +154,9 @@ sciencemenu = {
 systemmenu = {
     { "anydesk", "/usr/bin/anydesk", "/usr/share/icons/48x48/apps/anydesk.png" },
     { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
-    { "hardinfo", "hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
-    { "timemachine", "timemachine", "/usr/share/icons/hicolor/48x48/apps/timeshift.png" },
+    { "hardinfo", "/usr/bin/hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
+    { "partition manager", "/usr/bin/partitionmanager", "/usr/share/icons/hicolor/scalable/apps/partitionmanager.svg" },
+    { "timemachine", "/usr/bin/timeshift-launcher", "/usr/share/icons/hicolor/48x48/apps/timeshift.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
     { "vmware player", "/usr/bin/vmplayer", "/usr/share/icons/hicolor/48x48/apps/vmware-player.png" },
     { "vmware workstation", "/usr/bin/vmware", "/usr/share/icons/hicolor/48x48/apps/vmware-workstation.png" },
