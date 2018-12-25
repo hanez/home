@@ -13,7 +13,6 @@ accessoriesmenu = {
     { "pluma", "/usr/bin/pluma", "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
     { "regexxer", "/usr/bin/regexxer", "/usr/share/icons/hicolor/48x48/apps/regexxer.png" },
     { "retext", "/usr/bin/retext", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
-    { "wxcam", "/usr/bin/wxcam", "/usr/share/icons/Adwaita/48x48/devices/camera-web.png" },
     { "xarchiver", "xarchiver", "/usr/share/icons/hicolor/48x48/apps/xarchiver.png" },
 }
 communicationmenu = {
