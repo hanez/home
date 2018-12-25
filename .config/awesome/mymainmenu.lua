@@ -152,9 +152,9 @@ sciencemenu = {
     { "stellarium", "/usr/bin/stellarium", "/usr/share/icons/hicolor/48x48/apps/stellarium.png" },
 }
 systemmenu = {
-    { "anydesk", "/usr/bin/anydesk", "/usr/share/icons/48x48/apps/anydesk.png" },
+    { "anydesk", "/usr/bin/anydesk", "/usr/share/icons/hicolor/48x48/apps/anydesk.png" },
     { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
-    { "hardinfo", "/usr/bin/hardinfo", "/usr/share/hardinfo/pixmaps/logo.png" },
+    { "hardinfo", "/usr/bin/hardinfo", "/usr/share/icons/matefaenza/apps/scalable/hardinfo.svg" },
     { "partition manager", "/usr/bin/partitionmanager", "/usr/share/icons/hicolor/scalable/apps/partitionmanager.svg" },
     { "timemachine", "/usr/bin/timeshift-launcher", "/usr/share/icons/hicolor/48x48/apps/timeshift.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
