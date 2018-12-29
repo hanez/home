@@ -156,7 +156,7 @@ systemmenu = {
     { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
     { "hardinfo", "/usr/bin/hardinfo", "/usr/share/icons/matefaenza/apps/scalable/hardinfo.svg" },
     { "partition manager", "/usr/bin/partitionmanager", "/usr/share/icons/hicolor/scalable/apps/partitionmanager.svg" },
-    { "timemachine", "/usr/bin/timeshift-launcher", "/usr/share/icons/hicolor/48x48/apps/timeshift.png" },
+    { "timeshift", "/usr/bin/timeshift-launcher", "/usr/share/icons/hicolor/48x48/apps/timeshift.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
     { "vmware player", "/usr/bin/vmplayer", "/usr/share/icons/hicolor/48x48/apps/vmware-player.png" },
     { "vmware workstation", "/usr/bin/vmware", "/usr/share/icons/hicolor/48x48/apps/vmware-workstation.png" },
