@@ -33,7 +33,8 @@ dbmenu = {
 developmentmenu = {
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "bluegriffon", "/usr/bin/bluegriffon", "/usr/share/icons/hicolor/48x48/apps/bluegriffon.png" },
-    { "codeblocks", "/usr/bin/codeblocks", "/usr/share/pixmaps/codeblocks.png" },
+    { "code", "/usr/bin/code", "/usr/share/pixmaps/code-oss.png" },
+    { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/matefaenza/apps/48/codeblocks.png" },
     { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
     { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
