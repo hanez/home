@@ -12,6 +12,7 @@
 !bin/gnucash.sh
 !bin/hanez.org.sh
 !bin/steam.sh
+!bin/motd.sh
 !bin/myip.sh
 !bin/nas-boot.sh
 !bin/nas-reboot.sh
