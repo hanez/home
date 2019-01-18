@@ -9,8 +9,8 @@ for repo in /home/hanez/forks/*; do
 
     git checkout master
     
-    git rebase upstream/master
-    #git merge upstream/master
+    #git rebase upstream/master
+    git merge upstream/master
 
     git push -f origin master
 done
