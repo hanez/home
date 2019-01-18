@@ -2,6 +2,7 @@
 
 output="/var/www/localhost/htdocs/stats/"
 nic="eth0"
+name=$(hostname)
 
 generate_index() {
 	cat <<-EOF
@@ -12,7 +13,7 @@ generate_index() {
 	    <meta http-equiv="cache-control" content=no-cache">
 	    <meta http-equiv="refresh" content="3000">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <title>e: eth0 network statistics</title>
+	    <title>$name: $nic network statistics</title>
 	</head>
 	<body style="background-color:#444">
 	    <div style="text-align:center">
@@ -27,10 +28,10 @@ generate_index() {
 	EOF
 }
 
-if  [ ! -f "$output"/index.html ]; then
+#if  [ ! -f "$output"/index.html ]; then
 	mkdir -p $output
 	generate_index > "$output"/index.html
-fi
+#fi
 
 for type in hours days months top10 summary hsummary vsummary; do
     vnstati --${type} -i $nic -o $output/${type}.png

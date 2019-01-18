@@ -19,7 +19,6 @@
 !bin/stats.sh
 
 !.config
-
 !.config/awesome
 !.config/awesome/**
 .config/awesome/private.lua
