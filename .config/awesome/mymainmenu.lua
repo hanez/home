@@ -82,7 +82,7 @@ graphicsmenu = {
     { "krita", "/usr/bin/krita", "/usr/share/icons/hicolor/48x48/apps/calligrakrita.png" },
     { "mtpaint", "/usr/bin/mtpaint", "/usr/share/pixmaps/mtpaint.png" },
     { "scribus", "/usr/bin/scribus", "/usr/share/icons/hicolor/32x32/apps/scribus.png" },
-    { "sk1", "/usr/bin/sk1", "/usr/share/pixmaps/sk1.png" },
+    { "sk1", "/usr/bin/sk1", "/usr/share/icons/hicolor/scalable/apps/sk1.svg" },
     { "viewnior", "/usr/bin/viewnior", "/usr/share/icons/hicolor/48x48/apps/viewnior.png" },
     { "xsane scanning", "/usr/bin/xsane", "/usr/share/pixmaps/xsane.xpm" },
 }

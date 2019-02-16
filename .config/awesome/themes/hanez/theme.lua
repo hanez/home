@@ -43,7 +43,7 @@ theme.taglist_squares_unsel = "~/.config/awesome/themes/hanez/taglist/squarew.pn
 
 -- Variables set for theming the menu:
 -- theme.menu_bg_normal = "#000000"
-theme.menu_bg_focus = "#e95421"
+theme.menu_bg_focus = "#F0544C"
 -- theme.menu_fg_normal =
 theme.menu_fg_focus = "#222222" 
 -- theme.menu_border_color = "#e95421"
