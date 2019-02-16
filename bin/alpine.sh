@@ -10,7 +10,7 @@ src=rsync://rsync.alpinelinux.org/alpine/
 dest=/data/alpine/
 
 # uncomment this to exclude old v2.x branches
-exclude="--exclude v2.* --exclude v3.0 --exclude v3.1 --exclude v3.2 --exclude v3.2 --exclude v3.3 --exclude v3.4 --exclude v3.5 --exclude v3.6 --exclude v3.7 --exclude aarch64/ --exclude armhf/ --exclude armv7/ --exclude ppc64le/ --exclude s390x/ --exclude x86/"
+exclude="--exclude v2.* --exclude v3.0 --exclude v3.1 --exclude v3.2 --exclude v3.2 --exclude v3.3 --exclude v3.4 --exclude v3.5 --exclude v3.6 --exclude v3.7 --exclude v3.8 --exclude aarch64/ --exclude armhf/ --exclude armv7/ --exclude ppc64le/ --exclude s390x/ --exclude x86/"
 
 mkdir -p "$dest"
 /usr/bin/rsync \
