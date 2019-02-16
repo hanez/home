@@ -1,3 +1,6 @@
 [submodule ".zsh/oh-my-zsh"]
 	path = .zsh/oh-my-zsh
 	url = git@git.unixpeople.org:hanez/oh-my-zsh.git
+[submodule ".config/awesome/vicious"]
+	path = .config/awesome/vicious
+	url = https://github.com/vicious-widgets/vicious
