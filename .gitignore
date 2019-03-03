@@ -2,6 +2,7 @@
 
 !bin
 #!bin/**
+!bin/ac.sh
 !bin/alpine.sh
 !bin/arch.sh
 !bin/artix.s!bin/alpine.sh
