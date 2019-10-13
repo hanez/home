@@ -24,7 +24,7 @@ theme.border_marked = "#91231c"
 -- Set the icon theme and size
 theme.icon_theme = "Adwaita"
 theme.icon_size = "22x22"
-theme.icon_path = "/usr/share/icons/"..theme.icon_theme.."/"..theme.icon_size.."/"
+theme.icon_path = "/usr/share/icons/"..theme.icon_theme.."/"..theme.icon_size.."/legacy/"
 
 -- There are other variable sets
 -- overriding the default one when
