@@ -88,7 +88,8 @@ graphicsmenu = {
 }
 hackingmenu = {
     { "cutter", "/usr/bin/Cutter", "/usr/share/icons/hicolor/scalable/apps/cutter.svg" },
-    { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/48x48/apps/ghex.png" },
+    { "ghex", "/usr/bin/ghex ", "/usr/share/icons/matefaenza/apps/scalable/ghex.svg" },
+    { "hopper", "/opt/hopper-v4/bin/Hopper", "/opt/hopper-v4/doc/shared/HopperIcn.png" },
 }
 internetmenu = {
     { "brave", "/usr/bin/brave", "/usr/share/pixmaps/brave.png" },
@@ -158,8 +159,8 @@ systemmenu = {
     { "printer", "/usr/bin/system-config-printer", "/usr/share/icons/paper-vimix/scalable/devices/stock_printers.png" },
     { "timeshift", "/usr/bin/timeshift-launcher", "/usr/share/icons/hicolor/48x48/apps/timeshift.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
-    { "vmware player", "/usr/bin/vmplayer", "/usr/share/icons/hicolor/48x48/apps/vmware-player.png" },
-    { "vmware workstation", "/usr/bin/vmware", "/usr/share/icons/hicolor/48x48/apps/vmware-workstation.png" },
+    --{ "vmware player", "/usr/bin/vmplayer", "/usr/share/icons/hicolor/48x48/apps/vmware-player.png" },
+    --{ "vmware workstation", "/usr/bin/vmware", "/usr/share/icons/hicolor/48x48/apps/vmware-workstation.png" },
 }
 utilitiesmenu = {
     { "arandr", "/usr/bin/arandr", "/usr/share/icons/hicolor/scalable/devices/video-television.svg" },
@@ -169,28 +170,28 @@ utilitiesmenu = {
     { "veracrypt", "/usr/bin/veracrypt", "/usr/share/pixmaps/veracrypt.xpm" },
 }
 mymainmenu = awful.menu({ items = { 
-    { "accessories", accessoriesmenu, beautiful.icon_path.."categories/applications-accessories.png" },
+    { "accessories", accessoriesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-accessories.png" },
     { "communication", communicationmenu, "/usr/share/icons/matefaenza/status/22/applications-chat-panel.png" },
     { "database", dbmenu, "/usr/share/icons/oxygen/base/48x48/places/server-database.png" },
-    { "development", developmentmenu, beautiful.icon_path.."categories/applications-development.png" },
-    { "engineering", engineeringmenu, beautiful.icon_path.."categories/applications-engineering.png" },
-    { "games", gamesmenu, beautiful.icon_path.."categories/applications-games.png" },
-    { "graphics", graphicsmenu, beautiful.icon_path.."categories/applications-graphics.png" },
-    { "hacking", hackingmenu, beautiful.icon_path.."emotes/face-devilish.png" },
-    { "internet", internetmenu, beautiful.icon_path.."categories/applications-internet.png" },
-    { "network", networkmenu, beautiful.icon_path.."status/network-wired-disconnected.png" },
-    { "multimedia", multimediamenu, beautiful.icon_path.."categories/applications-multimedia.png" },
-    { "office", officemenu, beautiful.icon_path.."categories/applications-office.png" },
-    { "other", othermenu, beautiful.icon_path.."categories/applications-other.png" },
-    { "privacy", privacymenu, beautiful.icon_path.."categories/preferences-desktop-personal.png" },
+    { "development", developmentmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-development.png" },
+    { "engineering", engineeringmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-engineering.png" },
+    { "games", gamesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-games.png" },
+    { "graphics", graphicsmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-graphics.png" },
+    { "hacking", hackingmenu, "/usr/share/icons/Adwaita/22x22/legacy/face-devilish.png" },
+    { "internet", internetmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-internet.png" },
+    { "network", networkmenu, "/usr/share/icons/Adwaita/22x22/legacy/network-wired-disconnected.png" },
+    { "multimedia", multimediamenu, "/usr/share/icons/Adwaita/scalable/categories/applications-multimedia-symbolic.svg" },
+    { "office", officemenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-office.png" },
+    { "other", othermenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-other.png" },
+    { "privacy", privacymenu, "/usr/share/icons/Adwaita/22x22/legacy/preferences-desktop-personal.png" },
     { "radio", radiomenu, "/usr/share/icons/matefaenza/apps/48/radio.png" },
-    { "science", sciencemenu, beautiful.icon_path.."categories/applications-science.png" },
-    { "system", systemmenu, beautiful.icon_path.."categories/applications-system.png" },
-    { "utilities", utilitiesmenu, beautiful.icon_path.."categories/applications-utilities.png" },
-    { "filemanager", "/usr/bin/thunar", beautiful.icon_path.."apps/system-file-manager.png" },
-    { "terminal", terminal, beautiful.icon_path.."apps/utilities-terminal.png" },
-    { "configuration", editor_cmd .. " " .. awesome.conffile, beautiful.icon_path.."categories/preferences-other.png" },
-    { "reload", awesome.restart, beautiful.icon_path.."actions/view-refresh.png" },
-    { "quit", function() awesome.quit() end, beautiful.icon_path.."actions/system-log-out.png" }
+    { "science", sciencemenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-science.png" },
+    { "system", systemmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-system.png" },
+    { "utilities", utilitiesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-utilities.png" },
+    { "filemanager", "/usr/bin/thunar", "/usr/share/icons/Adwaita/22x22/legacy/system-file-manager.png" },
+    { "terminal", terminal, "/usr/share/icons/Adwaita/22x22/legacy/utilities-terminal.png" },
+    { "configuration", editor_cmd .. " " .. awesome.conffile, "/usr/share/icons/Adwaita/22x22/legacy/preferences-other.png" },
+    { "reload", awesome.restart, "/usr/share/icons/Adwaita/22x22/legacy/view-refresh.png" },
+    { "quit", function() awesome.quit() end, "/usr/share/icons/Adwaita/22x22/legacy/system-log-out.png" }
   }
 })
