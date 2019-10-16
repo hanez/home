@@ -104,7 +104,6 @@ multimediamenu = {
     { "spotify", "/usr/bin/spotify", "/usr/share/pixmaps/spotify-client.png" },
     { "tvbrowser", "/usr/bin/tvbrowser", "/usr/share/icons/hicolor/48x48/apps/tvbrowser.png" },
     { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
-    { "xfce4 mixer", "/usr/bin/xfce4-mixer", "/usr/share/icons/Adwaita/48x48/apps/multimedia-volume-control.png" },
     { "youtube viewer", "/usr/bin/gtk-youtube-viewer", "/usr/share/pixmaps/gtk-youtube-viewer.png" },
 }
 networkmenu = {
