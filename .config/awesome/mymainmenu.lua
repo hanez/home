@@ -1,5 +1,4 @@
 accessoriesmenu = {
-    { "acrobat reader", "/usr/bin/acroread", "/usr/share/pixmaps/acroread.png" },
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
     { "dia", "/usr/bin/dia", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
     { "emacs", "/usr/bin/emacs", "/usr/share/icons/hicolor/scalable/apps/emacs.svg" },
@@ -7,7 +6,6 @@ accessoriesmenu = {
     { "epdfview", "/usr/bin/epdfview", "/usr/share/icons/hicolor/48x48/apps/epdfview.png" },
     { "freemind", "/usr/bin/freemind", "/usr/share/pixmaps/freemind.png" },
     { "gscriptor", "/usr/bin/gscriptor", "/usr/share/icons/hicolor/48x48/apps/gcr-smart-card.png" },
-    { "gtkman", "/usr/bin/gtkman", "/usr/share/icons/hicolor/scalable/apps/gtkman.svg" },
     { "gvim", "/usr/bin/gvim", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
     { "pdfshuffler", "/usr/bin/pdfshuffler", "/usr/share/pixmaps/pdfshuffler.png" },
     { "pluma", "/usr/bin/pluma", "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
@@ -19,14 +17,10 @@ communicationmenu = {
     { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
     { "clawsker", "/usr/bin/clawsker", "/usr/share/icons/hicolor/48x48/apps/clawsker.png" },
     { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
-    { "corebird", "/usr/bin/corebird", "/usr/share/icons/hicolor/48x48/apps/corebird.png" },
-    { "signal", "/usr/bin/signal-desktop", "/usr/share/icons/hicolor/48x48/apps/signal-desktop.png" },
 }
 dbmenu = {
     { "dbeaver", "/usr/bin/dbeaver", "/usr/share/pixmaps/dbeaver.xpm" },
     { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
-    { "orbada", "/usr/bin/orbada", "/opt/orbada/doc/html/docs/orbada32.png" },
-    { "sql workbench", "/usr/bin/sqlworkbench", "/usr/share/icons/hicolor/32x32/apps/workbench32.png" },
     { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
     { "umongo", "/usr/bin/umongo.sh", "/usr/share/pixmaps/umongo.png" },
 }
@@ -36,10 +30,8 @@ developmentmenu = {
     { "code", "/usr/bin/code", "/usr/share/pixmaps/code-oss.png" },
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/matefaenza/apps/48/codeblocks.png" },
     { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
-    { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/48x48/apps/eclipse.png" },
     { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
-    { "glade gtk2", "/usr/bin/glade-3", "/usr/share/icons/hicolor/48x48/apps/glade-3.png" },
-    { "glade gtk3", "/usr/bin/glade ", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
+    { "glade", "/usr/bin/glade ", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
     { "intellij", "/usr/bin/idea.sh", "/usr/share/pixmaps/idea.png" },
     { "kdevelop", "/usr/bin/kdevelop", "/usr/share/icons/hicolor/48x48/apps/kdevelop.png" },
     { "lazarus", "/usr/bin/lazarus", "/usr/lib/lazarus/images/ide_icon48x48.png" },
@@ -89,10 +81,8 @@ graphicsmenu = {
 hackingmenu = {
     { "cutter", "/usr/bin/Cutter", "/usr/share/icons/hicolor/scalable/apps/cutter.svg" },
     { "ghex", "/usr/bin/ghex ", "/usr/share/icons/matefaenza/apps/scalable/ghex.svg" },
-    { "hopper", "/opt/hopper-v4/bin/Hopper", "/opt/hopper-v4/doc/shared/HopperIcn.png" },
 }
 internetmenu = {
-    { "brave", "/usr/bin/brave", "/usr/share/pixmaps/brave.png" },
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
     { "chromium (incognito)", "/usr/bin/chromium --incognito", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
@@ -130,10 +120,6 @@ officemenu = {
     { "libreoffice math", "/usr/bin/libreoffice --math", "/usr/share/icons/hicolor/48x48/apps/libreoffice-math.png" },
     { "libreoffice writer", "/usr/bin/libreoffice --writer", "/usr/share/icons/hicolor/48x48/apps/libreoffice-writer.png" },
 }
-othermenu = {
-    { "apache directory studio", "/usr/bin/apachedirectorystudio", "/opt/ApacheDirectoryStudio/icon.xpm" },
-    { "soapui", "/usr/bin/soapui", "/usr/share/icons/hicolor/48x48/apps/soapui.png" },
-}
 privacymenu = {
     { "gnu privacy agent", "/usr/bin/gpa", "/usr/share/pixmaps/gpa.png" },
     { "keepassxc", "/usr/bin/keepassxc", "/usr/share/icons/hicolor/48x48/apps/keepassxc.png" },
@@ -152,22 +138,15 @@ sciencemenu = {
     { "stellarium", "/usr/bin/stellarium", "/usr/share/icons/hicolor/48x48/apps/stellarium.png" },
 }
 systemmenu = {
-    { "anydesk", "/usr/bin/anydesk", "/usr/share/icons/hicolor/48x48/apps/anydesk.png" },
     { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
     { "hardinfo", "/usr/bin/hardinfo", "/usr/share/icons/matefaenza/apps/scalable/hardinfo.svg" },
     { "partition manager", "/usr/bin/partitionmanager", "/usr/share/icons/hicolor/scalable/apps/partitionmanager.svg" },
     { "printer", "/usr/bin/system-config-printer", "/usr/share/icons/paper-vimix/scalable/devices/stock_printers.png" },
-    { "timeshift", "/usr/bin/timeshift-launcher", "/usr/share/icons/hicolor/48x48/apps/timeshift.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
-    --{ "vmware player", "/usr/bin/vmplayer", "/usr/share/icons/hicolor/48x48/apps/vmware-player.png" },
-    --{ "vmware workstation", "/usr/bin/vmware", "/usr/share/icons/hicolor/48x48/apps/vmware-workstation.png" },
 }
 utilitiesmenu = {
     { "arandr", "/usr/bin/arandr", "/usr/share/icons/hicolor/scalable/devices/video-television.svg" },
     { "appearance", "/usr/bin/lxappearance", "/usr/share/icons/Adwaita/48x48/categories/preferences-desktop.png" },
-    { "qsshfs", "/usr/bin/qsshfs", "/usr/share/icons/hicolor/32x32/apps/qsshfs.png" },
-    { "unetbootin", "/usr/bin/unetbootin", "/usr/share/icons/hicolor/48x48/apps/unetbootin.png" },
-    { "veracrypt", "/usr/bin/veracrypt", "/usr/share/pixmaps/veracrypt.xpm" },
 }
 mymainmenu = awful.menu({ items = { 
     { "accessories", accessoriesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-accessories.png" },
@@ -182,7 +161,6 @@ mymainmenu = awful.menu({ items = {
     { "network", networkmenu, "/usr/share/icons/Adwaita/22x22/legacy/network-wired-disconnected.png" },
     { "multimedia", multimediamenu, "/usr/share/icons/Adwaita/scalable/categories/applications-multimedia-symbolic.svg" },
     { "office", officemenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-office.png" },
-    { "other", othermenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-other.png" },
     { "privacy", privacymenu, "/usr/share/icons/Adwaita/22x22/legacy/preferences-desktop-personal.png" },
     { "radio", radiomenu, "/usr/share/icons/matefaenza/apps/48/radio.png" },
     { "science", sciencemenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-science.png" },
