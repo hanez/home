@@ -123,7 +123,8 @@ privacymenu = {
     { "gnu privacy agent", "/usr/bin/gpa", "/usr/share/pixmaps/gpa.png" },
     { "keepassxc", "/usr/bin/keepassxc", "/usr/share/icons/hicolor/48x48/apps/keepassxc.png" },
     { "kleopatra", "/usr/bin/kleopatra", "/usr/share/icons/hicolor/48x48/apps/kleopatra.png" },
-    { "seahorse", "/usr/bin/seahorse", "/usr/share/icons/hicolor/48x48/apps/seahorse.png" },
+    { "seahorse", "/usr/bin/seahorse", "/usr/share/icons/hicolor/scalable/apps/org.gnome.seahorse.Application.svg" },
+    { "zulucrypt", "/usr/bin/zuluCrypt-gui", "/usr/share/pixmaps/zuluCrypt.papirus.dark.png" },
 }
 radiomenu = {
     { "cubicsdr", "/usr/bin/cubicsdr", "/usr/share/cubicsdr/CubicSDR.png" },
