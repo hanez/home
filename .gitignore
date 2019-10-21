@@ -8,6 +8,7 @@
 !bin/artix.s!bin/alpine.sh
 !bin/arch.sh
 !bin/artix.sh
+!bin/blackarch.sh
 !bin/eagle.sh
 !bin/fdroid.sh
 !bin/forksync.sh
