@@ -5,8 +5,6 @@
 !bin/ac.sh
 !bin/alpine.sh
 !bin/arch.sh
-!bin/artix.s!bin/alpine.sh
-!bin/arch.sh
 !bin/artix.sh
 !bin/blackarch.sh
 !bin/eagle.sh
