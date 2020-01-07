@@ -1,4 +1,4 @@
-#!/bin/bash                                                                                                                                                                      
+#!/bin/bash
 
 acme.sh --cron --force --home /root/.acme.sh
 
@@ -9,4 +9,5 @@ for host in $(ls /etc/acme | tr '\n' ' '); do
 done
 
 /etc/init.d/lighttpd restart
+/etc/init.d/prosody restart
 
