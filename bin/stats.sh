@@ -33,7 +33,7 @@ generate_index() {
 	generate_index > "$output"/index.html
 #fi
 
-for type in hours days months top10 summary hsummary vsummary; do
+for type in hours days months summary hsummary vsummary; do
     vnstati --${type} -i $nic -o $output/${type}.png
 done
-
+vnstati --top 10 -i $nic -o $output/top10.png
