@@ -1,5 +1,5 @@
 # Extend my $PATH to $HOME/bin
-export PATH=$HOME/bin:$HOME/.gem/ruby/2.6.0/bin:$PATH
+export PATH=$HOME/bin:$HOME/.gem/ruby/2.6.0/bin:$HOME/.gem/ruby/2.7.0/bin:$PATH
 
 # Java Stuff
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
