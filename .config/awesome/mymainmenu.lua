@@ -144,6 +144,8 @@ systemmenu = {
     { "hardinfo", "/usr/bin/hardinfo", "/usr/share/icons/matefaenza/apps/scalable/hardinfo.svg" },
     { "partition manager", "/usr/bin/partitionmanager", "/usr/share/icons/hicolor/scalable/apps/partitionmanager.svg" },
     { "printer", "/usr/bin/system-config-printer", "/usr/share/icons/paper-vimix/scalable/devices/stock_printers.png" },
+    { "timeshift", "/usr/bin/timeshift-launcher", "/usr/share/icons/hicolor/48x48/apps/timeshift.png" },
+    { "virt-manager", "/usr/bin/virt-manager", "/usr/share/icons/hicolor/48x48/apps/virt-manager.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
 }
 utilitiesmenu = {
