@@ -1,5 +1,5 @@
 # Extend my $PATH to $HOME/bin
-export PATH=$HOME/bin:$HOME/.gem/ruby/2.6.0/bin:$PATH
+export PATH=$HOME/bin:$HOME/.gem/ruby/2.6.0/bin:$HOME/.gem/ruby/2.7.0/bin:$PATH
 
 # Java Stuff
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
@@ -121,10 +121,10 @@ alias gitp='git push'
 alias gits='git status'
 
 # SSH Host aliases
+alias a.systemchaos.org='ssh a.systemchaos.org'
 alias c.systemchaos.org='ssh c.systemchaos.org'
 alias d.systemchaos.org='ssh d.systemchaos.org'
 alias e.systemchaos.org='ssh e.systemchaos.org'
-alias x.systemchaos.org='ssh x.systemchaos.org'
 
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
