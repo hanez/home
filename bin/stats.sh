@@ -18,10 +18,9 @@ generate_index() {
 	<body style="background-color:#444">
 	    <div style="text-align:center">
 	        <div><img src="summary.png" alt="summary"></div>
-		<div><img src="hours.png" alt="hours"></div>
+            <div><img src="hours.png" alt="hours"></div>
 	        <div><img src="days.png" alt="days"></div>
 	        <div><img src="months.png" alt="months"></div>
-		<div><img src="top10.png" alt="top10"></div>
 	    </div>
 	</body>
 	</html>
