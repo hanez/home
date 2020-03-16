@@ -36,4 +36,3 @@ generate_index() {
 for type in hours days months summary hsummary vsummary; do
     vnstati --${type} -i $nic -o $output/${type}.png
 done
-vnstati --top 10 -i $nic -o $output/top10.png
