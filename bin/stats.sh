@@ -18,9 +18,13 @@ generate_index() {
 	<body style="background-color:#444">
 	    <div style="text-align:center">
 	        <div><img src="summary.png" alt="summary"></div>
+	        <div><img src="fiveminutes.png" alt="summary"></div>
             <div><img src="hours.png" alt="hours"></div>
+            <div><img src="hoursgraph.png" alt="hours"></div>
 	        <div><img src="days.png" alt="days"></div>
+	        <div><img src="top.png" alt="days"></div>
 	        <div><img src="months.png" alt="months"></div>
+	        <div><img src="years.png" alt="months"></div>
 	    </div>
 	</body>
 	</html>
@@ -32,6 +36,6 @@ generate_index() {
 	generate_index > "$output"/index.html
 #fi
 
-for type in hours days top months summary hsummary vsummary; do
+for type in fiveminutes hours hoursgraph days top months years summary hsummary vsummary; do
     vnstati --${type} -i $nic -o $output/${type}.png
 done
