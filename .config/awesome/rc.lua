@@ -295,11 +295,11 @@ globalkeys = gears.table.join(
                                           end),
     
     -- Disable xautolock (win+alt#y)
-    --awful.key({ modkey, "Mod1"    }, "y", function() awful.util.spawn("/usr/bin/killall xautolock") end),
-    awful.key({ modkey, "Mod1"    }, "y", function() awful.util.spawn("/usr/bin/xscreensaver-command -exit") end),
+    awful.key({ modkey, "Mod1"    }, "y", function() awful.util.spawn("/usr/bin/killall xautolock") end),
+    --awful.key({ modkey, "Mod1"    }, "y", function() awful.util.spawn("/usr/bin/xscreensaver-command -exit") end),
     -- Enable xautolock (win+alt#x)
-    --awful.key({ modkey, "Mod1"    }, "x", function() awful.util.spawn("/usr/bin/xautolock -locker slock -time 5") end),
-    awful.key({ modkey, "Mod1"    }, "x", function() awful.util.spawn("/usr/bin/xscreensaver") end),
+    awful.key({ modkey, "Mod1"    }, "x", function() awful.util.spawn("/usr/bin/xautolock -locker slock -time 5") end),
+    --awful.key({ modkey, "Mod1"    }, "x", function() awful.util.spawn("/usr/bin/xscreensaver") end),
 
     -- Some Application shortcuts
     awful.key({ modkey            }, "e", function() awful.util.spawn("/usr/bin/emulationstation") end),
