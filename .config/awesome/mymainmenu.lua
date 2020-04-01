@@ -1,13 +1,12 @@
 accessoriesmenu = {
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
-    { "dia", "/usr/bin/dia", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
+    { "dia", "/usr/bin/dia --integrated", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
     { "emacs", "/usr/bin/emacs", "/usr/share/icons/hicolor/scalable/apps/emacs.svg" },
     { "engrampa", "/usr/bin/engrampa", "/usr/share/icons/hicolor/32x32/apps/engrampa.png" },
     { "epdfview", "/usr/bin/epdfview", "/usr/share/icons/hicolor/48x48/apps/epdfview.png" },
     { "freemind", "/usr/bin/freemind", "/usr/share/pixmaps/freemind.png" },
     { "gscriptor", "/usr/bin/gscriptor", "/usr/share/icons/hicolor/48x48/apps/gcr-smart-card.png" },
     { "gvim", "/usr/bin/gvim", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
-    { "pdfshuffler", "/usr/bin/pdfshuffler", "/usr/share/pixmaps/pdfshuffler.png" },
     { "pluma", "/usr/bin/pluma", "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
     { "regexxer", "/usr/bin/regexxer", "/usr/share/icons/hicolor/48x48/apps/regexxer.png" },
     { "retext", "/usr/bin/retext", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
@@ -28,13 +27,13 @@ developmentmenu = {
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "bluegriffon", "/usr/bin/bluegriffon", "/usr/share/icons/hicolor/48x48/apps/bluegriffon.png" },
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/matefaenza/apps/48/codeblocks.png" },
-    { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
+    --{ "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
     { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
     { "glade", "/usr/bin/glade ", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
-    { "intellij", "/usr/bin/idea.sh", "/usr/share/pixmaps/idea.png" },
+    { "intellij", "/usr/bin/idea", "/usr/share/pixmaps/idea.png" },
     { "kdevelop", "/usr/bin/kdevelop", "/usr/share/icons/hicolor/48x48/apps/kdevelop.png" },
     { "lazarus", "/usr/bin/lazarus", "/usr/lib/lazarus/images/ide_icon48x48.png" },
-    --{ "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
+    { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
     { "netbeans", "/usr/bin/netbeans -J-Xmx4096m", "/usr/share/pixmaps/netbeans.png" },
     { "qgit", "/usr/bin/qgit", "/usr/share/icons/hicolor/48x48/apps/qgit.png" },
     { "qtcreator", "/usr/bin/qtcreator", "/usr/share/icons/hicolor/48x48/apps/QtProject-qtcreator.png" },
@@ -66,6 +65,7 @@ graphicsmenu = {
     { "aseprite", "/usr/bin/aseprite", "/usr/share/pixmaps/aseprite.png" },
     { "blender", "/usr/bin/blender", "/usr/share/icons/hicolor/48x48/apps/blender.png" },
     { "font manager", "/usr/bin/font-manager", "/usr/share/icons/gnome/48x48/apps/preferences-desktop-font.png" },
+    { "font viewer", "/usr/bin/gnome-font-viewer", "/usr/share/icons/gnome/48x48/apps/preferences-desktop-font.png" },
     { "gimp", "/usr/bin/gimp", "/usr/share/icons/hicolor/48x48/apps/gimp.png" },
     { "gpick", "/usr/bin/gpick", "/usr/share/icons/hicolor/48x48/apps/gpick.png" },
     { "image scan!", "/usr/bin/iscan", "/usr/share/icons/gnome/48x48/devices/scanner.png" },    
@@ -79,6 +79,7 @@ graphicsmenu = {
 }
 hackingmenu = {
     { "cutter", "/usr/bin/Cutter", "/usr/share/icons/hicolor/scalable/apps/cutter.svg" },
+    { "ghidra", "/usr/bin/ghidra", "" },
     { "ghex", "/usr/bin/ghex ", "/usr/share/icons/matefaenza/apps/scalable/ghex.svg" },
 }
 internetmenu = {
@@ -105,7 +106,6 @@ multimediamenu = {
     { "spotify", "/usr/bin/spotify", "/usr/share/pixmaps/spotify-client.png" },
     { "tvbrowser", "/usr/bin/tvbrowser", "/usr/share/icons/hicolor/48x48/apps/tvbrowser.png" },
     { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
-    { "youtube viewer", "/usr/bin/gtk-youtube-viewer", "/usr/share/pixmaps/gtk-youtube-viewer.png" },
 }
 networkmenu = {
     { "ettercap", "/usr/bin/ettercap -G", "/usr/share/pixmaps/ettercap.svg" },
