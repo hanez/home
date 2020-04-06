@@ -52,7 +52,6 @@ engineeringmenu = {
     { "openscad", "/usr/bin/openscad", "/usr/share/pixmaps/openscad.png" },
     { "processing", "/usr/bin/processing", "/usr/share/pixmaps/processing.png" },
     { "qcad", "/usr/bin/qcad", "/usr/share/pixmaps/qcad_icon.png" },
-    { "qucs", "/usr/bin/qucs", "/usr/share/icons/hicolor/48x48/apps/qucs.png" },
 }
 gamesmenu = {
     { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
