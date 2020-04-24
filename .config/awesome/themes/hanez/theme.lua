@@ -25,6 +25,7 @@ theme.border_marked = "#91231c"
 theme.icon_theme = "Adwaita"
 theme.icon_size = "22x22"
 theme.icon_path = "/usr/share/icons/"..theme.icon_theme.."/"..theme.icon_size.."/legacy/"
+theme.notification_icon_size = 100;
 
 -- There are other variable sets
 -- overriding the default one when
