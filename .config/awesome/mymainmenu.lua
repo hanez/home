@@ -133,8 +133,6 @@ radiomenu = {
     { "urh", "/usr/bin/urh", "/usr/share/pixmaps/urh.png" },
 }
 sciencemenu = {
-    { "cantor", "/usr/bin/cantor", "/usr/share/icons/hicolor/48x48/apps/cantor.png" },
-    { "octave", "/usr/bin/octave --force-gui", "/usr/share/icons/hicolor/48x48/apps/octave.png" },
     { "stellarium", "/usr/bin/stellarium", "/usr/share/icons/hicolor/48x48/apps/stellarium.png" },
 }
 systemmenu = {
