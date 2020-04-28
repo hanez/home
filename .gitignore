@@ -20,6 +20,7 @@
 !.config/awesome/**
 .config/awesome/private.lua
 
+!.p10k.zsh
 !.config/powerline
 !.config/powerline/**
 
