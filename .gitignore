@@ -20,6 +20,9 @@
 !.config/awesome/**
 .config/awesome/private.lua
 
+!.config/powerline
+!.config/powerline/**
+
 !.emulationstation
 !.emulationstation/es_systems.cfg
 
