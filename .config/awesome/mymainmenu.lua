@@ -1,7 +1,6 @@
 accessoriesmenu = {
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
     { "dia", "/usr/bin/dia --integrated", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
-    { "emacs", "/usr/bin/emacs", "/usr/share/icons/hicolor/scalable/apps/emacs.svg" },
     { "engrampa", "/usr/bin/engrampa", "/usr/share/icons/hicolor/32x32/apps/engrampa.png" },
     { "epdfview", "/usr/bin/epdfview", "/usr/share/icons/hicolor/48x48/apps/epdfview.png" },
     { "freemind", "/usr/bin/freemind", "/usr/share/pixmaps/freemind.png" },
