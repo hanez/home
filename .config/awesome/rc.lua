@@ -1,31 +1,28 @@
--- require $HOME/.config/awesome/private.lua for including variables that are different on 
--- my systems like private.thermal_zone or private.net_device; this makes sure that widgets
--- are displaying the right value... ;)
--- This file needs to exist. You need to explore this if you want to use my widget stuff!
-require("private")
-require("functions")
+-- require $HOME/.config/awesome/config.lua for including variables that are
+-- different on my systems like config.thermal_zone or config.net_device;
+-- this makes sure that widgets are displaying the right value... ;)
+-- This file needs to exist. You need to explore this if you want to use my
+-- widget stuff!
+local config = require("config")
+require("lib.functions")
 
--- Standard awesome library
 local gears = require("gears")
 awful = require("awful")
+awful.rules = require("awful.rules")
 require("awful.autofocus")
--- Widget and layout library
 local wibox = require("wibox")
--- Theme handling library
-beautiful = require("beautiful")
--- Notification library
+local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
-vicious = require("vicious")
+local vicious = require("vicious")
+local lain = require("lain")
 
-local hotkeys_popup = require("awful.hotkeys_popup").widget
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
+local hotkeys_popup = require("awful.hotkeys_popup").widget
 require("awful.hotkeys_popup.keys")
 
 -- {{{ Error handling
--- Check if awesome encountered an error during startup and fell back to
--- another config (This code will only ever execute for the fallback config)
 if awesome.startup_errors then
     naughty.notify({ preset = naughty.config.presets.critical,
                      title = "Oops, there were errors during startup!",
@@ -56,45 +53,40 @@ beautiful.init(os.getenv("HOME").."/.config/awesome/themes/hanez/theme.lua")
 -- ~/images/background.png and then this file will be used as wallpaper. No need
 -- to change the theme or this file for that... ;)
 name = os.getenv("HOME").."/.background.png"
-if file_exists(name) then 
-    beautiful.wallpaper = name  
+if file_exists(name) then
+    beautiful.wallpaper = name
 end
 
 -- This is used later as the default terminal and editor to run.
-terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange  -fa "'..private.font_xterm..'" -fs '..private.font_xterm_size 
+terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange  -fa "'..config.font_xterm..'" -fs '..config.font_xterm_size
 editor = "/usr/bin/vim"
 editor_cmd = terminal .. " -e " .. editor
 
--- Default modkey.
--- Usually, Mod4 is the key with a logo between Control and Alt.
--- If you do not like this or do not have such a key,
--- I suggest you to remap Mod4 to another key using xmodmap or other tools.
--- However, you can use another modifier like Mod1, but it may interact with others.
 modkey = "Mod4"
 
--- Autostart some programs defined in private.lua; Start them only once... ;)
-for i, program in ipairs(private.autostart) do
+-- Autostart some programs defined in config.lua; Start them only once... ;)
+for i, program in ipairs(config.autostart) do
     run_once(program)
 end
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
+    awful.layout.suit.fair,
+    awful.layout.suit.fair.horizontal,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
-    awful.layout.suit.floating,
-    awful.layout.suit.fair,
-    -- awful.layout.suit.fair.horizontal,
-    -- awful.layout.suit.spiral,
-    -- awful.layout.suit.spiral.dwindle,
+    --awful.layout.suit.spiral,
+    --awful.layout.suit.spiral.dwindle,
+    --awful.layout.suit.magnifier,
+    awful.layout.suit.corner.nw,
+    awful.layout.suit.corner.ne,
+    awful.layout.suit.corner.sw,
+    awful.layout.suit.corner.se,
     awful.layout.suit.max,
     awful.layout.suit.max.fullscreen,
-    -- awful.layout.suit.magnifier,
-    -- awful.layout.suit.corner.nw,
-    -- awful.layout.suit.corner.ne,
-    -- awful.layout.suit.corner.sw,
-    -- awful.layout.suit.corner.se,
+    awful.layout.suit.floating,
 }
 -- }}}
 
@@ -114,8 +106,8 @@ end
 -- }}}
 
 -- Include the mainmenu from external file to make customisation easier
-require("mymainmenu")
-mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon, menu = mymainmenu })
+local mainmenu = require("mainmenu")
+mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon, menu = mainmenu })
 
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
@@ -123,16 +115,16 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 
 -- {{{ Vicious widgets
 local batterywidget = wibox.widget.textbox()
-vicious.register(batterywidget, vicious.widgets.bat, "$1$2% / ", 20, private.battery)
+vicious.register(batterywidget, vicious.widgets.bat, "$1$2% / ", 20, config.battery)
 
 local netwidget = wibox.widget.textbox()
-vicious.register(netwidget, vicious.widgets.net, 
-'<span color="green">⇩${'..private.net_device..' down_kb}</span> / <span color="#C83321">${'..private.net_device..' up_kb}⇧</span> ', 1)
+vicious.register(netwidget, vicious.widgets.net,
+'<span color="green">⇩${'..config.net_device..' down_kb}</span> / <span color="#C83321">${'..config.net_device..' up_kb}⇧</span> ', 1)
 
 local thermalwidget  = wibox.widget.textbox()
-vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, private.thermal_zone )
+vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, config.thermal_zone )
 
-cpuwidget = awful.widget.graph()
+local cpuwidget = awful.widget.graph()
 cpuwidget:set_width(100)
 cpuwidget:set_background_color("#222222")
 cpuwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = { {0, "#FF5656"}, {0.5, "#88A175"}, {1, "#AECF96" }}})
@@ -141,7 +133,7 @@ vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
 -- {{{ Wibar
 -- Create a textclock widget
 --mytextclock = wibox.widget.textclock()
-mytextclock = awful.widget.textclock(" %a %b %d, %H:%M:%S ", 1)
+local mytextclock = awful.widget.textclock(" %a %b %d, %H:%M:%S ", 1)
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -254,7 +246,7 @@ end)
 
 -- {{{ Mouse bindings
 root.buttons(gears.table.join(
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
+    awful.button({ }, 3, function () mainmenu:toggle() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
 ))
@@ -263,145 +255,143 @@ root.buttons(gears.table.join(
 -- {{{ Key bindings
 globalkeys = gears.table.join(
 
-    --- CUSTOM STUFF
     -- Set backlight
-    awful.key({ modkey, "Mod1"    }, "1", function() awful.util.spawn("/usr/bin/xbacklight -set 10") end),
-    awful.key({ modkey, "Mod1"    }, "2", function() awful.util.spawn("/usr/bin/xbacklight -set 20") end),
-    awful.key({ modkey, "Mod1"    }, "3", function() awful.util.spawn("/usr/bin/xbacklight -set 30") end),
-    awful.key({ modkey, "Mod1"    }, "4", function() awful.util.spawn("/usr/bin/xbacklight -set 40") end),
-    awful.key({ modkey, "Mod1"    }, "5", function() awful.util.spawn("/usr/bin/xbacklight -set 50") end),
-    awful.key({ modkey, "Mod1"    }, "6", function() awful.util.spawn("/usr/bin/xbacklight -set 60") end),
-    awful.key({ modkey, "Mod1"    }, "7", function() awful.util.spawn("/usr/bin/xbacklight -set 70") end),
-    awful.key({ modkey, "Mod1"    }, "8", function() awful.util.spawn("/usr/bin/xbacklight -set 80") end),
-    awful.key({ modkey, "Mod1"    }, "9", function() awful.util.spawn("/usr/bin/xbacklight -set 90") end),
-    awful.key({ modkey, "Mod1"    }, "0", function() awful.util.spawn("/usr/bin/xbacklight -set 100") end),
-
+    awful.key({ modkey, "Mod1"    }, "1", function() awful.util.spawn("/usr/bin/xbacklight -set 10") end,
+              { description="set backlight", group="awesome" }),
+    awful.key({ modkey, "Mod1"    }, "2", function() awful.util.spawn("/usr/bin/xbacklight -set 20") end,
+              { description="set backlight", group="awesome" }),
+    awful.key({ modkey, "Mod1"    }, "3", function() awful.util.spawn("/usr/bin/xbacklight -set 30") end,
+              { description="set backlight", group="awesome" }),
+    awful.key({ modkey, "Mod1"    }, "4", function() awful.util.spawn("/usr/bin/xbacklight -set 40") end,
+              { description="set backlight", group="awesome" }),
+    awful.key({ modkey, "Mod1"    }, "5", function() awful.util.spawn("/usr/bin/xbacklight -set 50") end,
+              { description="set backlight", group="awesome" }),
+    awful.key({ modkey, "Mod1"    }, "6", function() awful.util.spawn("/usr/bin/xbacklight -set 60") end,
+              { description="set backlight", group="awesome" }),
+    awful.key({ modkey, "Mod1"    }, "7", function() awful.util.spawn("/usr/bin/xbacklight -set 70") end,
+              { description="set backlight", group="awesome" }),
+    awful.key({ modkey, "Mod1"    }, "8", function() awful.util.spawn("/usr/bin/xbacklight -set 80") end,
+              { description="set backlight", group="awesome" }),
+    awful.key({ modkey, "Mod1"    }, "9", function() awful.util.spawn("/usr/bin/xbacklight -set 90") end,
+              { description="set backlight", group="awesome" }),
+    awful.key({ modkey, "Mod1"    }, "0", function() awful.util.spawn("/usr/bin/xbacklight -set 100") end,
+              { description="set backlight", group="awesome" }),
     awful.key({ modkey, "Mod1"    }, "o", function()
-                                            local handle = io.popen("/usr/bin/xbacklight -get")
-                                            local result = handle:read("*a")
-                                            handle:close()
-                                            result = math.floor(result)
-                                            local newval = tonumber(result) - 5
-                                            awful.util.spawn("/usr/bin/xbacklight -set "..newval)
-                                          end),
-
+        local handle = io.popen("/usr/bin/xbacklight -get")
+        local result = handle:read("*a")
+        handle:close()
+        result = math.floor(result)
+        local newval = tonumber(result) - 5
+        awful.util.spawn("/usr/bin/xbacklight -set "..newval)
+        end,
+        { description="decrease backlight", group="awesome" }),
     awful.key({ modkey, "Mod1"    }, "p", function()
-                                            local handle = io.popen("/usr/bin/xbacklight -get")
-                                            local result = handle:read("*a")
-                                            handle:close()
-                                            result = math.floor(result)
-                                            local newval = tonumber(result) + 5
-                                            awful.util.spawn("/usr/bin/xbacklight -set "..newval)
-                                          end),
-    
-    -- Disable xautolock (win+alt#y)
-    awful.key({ modkey, "Mod1"    }, "y", function() awful.util.spawn("/usr/bin/killall xautolock") end),
-    --awful.key({ modkey, "Mod1"    }, "y", function() awful.util.spawn("/usr/bin/xscreensaver-command -exit") end),
-    -- Enable xautolock (win+alt#x)
-    awful.key({ modkey, "Mod1"    }, "x", function() awful.util.spawn("/usr/bin/xautolock -locker slock -time 5") end),
-    --awful.key({ modkey, "Mod1"    }, "x", function() awful.util.spawn("/usr/bin/xscreensaver") end),
-
+        local handle = io.popen("/usr/bin/xbacklight -get")
+        local result = handle:read("*a")
+        handle:close()
+        result = math.floor(result)
+        local newval = tonumber(result) + 5
+        awful.util.spawn("/usr/bin/xbacklight -set "..newval)
+        end,
+        { description="increase backlight", group="awesome" }),
+    awful.key({ modkey, "Mod1"    }, "y", function() awful.util.spawn("/usr/bin/killall xautolock") end,
+              { description="kill xautolock", group="awesome" }),
+    awful.key({ modkey, "Mod1"    }, "x", function() awful.util.spawn("/usr/bin/xautolock -locker slock -time 5") end,
+              { description="enable xautolock", group="awesome" }),
     -- Some Application shortcuts
-    awful.key({ modkey            }, "e", function() awful.util.spawn("/usr/bin/emulationstation") end),
-    awful.key({ modkey            }, "v", function() awful.util.spawn("/usr/bin/chromium") end),
-    awful.key({ modkey            }, "b", function() awful.util.spawn("/usr/bin/firefox") end),
-    awful.key({ modkey            }, "n", function() awful.util.spawn("/usr/bin/thunderbird") end),
-    awful.key({ modkey            }, "m", function() awful.util.spawn("/usr/bin/claws-mail") end),
-
-    awful.key({ modkey            }, "c", function()
-                                              awful.util.spawn(editor_cmd .. " " .. awesome.conffile) end),
-    awful.key({ modkey            }, "z", function()
-                                              awful.util.spawn(editor_cmd .. " " .. os.getenv("HOME") .. "/.zshrc") end),
-    awful.key({ modkey            }, "y", function() awful.util.spawn("/usr/bin/thunar") end),
+    awful.key({ modkey            }, "e", function() awful.util.spawn("/usr/bin/emulationstation") end,
+              { description="start emulationstation", group="awesome" }),
+    awful.key({ modkey            }, "v", function() awful.util.spawn("/usr/bin/chromium") end,
+              { description="start chromium", group="awesome" }),
+    awful.key({ modkey            }, "b", function() awful.util.spawn("/usr/bin/firefox") end,
+              { description="start firefox", group="awesome" }),
+    awful.key({ modkey            }, "n", function() awful.util.spawn("/usr/bin/thunderbird") end,
+              { description="start thunderbird", group="awesome" }),
+    awful.key({ modkey            }, "m", function() awful.util.spawn("/usr/bin/claws-mail") end,
+              { description="start claws-mail", group="awesome" }),
+    awful.key({ modkey            }, "c", function() awful.util.spawn(editor_cmd .. " " .. awesome.conffile) end,
+              { description="edit awesome configuration", group="awesome" }),
+    awful.key({ modkey            }, "z", function() awful.util.spawn(editor_cmd .. " " .. os.getenv("HOME") .. "/.zshrc") end,
+              { description="edit zsh configuration", group="awesome" }),
+    awful.key({ modkey            }, "y", function() awful.util.spawn("/usr/bin/thunar") end,
+              { description="start thunar", group="awesome"}),
     awful.key({ modkey,           }, "u", function() awful.util.spawn("/usr/bin/xdotool click 2") end),
     --awful.key({ modkey, "Mod1"    }, "space", function() awful.util.spawn("/usr/bin/xdotool click 2") end),
 
-    -- Lock screen
-    awful.key({ modkey, "Shift"   }, "Return", function () awful.util.spawn("/usr/bin/slock") end),
-    --- END CUSTOM STUFF
-
-    awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
-              {description="show help", group="awesome"}),
-    awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
-              {description = "view previous", group = "tag"}),
-    awful.key({ modkey,           }, "Right",  awful.tag.viewnext,
-              {description = "view next", group = "tag"}),
+    awful.key({ modkey, "Shift"   }, "Return", function () awful.util.spawn("/usr/bin/slock") end,
+              { description="lock screen", group="awesome"}),
+    awful.key({ modkey,           }, "s", hotkeys_popup.show_help,
+              { description="show help", group="awesome"}),
+    awful.key({ modkey,           }, "Left", awful.tag.viewprev,
+              { description="view previous", group = "tag"}),
+    awful.key({ modkey,           }, "Right", awful.tag.viewnext,
+              { description= "view next", group = "tag"}),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore,
-              {description = "go back", group = "tag"}),
+              { description= "go back", group = "tag"}),
 
-    awful.key({ modkey,           }, "j",
-        function ()
-            awful.client.focus.byidx( 1)
-        end,
-        {description = "focus next by index", group = "client"}
-    ),
-    awful.key({ modkey,           }, "k",
-        function ()
-            awful.client.focus.byidx(-1)
-        end,
-        {description = "focus previous by index", group = "client"}
-    ),
+    awful.key({ modkey,           }, "j", function () awful.client.focus.byidx(1) end,
+              { description = "focus next by index", group = "client"}),
+    awful.key({ modkey,           }, "k", function () awful.client.focus.byidx(-1) end,
+              { description = "focus previous by index", group = "client"}),
     awful.key({ modkey,           }, "w", function () mymainmenu:show() end,
-              {description = "show main menu", group = "awesome"}),
+              { description = "show main menu", group = "awesome"}),
 
     -- Layout manipulation
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
-              {description = "swap with next client by index", group = "client"}),
+              { description = "swap with next client by index", group = "client"}),
     awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end,
-              {description = "swap with previous client by index", group = "client"}),
+              { description = "swap with previous client by index", group = "client"}),
     awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
-              {description = "focus the next screen", group = "screen"}),
+              { description = "focus the next screen", group = "screen"}),
     awful.key({ modkey, "Control" }, "k", function () awful.screen.focus_relative(-1) end,
-              {description = "focus the previous screen", group = "screen"}),
+              { description = "focus the previous screen", group = "screen"}),
     awful.key({ modkey,           }, "u", awful.client.urgent.jumpto,
-              {description = "jump to urgent client", group = "client"}),
-    awful.key({ modkey,           }, "Tab",
-        function ()
-            awful.client.focus.history.previous()
+              { description = "jump to urgent client", group = "client"}),
+    awful.key({ modkey,           }, "Tab", function ()
+        awful.client.focus.history.previous()
             if client.focus then
                 client.focus:raise()
             end
         end,
-        {description = "go back", group = "client"}),
+        { description = "go back", group = "client"}),
 
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
-              {description = "open a terminal", group = "launcher"}),
+              { description = "open a terminal", group = "launcher"}),
     awful.key({ modkey, "Control" }, "r", awesome.restart,
-              {description = "reload awesome", group = "awesome"}),
+              { description = "reload awesome", group = "awesome"}),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit,
-              {description = "quit awesome", group = "awesome"}),
+              { description = "quit awesome", group = "awesome"}),
 
-    awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
-              {description = "increase master width factor", group = "layout"}),
-    awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)          end,
-              {description = "decrease master width factor", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1, nil, true) end,
-              {description = "increase the number of master clients", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "l",     function () awful.tag.incnmaster(-1, nil, true) end,
-              {description = "decrease the number of master clients", group = "layout"}),
-    awful.key({ modkey, "Control" }, "h",     function () awful.tag.incncol( 1, nil, true)    end,
-              {description = "increase the number of columns", group = "layout"}),
-    awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1, nil, true)    end,
-              {description = "decrease the number of columns", group = "layout"}),
-    awful.key({ modkey,           }, "space", function () awful.layout.inc( 1)                end,
-              {description = "select next", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
-              {description = "select previous", group = "layout"}),
+    awful.key({ modkey,           }, "l", function () awful.tag.incmwfact( 0.05) end,
+              { description = "increase master width factor", group = "layout"}),
+    awful.key({ modkey,           }, "h", function () awful.tag.incmwfact(-0.05) end,
+              { description = "decrease master width factor", group = "layout"}),
+    awful.key({ modkey, "Shift"   }, "h", function () awful.tag.incnmaster( 1, nil, true) end,
+              { description = "increase the number of master clients", group = "layout"}),
+    awful.key({ modkey, "Shift"   }, "l", function () awful.tag.incnmaster(-1, nil, true) end,
+              { description = "decrease the number of master clients", group = "layout"}),
+    awful.key({ modkey, "Control" }, "h", function () awful.tag.incncol( 1, nil, true) end,
+              { description = "increase the number of columns", group = "layout"}),
+    awful.key({ modkey, "Control" }, "l", function () awful.tag.incncol(-1, nil, true) end,
+              { description = "decrease the number of columns", group = "layout"}),
+    awful.key({ modkey,           }, "space", function () awful.layout.inc(1) end,
+              { description = "select next", group = "layout"}),
+    awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1) end,
+              { description = "select previous", group = "layout"}),
 
-    awful.key({ modkey, "Control" }, "n",
-              function ()
-                  local c = awful.client.restore()
-                  -- Focus restored client
-                  if c then
-                      client.focus = c
-                      c:raise()
-                  end
-              end,
-              {description = "restore minimized", group = "client"}),
+    awful.key({ modkey, "Control" }, "n", function ()
+        local c = awful.client.restore()
+        -- Focus restored client
+        if c then
+            client.focus = c
+            c:raise()
+        end
+        end,
+        { description = "restore minimized", group = "client"}),
 
     -- Prompt
-    awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
+    awful.key({ modkey },            "r", function () awful.screen.focused().mypromptbox:run() end,
               {description = "run prompt", group = "launcher"}),
 
     awful.key({ modkey }, "x",
@@ -426,15 +416,15 @@ clientkeys = gears.table.join(
             c:raise()
         end,
         {description = "toggle fullscreen", group = "client"}),
-    awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end,
+    awful.key({ modkey, "Shift"   }, "c", function (c) c:kill() end,
               {description = "close", group = "client"}),
-    awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ,
+    awful.key({ modkey, "Control" }, "space", awful.client.floating.toggle,
               {description = "toggle floating", group = "client"}),
     awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end,
               {description = "move to master", group = "client"}),
-    awful.key({ modkey,           }, "o",      function (c) c:move_to_screen()               end,
+    awful.key({ modkey,           }, "o", function (c) c:move_to_screen() end,
               {description = "move to screen", group = "client"}),
-    awful.key({ modkey,           }, "t",      function (c) c.ontop = not c.ontop            end,
+    awful.key({ modkey,           }, "t", function (c) c.ontop = not c.ontop end,
               {description = "toggle keep on top", group = "client"}),
     awful.key({ modkey,           }, "n",
         function (c)
@@ -566,7 +556,7 @@ awful.rules.rules = {
 
     -- Add titlebars to normal clients and dialogs
     { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = private.titlebars_enabled }
+      }, properties = { titlebars_enabled = config.titlebars_enabled }
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
