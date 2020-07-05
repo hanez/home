@@ -7,6 +7,9 @@ config.font_awesome_size = "9"
 config.font_xterm = "Source Code Pro"
 config.font_xterm_size = "10"
 config.titlebars_enabled = "true"
+config.cityid = "2810284" -- (Westerland, DE)
+config.quake_width = 1024
+config.quake_height = 768
 config.autostart = {
     --"kalu",
     --"amor",
@@ -20,7 +23,7 @@ config.autostart = {
     "pamac-tray",
     --"/bin/bash /home/hanez/bin/steam.sh",
     "redshift",
-    "pidgin",
+    --"pidgin",
     "claws-mail",
     "blueman-applet",
     --"virt-manager",

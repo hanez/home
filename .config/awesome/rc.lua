@@ -225,8 +225,8 @@ awful.screen.connect_for_each_screen(function(s)
     -- Quake application
     s.quake = lain.util.quake({ app = terminal })
     s.quake.horiz = "center"
-    s.quake.width = 1024
-    s.quake.height = 768
+    s.quake.width = config.quake_width
+    s.quake.height = config.quake_height
 
     -- Wallpaper
     set_wallpaper(s)
