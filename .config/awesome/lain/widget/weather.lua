@@ -137,7 +137,7 @@ local function factory(args)
         end)
     end
 
-    if showpopup == "on" then weather.attach(weather.widget) end
+    if showpopup == "on" then weather.attach(weather.widget)  end
 
     weather.timer = helpers.newtimer("weather-" .. city_id, timeout, weather.update, false, true)
     weather.timer_forecast = helpers.newtimer("weather_forecast-" .. city_id, timeout, weather.forecast_update, false, true)
