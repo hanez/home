@@ -6,6 +6,8 @@
 local config = require("config")
 require("lib.functions")
 
+--local math, string, os = math, string, os
+
 local gears = require("gears")
 awful = require("awful")
 awful.rules = require("awful.rules")
@@ -16,6 +18,7 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 local vicious = require("vicious")
 local lain = require("lain")
+--local vain = require("vain")
 
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
@@ -50,8 +53,8 @@ end
 beautiful.init(os.getenv("HOME").."/.config/awesome/themes/hanez/theme.lua")
 
 -- To override the wallpaper provided by the theme you can just add a file named
--- ~/images/background.png and then this file will be used as wallpaper. No need
--- to change the theme or this file for that... ;)
+-- ~/.background.png and then this file will be used as wallpaper. No need
+-- to change the theme or this file for that... Even symlinks are working ;)
 name = os.getenv("HOME").."/.background.png"
 if file_exists(name) then
     beautiful.wallpaper = name
@@ -62,7 +65,10 @@ terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange  
 editor = "/usr/bin/vim"
 editor_cmd = terminal .. " -e " .. editor
 
-modkey = "Mod4"
+awful.util.terminal = terminal
+
+local modkey = "Mod4"
+local altkey = "Mod1"
 
 -- Autostart some programs defined in config.lua; Start them only once... ;)
 for i, program in ipairs(config.autostart) do
@@ -72,21 +78,27 @@ end
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
+    --awful.layout.suit.fair.horizontal,
+    lain.layout.centerwork,
+    --lain.layout.centerwork.horizontal,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
+    --awful.layout.suit.tile.bottom,
+    --awful.layout.suit.tile.top,
     --awful.layout.suit.spiral,
     --awful.layout.suit.spiral.dwindle,
     --awful.layout.suit.magnifier,
-    awful.layout.suit.corner.nw,
-    awful.layout.suit.corner.ne,
+    --awful.layout.suit.corner.nw,
+    --awful.layout.suit.corner.ne,
     awful.layout.suit.corner.sw,
-    awful.layout.suit.corner.se,
+    --awful.layout.suit.corner.se,
     awful.layout.suit.max,
     awful.layout.suit.max.fullscreen,
     awful.layout.suit.floating,
+    --lain.layout.cascade,
+    --lain.layout.cascade.tile,
+    --lain.layout.termfair,
+    --lain.layout.termfair.center,
 }
 -- }}}
 
@@ -123,6 +135,20 @@ vicious.register(netwidget, vicious.widgets.net,
 
 local thermalwidget  = wibox.widget.textbox()
 vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, config.thermal_zone )
+
+local myweather = lain.widget.weather({
+    city_id = config.cityid,
+    notification_preset = { font = beautiful.font },
+    notification_text_fun = function (wn)
+                                local day = os.date("%a %d", wn["dt"])
+                                local tmin = math.floor(wn["temp"]["min"])
+                                local tmax = math.floor(wn["temp"]["max"])
+                                local desc = wn["weather"][1]["description"]
+                            return string.format("<b>%s</b>: %s, %d°C/%d°C ", day, desc, tmin, tmax)
+    end,
+
+})
+myweather.attach(myweather.icon)
 
 local cpuwidget = awful.widget.graph()
 cpuwidget:set_width(100)
@@ -195,6 +221,13 @@ end
 screen.connect_signal("property::geometry", set_wallpaper)
 
 awful.screen.connect_for_each_screen(function(s)
+
+    -- Quake application
+    s.quake = lain.util.quake({ app = terminal })
+    s.quake.horiz = "center"
+    s.quake.width = 1024
+    s.quake.height = 768
+
     -- Wallpaper
     set_wallpaper(s)
 
@@ -236,6 +269,7 @@ awful.screen.connect_for_each_screen(function(s)
             cpuwidget,
             batterywidget,
             thermalwidget,
+            myweather.icon,
             wibox.widget.systray(),
             mytextclock,
             s.mylayoutbox,
@@ -255,28 +289,33 @@ root.buttons(gears.table.join(
 -- {{{ Key bindings
 globalkeys = gears.table.join(
 
+    -- Dropdown application
+    awful.key({ modkey,           }, "q", function () awful.screen.focused().quake:toggle() end,
+              {description = "dropdown application", group = "launcher"}),
+
     -- Set backlight
-    awful.key({ modkey, "Mod1"    }, "1", function() awful.util.spawn("/usr/bin/xbacklight -set 10") end,
+    awful.key({ modkey,           }, "1", function() awful.util.spawn("/usr/bin/xbacklight -set 10") end,
               { description="set backlight", group="awesome" }),
-    awful.key({ modkey, "Mod1"    }, "2", function() awful.util.spawn("/usr/bin/xbacklight -set 20") end,
+    awful.key({ modkey,           }, "2", function() awful.util.spawn("/usr/bin/xbacklight -set 20") end,
               { description="set backlight", group="awesome" }),
-    awful.key({ modkey, "Mod1"    }, "3", function() awful.util.spawn("/usr/bin/xbacklight -set 30") end,
+    awful.key({ modkey,           }, "3", function() awful.util.spawn("/usr/bin/xbacklight -set 30") end,
               { description="set backlight", group="awesome" }),
-    awful.key({ modkey, "Mod1"    }, "4", function() awful.util.spawn("/usr/bin/xbacklight -set 40") end,
+    awful.key({ modkey,           }, "4", function() awful.util.spawn("/usr/bin/xbacklight -set 40") end,
               { description="set backlight", group="awesome" }),
-    awful.key({ modkey, "Mod1"    }, "5", function() awful.util.spawn("/usr/bin/xbacklight -set 50") end,
+    awful.key({ modkey,           }, "5", function() awful.util.spawn("/usr/bin/xbacklight -set 50") end,
               { description="set backlight", group="awesome" }),
-    awful.key({ modkey, "Mod1"    }, "6", function() awful.util.spawn("/usr/bin/xbacklight -set 60") end,
+    awful.key({ modkey,           }, "6", function() awful.util.spawn("/usr/bin/xbacklight -set 60") end,
               { description="set backlight", group="awesome" }),
-    awful.key({ modkey, "Mod1"    }, "7", function() awful.util.spawn("/usr/bin/xbacklight -set 70") end,
+    awful.key({ modkey,           }, "7", function() awful.util.spawn("/usr/bin/xbacklight -set 70") end,
               { description="set backlight", group="awesome" }),
-    awful.key({ modkey, "Mod1"    }, "8", function() awful.util.spawn("/usr/bin/xbacklight -set 80") end,
+    awful.key({ modkey,           }, "8", function() awful.util.spawn("/usr/bin/xbacklight -set 80") end,
               { description="set backlight", group="awesome" }),
-    awful.key({ modkey, "Mod1"    }, "9", function() awful.util.spawn("/usr/bin/xbacklight -set 90") end,
+    awful.key({ modkey,           }, "9", function() awful.util.spawn("/usr/bin/xbacklight -set 90") end,
               { description="set backlight", group="awesome" }),
-    awful.key({ modkey, "Mod1"    }, "0", function() awful.util.spawn("/usr/bin/xbacklight -set 100") end,
+    awful.key({ modkey,           }, "0", function() awful.util.spawn("/usr/bin/xbacklight -set 100") end,
               { description="set backlight", group="awesome" }),
-    awful.key({ modkey, "Mod1"    }, "o", function()
+
+    awful.key({ modkey,           }, "o", function()
         local handle = io.popen("/usr/bin/xbacklight -get")
         local result = handle:read("*a")
         handle:close()
@@ -285,7 +324,7 @@ globalkeys = gears.table.join(
         awful.util.spawn("/usr/bin/xbacklight -set "..newval)
         end,
         { description="decrease backlight", group="awesome" }),
-    awful.key({ modkey, "Mod1"    }, "p", function()
+    awful.key({ modkey,           }, "p", function()
         local handle = io.popen("/usr/bin/xbacklight -get")
         local result = handle:read("*a")
         handle:close()
@@ -294,10 +333,11 @@ globalkeys = gears.table.join(
         awful.util.spawn("/usr/bin/xbacklight -set "..newval)
         end,
         { description="increase backlight", group="awesome" }),
-    awful.key({ modkey, "Mod1"    }, "y", function() awful.util.spawn("/usr/bin/killall xautolock") end,
+    awful.key({ modkey, altkey    }, "y", function() awful.util.spawn("/usr/bin/killall xautolock") end,
               { description="kill xautolock", group="awesome" }),
-    awful.key({ modkey, "Mod1"    }, "x", function() awful.util.spawn("/usr/bin/xautolock -locker slock -time 5") end,
+    awful.key({ modkey, altkey    }, "x", function() awful.util.spawn("/usr/bin/xautolock -locker slock -time 5") end,
               { description="enable xautolock", group="awesome" }),
+
     -- Some Application shortcuts
     awful.key({ modkey            }, "e", function() awful.util.spawn("/usr/bin/emulationstation") end,
               { description="start emulationstation", group="awesome" }),
@@ -316,10 +356,18 @@ globalkeys = gears.table.join(
     awful.key({ modkey            }, "y", function() awful.util.spawn("/usr/bin/thunar") end,
               { description="start thunar", group="awesome"}),
     awful.key({ modkey,           }, "u", function() awful.util.spawn("/usr/bin/xdotool click 2") end),
-    --awful.key({ modkey, "Mod1"    }, "space", function() awful.util.spawn("/usr/bin/xdotool click 2") end),
+    --awful.key({ modkey, altkey    }, "space", function() awful.util.spawn("/usr/bin/xdotool click 2") end),
 
     awful.key({ modkey, "Shift"   }, "Return", function () awful.util.spawn("/usr/bin/slock") end,
               { description="lock screen", group="awesome"}),
+
+    -- Copy primary to clipboard (terminals to gtk)
+    awful.key({ modkey, altkey    }, "c", function () awful.spawn.with_shell("xsel | xsel -i -b") end,
+              {description = "copy terminal to gtk", group = "hotkeys"}),
+    -- Copy clipboard to primary (gtk to terminals)
+    awful.key({ modkey, altkey    }, "v", function () awful.spawn.with_shell("xsel -b | xsel") end,
+              {description = "copy gtk to terminal", group = "hotkeys"}),
+
     awful.key({ modkey,           }, "s", hotkeys_popup.show_help,
               { description="show help", group="awesome"}),
     awful.key({ modkey,           }, "Left", awful.tag.viewprev,
