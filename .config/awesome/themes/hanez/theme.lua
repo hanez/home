@@ -1,31 +1,33 @@
--------------------------
--- Hanez awesome theme --
--------------------------
+--------------------------
+-- Hanez' Awesome theme --
+--------------------------
 theme = {}
 
-theme.font          = private.font_awesome.." "..private.font_awesome_size
+theme.font = config.font_awesome.." "..config.font_awesome_size
 
-theme.bg_normal     = "#222222"
-theme.bg_focus      = "#222222"
-theme.bg_urgent     = "#ff0000"
-theme.bg_minimize   = "#444444"
-theme.bg_systray    = theme.bg_normal
+theme.bg_normal   = "#222222"
+theme.bg_focus    = "#222222"
+theme.bg_urgent   = "#ff0000"
+theme.bg_minimize = "#444444"
+theme.bg_systray  = theme.bg_normal
 
-theme.fg_normal     = "#aaaaaa"
-theme.fg_focus      = "#ffa500"
-theme.fg_urgent     = "#ffffff"
-theme.fg_minimize   = "#ffffff"
+theme.fg_normal   = "#aaaaaa"
+theme.fg_focus    = "#ffa500"
+theme.fg_urgent   = "#ffffff"
+theme.fg_minimize = "#ffffff"
 
 theme.border_width  = 1
 theme.border_normal = "#000000"
 theme.border_focus  = "#e95421"
 theme.border_marked = "#91231c"
 
--- Set the icon theme and size
-theme.icon_theme = "Adwaita"
-theme.icon_size = "22x22"
-theme.icon_path = "/usr/share/icons/"..theme.icon_theme.."/"..theme.icon_size.."/legacy/"
+theme.icon_theme    = "Adwaita"
+theme.icon_size     = "22x22"
+theme.icon_path     = "/usr/share/icons/"..theme.icon_theme.."/"..theme.icon_size.."/legacy/"
 theme.notification_icon_size = 100;
+
+theme.wallpaper    = os.getenv("HOME").."/.config/awesome/themes/hanez/31c3-saal-3.jpg"
+theme.awesome_icon = os.getenv("HOME").."/.config/awesome/themes/hanez/awesome.png"
 
 -- There are other variable sets
 -- overriding the default one when
@@ -38,67 +40,58 @@ theme.notification_icon_size = 100;
 -- Example:
 --theme.taglist_bg_focus = "#ff0000"
 
--- Display the taglist squares
-theme.taglist_squares_sel   = "~/.config/awesome/themes/hanez/taglist/squarefw.png"
-theme.taglist_squares_unsel = "~/.config/awesome/themes/hanez/taglist/squarew.png"
+theme.taglist_squares_sel   = os.getenv("HOME").."/.config/awesome/themes/hanez/taglist/squarefw.png"
+theme.taglist_squares_unsel = os.getenv("HOME").."/.config/awesome/themes/hanez/taglist/squarew.png"
 
--- Variables set for theming the menu:
 -- theme.menu_bg_normal = "#000000"
-theme.menu_bg_focus = "#F0544C"
+theme.menu_bg_focus     = "#F0544C"
 -- theme.menu_fg_normal =
-theme.menu_fg_focus = "#222222" 
+theme.menu_fg_focus     = "#222222"
 -- theme.menu_border_color = "#e95421"
 -- theme.menu_border_width = 1
 theme.menu_submenu_icon = theme.icon_path.."actions/media-playback-start.png"
-theme.menu_height = 22
-theme.menu_width  = 182
+theme.menu_height       = 22
+theme.menu_width        = 182
 
 -- You can add as many variables as
 -- you wish and access them by using
 -- beautiful.variable in your rc.lua
 --theme.bg_widget = "#cc0000"
+theme.titlebar_bg                               = "#1d224b"
+theme.titlebar_close_button_normal              = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/close_normal.png"
+theme.titlebar_close_button_focus               = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/close_focus.png"
+theme.titlebar_ontop_button_normal_inactive     = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/ontop_normal_inactive.png"
+theme.titlebar_ontop_button_focus_inactive      = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/ontop_focus_inactive.png"
+theme.titlebar_ontop_button_normal_active       = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/ontop_normal_active.png"
+theme.titlebar_ontop_button_focus_active        = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/ontop_focus_active.png"
+theme.titlebar_sticky_button_normal_inactive    = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/sticky_normal_inactive.png"
+theme.titlebar_sticky_button_focus_inactive     = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/sticky_focus_inactive.png"
+theme.titlebar_sticky_button_normal_active      = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/sticky_normal_active.png"
+theme.titlebar_sticky_button_focus_active       = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/sticky_focus_active.png"
+theme.titlebar_floating_button_normal_inactive  = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/floating_normal_inactive.png"
+theme.titlebar_floating_button_focus_inactive   = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/floating_focus_inactive.png"
+theme.titlebar_floating_button_normal_active    = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/floating_normal_active.png"
+theme.titlebar_floating_button_focus_active     = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/floating_focus_active.png"
+theme.titlebar_maximized_button_normal_inactive = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/maximized_normal_inactive.png"
+theme.titlebar_maximized_button_focus_inactive  = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/maximized_focus_inactive.png"
+theme.titlebar_maximized_button_normal_active   = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/maximized_normal_active.png"
+theme.titlebar_maximized_button_focus_active    = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/maximized_focus_active.png"
 
--- Define the image to load
-theme.titlebar_close_button_normal = "~/.config/awesome/themes/hanez/titlebar/close_normal.png"
-theme.titlebar_close_button_focus  = "~/.config/awesome/themes/hanez/titlebar/close_focus.png"
-
-theme.titlebar_ontop_button_normal_inactive = "~/.config/awesome/themes/hanez/titlebar/ontop_normal_inactive.png"
-theme.titlebar_ontop_button_focus_inactive  = "~/.config/awesome/themes/hanez/titlebar/ontop_focus_inactive.png"
-theme.titlebar_ontop_button_normal_active = "~/.config/awesome/themes/hanez/titlebar/ontop_normal_active.png"
-theme.titlebar_ontop_button_focus_active  = "~/.config/awesome/themes/hanez/titlebar/ontop_focus_active.png"
-
-theme.titlebar_sticky_button_normal_inactive = "~/.config/awesome/themes/hanez/titlebar/sticky_normal_inactive.png"
-theme.titlebar_sticky_button_focus_inactive  = "~/.config/awesome/themes/hanez/titlebar/sticky_focus_inactive.png"
-theme.titlebar_sticky_button_normal_active = "~/.config/awesome/themes/hanez/titlebar/sticky_normal_active.png"
-theme.titlebar_sticky_button_focus_active  = "~/.config/awesome/themes/hanez/titlebar/sticky_focus_active.png"
-
-theme.titlebar_floating_button_normal_inactive = "~/.config/awesome/themes/hanez/titlebar/floating_normal_inactive.png"
-theme.titlebar_floating_button_focus_inactive  = "~/.config/awesome/themes/hanez/titlebar/floating_focus_inactive.png"
-theme.titlebar_floating_button_normal_active = "~/.config/awesome/themes/hanez/titlebar/floating_normal_active.png"
-theme.titlebar_floating_button_focus_active  = "~/.config/awesome/themes/hanez/titlebar/floating_focus_active.png"
-
-theme.titlebar_maximized_button_normal_inactive = "~/.config/awesome/themes/hanez/titlebar/maximized_normal_inactive.png"
-theme.titlebar_maximized_button_focus_inactive  = "~/.config/awesome/themes/hanez/titlebar/maximized_focus_inactive.png"
-theme.titlebar_maximized_button_normal_active = "~/.config/awesome/themes/hanez/titlebar/maximized_normal_active.png"
-theme.titlebar_maximized_button_focus_active  = "~/.config/awesome/themes/hanez/titlebar/maximized_focus_active.png"
-
-theme.wallpaper = "~/.config/awesome/themes/hanez/31c3-saal-3.jpg"
-
--- You can use your own layout icons like this:
-theme.layout_fairh = "~/.config/awesome/themes/hanez/layouts/fairhw.png"
-theme.layout_fairv = "~/.config/awesome/themes/hanez/layouts/fairvw.png"
-theme.layout_floating  = "~/.config/awesome/themes/hanez/layouts/floatingw.png"
-theme.layout_magnifier = "~/.config/awesome/themes/hanez/layouts/magnifierw.png"
-theme.layout_max = "~/.config/awesome/themes/hanez/layouts/maxw.png"
-theme.layout_fullscreen = "~/.config/awesome/themes/hanez/layouts/fullscreenw.png"
-theme.layout_tilebottom = "~/.config/awesome/themes/hanez/layouts/tilebottomw.png"
-theme.layout_tileleft   = "~/.config/awesome/themes/hanez/layouts/tileleftw.png"
-theme.layout_tile = "~/.config/awesome/themes/hanez/layouts/tilew.png"
-theme.layout_tiletop = "~/.config/awesome/themes/hanez/layouts/tiletopw.png"
-theme.layout_spiral  = "~/.config/awesome/themes/hanez/layouts/spiralw.png"
-theme.layout_dwindle = "~/.config/awesome/themes/hanez/layouts/dwindlew.png"
-
-theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
+theme.layout_fairh      = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/fairh.png"
+theme.layout_fairv      = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/fairv.png"
+theme.layout_floating   = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/floating.png"
+theme.layout_magnifier  = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/magnifier.png"
+theme.layout_max        = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/max.png"
+theme.layout_fullscreen = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/fullscreen.png"
+theme.layout_tilebottom = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/tilebottom.png"
+theme.layout_tileleft   = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/tileleft.png"
+theme.layout_tile       = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/tile.png"
+theme.layout_tiletop    = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/tiletop.png"
+theme.layout_spiral     = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/spiral.png"
+theme.layout_dwindle    = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/dwindle.png"
+theme.layout_cornernw   = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/cornernw.png"
+theme.layout_cornerne   = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/cornerne.png"
+theme.layout_cornersw   = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/cornersw.png"
+theme.layout_cornerse   = os.getenv("HOME").."/.config/awesome/themes/hanez/layouts/cornerse.png"
 
 return theme
--- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80
