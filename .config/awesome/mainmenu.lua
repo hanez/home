@@ -101,7 +101,7 @@ multimediamenu = {
     { "k3b", "/usr/bin/k3b", "/usr/share/icons/hicolor/48x48/apps/k3b.png" },
     { "k9copy", "/usr/bin/k9copy", "/usr/share/icons/hicolor/48x48/actions/k9copy.png" },
     { "kaffeine", "/usr/bin/kaffeine", "/usr/share/icons/hicolor/scalable/apps/kaffeine.svg" },
-    { "mediathek", "/usr/bin/mediathek", "/usr/share/pixmaps/MediathekView.svg" },
+    { "mediathekview", "/usr/bin/mediathekview", "/usr/share/icons/hicolor/scalable/apps/mediathekview.svg/MediathekView.svg" },
     { "spotify", "/usr/bin/spotify-tray", "/usr/share/pixmaps/spotify-client.png" },
     { "tvbrowser", "/usr/bin/tvbrowser", "/usr/share/icons/hicolor/48x48/apps/tvbrowser.png" },
     { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
