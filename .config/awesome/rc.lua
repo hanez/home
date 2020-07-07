@@ -137,6 +137,7 @@ local thermalwidget  = wibox.widget.textbox()
 vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, config.thermal_zone )
 
 local myweather = lain.widget.weather({
+    APPID = config.openweather_api_key,
     city_id = config.cityid,
     notification_preset = { font = beautiful.font },
     notification_text_fun = function (wn)
@@ -146,7 +147,6 @@ local myweather = lain.widget.weather({
                                 local desc = wn["weather"][1]["description"]
                             return string.format("<b>%s</b>: %s, %d°C/%d°C ", day, desc, tmin, tmax)
     end,
-
 })
 myweather.attach(myweather.icon)
 
