@@ -5,8 +5,8 @@ theme = {}
 
 theme.font = config.font_awesome.." "..config.font_awesome_size
 
-theme.bg_normal   = "#222222"
-theme.bg_focus    = "#222222"
+theme.bg_normal   = "#000000"
+theme.bg_focus    = "#000000"
 theme.bg_urgent   = "#ff0000"
 theme.bg_minimize = "#444444"
 theme.bg_systray  = theme.bg_normal
@@ -57,7 +57,7 @@ theme.menu_width        = 182
 -- you wish and access them by using
 -- beautiful.variable in your rc.lua
 --theme.bg_widget = "#cc0000"
-theme.titlebar_bg                               = "#1d224b"
+theme.titlebar_bg                               = "#000000"
 theme.titlebar_close_button_normal              = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/close_normal.png"
 theme.titlebar_close_button_focus               = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/close_focus.png"
 theme.titlebar_ontop_button_normal_inactive     = os.getenv("HOME").."/.config/awesome/themes/hanez/titlebar/ontop_normal_inactive.png"
