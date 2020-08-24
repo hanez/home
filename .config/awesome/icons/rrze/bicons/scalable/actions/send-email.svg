@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-xdpi="7.1997633"
+   inkscape:export-ydpi="7.1997633"
+   sodipodi:docname="send-email.svg"
+   inkscape:export-filename="C:\Users\johannes\Documents\Arbeit\RRZE\github3\bicons\32x32\actions\send-email.png">
+  <defs
+     id="defs4">
+    <linearGradient
+       gradientTransform="matrix(1.9864516,0,0,1.9864516,-771.04918,-1129.7009)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient4321"
+       id="linearGradient4225"
+       x1="446.92957"
+       y1="707.06952"
+       x2="552.96887"
+       y2="592.8045"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4321"
+       inkscape:collect="always">
+      <stop
+         id="stop4323"
+         offset="0"
+         style="stop-color:#4e505d;stop-opacity:1;" />
+      <stop
+         id="stop4325"
+         offset="1"
+         style="stop-color:#7a8597;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="281.56519"
+     inkscape:cy="493.40719"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="721"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true">
+    <sodipodi:guide
+       position="315.53572,730.17859"
+       orientation="0,1"
+       id="guide3338" />
+    <sodipodi:guide
+       position="351.25,330.17858"
+       orientation="0,1"
+       id="guide3340" />
+    <sodipodi:guide
+       position="189.10714,408.8393"
+       orientation="1,0"
+       id="guide3344" />
+    <sodipodi:guide
+       position="589.04521,468.07945"
+       orientation="1,0"
+       id="guide3346" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3440" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="0,1"
+       id="guide3405" />
+    <sodipodi:guide
+       position="214.125,684.50002"
+       orientation="1,0"
+       id="guide3407" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="0,1"
+       id="guide3409" />
+    <sodipodi:guide
+       position="589.04521,378.30213"
+       orientation="1,0"
+       id="guide3411" />
+    <sodipodi:guide
+       position="564.00001,683.37502"
+       orientation="1,0"
+       id="guide3413" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>send email</dc:title>
+        <dc:date>June 2015</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Johannes Hechler</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Johannes Hechler</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>RRZE</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Ute Weber, Hendrik Eggers, Joanna Barbach</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>email</rdf:li>
+            <rdf:li>one</rdf:li>
+            <rdf:li>send</rdf:li>
+            <rdf:li>participant</rdf:li>
+            <rdf:li>mail</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="translate(189.10714,-330.17849)"
+       id="g4349">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4169"
+         transform="translate(0,652.36214)"
+         d="m 200.11133,19.107422 c -61.51172,0 -123.022354,4.557082 -182.255861,13.669922 l 0,45.314453 183.037111,104.927733 181.47656,-104.927733 0,-45.314453 C 323.13564,23.664504 261.62304,19.107422 200.11133,19.107422 Z m -182.255861,78.322266 0,159.462892 L 130.49609,166.00391 17.855469,97.429688 Z m 364.513671,0 -111.4668,68.451172 21.27735,17.38867 c 0.0148,-0.003 0.0301,-0.008 0.0449,-0.0117 2.59857,-0.56491 5.06075,-0.74396 7.38672,-0.59961 6.44456,0.39997 11.83498,3.30369 16.22461,7.38868 l 66.5332,53.29101 0,-145.908202 z m -66.5332,92.617192 -0.47071,-0.37696 1.55274,1.40039 c -0.3494,-0.35371 -0.71876,-0.68537 -1.08203,-1.02343 z m -63.60352,-17.37305 -51.33984,35.68555 -51.36719,-35.44727 0,0.10937 -131.548828,105.8125 c 48.788273,3.90779 97.555878,7.42028 146.222658,9.14063 l 0.10742,-40.30078 c 0.0418,-15.62702 14.10405,-28.9889 29.58398,-28.9336 l 79.5293,0.28321 0,-10.93164 c 0,-4.67467 1.05375,-9.89162 4.0293,-14.55078 l -25.2168,-20.54493 0,-0.32226 z m 57.1875,58.35937 0,6.05469 a 18.0018,18.0018 0 0 1 -18.06445,18 l -91.06836,-0.32422 -0.0918,34.13867 c 57.14477,0.87919 114.12405,-1.20514 170.8125,-8.53906 L 309.41992,231.0332 Z"
+         style="fill:url(#linearGradient4225);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <rect
+         inkscape:export-ydpi="4.9499998"
+         inkscape:export-xdpi="4.9499998"
+         y="652.36212"
+         x="3.3544922e-007"
+         height="400"
+         width="400"
+         id="rect3336-8"
+         style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <g
+         id="g4194"
+         transform="translate(-189.14485,330.09209)" />
+      <path
+         style="fill:#99b000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 400.01315,935.34157 c 0,1.66002 -1.58579,3.21601 -3.98242,5.42937 l -92.74056,72.99716 c -4.79327,4.4267 -11.83888,2.2255 -11.98313,-6.64 l -0.44707,-27.47594 -97.46868,0.0265 c -6.63863,0.002 -11.55868,-5.02146 -11.51976,-11.15231 l 0.4345,-68.4436 c 0.0389,-6.13085 4.96952,-11.52929 11.60816,-11.51147 l 96.88654,0.26008 0.17678,-29.08623 c 0.0538,-8.85321 8.11504,-9.00555 12.69277,-4.37138 l 92.3605,74.33048 c 2.39662,2.21334 3.95843,3.5875 3.97998,5.43248 z"
+         id="path4331"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccscsssscsccsc" />
+    </g>
+  </g>
+</svg>

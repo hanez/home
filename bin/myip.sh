@@ -9,9 +9,10 @@
 
 MY_IP="`wget -qO- http://ipecho.net/plain`"
 
-echo $MY_IP
+#echo $MY_IP
 
-MY_PROVIDER="`whois $MY_IP | awk '/role/{getline; print}' | awk -F  ":" '{print $2}' | awk '{$1=$1;print}'`"
+#MY_PROVIDER="`whois $MY_IP | awk '/role/{getline; print}' | awk -F  ":" '{print $2}' | awk '{$1=$1;print}'`"
+MY_PROVIDER="`whois $MY_IP | grep "descr" | head -n 1 | awk -F  ":" '{print $2}' | awk '{$1=$1;print}'`"
 
-echo $MY_PROVIDER
+echo $MY_IP: $MY_PROVIDER
 

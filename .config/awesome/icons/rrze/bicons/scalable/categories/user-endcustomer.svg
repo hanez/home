@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-xdpi="7.1993213"
+   inkscape:export-ydpi="7.1993213"
+   sodipodi:docname="user-endcustomer.svg"
+   inkscape:export-filename="C:\Users\johannes\Documents\Arbeit\RRZE\github3\bicons\32x32\categories\user-endcustomer.png">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4254"
+       id="linearGradient4268"
+       x1="358.43118"
+       y1="465.73074"
+       x2="429.96555"
+       y2="644.62878"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1386133,0,0,1.1386133,-55.468972,-53.587545)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4254">
+      <stop
+         style="stop-color:#7a8597;stop-opacity:1"
+         offset="0"
+         id="stop4256" />
+      <stop
+         style="stop-color:#4e505d;stop-opacity:1"
+         offset="1"
+         id="stop4258" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4254"
+       id="linearGradient4260"
+       x1="380.01031"
+       y1="330.40619"
+       x2="414.6156"
+       y2="457.18103"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1011151,0,0,1.1092129,-42.787102,-44.307155)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="479.63926"
+     inkscape:cy="435.04547"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="721"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-nodes="false">
+    <sodipodi:guide
+       position="315.53572,730.17859"
+       orientation="0,1"
+       id="guide3338" />
+    <sodipodi:guide
+       position="351.25,330.17858"
+       orientation="0,1"
+       id="guide3340" />
+    <sodipodi:guide
+       position="189.10714,408.8393"
+       orientation="1,0"
+       id="guide3344" />
+    <sodipodi:guide
+       position="589.04521,468.07945"
+       orientation="1,0"
+       id="guide3346" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3440" />
+    <sodipodi:guide
+       position="589.04521,378.30213"
+       orientation="1,0"
+       id="guide3411" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>user endcustomer</dc:title>
+        <dc:date>June 2015</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Johannes Hechler</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Johannes Hechler</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>RRZE</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Ute Weber, Hendrik Eggers, Joanna Barbach</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>user</rdf:li>
+            <rdf:li>customer</rdf:li>
+            <rdf:li>client</rdf:li>
+            <rdf:li>academic</rdf:li>
+            <rdf:li>identity management</rdf:li>
+            <rdf:li>role</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4221">
+      <flowRoot
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#252525;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="flowRoot4169-9"
+         xml:space="preserve"
+         transform="translate(-0.037712,-0.086355)"><flowRegion
+           id="flowRegion4171-4"><rect
+             y="427.07962"
+             x="89.541069"
+             height="88.78862"
+             width="56.433445"
+             id="rect4173-3" /></flowRegion><flowPara
+           id="flowPara4175-9" /></flowRoot>      <rect
+         inkscape:export-ydpi="4.9499998"
+         inkscape:export-xdpi="4.9499998"
+         y="322.18362"
+         x="189.10713"
+         height="400"
+         width="400"
+         id="rect3336-4"
+         style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path2176"
+         d="M 346.33203 474.64648 L 346.33203 474.64844 C 346.1983 474.76675 346.07551 474.89299 345.9375 475.00781 L 338.48828 479.04492 C 289.89709 507.82988 256.08203 573.1715 256.08203 654.25195 C 256.08203 671.66693 257.67099 688.54075 260.63477 704.59375 C 265.03093 714.42835 276.07757 721.63662 289.3125 722.57812 L 289.3125 722.6875 L 474.64453 722.6875 C 466.59894 718.18263 459.14224 712.77714 452.40234 706.48438 C 452.40234 706.48438 452.40039 706.48242 452.40039 706.48242 C 452.39839 706.48142 452.39653 706.47856 452.39453 706.47656 C 440.06664 694.97627 431.06763 681.11269 425.38281 665.58984 L 417.17578 665.58984 A 19.213868 16.866193 0 0 1 398.36133 645.31641 L 403.33008 624.19141 A 19.213868 16.866193 0 0 1 404.07422 621.92383 A 19.213868 16.866193 0 0 1 398.36133 606.20117 L 403.33008 585.07812 A 19.213868 16.866193 0 0 1 422.14648 571.62109 L 425.96484 571.62109 C 431.65507 556.45586 440.49394 542.8975 452.5 531.59961 A 19.213868 16.866193 0 0 1 452.51953 531.58203 C 460.05231 524.51483 468.53194 518.5706 477.7832 513.75781 C 464.52363 496.98015 448.8762 483.85021 431.68359 475.26758 C 419.21283 482.26939 404.83792 486.28711 389.55078 486.28711 C 373.81801 486.28712 359.05041 482.03165 346.33203 474.64648 z M 496.50977 542.95508 C 490.78193 546.11179 485.51923 549.99194 480.58594 554.61914 C 470.15779 564.43606 463.15042 576.45493 459.41992 591.9707 A 19.213868 16.866193 0 0 1 453.82031 600.71289 A 19.213868 16.866193 0 0 1 456.69727 610.57422 C 456.51763 613.3341 456.41797 616.71537 456.41797 620.65039 C 456.41797 622.89534 456.46369 624.98263 456.55469 626.90039 A 19.213868 16.866193 0 0 1 453.56641 636.65234 A 19.213868 16.866193 0 0 1 458.98633 645.38867 C 462.62673 661.2108 469.70425 673.40572 480.38477 683.36719 A 19.213868 16.866193 0 0 1 480.39062 683.37695 C 491.17516 693.44804 503.13133 699.8715 517.63867 703.01562 C 517.72982 702.50479 517.80813 701.98707 517.89648 701.47461 C 505.37262 697.94932 494.09711 691.49652 485.44727 682.54492 C 477.46242 674.31603 472.49489 664.10798 469.42188 652.5625 A 19.213868 16.866193 0 0 1 471.76953 639.91016 A 19.213868 16.866193 0 0 1 465.68359 628.48828 C 465.46032 624.76432 465.3457 621.15357 465.3457 617.65234 C 465.3457 614.22533 465.39714 611.35011 465.51953 608.87891 A 19.213868 16.866193 0 0 1 471.50977 597.38867 A 19.213868 16.866193 0 0 1 469.14844 584.51367 C 472.22233 573.3832 477.71942 563.24722 485.85156 554.98047 C 489.41425 551.35767 493.41651 548.16173 497.75195 545.40039 C 497.34197 544.58034 496.92878 543.76511 496.50977 542.95508 z M 520.43945 665.58984 C 520.83652 665.86399 521.23818 666.12231 521.64258 666.37305 C 521.65366 666.11293 521.65954 665.85024 521.66992 665.58984 L 520.43945 665.58984 z "
+         style="fill:url(#linearGradient4268);fill-opacity:1;stroke:none;stroke-width:41.15159225;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+      <ellipse
+         ry="72.424042"
+         rx="72.285255"
+         cx="389.52188"
+         cy="395.19952"
+         id="circle2187-6"
+         style="fill:url(#linearGradient4260);fill-opacity:1;stroke:none;stroke-width:14;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <flowRoot
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#252525;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="flowRoot4169"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4171"><rect
+             y="427.07962"
+             x="89.541069"
+             height="88.78862"
+             width="56.433445"
+             id="rect4173" /></flowRegion><flowPara
+           id="flowPara4175" /></flowRoot>      <rect
+         inkscape:export-ydpi="4.9499998"
+         inkscape:export-xdpi="4.9499998"
+         y="322.27005"
+         x="189.14485"
+         height="400"
+         width="400"
+         id="rect3336"
+         style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         transform="scale(1.0673304,0.93691704)"
+         sodipodi:linespacing="125%"
+         id="text4210"
+         y="767.172"
+         x="478.42819"
+         style="font-style:normal;font-weight:normal;font-size:297.90628052px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#99b000"
+           y="767.172"
+           x="478.42819"
+           id="tspan4212"
+           sodipodi:role="line">€</tspan></text>
+    </g>
+  </g>
+</svg>
