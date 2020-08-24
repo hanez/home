@@ -1,3 +1,5 @@
+local icondir = os.getenv("HOME").."/.config/awesome/icons/rrze/tango/22x22/"
+
 accessoriesmenu = {
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
     { "dia", "/usr/bin/dia --integrated", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
@@ -14,6 +16,7 @@ accessoriesmenu = {
 communicationmenu = {
     { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
     { "clawsker", "/usr/bin/clawsker", "/usr/share/icons/hicolor/48x48/apps/clawsker.png" },
+    { "evolution", "/usr/bin/evolution", "/usr/share/icons/hicolor/scalable/apps/evolution.svg" },
     { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
     { "zoom", "/usr/bin/zoom", "/usr/share/pixmaps/application-x-zoom.png" },
 }
@@ -151,18 +154,18 @@ utilitiesmenu = {
 }
 mainmenu = awful.menu({ items = {
     { "accessories", accessoriesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-accessories.png" },
-    { "communication", communicationmenu, "/usr/share/icons/matefaenza/status/22/applications-chat-panel.png" },
+    { "communication", communicationmenu, icondir.."actions/quote.png" },
     { "database", dbmenu, "/usr/share/icons/oxygen/base/48x48/places/server-database.png" },
     { "development", developmentmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-development.png" },
     { "engineering", engineeringmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-engineering.png" },
     { "games", gamesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-games.png" },
     { "graphics", graphicsmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-graphics.png" },
     { "hacking", hackingmenu, "/usr/share/icons/Adwaita/22x22/legacy/face-devilish.png" },
-    { "internet", internetmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-internet.png" },
+    { "internet", internetmenu, icondir.."emblems/globe.png" },
     { "network", networkmenu, "/usr/share/icons/Adwaita/22x22/legacy/network-wired-disconnected.png" },
     { "multimedia", multimediamenu, "/usr/share/icons/Adwaita/scalable/categories/applications-multimedia-symbolic.svg" },
     { "office", officemenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-office.png" },
-    { "privacy", privacymenu, "/usr/share/icons/Adwaita/22x22/legacy/preferences-desktop-personal.png" },
+    { "privacy", privacymenu, icondir.."emblems/lock-key.png" },
     { "radio", radiomenu, "/usr/share/icons/matefaenza/apps/48/radio.png" },
     { "science", sciencemenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-science.png" },
     { "system", systemmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-system.png" },

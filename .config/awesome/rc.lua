@@ -253,6 +253,28 @@ awful.screen.connect_for_each_screen(function(s)
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s })
 
+    x = { layout = wibox.layout.fixed.horizontal }
+    y = config.widgets
+    z = { myweather.icon,
+          wibox.widget.systray(),
+          mytextclock,
+          s.mylayoutbox }
+
+    r = {}
+
+    for k,v in ipairs(x) do
+        print(v)
+        table.insert(r,v)
+    end
+    for k,v in ipairs(y) do
+        print(v)
+        --table.insert(r,v)
+    end
+    for k,v in ipairs(z) do
+        print(v)
+        table.insert(r,v)
+    end
+
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
@@ -263,6 +285,7 @@ awful.screen.connect_for_each_screen(function(s)
             s.mypromptbox,
         },
         s.mytasklist, -- Middle widget
+        --r,
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             --netwidget,
