@@ -166,7 +166,7 @@ mainmenu = awful.menu({ items = {
     { "multimedia", multimediamenu, "/usr/share/icons/Adwaita/scalable/categories/applications-multimedia-symbolic.svg" },
     { "office", officemenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-office.png" },
     { "privacy", privacymenu, icondir.."emblems/lock-key.png" },
-    { "radio", radiomenu, "/usr/share/icons/matefaenza/apps/48/radio.png" },
+    { "radio", radiomenu, icondir.."emblems/wifi.png" },
     { "science", sciencemenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-science.png" },
     { "system", systemmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-system.png" },
     { "utilities", utilitiesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-utilities.png" },
