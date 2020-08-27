@@ -118,7 +118,7 @@ end
 -- }}}
 
 -- Include the mainmenu from external file to make customisation easier
-local mainmenu = require("mainmenu")
+local mainmenu = require(config.menu)
 mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon, menu = mainmenu })
 
 -- Menubar configuration
