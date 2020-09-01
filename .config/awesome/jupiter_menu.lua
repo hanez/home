@@ -58,7 +58,6 @@ engineeringmenu = {
 }
 gamesmenu = {
     { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
-    { "emulationstation", "/usr/bin/emulationstation", "/home/hanez/.config/awesome/themes/hanez/icons/RetroPie.png" },
     { "retroarch", "/usr/bin/retroarch", "/usr/share/pixmaps/retroarch.svg" },
     { "steam", "/home/hanez/bin/steam.sh", "/usr/share/pixmaps/steam.png" },
     --{ "thimbleweed park", "/home/hanez/bin/thimbleweedpark", "/home/hanez/.local/share/Steam/steamapps/common/Thimbleweed Park/Icon32.png" },
