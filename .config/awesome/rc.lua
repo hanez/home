@@ -8,16 +8,16 @@ require("lib.functions")
 
 --local math, string, os = math, string, os
 
-local gears = require("gears")
+gears = require("gears")
 awful = require("awful")
 awful.rules = require("awful.rules")
 require("awful.autofocus")
-local wibox = require("wibox")
+wibox = require("wibox")
 local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 local vicious = require("vicious")
-local lain = require("lain")
+lain = require("lain")
 --local vain = require("vain")
 
 -- Enable hotkeys help widget for VIM and other apps
@@ -126,17 +126,17 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- }}}
 
 -- {{{ Vicious widgets
-local batterywidget = wibox.widget.textbox()
+batterywidget = wibox.widget.textbox()
 vicious.register(batterywidget, vicious.widgets.bat, "$1$2% / ", 20, config.battery)
 
-local netwidget = wibox.widget.textbox()
+netwidget = wibox.widget.textbox()
 vicious.register(netwidget, vicious.widgets.net,
 '<span color="green">⇩${'..config.net_device..' down_kb}</span> / <span color="#C83321">${'..config.net_device..' up_kb}⇧</span> ', 1)
 
-local thermalwidget  = wibox.widget.textbox()
+thermalwidget  = wibox.widget.textbox()
 vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, config.thermal_zone )
 
-local myweather = lain.widget.weather({
+myweather = lain.widget.weather({
     APPID = config.openweather_api_key,
     city_id = config.cityid,
     notification_preset = { font = beautiful.font },
@@ -150,7 +150,7 @@ local myweather = lain.widget.weather({
 })
 myweather.attach(myweather.icon)
 
-local cpuwidget = awful.widget.graph()
+cpuwidget = awful.widget.graph()
 cpuwidget:set_width(100)
 cpuwidget:set_background_color("#000000")
 cpuwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 10,0 }, stops = { {0, "#FF5656"}, {0.5, "#88A175"}, {1, "#AECF96" }}})
@@ -159,10 +159,10 @@ vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
 -- {{{ Wibar
 -- Create a textclock widget
 --mytextclock = wibox.widget.textclock()
-local mytextclock = awful.widget.textclock(" %a %b %d, %H:%M:%S ", 1)
+mytextclock = awful.widget.textclock(" %a %b %d, %H:%M:%S ", 1)
 
 -- Create a wibox for each screen and add it
-local taglist_buttons = gears.table.join(
+taglist_buttons = gears.table.join(
                     awful.button({ }, 1, function(t) t:view_only() end),
                     awful.button({ modkey }, 1, function(t)
                                               if client.focus then
@@ -179,7 +179,7 @@ local taglist_buttons = gears.table.join(
                     awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end)
                 )
 
-local tasklist_buttons = gears.table.join(
+tasklist_buttons = gears.table.join(
                      awful.button({ }, 1, function (c)
                                               if c == client.focus then
                                                   c.minimized = true
@@ -204,7 +204,7 @@ local tasklist_buttons = gears.table.join(
                                               awful.client.focus.byidx(-1)
                                           end))
 
-local function set_wallpaper(s)
+function set_wallpaper(s)
     -- Wallpaper
     if beautiful.wallpaper then
         local wallpaper = beautiful.wallpaper
@@ -220,85 +220,8 @@ end
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", set_wallpaper)
 
-awful.screen.connect_for_each_screen(function(s)
-
-    -- Quake application
-    s.quake = lain.util.quake({ app = terminal })
-    s.quake.horiz = "center"
-    s.quake.width = config.quake_width
-    s.quake.height = config.quake_height
-
-    -- Wallpaper
-    set_wallpaper(s)
-
-    -- Each screen has its own tag table.
-    awful.tag({ "➊", "➋", "➌", "➍", "➎", "➏", "➐", "➑", "➒" }, s, awful.layout.layouts[1])
-
-    -- Create a promptbox for each screen
-    s.mypromptbox = awful.widget.prompt()
-    -- Create an imagebox widget which will contain an icon indicating which layout we're using.
-    -- We need one layoutbox per screen.
-    s.mylayoutbox = awful.widget.layoutbox(s)
-    s.mylayoutbox:buttons(gears.table.join(
-                           awful.button({ }, 1, function () awful.layout.inc( 1) end),
-                           awful.button({ }, 3, function () awful.layout.inc(-1) end),
-                           awful.button({ }, 4, function () awful.layout.inc( 1) end),
-                           awful.button({ }, 5, function () awful.layout.inc(-1) end)))
-    -- Create a taglist widget
-    s.mytaglist = awful.widget.taglist(s, awful.widget.taglist.filter.all, taglist_buttons)
-
-    -- Create a tasklist widget
-    s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, tasklist_buttons)
-
-    -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
-
-    x = { layout = wibox.layout.fixed.horizontal }
-    y = config.widgets
-    z = { myweather.icon,
-          wibox.widget.systray(),
-          mytextclock,
-          s.mylayoutbox }
-
-    r = {}
-
-    for k,v in ipairs(x) do
-        print(v)
-        table.insert(r,v)
-    end
-    for k,v in ipairs(y) do
-        print(v)
-        --table.insert(r,v)
-    end
-    for k,v in ipairs(z) do
-        print(v)
-        table.insert(r,v)
-    end
-
-    -- Add widgets to the wibox
-    s.mywibox:setup {
-        layout = wibox.layout.align.horizontal,
-        { -- Left widgets
-            layout = wibox.layout.fixed.horizontal,
-            mylauncher,
-            s.mytaglist,
-            s.mypromptbox,
-        },
-        s.mytasklist, -- Middle widget
-        --r,
-        { -- Right widgets
-            layout = wibox.layout.fixed.horizontal,
-            --netwidget,
-            cpuwidget,
-            ---batterywidget,
-            --thermalwidget,
-            myweather.icon,
-            wibox.widget.systray(),
-            mytextclock,
-            s.mylayoutbox,
-        },
-    }
-end)
+-- {{{ Build Taskbar layout
+require(config.taskbar)
 -- }}}
 
 -- {{{ Mouse bindings
