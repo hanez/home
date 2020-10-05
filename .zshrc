@@ -132,7 +132,7 @@ alias a.systemchaos.org='ssh a.systemchaos.org'
 alias c.systemchaos.org='ssh c.systemchaos.org'
 alias d.systemchaos.org='ssh d.systemchaos.org'
 alias e.systemchaos.org='ssh e.systemchaos.org'
-
+alias onionpi='ssh onionpi'
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
 case $TERM in
