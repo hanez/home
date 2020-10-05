@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-xdpi="7.1999998"
+   inkscape:export-ydpi="7.1999998"
+   sodipodi:docname="news.svg"
+   inkscape:export-filename="C:\Users\johannes\Documents\Arbeit\RRZE\github3\bicons\32x32\emblems\news.png">
+  <title
+     id="title4154">news</title>
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4321"
+       id="linearGradient4182"
+       x1="250.3158"
+       y1="710.1225"
+       x2="537.40118"
+       y2="469.70621"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.90899995,0,0,0.89962661,35.510048,17.96674)" />
+    <linearGradient
+       id="linearGradient4321"
+       inkscape:collect="always">
+      <stop
+         id="stop4323"
+         offset="0"
+         style="stop-color:#4e505d;stop-opacity:1;" />
+      <stop
+         id="stop4325"
+         offset="1"
+         style="stop-color:#7a8597;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="468.7308"
+     inkscape:cy="560.43279"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="721"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true">
+    <sodipodi:guide
+       position="560,730.00002"
+       orientation="0,1"
+       id="guide3338" />
+    <sodipodi:guide
+       position="560,330.00001"
+       orientation="0,1"
+       id="guide3340" />
+    <sodipodi:guide
+       position="190,475.00001"
+       orientation="1,0"
+       id="guide3344" />
+    <sodipodi:guide
+       position="590,451.00001"
+       orientation="1,0"
+       id="guide3346" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3440" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>news</dc:title>
+        <dc:date>June 2015</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Johannes Hechler</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Johannes Hechler</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>RRZE</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Ute Weber, Hendrik Eggers, Joanna Barbach</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>news</rdf:li>
+            <rdf:li>paper</rdf:li>
+            <rdf:li>newspaper</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:23;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4160"
+       width="400"
+       height="400"
+       x="190"
+       y="322.36221" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#252525;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#252525;solid-opacity:1;fill:url(#linearGradient4182);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:23;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 517.2041,376.88091 -293.83398,0.0605 c -8.39309,0.002 -15.15039,6.68955 -15.15039,14.99609 l 0,29.98633 0,29.98828 0,104.95507 0,80.9668 c 0,16.61317 13.5146,29.98828 30.30078,29.98828 l 302.99805,0 c 16.78618,0 30.30078,-13.37511 30.30078,-29.98828 l 0,-187.42187 0,-21.98829 c 0,-8.30654 -6.75539,-14.96947 -15.14844,-14.99413 l -21.06641,-0.0605 0,-21.49414 c 0,-8.30654 -10.00729,-14.99591 -18.40039,-14.99414 z m -14.85351,18.24219 c 8.32361,-0.003 15.02343,6.61071 15.02343,14.82226 l 0,189.50976 0,30.23829 c 0,0 6e-5,20.15625 20.28321,20.15625 l -35.30664,0 -5.25977,0 -255.66406,0.10742 c -8.32359,0.003 -15.02539,-6.61068 -15.02539,-14.82227 l 0,-225.08398 c 0,-8.21155 6.7018,-14.81887 15.02539,-14.82226 L 502.35059,395.1231 Z M 253.6709,413.30279 c -5.03586,0 -9.0918,4.05398 -9.0918,9.08983 0,5.03586 4.05594,9.08985 9.0918,9.08985 l 236.33984,0 c 5.03586,0 9.08985,-4.05399 9.08985,-9.08985 0,-5.03585 -4.05399,-9.08983 -9.08985,-9.08983 l -236.33984,0 z m 6.39258,36.35937 c -8.57759,0 -15.48438,6.90483 -15.48438,15.48242 l 0,78.11523 c 0,8.57759 6.90679,15.48242 15.48438,15.48242 l 60.02539,0 c 8.57758,0 15.48437,-6.90483 15.48437,-15.48242 l 0,-78.11523 c 0,-8.57759 -6.90679,-15.48242 -15.48437,-15.48242 l -60.02539,0 z m 102.6875,0 c -5.03586,0 -9.0918,4.05398 -9.0918,9.08984 0,5.03586 4.05594,9.08984 9.0918,9.08984 l 90.89844,0 c 5.03586,0 9.08984,-4.05398 9.08984,-9.08984 0,-5.03586 -4.05398,-9.08984 -9.08984,-9.08984 l -90.89844,0 z m 0,36.35937 c -5.03586,0 -9.0918,4.05399 -9.0918,9.08984 0,5.03586 4.05594,9.0918 9.0918,9.0918 l 127.25976,0 c 5.03586,0 9.08985,-4.05594 9.08985,-9.0918 0,-5.03585 -4.05399,-9.08984 -9.08985,-9.08984 l -127.25976,0 z"
+       id="rect4151" />
+  </g>
+</svg>

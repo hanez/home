@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-xdpi="4"
+   inkscape:export-ydpi="4"
+   sodipodi:docname="wlan-external.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4163"
+       id="linearGradient4158"
+       gradientUnits="userSpaceOnUse"
+       x1="6.7543955"
+       y1="22.667271"
+       x2="19.125675"
+       y2="1.4474881"
+       gradientTransform="matrix(14.804765,0,0,14.804765,201.83555,342.67248)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4163">
+      <stop
+         style="stop-color:#4e505d;stop-opacity:1;"
+         offset="0"
+         id="stop4165" />
+      <stop
+         style="stop-color:#7a8597;stop-opacity:1"
+         offset="1"
+         id="stop4167" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="380.96393"
+     inkscape:cy="496.06637"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true">
+    <sodipodi:guide
+       position="560,730.00002"
+       orientation="0,1"
+       id="guide3338" />
+    <sodipodi:guide
+       position="560,330.00001"
+       orientation="0,1"
+       id="guide3340" />
+    <sodipodi:guide
+       position="190,475.00001"
+       orientation="1,0"
+       id="guide3344" />
+    <sodipodi:guide
+       position="590,451.00001"
+       orientation="1,0"
+       id="guide3346" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3440" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>wlan external</dc:title>
+        <dc:date>June 2015</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Johannes Hechler</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Johannes Hechler</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>RRZE</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Ute Weber, Hendrik Eggers, Joanna Barbach</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>WiFi</rdf:li>
+            <rdf:li>Wireless LAN</rdf:li>
+            <rdf:li>hotspot</rdf:li>
+            <rdf:li>access point</rdf:li>
+            <rdf:li>broadcast</rdf:li>
+            <rdf:li>external</rdf:li>
+            <rdf:li>extern</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4183">
+      <rect
+         y="322.36221"
+         x="190"
+         height="400"
+         width="400"
+         id="rect4160-5"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:23;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path5"
+         d="M 390.43359 380.52734 C 322.33167 380.52734 257.88596 406.38971 208.94141 453.36523 C 199.73284 462.20368 199.42296 476.86174 208.29102 486.07031 C 217.14427 495.29367 231.78558 495.58843 240.99414 486.75 C 281.27791 448.07995 334.35396 426.79102 390.44922 426.79102 C 426.54324 426.79102 461.41223 435.66232 492.46484 452.33398 C 493.8971 452.00712 495.25493 451.87143 496.48828 451.85547 C 497.53925 451.84186 498.50065 451.91091 499.34766 452.00781 C 505.7869 452.74459 508.96798 454.227 513.2207 458.85156 L 543.60742 489.66016 C 552.38055 495.08627 563.68496 494.02953 572.5625 486.11328 C 581.38614 476.88991 581.0886 462.24861 571.86523 453.41016 C 522.81704 406.41984 458.38746 380.52734 390.43359 380.52734 z M 390.43359 459.5293 C 341.10411 459.5293 294.73519 478.61436 259.88477 513.28711 C 250.80945 522.28841 250.77995 536.9434 259.78125 546.00391 C 268.78255 555.03479 283.43865 555.09509 292.48438 546.09375 C 318.62959 520.09659 353.40687 505.79492 390.43359 505.79492 C 406.25911 505.79492 421.68052 508.43424 436.20117 513.48828 C 452.00033 505.28857 466.50707 501.88103 477.5957 500.31445 L 477.58203 481.24023 C 451.0788 467.05937 421.32754 459.5293 390.43359 459.5293 z M 512.60156 508.06445 L 512.60547 515.32031 L 512.57031 515.875 C 512.3883 518.76636 511.53688 524.12789 506.78125 528.69531 C 502.02562 533.26274 496.09639 533.92149 493.43555 533.90039 C 492.77404 533.89516 486.07658 534.29121 477.12695 536.17188 C 481.01133 539.28797 484.75762 542.6216 488.33789 546.18164 C 497.21302 554.78723 510.72814 554.98964 521.07031 546.10938 C 527.51435 539.60164 529.31417 530.23101 526.47656 522.13086 L 512.60156 508.06445 z M 390.44922 538.50391 C 359.99581 538.50391 330.81471 551.39993 310.44336 573.91797 C 301.85659 583.37822 302.56792 597.98941 312.04297 606.57617 C 321.53283 615.19255 336.15851 614.46724 344.73047 604.99219 C 354.45097 594.235 367.19064 587.49917 381.25977 585.45508 C 385.58387 566.63442 393.77551 551.3496 403.81055 539.3457 C 399.39946 538.79292 394.93858 538.50391 390.44922 538.50391 z M 441.30273 551.25586 C 429.96612 559.35453 420.206 570.95998 415.65625 590.1875 C 423.37337 593.64424 430.39397 598.67929 436.19531 605.08203 C 440.9064 608.97235 446.3387 611.94192 452.20508 612.43945 C 455.0809 610.16146 458.0324 608.2531 460.95508 606.73438 C 465.03703 604.61324 469.09118 603.04919 472.875 601.89062 C 478.30615 593.32685 477.6205 581.86667 470.48242 573.97656 C 462.05872 564.69342 452.15662 557.04632 441.30273 551.25586 z M 379.2168 636.7832 A 27.951397 27.951397 0 0 0 362.49609 662.36133 A 27.951397 27.951397 0 0 0 390.44922 690.3125 A 27.951397 27.951397 0 0 0 397.83984 689.28711 C 388.80472 675.38672 381.95059 658.01168 379.2168 636.7832 z "
+         style="fill:url(#linearGradient4158);fill-opacity:1" />
+      <rect
+         y="322.36221"
+         x="190"
+         height="400"
+         width="400"
+         id="rect4160"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:23;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccccssccsccccc"
+         inkscape:connector-curvature="0"
+         id="path4160"
+         d="m 587.84299,572.91771 c 3.42028,-3.42317 3.42028,-10.06204 0.10228,-13.38293 l -87.1848,-88.39507 c -1.48786,-1.68703 -5.68752,-3.04402 -5.6846,0.22605 l 0.0299,43.40994 c -0.081,1.28671 -0.60161,1.63296 -1.53248,1.62559 -9.98361,-0.079 -98.15434,5.58465 -98.15434,99.56536 0,106.22196 96.2053,106.18306 96.2053,106.18306 2.68023,-0.73993 2.27228,-4.00299 0,-4.45301 0,0 -46.41376,-12.51465 -46.41376,-51.9385 0,-49.79155 47.62774,-49.64486 47.62774,-49.64486 1.52724,-0.10722 2.13762,0.81243 2.16119,2.09885 l -0.0491,42.30754 c 0.0491,1.91903 2.46074,2.48958 4.96276,-0.0654 z"
+         style="fill:#99b000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

@@ -18,7 +18,11 @@
 !.config
 !.config/awesome
 !.config/awesome/**
-.config/awesome/private.lua
+.config/awesome/config.lua
+
+!.p10k.zsh
+!.config/powerline
+!.config/powerline/**
 
 !.emulationstation
 !.emulationstation/es_systems.cfg
