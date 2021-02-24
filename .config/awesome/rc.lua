@@ -293,7 +293,7 @@ globalkeys = gears.table.join(
               { description="start firefox", group="awesome" }),
     awful.key({ modkey            }, "n", function() awful.util.spawn("/usr/bin/thunderbird") end,
               { description="start thunderbird", group="awesome" }),
-    awful.key({ modkey            }, "m", function() awful.util.spawn("/usr/bin/claws-mail") end,
+    awful.key({ modkey            }, "m", function() awful.util.spawn("/usr/bin/birdtray") end,
               { description="start claws-mail", group="awesome" }),
     awful.key({ modkey            }, "c", function() awful.util.spawn(editor_cmd .. " " .. awesome.conffile) end,
               { description="edit awesome configuration", group="awesome" }),

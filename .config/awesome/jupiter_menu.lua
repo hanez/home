@@ -16,9 +16,9 @@ accessoriesmenu = {
 communicationmenu = {
     { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
     { "clawsker", "/usr/bin/clawsker", "/usr/share/icons/hicolor/48x48/apps/clawsker.png" },
-    { "element", "/usr/bin/element-desktop", "/usr/share/icons/hicolor/scalable/apps/io.element.Element.svg" },
     { "evolution", "/usr/bin/evolution", "/usr/share/icons/hicolor/scalable/apps/evolution.svg" },
     { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
+    { "thunderbird", "/usr/bin/birdtray", "/usr/share/icons/hicolor/48x48/apps/thunderbird.png" },
     { "zoom", "/usr/bin/zoom", "/usr/share/pixmaps/application-x-zoom.png" },
 }
 dbmenu = {
