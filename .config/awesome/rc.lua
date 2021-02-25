@@ -528,17 +528,25 @@ awful.rules.rules = {
           "DTA",  -- Firefox addon DownThemAll.
           "copyq",  -- Includes session name in class.
           "galculator",
+          "megasync",
+          "MEGAsync",
         },
         class = {
           "Arandr",
           "Gpick",
+          "megasync",
+          "MEGAsync",
         },
         name = {
           "Event Tester",  -- xev.
+          "megasync",
+          "MEGAsync",
         },
         role = {
           "AlarmWindow",  -- Thunderbird's calendar.
           "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
+          "megasync",
+          "MEGAsync",
         }
       }, properties = { floating = true }},
 
