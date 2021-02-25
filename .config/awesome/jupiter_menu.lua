@@ -5,23 +5,21 @@ accessoriesmenu = {
     { "dia", "/usr/bin/dia --integrated", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
     { "engrampa", "/usr/bin/engrampa", "/usr/share/icons/hicolor/32x32/apps/engrampa.png" },
     { "epdfview", "/usr/bin/epdfview", "/usr/share/icons/hicolor/48x48/apps/epdfview.png" },
-    { "freemind", "/usr/bin/freemind", "/usr/share/pixmaps/freemind.png" },
+    { "freemind", "/usr/bin/freemind", "/usr/share/icons/hicolor/32x32/apps/freemind.png" },
     { "gscriptor", "/usr/bin/gscriptor", "/usr/share/icons/hicolor/48x48/apps/gcr-smart-card.png" },
     { "gvim", "/usr/bin/gvim", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
-    { "pluma", "/usr/bin/pluma", "/usr/share/icons/Adwaita/48x48/apps/accessories-text-editor.png" },
+    { "pluma", "/usr/bin/pluma", "/usr/share/icons/Moka/48x48/apps/gedit.png" },
     { "regexxer", "/usr/bin/regexxer", "/usr/share/icons/hicolor/48x48/apps/regexxer.png" },
     { "retext", "/usr/bin/retext", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
     { "xarchiver", "xarchiver", "/usr/share/icons/hicolor/48x48/apps/xarchiver.png" },
 }
 communicationmenu = {
-    { "claws", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
-    { "clawsker", "/usr/bin/clawsker", "/usr/share/icons/hicolor/48x48/apps/clawsker.png" },
-    { "evolution", "/usr/bin/evolution", "/usr/share/icons/hicolor/scalable/apps/evolution.svg" },
-    { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/48x48/apps/pidgin.png" },
+    { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/scalable/apps/org.gajim.Gajim.svg" },
     { "thunderbird", "/usr/bin/birdtray", "/usr/share/icons/hicolor/48x48/apps/thunderbird.png" },
     { "zoom", "/usr/bin/zoom", "/usr/share/pixmaps/application-x-zoom.png" },
 }
 dbmenu = {
+    { "datagrip", "/home/hanez/bin/datagrip.sh", "/opt/datagrip/bin/datagrip.svg" },
     { "dbeaver", "/usr/bin/dbeaver", "/usr/share/pixmaps/dbeaver.xpm" },
     { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
     { "umongo", "/usr/bin/umongo.sh", "/usr/share/pixmaps/umongo.png" },
@@ -30,18 +28,25 @@ developmentmenu = {
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "android studio", "/opt/android-studio/bin/studio.sh", "/opt/android-studio/bin/studio.png" },
     { "bluegriffon", "/usr/bin/bluegriffon", "/usr/share/icons/hicolor/48x48/apps/bluegriffon.png" },
-    { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/matefaenza/apps/48/codeblocks.png" },
+    { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/hicolor/64x64/apps/codeblocks.png" },
+    { "clion", "/home/hanez/bin/clion.sh", "/usr/share/pixmaps/clion.svg" },
     --{ "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
     { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
-    { "glade", "/usr/bin/glade ", "/usr/share/icons/hicolor/48x48/apps/glade.png" },
+    { "glade", "/usr/bin/glade ", "/usr/share/icons/hicolor/scalable/apps/glade-3.svg" },
+    { "goland", "/home/hanez/bin/goland.sh", "/usr/share/pixmaps/goland.png"},
     { "intellij", "/usr/bin/idea", "/usr/share/pixmaps/idea.png" },
     { "kdevelop", "/usr/bin/kdevelop", "/usr/share/icons/hicolor/48x48/apps/kdevelop.png" },
     { "lazarus", "/usr/bin/lazarus", "/usr/lib/lazarus/images/ide_icon48x48.png" },
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
+    { "phpstorm", "/home/hanez/bin/phpstorm.sh", "/usr/share/pixmaps/phpstorm.svg" },
+    { "pycharm", "/usr/bin/pycharm", "/usr/share/pycharm/bin/pycharm.svg" },
     { "qgit", "/usr/bin/qgit", "/usr/share/icons/hicolor/48x48/apps/qgit.png" },
     { "qtcreator", "/usr/bin/qtcreator", "/usr/share/icons/hicolor/48x48/apps/QtProject-qtcreator.png" },
-    { "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
+    --{ "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
+    { "rider", "/home/hanez/bin/rider.sh", "/usr/share/rider/bin/rider.svg" },
+    { "rubymine", "/home/hanez/bin/rubymine.sh", "/usr/share/icons/hicolor/scalable/apps/rubymine.svg" },
     { "smartgit", "/usr/bin/smartgit", "/opt/smartgit/bin/smartgit.svg" },
+    { "webstorm", "/home/hanez/bin/webstorm.sh", "/opt/webstorm/bin/webstorm.svg" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/pixmaps/wxglade.png" },
     { "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
 }
@@ -64,15 +69,15 @@ gamesmenu = {
     --{ "thimbleweed park", "/home/hanez/bin/thimbleweedpark", "/home/hanez/.local/share/Steam/steamapps/common/Thimbleweed Park/Icon32.png" },
 }
 graphicsmenu = {
-    { "aseprite", "/usr/bin/aseprite", "/usr/share/pixmaps/aseprite.png" },
-    { "blender", "/usr/bin/blender", "/usr/share/icons/hicolor/48x48/apps/blender.png" },
+    { "aseprite", "/usr/bin/aseprite", "/usr/share/icons/hicolor/48x48/apps/aseprite.png" },
+    { "blender", "/usr/bin/blender", "/usr/share/icons/hicolor/scalable/apps/blender.svg" },
     { "font manager", "/usr/bin/font-manager", "/usr/share/icons/gnome/48x48/apps/preferences-desktop-font.png" },
     { "font viewer", "/usr/bin/gnome-font-viewer", "/usr/share/icons/gnome/48x48/apps/preferences-desktop-font.png" },
     { "gimp", "/usr/bin/gimp", "/usr/share/icons/hicolor/48x48/apps/gimp.png" },
     { "gpick", "/usr/bin/gpick", "/usr/share/icons/hicolor/48x48/apps/gpick.png" },
     { "image scan!", "/usr/bin/iscan", "/usr/share/icons/gnome/48x48/devices/scanner.png" },
-    { "inkscape", "/usr/bin/inkscape", "/usr/share/icons/hicolor/48x48/apps/inkscape.png" },
-    { "krita", "/usr/bin/krita", "/usr/share/icons/hicolor/48x48/apps/calligrakrita.png" },
+    { "inkscape", "/usr/bin/inkscape", "/usr/share/icons/hicolor/48x48/apps/org.inkscape.Inkscape.png" },
+    { "krita", "/usr/bin/krita", "/usr/share/icons/hicolor/48x48/apps/krita.png" },
     { "mtpaint", "/usr/bin/mtpaint", "/usr/share/pixmaps/mtpaint.png" },
     { "scribus", "/usr/bin/scribus", "/usr/share/icons/hicolor/32x32/apps/scribus.png" },
     { "sk1", "/usr/bin/sk1", "/usr/share/icons/hicolor/scalable/apps/sk1.svg" },
@@ -82,8 +87,8 @@ graphicsmenu = {
 }
 hackingmenu = {
     { "cutter", "/usr/bin/Cutter", "/usr/share/icons/hicolor/scalable/apps/cutter.svg" },
-    { "ghidra", "/usr/bin/ghidra", "" },
-    { "ghex", "/usr/bin/ghex ", "/usr/share/icons/matefaenza/apps/scalable/ghex.svg" },
+    { "ghidra", "/usr/bin/ghidra", "/usr/share/pixmaps/Ghidra_Logo.png" },
+    { "ghex", "/usr/bin/ghex ", "/usr/share/icons/Moka/48x48/apps/ghex.png" },
 }
 internetmenu = {
     { "chrome", "/usr/bin/google-chrome-stable", "/usr/share/icons/hicolor/48x48/apps/google-chrome.png" },
@@ -99,7 +104,7 @@ internetmenu = {
     { "tor browser", "/usr/bin/tor-browser", "/usr/share/icons/breeze/apps/48/tor-browser.svg" },
 }
 multimediamenu = {
-    { "acidrip", "/usr/bin/acidrip", "/usr/share/pixmaps/acidrip.png" },
+    { "acidrip", "/usr/bin/acidrip", "/usr/share/icons/Vimix/scalable/apps/acidrip.svg" },
     { "ardour", "/usr/bin/ardour6", "/usr/share/icons/hicolor/48x48/apps/ardour6.png" },
     { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/48x48/apps/audacity.png" },
     { "brasero", "/usr/bin/brasero", "/usr/share/icons/hicolor/48x48/apps/brasero.png" },
@@ -127,7 +132,7 @@ officemenu = {
 }
 privacymenu = {
     { "gnu privacy agent", "/usr/bin/gpa", "/usr/share/pixmaps/gpa.png" },
-    { "keepassxc", "/usr/bin/keepassxc", "/usr/share/icons/hicolor/48x48/apps/keepassxc.png" },
+    { "keepassxc", "/usr/bin/keepassxc", "/usr/share/icons/hicolor/scalable/apps/keepassxc.svg" },
     { "kleopatra", "/usr/bin/kleopatra", "/usr/share/icons/hicolor/48x48/apps/kleopatra.png" },
     { "seahorse", "/usr/bin/seahorse", "/usr/share/icons/hicolor/scalable/apps/org.gnome.seahorse.Application.svg" },
     { "zulucrypt", "/usr/bin/zuluCrypt-gui", "/usr/share/pixmaps/zuluCrypt.papirus.dark.png" },
