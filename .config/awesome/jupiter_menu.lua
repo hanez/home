@@ -63,6 +63,7 @@ engineeringmenu = {
     { "openscad", "/usr/bin/openscad", "/usr/share/pixmaps/openscad.png" },
     { "processing", "/usr/bin/processing", "/usr/share/pixmaps/processing.png" },
     { "qcad", "/usr/bin/qcad", "/usr/share/pixmaps/qcad_icon.png" },
+    { "qtresistors", "/usr/bin/qtResistors", "/usr/share/icons/hicolor/64x64/apps/qtResistors.png" },
 }
 gamesmenu = {
     { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
