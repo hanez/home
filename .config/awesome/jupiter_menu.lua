@@ -15,6 +15,8 @@ accessoriesmenu = {
 }
 communicationmenu = {
     { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/scalable/apps/org.gajim.Gajim.svg" },
+    { "syke", "/usr/bin/skypeforlinux", "/usr/share/pixmaps/skypeforlinux.png" },
+    { "teams", "/usr/bin/teams", "/usr/share/pixmaps/teams.png" },
     { "thunderbird", "/usr/bin/birdtray", "/usr/share/icons/hicolor/48x48/apps/thunderbird.png" },
     { "zoom", "/usr/bin/zoom", "/usr/share/pixmaps/application-x-zoom.png" },
 }
