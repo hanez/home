@@ -1,21 +1,30 @@
 local icondir = os.getenv("HOME").."/.config/awesome/icons/rrze/tango/22x22/"
 
 accessoriesmenu = {
+    { "bookworm", "/usr/bin/com.github.babluboy.bookworm", "/usr/share/icons/hicolor/48x48/apps/com.github.babluboy.bookworm.svg" },
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
     { "dia", "/usr/bin/dia --integrated", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
     { "engrampa", "/usr/bin/engrampa", "/usr/share/icons/hicolor/32x32/apps/engrampa.png" },
     { "epdfview", "/usr/bin/epdfview", "/usr/share/icons/hicolor/48x48/apps/epdfview.png" },
+    { "fbreader", "/usr/bin/FBReader", "/usr/share/pixmaps/FBReader.png" },
     { "freemind", "/usr/bin/freemind", "/usr/share/icons/hicolor/32x32/apps/freemind.png" },
     { "gscriptor", "/usr/bin/gscriptor", "/usr/share/icons/hicolor/48x48/apps/gcr-smart-card.png" },
     { "gvim", "/usr/bin/gvim", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
+    { "lector", "/usr/bin/lector", "/usr/share/icons/hicolor/scalable/apps/Lector.png" },
     { "pluma", "/usr/bin/pluma", "/usr/share/icons/Moka/48x48/apps/gedit.png" },
     { "regexxer", "/usr/bin/regexxer", "/usr/share/icons/hicolor/48x48/apps/regexxer.png" },
     { "retext", "/usr/bin/retext", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
     { "xarchiver", "xarchiver", "/usr/share/icons/hicolor/48x48/apps/xarchiver.png" },
 }
+audiomenu = {
+    { "ardour", "/usr/bin/ardour6", "/usr/share/icons/hicolor/48x48/apps/ardour6.png" },
+    { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/48x48/apps/audacity.png" },
+    { "bitwig studio", "/usr/bin/bitwig-studio", "/usr/share/icons/hicolor/scalable/apps/bitwig-studio.svg" },
+    { "reaper", "/usr/bin/reaper", "/usr/share/icons/hicolor/256x256/apps/cockos-reaper.png" },
+}
 communicationmenu = {
     { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/scalable/apps/org.gajim.Gajim.svg" },
-    { "syke", "/usr/bin/skypeforlinux", "/usr/share/pixmaps/skypeforlinux.png" },
+    { "skype", "/usr/bin/skypeforlinux", "/usr/share/pixmaps/skypeforlinux.png" },
     { "teams", "/usr/bin/teams", "/usr/share/pixmaps/teams.png" },
     { "thunderbird", "/usr/bin/birdtray", "/usr/share/icons/hicolor/48x48/apps/thunderbird.png" },
     { "zoom", "/usr/bin/zoom", "/usr/share/pixmaps/application-x-zoom.png" },
@@ -58,12 +67,12 @@ engineeringmenu = {
     { "arduino", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
     { "eagle", "/home/hanez/bin/eagle.sh", "/usr/share/pixmaps/eagle.png" },
     { "energia", "/usr/bin/energia", "/usr/share/pixmaps/energia.png" },
-    { "fritzing", "/usr/bin/Fritzing", "/usr/share/icons/fritzing.png" },
+    { "fritzing", "/usr/bin/Fritzing", "/usr/share/pixmaps/fritzing.png" },
     { "kicad", "/usr/bin/kicad", "/usr/share/icons/hicolor/48x48/apps/kicad.png" },
     { "leocad", "/usr/bin/leocad", "/usr/share/icons/hicolor/scalable/mimetypes/application-vnd.leocad.svg" },
     { "librecad", "/usr/bin/librecad", "/usr/share/icons/hicolor/scalable/apps/librecad.svg" },
     { "openscad", "/usr/bin/openscad", "/usr/share/pixmaps/openscad.png" },
-    { "processing", "/usr/bin/processing", "/usr/share/pixmaps/processing.png" },
+    --{ "processing", "/usr/bin/processing", "/usr/share/pixmaps/processing.png" },
     { "qcad", "/usr/bin/qcad", "/usr/share/pixmaps/qcad_icon.png" },
     { "qtresistors", "/usr/bin/qtResistors", "/usr/share/icons/hicolor/64x64/apps/qtResistors.png" },
 }
@@ -100,6 +109,8 @@ internetmenu = {
     { "chrome (incognito)", "/usr/bin/google-chrome-stable", "/usr/share/icons/hicolor/48x48/apps/google-chrome.png" },
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
     { "chromium (incognito)", "/usr/bin/chromium --incognito", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
+    { "edge", "/usr/bin/microsoft-edge-dev", "/usr/share/icons/hicolor/48x48/apps/microsoft-edge-dev.png" },
+    { "edge (private)", "/usr/bin/microsoft-edge-dev --inprivate", "/usr/share/icons/hicolor/48x48/apps/microsoft-edge-dev.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "firefox (private)", "/usr/bin/firefox --private-window", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "google earth", "/usr/bin/google-earth-pro", "/opt/google/earth/pro/product_logo_32.xpm" },
@@ -110,8 +121,6 @@ internetmenu = {
 }
 multimediamenu = {
     { "acidrip", "/usr/bin/acidrip", "/usr/share/icons/Vimix/scalable/apps/acidrip.svg" },
-    { "ardour", "/usr/bin/ardour6", "/usr/share/icons/hicolor/48x48/apps/ardour6.png" },
-    { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/48x48/apps/audacity.png" },
     { "brasero", "/usr/bin/brasero", "/usr/share/icons/hicolor/48x48/apps/brasero.png" },
     { "handbrake", "/usr/bin/ghb", "/usr/share/icons/hicolor/scalable/apps/hb-icon.svg" },
     { "k3b", "/usr/bin/k3b", "/usr/share/icons/hicolor/48x48/apps/k3b.png" },
@@ -167,6 +176,7 @@ utilitiesmenu = {
 }
 mainmenu = awful.menu({ items = {
     { "accessories", accessoriesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-accessories.png" },
+    { "audio", audiomenu, "/usr/share/icons/hicolor/scalable/devices/audio-card.svg" },
     { "communication", communicationmenu, icondir.."actions/quote.png" },
     { "database", dbmenu, "/usr/share/icons/oxygen/base/48x48/places/server-database.png" },
     { "development", developmentmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-development.png" },
