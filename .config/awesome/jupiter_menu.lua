@@ -79,9 +79,15 @@ engineeringmenu = {
 }
 gamesmenu = {
     { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
+    { "kobodeluxe", "/usr/bin/kobodl", "/usr/share/icons/hicolor/48x48/apps/kobodl.png" },
+    { "neverball", "/usr/bin/neverball", "/usr/share/icons/hicolor/48x48/apps/neverball.png" },
+    { "neverputt", "/usr/bin/neverputt", "/usr/share/icons/hicolor/48x48/apps/neverputt.png" },
+    { "supertux", "/usr/bin/supertux2", "/usr/share/icons/hicolor/scalable/apps/supertux2.svg" },
+    { "supertux kart", "/usr/bin/supertuxkart", "/usr/share/icons/hicolor/48x48/apps/supertuxkart.png" },
     { "retroarch", "/usr/bin/retroarch", "/usr/share/pixmaps/retroarch.svg" },
     { "steam", "/home/hanez/bin/steam.sh", "/usr/share/pixmaps/steam.png" },
     --{ "thimbleweed park", "/home/hanez/bin/thimbleweedpark", "/home/hanez/.local/share/Steam/steamapps/common/Thimbleweed Park/Icon32.png" },
+    { "xgalaga++", "/usr/bin/xgalaga++", "/usr/share/pixmaps/xgalaga++.xpm" },
 }
 graphicsmenu = {
     { "aseprite", "/usr/bin/aseprite", "/usr/share/icons/hicolor/48x48/apps/aseprite.png" },
