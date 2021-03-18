@@ -1,12 +1,10 @@
 local icondir = os.getenv("HOME").."/.config/awesome/icons/rrze/tango/22x22/"
 
 accessoriesmenu = {
-    { "bookworm", "/usr/bin/com.github.babluboy.bookworm", "/usr/share/icons/hicolor/48x48/apps/com.github.babluboy.bookworm.svg" },
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
     { "dia", "/usr/bin/dia --integrated", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
     { "engrampa", "/usr/bin/engrampa", "/usr/share/icons/hicolor/32x32/apps/engrampa.png" },
     { "epdfview", "/usr/bin/epdfview", "/usr/share/icons/hicolor/48x48/apps/epdfview.png" },
-    { "fbreader", "/usr/bin/FBReader", "/usr/share/pixmaps/FBReader.png" },
     { "freemind", "/usr/bin/freemind", "/usr/share/icons/hicolor/32x32/apps/freemind.png" },
     { "gscriptor", "/usr/bin/gscriptor", "/usr/share/icons/hicolor/48x48/apps/gcr-smart-card.png" },
     { "gvim", "/usr/bin/gvim", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
@@ -170,9 +168,10 @@ sciencemenu = {
 }
 systemmenu = {
     { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
-    { "hardinfo", "/usr/bin/hardinfo", "/usr/share/icons/matefaenza/apps/scalable/hardinfo.svg" },
+    { "hardinfo", "/usr/bin/hardinfo", "/usr/share/icons/hicolor/48x48/apps/hardinfo.png" },
+    { "ksysguard", "/usr/bin/ksysguard", "/usr/share/icons/hicolor/16x16/apps/ksysguardd.png" },
     { "partition manager", "/usr/bin/partitionmanager", "/usr/share/icons/hicolor/scalable/apps/partitionmanager.svg" },
-    { "printer", "/usr/bin/system-config-printer", "/usr/share/icons/paper-vimix/scalable/devices/stock_printers.png" },
+    { "printer", "/usr/bin/system-config-printer", "/usr/share/icons/Adwaita/48x48/legacy/printer-printing.png" },
     { "timeshift", "/usr/bin/timeshift-launcher", "/usr/share/icons/hicolor/48x48/apps/timeshift.png" },
     { "virt-manager", "/usr/bin/virt-manager", "/usr/share/icons/hicolor/48x48/apps/virt-manager.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
