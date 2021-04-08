@@ -126,15 +126,15 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- }}}
 
 -- {{{ Vicious widgets
---batterywidget = wibox.widget.textbox()
---vicious.register(batterywidget, vicious.widgets.bat, "$1$2% / ", 20, config.battery)
+batterywidget = wibox.widget.textbox()
+vicious.register(batterywidget, vicious.widgets.bat, "$1$2% / ", 20, config.battery)
 
 --netwidget = wibox.widget.textbox()
 --vicious.register(netwidget, vicious.widgets.net,
 --'<span color="green">⇩${'..config.net_device..' down_kb}</span> / <span color="#C83321">${'..config.net_device..' up_kb}⇧</span> ', 1)
 
---thermalwidget  = wibox.widget.textbox()
---vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, config.thermal_zone )
+thermalwidget  = wibox.widget.textbox()
+vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, config.thermal_zone )
 
 --myweather = lain.widget.weather({
 --    APPID = config.openweather_api_key,
