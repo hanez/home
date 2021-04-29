@@ -2,6 +2,7 @@ local icondir = os.getenv("HOME").."/.config/awesome/icons/rrze/tango/22x22/"
 
 accessoriesmenu = {
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
+    { "calibre", "/usr/bin/calibre", "/usr/share/icons/hicolor/48x48/apps/calibre-gui.png" },
     { "dia", "/usr/bin/dia --integrated", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
     { "engrampa", "/usr/bin/engrampa", "/usr/share/icons/hicolor/32x32/apps/engrampa.png" },
     { "epdfview", "/usr/bin/epdfview", "/usr/share/icons/hicolor/48x48/apps/epdfview.png" },
