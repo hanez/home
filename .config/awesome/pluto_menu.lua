@@ -48,7 +48,6 @@ developmentmenu = {
     { "rider", "/home/hanez/bin/rider.sh", "/usr/share/rider/bin/rider.svg" },
     { "rubymine", "/home/hanez/bin/rubymine.sh", "/usr/share/icons/hicolor/scalable/apps/rubymine.svg" },
     { "smartgit", "/usr/bin/smartgit", "/opt/smartgit/bin/smartgit.svg" },
-    { "webstorm", "/home/hanez/bin/webstorm.sh", "/opt/webstorm/bin/webstorm.svg" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/pixmaps/wxglade.png" },
     { "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
 }
