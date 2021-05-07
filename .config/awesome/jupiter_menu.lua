@@ -56,10 +56,11 @@ developmentmenu = {
     { "pycharm professional", "/home/hanez/bin/pycharm.sh", "/usr/share/icons/hicolor/scalable/apps/pycharm.svg" },
     { "qgit", "/usr/bin/qgit", "/usr/share/icons/hicolor/48x48/apps/qgit.png" },
     { "qtcreator", "/usr/bin/qtcreator", "/usr/share/icons/hicolor/48x48/apps/QtProject-qtcreator.png" },
-    { "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
     { "rider", "/home/hanez/bin/rider.sh", "/usr/share/rider/bin/rider.svg" },
     { "rubymine", "/home/hanez/bin/rubymine.sh", "/usr/share/icons/hicolor/scalable/apps/rubymine.svg" },
+    { "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
     { "smartgit", "/usr/bin/smartgit", "/opt/smartgit/bin/smartgit.svg" },
+    { "thonny", "/usr/bin/thonny", "/usr/share/icons/hicolor/48x48/apps/org.thonny.Thonny.png" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/icons/hicolor/32x32/apps/wxglade.png" },
     { "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
 }
@@ -181,6 +182,9 @@ utilitiesmenu = {
     { "arandr", "/usr/bin/arandr", "/usr/share/icons/hicolor/scalable/devices/video-television.svg" },
     { "appearance", "/usr/bin/lxappearance", "/usr/share/icons/Adwaita/48x48/categories/preferences-desktop.png" },
 }
+videomenu = {
+    { "shotcut", "/usr/bin/shotcut", "/usr/share/icons/hicolor/64x64/apps/org.shotcut.Shotcut.png" },
+}
 mainmenu = awful.menu({ items = {
     { "accessories", accessoriesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-accessories.png" },
     { "audio", audiomenu, "/usr/share/icons/hicolor/scalable/devices/audio-card.svg" },
@@ -200,6 +204,7 @@ mainmenu = awful.menu({ items = {
     { "science", sciencemenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-science.png" },
     { "system", systemmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-system.png" },
     { "utilities", utilitiesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-utilities.png" },
+    --{ "video", videomenu, "/usr/share/icons/Adwaita/48x48/legacy/camera-video.png" },
     { "filemanager", "/usr/bin/thunar", "/usr/share/icons/Adwaita/22x22/legacy/system-file-manager.png" },
     { "terminal", terminal, "/usr/share/icons/Adwaita/22x22/legacy/utilities-terminal.png" },
     { "configuration", editor_cmd .. " " .. awesome.conffile, "/usr/share/icons/Adwaita/22x22/legacy/preferences-other.png" },
