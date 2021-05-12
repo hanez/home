@@ -66,6 +66,7 @@ developmentmenu = {
 }
 engineeringmenu = {
     { "arduino", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
+    { "cura", "/usr/bin/cura", "/usr/share/icons/hicolor/128x128/apps/cura-icon.png" },
     { "eagle", "/home/hanez/bin/eagle.sh", "/usr/share/pixmaps/eagle.png" },
     { "energia", "/usr/bin/energia", "/usr/share/pixmaps/energia.png" },
     { "fritzing", "/usr/bin/Fritzing", "/usr/share/pixmaps/fritzing.png" },
@@ -150,6 +151,7 @@ officemenu = {
     { "libreoffice impress", "/usr/bin/libreoffice --impress", "/usr/share/icons/hicolor/48x48/apps/libreoffice-impress.png" },
     { "libreoffice math", "/usr/bin/libreoffice --math", "/usr/share/icons/hicolor/48x48/apps/libreoffice-math.png" },
     { "libreoffice writer", "/usr/bin/libreoffice --writer", "/usr/share/icons/hicolor/48x48/apps/libreoffice-writer.png" },
+    { "openboard", "/usr/bin/openboard", "/usr/share/icons/hicolor/64x64/apps/OpenBoard.png" },
     { "pdfslicer", "/usr/bin/pdfslicer", "/usr/share/icons/hicolor/scalable/apps/com.github.junrrein.PDFSlicer.svg" },
 }
 privacymenu = {
