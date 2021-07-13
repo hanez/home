@@ -65,6 +65,7 @@ developmentmenu = {
     { "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
     { "smartgit", "/usr/bin/smartgit", "/opt/smartgit/bin/smartgit.svg" },
     { "thonny", "/usr/bin/thonny", "/usr/share/icons/hicolor/48x48/apps/org.thonny.Thonny.png" },
+    --{ "webstorm", "/home/hanez/bin/webstorm.sh", "/usr/share/pixmaps/webstorm.svg" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/icons/hicolor/32x32/apps/wxglade.png" },
     { "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
 }
@@ -145,8 +146,10 @@ multimediamenu = {
 }
 networkmenu = {
     { "ettercap", "/usr/bin/ettercap -G", "/usr/share/pixmaps/ettercap.svg" },
+    { "gns3", "/usr/bin/gns3", "/usr/share/icons/hicolor/48x48/apps/gns3.png" },
     { "gufw", "/usr/bin/gufw_fixed", "/usr/share/icons/hicolor/scalable/apps/gufw.svg" },
     { "wireshark", "/usr/bin/wireshark-gtk", "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
+    { "zenmap", "/usr/bin/gksu /usr/bin/zenmap", "/usr/share/zenmap/pixmaps/zenmap.png" },
 }
 officemenu = {
     { "calendar", "/usr/bin/io.elementary.calendar", "/usr/share/icons/elementary/apps/48/office-calendar.svg" },
@@ -180,6 +183,7 @@ systemmenu = {
     { "ksysguard", "/usr/bin/ksysguard", "/usr/share/icons/hicolor/16x16/apps/ksysguardd.png" },
     { "partition manager", "/usr/bin/partitionmanager", "/usr/share/icons/hicolor/scalable/apps/partitionmanager.svg" },
     { "printer", "/usr/bin/system-config-printer", "/usr/share/icons/Adwaita/48x48/legacy/printer-printing.png" },
+    { "teamviewer", "/usr/bin/teamviewer", "/usr/share/icons/hicolor/48x48/apps/TeamViewer.png" },
     { "timeshift", "/usr/bin/timeshift-launcher", "/usr/share/icons/hicolor/48x48/apps/timeshift.png" },
     { "virt-manager", "/usr/bin/virt-manager", "/usr/share/icons/hicolor/48x48/apps/virt-manager.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
