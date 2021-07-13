@@ -60,6 +60,21 @@ if file_exists(name) then
     beautiful.wallpaper = name
 end
 
+
+-- {{{ Wallpaper
+if beautiful.wallpaper then
+    for s = 1, screen.count() do
+        --gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+        if s < 2 then
+          gears.wallpaper.maximized(os.getenv("HOME").."/.background0.png", s, true)
+        else
+          gears.wallpaper.maximized(os.getenv("HOME").."/.background1.png", s, true)
+        end
+    end
+end
+-- }}}
+
+
 -- This is used later as the default terminal and editor to run.
 terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange  -fa "'..config.font_xterm..'" -fs '..config.font_xterm_size
 editor = "/usr/bin/vim"
@@ -205,16 +220,34 @@ tasklist_buttons = gears.table.join(
                                           end))
 
 function set_wallpaper(s)
-    -- Wallpaper
+--    -- Wallpaper
+--    if beautiful.wallpaper then
+--        local wallpaper = beautiful.wallpaper
+--        -- If wallpaper is a function, call it with the screen
+--        if type(wallpaper) == "function" then
+--            wallpaper = wallpaper(s)
+--       end
+--        gears.wallpaper.maximized(wallpaper, s, false)
+--        --gears.wallpaper.centered(wallpaper, s, true)
+--    end
+-- {{{ Wallpaper
     if beautiful.wallpaper then
         local wallpaper = beautiful.wallpaper
         -- If wallpaper is a function, call it with the screen
         if type(wallpaper) == "function" then
             wallpaper = wallpaper(s)
         end
-        gears.wallpaper.maximized(wallpaper, s, false)
-        --gears.wallpaper.centered(wallpaper, s, true)
+
+        for s = 1, screen.count() do
+            --gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+            if s < 2 then
+              gears.wallpaper.maximized(os.getenv("HOME").."/.background0.png", s, true)
+            else
+              gears.wallpaper.maximized(os.getenv("HOME").."/.background1.png", s, true)
+            end
+        end
     end
+-- }}}
 end
 
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
@@ -291,8 +324,6 @@ globalkeys = gears.table.join(
               { description="start chromium", group="awesome" }),
     awful.key({ modkey            }, "b", function() awful.util.spawn("/usr/bin/firefox") end,
               { description="start firefox", group="awesome" }),
-    awful.key({ modkey            }, "n", function() awful.util.spawn("/usr/bin/thunderbird") end,
-              { description="start thunderbird", group="awesome" }),
     awful.key({ modkey            }, "m", function() awful.util.spawn("/usr/bin/birdtray") end,
               { description="start claws-mail", group="awesome" }),
     awful.key({ modkey            }, "c", function() awful.util.spawn(editor_cmd .. " " .. awesome.conffile) end,
