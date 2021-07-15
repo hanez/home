@@ -20,7 +20,10 @@ audiomenu = {
     { "ardour", "/usr/bin/ardour6", "/usr/share/icons/hicolor/48x48/apps/ardour6.png" },
     { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/48x48/apps/audacity.png" },
     { "bitwig studio", "/usr/bin/bitwig-studio", "/usr/share/icons/hicolor/scalable/apps/bitwig-studio.svg" },
+    { "cadence", "/usr/bin/cadence", "/usr/share/icons/hicolor/scalable/apps/cadence.svg" },
     { "carla", "/usr/bin/carla", "/usr/share/icons/hicolor/scalable/apps/carla.svg" },
+    { "catarina", "/usr/bin/catarina", "/usr/share/icons/hicolor/scalable/apps/catarina.svg" },
+    { "catia", "/usr/bin/catia", "/usr/share/icons/hicolor/scalable/apps/catia.svg" },
     { "qjackctl", "/usr/bin/qjackctl", "/usr/share/icons/hicolor/scalable/apps/qjackctl.svg" },
     { "reaper", "/usr/bin/reaper", "/usr/share/icons/hicolor/256x256/apps/cockos-reaper.png" },
 }
@@ -42,7 +45,6 @@ dbmenu = {
 }
 developmentmenu = {
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
-    { "android studio", "/opt/android-studio/bin/studio.sh", "/opt/android-studio/bin/studio.png" },
     { "bluegriffon", "/usr/bin/bluegriffon", "/usr/share/icons/hicolor/48x48/apps/bluegriffon.png" },
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/hicolor/64x64/apps/codeblocks.png" },
     { "clion", "/home/hanez/bin/clion.sh", "/usr/share/pixmaps/clion.svg" },
@@ -52,7 +54,6 @@ developmentmenu = {
     { "glade", "/usr/bin/glade ", "/usr/share/icons/hicolor/scalable/apps/glade-3.svg" },
     { "goland", "/home/hanez/bin/goland.sh", "/usr/share/pixmaps/goland.png"},
     { "intellij", "/usr/bin/idea", "/usr/share/pixmaps/idea.png" },
-    { "intellij ultimate", "/usr/bin/intellij-idea-ultimate-edition", "/usr/share/pixmaps/idea.png" },
     { "kdevelop", "/usr/bin/kdevelop", "/usr/share/icons/hicolor/48x48/apps/kdevelop.png" },
     { "lazarus", "/usr/bin/lazarus", "/usr/lib/lazarus/images/ide_icon48x48.png" },
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
