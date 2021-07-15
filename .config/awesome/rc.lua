@@ -561,12 +561,14 @@ awful.rules.rules = {
           "galculator",
           "megasync",
           "MEGAsync",
+          "qjackctl",
         },
         class = {
           "Arandr",
           "Gpick",
           "megasync",
           "MEGAsync",
+          "qjackctl",
         },
         name = {
           "Event Tester",  -- xev.
