@@ -24,7 +24,22 @@ audiomenu = {
     { "carla", "/usr/bin/carla", "/usr/share/icons/hicolor/scalable/apps/carla.svg" },
     { "catarina", "/usr/bin/catarina", "/usr/share/icons/hicolor/scalable/apps/catarina.svg" },
     { "catia", "/usr/bin/catia", "/usr/share/icons/hicolor/scalable/apps/catia.svg" },
+    { "hydrogen", "/usr/bin/hydrogen", "/usr/share/icons/hicolor/scalable/apps/org.hydrogenmusic.Hydrogen.svg" },
+    { "lmms", "/usr/bin/lmms", "/usr/share/icons/hicolor/48x48/apps/lmms.png" },
     { "qjackctl", "/usr/bin/qjackctl", "/usr/share/icons/hicolor/scalable/apps/qjackctl.svg" },
+    { "qtractor", "/usr/bin/qtractor", "/usr/share/icons/hicolor/scalable/apps/qtractor.svg" },
+    { "reaper", "/usr/bin/reaper", "/usr/share/icons/hicolor/256x256/apps/cockos-reaper.png" },
+    { "rosegarden", "/usr/bin/rosegarden", "/usr/share/icons/hicolor/64x64/apps/rosegarden.png" },
+    { "waveform", "/usr/bin/Waveform11", "/usr/share/pixmaps/waveform11.png" },
+}
+communicationmenu = {
+    { "claws mail", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
+    { "clawsker", "/usr/bin/clawsker", "/usr/share/icons/hicolor/48x48/apps/clawsker.png" },
+    { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/scalable/apps/org.gajim.Gajim.svg" },
+    { "signal", "/usr/bin/signal-desktop-beta", "/usr/share/icons/hicolor/48x48/apps/signal-desktop-beta.png" },
+    { "skype", "/usr/bin/skypeforlinux", "/usr/share/pixmaps/skypeforlinux.png" },
+    { "teams", "/usr/bin/teams", "/usr/share/pixmaps/teams.png" },
+    { "whatsapp", "/usr/bin/whatsapp-for-linux", "/usr/share/icons/hicolor/32x32/apps/whatsapp-for-linux.png" },
     { "reaper", "/usr/bin/reaper", "/usr/share/icons/hicolor/256x256/apps/cockos-reaper.png" },
 }
 communicationmenu = {
@@ -34,7 +49,6 @@ communicationmenu = {
     { "signal", "/usr/bin/signal-desktop-beta", "/usr/share/icons/hicolor/48x48/apps/signal-desktop-beta.png" },
     { "skype", "/usr/bin/skypeforlinux", "/usr/share/pixmaps/skypeforlinux.png" },
     { "teams", "/usr/bin/teams", "/usr/share/pixmaps/teams.png" },
-    { "thunderbird", "/usr/bin/thunderbird", "/usr/share/icons/hicolor/48x48/apps/thunderbird.png" },
     { "whatsapp", "/usr/bin/whatsapp-for-linux", "/usr/share/icons/hicolor/32x32/apps/whatsapp-for-linux.png" },
     { "zoom", "/usr/bin/zoom", "/usr/share/pixmaps/application-x-zoom.png" },
 }
@@ -50,6 +64,7 @@ developmentmenu = {
     { "clion", "/home/hanez/bin/clion.sh", "/usr/share/pixmaps/clion.svg" },
     { "cmake gui", "/usr/bin/cmake-gui", "/usr/share/icons/hicolor/64x64/apps/cmake.png" },
     { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
+    { "eric", "/usr/bin/eric6", "/usr/lib/python3.9/site-packages/eric6/pixmaps/ericWeb48_icon.png" },
     { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
     { "glade", "/usr/bin/glade ", "/usr/share/icons/hicolor/scalable/apps/glade-3.svg" },
     { "goland", "/home/hanez/bin/goland.sh", "/usr/share/pixmaps/goland.png"},
@@ -140,7 +155,7 @@ multimediamenu = {
     { "k3b", "/usr/bin/k3b", "/usr/share/icons/hicolor/48x48/apps/k3b.png" },
     { "k9copy", "/usr/bin/k9copy", "/usr/share/icons/hicolor/48x48/actions/k9copy.png" },
     { "kaffeine", "/usr/bin/kaffeine", "/usr/share/icons/hicolor/scalable/apps/kaffeine.svg" },
-    { "mediathekview", "/usr/bin/mediathekview", "/usr/share/icons/hicolor/scalable/apps/mediathekview.svg/MediathekView.svg" },
+    { "mediathekview", "/home/hanez/opt/MediathekView/MediathekView", "/home/hanez/opt/MediathekView/MediathekView.svg" },
     { "spotify", "/usr/bin/spotify-tray", "/usr/share/pixmaps/spotify-client.png" },
     { "tvbrowser", "/usr/bin/tvbrowser", "/usr/share/icons/hicolor/48x48/apps/tvbrowser.png" },
     { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
