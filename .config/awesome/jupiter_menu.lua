@@ -52,17 +52,13 @@ communicationmenu = {
     { "whatsapp", "/usr/bin/whatsapp-for-linux", "/usr/share/icons/hicolor/32x32/apps/whatsapp-for-linux.png" },
     { "zoom", "/usr/bin/zoom", "/usr/share/pixmaps/application-x-zoom.png" },
 }
-dbmenu = {
-    { "datagrip", "/home/hanez/bin/datagrip.sh", "/opt/datagrip/bin/datagrip.svg" },
-    { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
-    { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
-}
 developmentmenu = {
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "bluegriffon", "/usr/bin/bluegriffon", "/usr/share/icons/hicolor/48x48/apps/bluegriffon.png" },
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/hicolor/64x64/apps/codeblocks.png" },
     { "clion", "/home/hanez/bin/clion.sh", "/usr/share/pixmaps/clion.svg" },
     { "cmake gui", "/usr/bin/cmake-gui", "/usr/share/icons/hicolor/64x64/apps/cmake.png" },
+    { "datagrip", "/home/hanez/bin/datagrip.sh", "/opt/datagrip/bin/datagrip.svg" },
     { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
     { "eric", "/usr/bin/eric6", "/usr/lib/python3.9/site-packages/eric6/pixmaps/ericWeb48_icon.png" },
     { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
@@ -72,6 +68,7 @@ developmentmenu = {
     { "kdevelop", "/usr/bin/kdevelop", "/usr/share/icons/hicolor/48x48/apps/kdevelop.png" },
     { "lazarus", "/usr/bin/lazarus", "/usr/lib/lazarus/images/ide_icon48x48.png" },
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
+    { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
     { "phpstorm", "/home/hanez/bin/phpstorm.sh", "/usr/share/pixmaps/phpstorm.svg" },
     { "pycharm professional", "/home/hanez/bin/pycharm.sh", "/usr/share/icons/hicolor/scalable/apps/pycharm.svg" },
     { "qgit", "/usr/bin/qgit", "/usr/share/icons/hicolor/48x48/apps/qgit.png" },
@@ -80,6 +77,7 @@ developmentmenu = {
     { "rubymine", "/home/hanez/bin/rubymine.sh", "/usr/share/icons/hicolor/scalable/apps/rubymine.svg" },
     { "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
     { "smartgit", "/usr/bin/smartgit", "/opt/smartgit/bin/smartgit.svg" },
+    { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
     { "thonny", "/usr/bin/thonny", "/usr/share/icons/hicolor/48x48/apps/org.thonny.Thonny.png" },
     --{ "webstorm", "/home/hanez/bin/webstorm.sh", "/usr/share/pixmaps/webstorm.svg" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/icons/hicolor/32x32/apps/wxglade.png" },
@@ -104,11 +102,14 @@ gamesmenu = {
     { "kobodeluxe", "/usr/bin/kobodl", "/usr/share/icons/hicolor/48x48/apps/kobodl.png" },
     { "neverball", "/usr/bin/neverball", "/usr/share/icons/hicolor/48x48/apps/neverball.png" },
     { "neverputt", "/usr/bin/neverputt", "/usr/share/icons/hicolor/48x48/apps/neverputt.png" },
+    { "red eclipse", "/opt/redeclipse/redeclipse.sh", "/usr/share/pixmaps/redeclipse.png" },
+    { "retroarch", "/usr/bin/retroarch", "/usr/share/pixmaps/retroarch.svg" },
     { "supertux", "/usr/bin/supertux2", "/usr/share/icons/hicolor/scalable/apps/supertux2.svg" },
     { "supertux kart", "/usr/bin/supertuxkart", "/usr/share/icons/hicolor/48x48/apps/supertuxkart.png" },
-    { "retroarch", "/usr/bin/retroarch", "/usr/share/pixmaps/retroarch.svg" },
+    { "sauerbraten", "/usr/bin/sauerbraten-client", "/usr/share/pixmaps/sauerbraten.png" },
     { "steam", "/home/hanez/bin/steam.sh", "/usr/share/pixmaps/steam.png" },
     --{ "thimbleweed park", "/home/hanez/bin/thimbleweedpark", "/home/hanez/.local/share/Steam/steamapps/common/Thimbleweed Park/Icon32.png" },
+    { "warzone 2100", "/usr/bin/warzone2100", "/usr/share/icons/warzone2100.png" },
     { "xgalaga++", "/usr/bin/xgalaga++", "/usr/share/pixmaps/xgalaga++.xpm" },
 }
 graphicsmenu = {
@@ -217,7 +218,6 @@ mainmenu = awful.menu({ items = {
     { "accessories", accessoriesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-accessories.png" },
     { "audio", audiomenu, "/usr/share/icons/hicolor/scalable/devices/audio-card.svg" },
     { "communication", communicationmenu, icondir.."actions/quote.png" },
-    { "database", dbmenu, "/usr/share/icons/oxygen/base/48x48/places/server-database.png" },
     { "development", developmentmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-development.png" },
     { "engineering", engineeringmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-engineering.png" },
     { "games", gamesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-games.png" },
