@@ -23,14 +23,22 @@ audiomenu = {
     { "cadence", "/usr/bin/cadence", "/usr/share/icons/hicolor/scalable/apps/cadence.svg" },
     { "carla", "/usr/bin/carla", "/usr/share/icons/hicolor/scalable/apps/carla.svg" },
     { "catarina", "/usr/bin/catarina", "/usr/share/icons/hicolor/scalable/apps/catarina.svg" },
+    { "dexed", "/usr/bin/dexed", "/usr/share/icons/hicolor/512x512/apps/dexed.png" },
+    { "helm", "/usr/bin/helm-synth", "/usr/share/icons/hicolor/48x48/apps/helm-synth.png" },
     { "catia", "/usr/bin/catia", "/usr/share/icons/hicolor/scalable/apps/catia.svg" },
     { "hydrogen", "/usr/bin/hydrogen", "/usr/share/icons/hicolor/scalable/apps/org.hydrogenmusic.Hydrogen.svg" },
     { "lmms", "/usr/bin/lmms", "/usr/share/icons/hicolor/48x48/apps/lmms.png" },
+    { "mixxx", "/usr/bin/mixxx", "/usr/share/icons/hicolor/scalable/apps/mixxx.svg" },
+    { "os-251", "/usr/bin/OS-251", "/home/hanez/.config/awesome/icons/synth.svg" },
     { "qjackctl", "/usr/bin/qjackctl", "/usr/share/icons/hicolor/scalable/apps/qjackctl.svg" },
     { "qtractor", "/usr/bin/qtractor", "/usr/share/icons/hicolor/scalable/apps/qtractor.svg" },
     { "reaper", "/usr/bin/reaper", "/usr/share/icons/hicolor/256x256/apps/cockos-reaper.png" },
     { "rosegarden", "/usr/bin/rosegarden", "/usr/share/icons/hicolor/64x64/apps/rosegarden.png" },
+    { "sitala", "/usr/bin/sitala", "/usr/share/icons/hicolor/256x256/apps/sitala.png" },
+    { "vital", "/usr/bin/vital", "/usr/share/icons/hicolor/48x48/apps/vital.png" },
     { "waveform", "/usr/bin/Waveform11", "/usr/share/pixmaps/waveform11.png" },
+    { "zyn-fusion", "/usr/bin/zyn-fusion", "/usr/share/pixmaps/zynaddsubfx.svg" },
+    { "zyaddsubfx", "/usr/bin/zynaddsubfx", "/usr/share/pixmaps/zynaddsubfx.svg" },
 }
 communicationmenu = {
     { "claws mail", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
@@ -84,7 +92,8 @@ developmentmenu = {
     { "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
 }
 engineeringmenu = {
-    { "arduino", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
+    { "arduino 1.0.5", "/home/hanez/opt/arduino-1.0.5/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
+    { "arduino 1.8.16", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
     { "cura", "/usr/bin/cura", "/usr/share/icons/hicolor/128x128/apps/cura-icon.png" },
     { "eagle", "/home/hanez/bin/eagle.sh", "/usr/share/pixmaps/eagle.png" },
     { "energia", "/usr/bin/energia", "/usr/share/pixmaps/energia.png" },
@@ -184,6 +193,7 @@ privacymenu = {
     { "keepassxc", "/usr/bin/keepassxc", "/usr/share/icons/hicolor/scalable/apps/keepassxc.svg" },
     { "kleopatra", "/usr/bin/kleopatra", "/usr/share/icons/hicolor/48x48/apps/kleopatra.png" },
     { "seahorse", "/usr/bin/seahorse", "/usr/share/icons/hicolor/scalable/apps/org.gnome.seahorse.Application.svg" },
+    { "tor browser", "/usr/bin/tor-browser", "/usr/share/icons/hicolor/scalable/apps/tor-browser.svg" },
     { "zulucrypt", "/usr/bin/zuluCrypt-gui", "/usr/share/pixmaps/zuluCrypt.papirus.dark.png" },
 }
 radiomenu = {
@@ -216,7 +226,7 @@ videomenu = {
 }
 mainmenu = awful.menu({ items = {
     { "accessories", accessoriesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-accessories.png" },
-    { "audio", audiomenu, "/usr/share/icons/hicolor/scalable/devices/audio-card.svg" },
+    { "audio", audiomenu, "/home/hanez/.config/awesome/icons/synth2.png" },
     { "communication", communicationmenu, icondir.."actions/quote.png" },
     { "development", developmentmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-development.png" },
     { "engineering", engineeringmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-engineering.png" },
