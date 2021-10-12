@@ -19,3 +19,8 @@ function tablelength(T)
     return count
 end
 
+function suspend()
+    awful.util.spawn("/usr/bin/slock")
+    awful.util.spawn("loginctl suspend")
+end
+
