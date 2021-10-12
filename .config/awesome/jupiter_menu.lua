@@ -26,17 +26,21 @@ audiomenu = {
     { "dexed", "/usr/bin/dexed", "/usr/share/icons/hicolor/512x512/apps/dexed.png" },
     { "helm", "/usr/bin/helm-synth", "/usr/share/icons/hicolor/48x48/apps/helm-synth.png" },
     { "catia", "/usr/bin/catia", "/usr/share/icons/hicolor/scalable/apps/catia.svg" },
+    { "gtick", "/usr/bin/gtick", "/usr/share/pixmaps/gtick_32x32.xpm" },
     { "hydrogen", "/usr/bin/hydrogen", "/usr/share/icons/hicolor/scalable/apps/org.hydrogenmusic.Hydrogen.svg" },
     { "lmms", "/usr/bin/lmms", "/usr/share/icons/hicolor/48x48/apps/lmms.png" },
     { "mixxx", "/usr/bin/mixxx", "/usr/share/icons/hicolor/scalable/apps/mixxx.svg" },
+    { "ob-xd", "/home/hanez/bin/OB-Xd", "/home/hanez/.config/awesome/icons/synth.png" },
     { "os-251", "/usr/bin/OS-251", "/home/hanez/.config/awesome/icons/synth.svg" },
     { "qjackctl", "/usr/bin/qjackctl", "/usr/share/icons/hicolor/scalable/apps/qjackctl.svg" },
     { "qtractor", "/usr/bin/qtractor", "/usr/share/icons/hicolor/scalable/apps/qtractor.svg" },
+    { "rack", "/home/hanez/Rack.sh", "/home/hanez/opt/Rack/res/icon.png" },
     { "reaper", "/usr/bin/reaper", "/usr/share/icons/hicolor/256x256/apps/cockos-reaper.png" },
     { "rosegarden", "/usr/bin/rosegarden", "/usr/share/icons/hicolor/64x64/apps/rosegarden.png" },
     { "sitala", "/usr/bin/sitala", "/usr/share/icons/hicolor/256x256/apps/sitala.png" },
     { "vital", "/usr/bin/vital", "/usr/share/icons/hicolor/48x48/apps/vital.png" },
     { "waveform", "/usr/bin/Waveform11", "/usr/share/pixmaps/waveform11.png" },
+    { "yoshimi", "/usr/bin/yoshimi", "/usr/share/icons/hicolor/scalable/apps/yoshimi.svg" },
     { "zyn-fusion", "/usr/bin/zyn-fusion", "/usr/share/pixmaps/zynaddsubfx.svg" },
     { "zyaddsubfx", "/usr/bin/zynaddsubfx", "/usr/share/pixmaps/zynaddsubfx.svg" },
 }
@@ -92,8 +96,8 @@ developmentmenu = {
     { "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
 }
 engineeringmenu = {
-    { "arduino 1.0.5", "/home/hanez/opt/arduino-1.0.5/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
-    { "arduino 1.8.16", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
+    { "arduino (1.0.5)", "/home/hanez/opt/arduino-1.0.5/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
+    { "arduino (1.8.16)", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
     { "cura", "/usr/bin/cura", "/usr/share/icons/hicolor/128x128/apps/cura-icon.png" },
     { "eagle", "/home/hanez/bin/eagle.sh", "/usr/share/pixmaps/eagle.png" },
     { "energia", "/usr/bin/energia", "/usr/share/pixmaps/energia.png" },
@@ -247,6 +251,7 @@ mainmenu = awful.menu({ items = {
     { "terminal", terminal, "/usr/share/icons/Adwaita/22x22/legacy/utilities-terminal.png" },
     { "configuration", editor_cmd .. " " .. awesome.conffile, "/usr/share/icons/Adwaita/22x22/legacy/preferences-other.png" },
     { "reload", awesome.restart, "/usr/share/icons/Adwaita/22x22/legacy/view-refresh.png" },
+    { "suspend", "", "/usr/share/icons/Faenza-Dark/apps/48/system-suspend.png" },
     { "quit", function() awesome.quit() end, "/usr/share/icons/Adwaita/22x22/legacy/system-log-out.png" }
   }
 })
