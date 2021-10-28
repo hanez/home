@@ -24,6 +24,7 @@ audiomenu = {
     { "carla", "/usr/bin/carla", "/usr/share/icons/hicolor/scalable/apps/carla.svg" },
     { "catarina", "/usr/bin/catarina", "/usr/share/icons/hicolor/scalable/apps/catarina.svg" },
     { "dexed", "/usr/bin/dexed", "/usr/share/icons/hicolor/512x512/apps/dexed.png" },
+    { "drumkv1", "/usr/bin/drumkv1_jack", "/usr/share/icons/hicolor/scalable/apps/drumkv1.svg" },
     { "helm", "/usr/bin/helm-synth", "/usr/share/icons/hicolor/48x48/apps/helm-synth.png" },
     { "catia", "/usr/bin/catia", "/usr/share/icons/hicolor/scalable/apps/catia.svg" },
     { "gtick", "/usr/bin/gtick", "/usr/share/pixmaps/gtick_32x32.xpm" },
@@ -214,6 +215,7 @@ systemmenu = {
     { "ksysguard", "/usr/bin/ksysguard", "/usr/share/icons/hicolor/16x16/apps/ksysguardd.png" },
     { "partition manager", "/usr/bin/partitionmanager", "/usr/share/icons/hicolor/scalable/apps/partitionmanager.svg" },
     { "printer", "/usr/bin/system-config-printer", "/usr/share/icons/Adwaita/48x48/legacy/printer-printing.png" },
+    { "sysmon", "/usr/bin/sysmon", "/home/hanez/.config/awesome/icons/sysmon.png" },
     { "teamviewer", "/usr/bin/teamviewer", "/usr/share/icons/hicolor/48x48/apps/TeamViewer.png" },
     { "timeshift", "/usr/bin/timeshift-launcher", "/usr/share/icons/hicolor/48x48/apps/timeshift.png" },
     { "virt-manager", "/usr/bin/virt-manager", "/usr/share/icons/hicolor/48x48/apps/virt-manager.png" },
@@ -226,6 +228,7 @@ utilitiesmenu = {
     { "raspberry pi imager", "/usr/bin/rpi-imager", "/usr/share/icons/hicolor/128x128/apps/rpi-imager.png" },
 }
 videomenu = {
+    { "obs", "/usr/bin/obs", "/usr/share/icons/hicolor/256x256/apps/com.obsproject.Studio.png" },
     { "shotcut", "/usr/bin/shotcut", "/usr/share/icons/hicolor/64x64/apps/org.shotcut.Shotcut.png" },
 }
 mainmenu = awful.menu({ items = {
@@ -251,7 +254,7 @@ mainmenu = awful.menu({ items = {
     { "terminal", terminal, "/usr/share/icons/Adwaita/22x22/legacy/utilities-terminal.png" },
     { "configuration", editor_cmd .. " " .. awesome.conffile, "/usr/share/icons/Adwaita/22x22/legacy/preferences-other.png" },
     { "reload", awesome.restart, "/usr/share/icons/Adwaita/22x22/legacy/view-refresh.png" },
-    { "suspend", "", "/usr/share/icons/Faenza-Dark/apps/48/system-suspend.png" },
+    { "suspend", function () awful.util.spawn("/usr/bin/loginctl suspend") end, "/usr/share/icons/Faenza-Dark/apps/48/system-suspend.png" },
     { "quit", function() awesome.quit() end, "/usr/share/icons/Adwaita/22x22/legacy/system-log-out.png" }
   }
 })
