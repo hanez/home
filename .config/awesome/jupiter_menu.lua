@@ -115,6 +115,7 @@ engineeringmenu = {
 }
 gamesmenu = {
     { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
+    { "flightgear", "/usr/bin/fgfs --launcher", "/usr/share/icons/hicolor/scalable/apps/flightgear.svg" },
     { "kobodeluxe", "/usr/bin/kobodl", "/usr/share/icons/hicolor/48x48/apps/kobodl.png" },
     { "neverball", "/usr/bin/neverball", "/usr/share/icons/hicolor/48x48/apps/neverball.png" },
     { "neverputt", "/usr/bin/neverputt", "/usr/share/icons/hicolor/48x48/apps/neverputt.png" },
@@ -203,6 +204,7 @@ privacymenu = {
     { "kleopatra", "/usr/bin/kleopatra", "/usr/share/icons/hicolor/48x48/apps/kleopatra.png" },
     { "seahorse", "/usr/bin/seahorse", "/usr/share/icons/hicolor/scalable/apps/org.gnome.seahorse.Application.svg" },
     { "tor browser", "/usr/bin/tor-browser", "/usr/share/icons/hicolor/scalable/apps/tor-browser.svg" },
+    { "yubikey", "/usr/bin/yubikey-personalization-gui", "/usr/share/icons/hicolor/48x48/apps/yubikey-personalization-gui.png" },
     { "zulucrypt", "/usr/bin/zuluCrypt-gui", "/usr/share/pixmaps/zuluCrypt.papirus.dark.png" },
 }
 radiomenu = {
