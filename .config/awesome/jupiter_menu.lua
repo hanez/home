@@ -75,7 +75,7 @@ developmentmenu = {
     { "dbeaver", "/usr/bin/dbeaver", "/usr/share/icons/hicolor/48x48/apps/dbeaver.png" },
     --{ "datagrip", "/home/hanez/bin/datagrip.sh", "/opt/datagrip/bin/datagrip.svg" },
     { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
-    { "eric", "/usr/bin/eric6", "/usr/lib/python3.9/site-packages/eric6/pixmaps/ericWeb48_icon.png" },
+    { "eric", "/usr/bin/eric6", "/usr/share/icons/hicolor/48x48/apps/eric.png" },
     { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
     { "glade", "/usr/bin/glade ", "/usr/share/icons/hicolor/scalable/apps/glade-3.svg" },
     --{ "goland", "/home/hanez/bin/goland.sh", "/usr/share/pixmaps/goland.png"},
@@ -83,6 +83,7 @@ developmentmenu = {
     { "kdevelop", "/usr/bin/kdevelop", "/usr/share/icons/hicolor/48x48/apps/kdevelop.png" },
     { "lazarus", "/usr/bin/lazarus", "/usr/lib/lazarus/images/ide_icon48x48.png" },
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
+    { "meld", "/usr/bin/meld", "/usr/share/icons/hicolor/scalable/apps/org.gnome.meld.svg" },
     { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
     --{ "phpstorm", "/home/hanez/bin/phpstorm.sh", "/usr/share/pixmaps/phpstorm.svg" },
     --{ "pycharm", "/home/hanez/bin/pycharm.sh", "/usr/share/pycharm/bin/pycharm.svg" },
@@ -95,6 +96,7 @@ developmentmenu = {
     { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
     { "thonny", "/usr/bin/thonny", "/usr/share/icons/hicolor/48x48/apps/org.thonny.Thonny.png" },
     --{ "webstorm", "/home/hanez/bin/webstorm.sh", "/usr/share/pixmaps/webstorm.svg" },
+    { "wxformbuilder", "/usr/bin/wxformbuilder", "/usr/share/pixmaps/wxformbuilder.png" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/icons/hicolor/32x32/apps/wxglade.png" },
     { "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
 }
@@ -147,7 +149,7 @@ graphicsmenu = {
 }
 hackingmenu = {
     { "ghidra", "/usr/bin/ghidra", "/usr/share/pixmaps/Ghidra_Logo.png" },
-    { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/scalable/apps/org.gnome.GHex-symbolic.svg" },
+    { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/scalable/apps/org.gnome.GHex.svg" },
     { "iaito", "/usr/bin/iaito ", "/usr/share/icons/hicolor/scalable/apps/iaito-o.svg" },
 }
 internetmenu = {
@@ -204,6 +206,7 @@ privacymenu = {
     { "kleopatra", "/usr/bin/kleopatra", "/usr/share/icons/hicolor/48x48/apps/kleopatra.png" },
     { "seahorse", "/usr/bin/seahorse", "/usr/share/icons/hicolor/scalable/apps/org.gnome.seahorse.Application.svg" },
     { "tor browser", "/usr/bin/tor-browser", "/usr/share/icons/hicolor/scalable/apps/tor-browser.svg" },
+    { "veracrypt", "/usr/bin/veracrypt", "/usr/share/icons/hicolor/scalable/apps/tor-browser.svg" },
     { "yubikey", "/usr/bin/yubikey-personalization-gui", "/usr/share/icons/hicolor/48x48/apps/yubikey-personalization-gui.png" },
     { "zulucrypt", "/usr/bin/zuluCrypt-gui", "/usr/share/pixmaps/zuluCrypt.papirus.dark.png" },
 }
