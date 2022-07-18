@@ -21,7 +21,7 @@ export ANDROIDNDKVER="r16b"
 # Export the $EDITOR and $TERMINAL
 export BROWSER=/usr/bin/firefox
 export EDITOR=/usr/bin/vim
-export TERMINAL='/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange -fa "Noto Mono" -fs 13'
+export TERMINAL='/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange -fa "NotoMono Nerd Font Mono" -fs 13'
 
 # Fix to make JAVA applications behave more friendly in awesome. Still many JAVA apps
 # suck in awesome. PyCharm works perfect, Arduino does not!

@@ -17,43 +17,10 @@ accessoriesmenu = {
 }
 audiomenu = {
     { "ableton live 11", "/home/hanez/bin/ableton.sh", "/home/hanez/images/ableton_logo.png" },
-    { "airwave manager", "/usr/bin/airwave-manager", "/usr/share/icons/hicolor/48x48/apps/airwave-manager.png" },
-    { "amsynth", "/usr/bin/amsynth", "/usr/share/icons/hicolor/scalable/apps/amsynth.svg" },
     { "ardour", "/usr/bin/ardour6", "/usr/share/icons/hicolor/48x48/apps/ardour6.png" },
     { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/48x48/apps/audacity.png" },
-    { "cadence", "/usr/bin/cadence", "/usr/share/icons/hicolor/scalable/apps/cadence.svg" },
-    { "carla", "/usr/bin/carla", "/usr/share/icons/hicolor/scalable/apps/carla.svg" },
-    { "catarina", "/usr/bin/catarina", "/usr/share/icons/hicolor/scalable/apps/catarina.svg" },
-    { "dexed", "/usr/bin/dexed", "/usr/share/icons/hicolor/512x512/apps/dexed.png" },
-    { "drumkv1", "/usr/bin/drumkv1_jack", "/usr/share/icons/hicolor/scalable/apps/drumkv1.svg" },
-    { "helm", "/usr/bin/helm-synth", "/usr/share/icons/hicolor/48x48/apps/helm-synth.png" },
-    { "catia", "/usr/bin/catia", "/usr/share/icons/hicolor/scalable/apps/catia.svg" },
-    { "gtick", "/usr/bin/gtick", "/usr/share/pixmaps/gtick_32x32.xpm" },
-    { "hydrogen", "/usr/bin/hydrogen", "/usr/share/icons/hicolor/scalable/apps/org.hydrogenmusic.Hydrogen.svg" },
-    { "lmms", "/usr/bin/lmms", "/usr/share/icons/hicolor/48x48/apps/lmms.png" },
     { "mixxx", "/usr/bin/mixxx", "/usr/share/icons/hicolor/scalable/apps/mixxx.svg" },
-    { "ob-xd", "/home/hanez/bin/OB-Xd", "/home/hanez/.config/awesome/icons/synth.png" },
-    { "os-251", "/usr/bin/OS-251", "/home/hanez/.config/awesome/icons/synth.svg" },
     { "qjackctl", "/usr/bin/qjackctl", "/usr/share/icons/hicolor/scalable/apps/qjackctl.svg" },
-    { "qtractor", "/usr/bin/qtractor", "/usr/share/icons/hicolor/scalable/apps/qtractor.svg" },
-    { "rack", "/home/hanez/Rack.sh", "/home/hanez/opt/Rack/res/icon.png" },
-    { "reaper", "/usr/bin/reaper", "/usr/share/icons/hicolor/256x256/apps/cockos-reaper.png" },
-    { "rosegarden", "/usr/bin/rosegarden", "/usr/share/icons/hicolor/64x64/apps/rosegarden.png" },
-    { "sitala", "/usr/bin/sitala", "/usr/share/icons/hicolor/256x256/apps/sitala.png" },
-    { "vital", "/usr/bin/vital", "/usr/share/icons/hicolor/48x48/apps/vital.png" },
-    { "yoshimi", "/usr/bin/yoshimi", "/usr/share/icons/hicolor/scalable/apps/yoshimi.svg" },
-    { "zyn-fusion", "/usr/bin/zyn-fusion", "/usr/share/pixmaps/zynaddsubfx.svg" },
-    { "zyaddsubfx", "/usr/bin/zynaddsubfx", "/usr/share/pixmaps/zynaddsubfx.svg" },
-}
-communicationmenu = {
-    { "claws mail", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
-    { "clawsker", "/usr/bin/clawsker", "/usr/share/icons/hicolor/48x48/apps/clawsker.png" },
-    { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/scalable/apps/org.gajim.Gajim.svg" },
-    { "signal", "/usr/bin/signal-desktop-beta", "/usr/share/icons/hicolor/48x48/apps/signal-desktop-beta.png" },
-    { "skype", "/usr/bin/skypeforlinux", "/usr/share/pixmaps/skypeforlinux.png" },
-    { "teams", "/usr/bin/teams", "/usr/share/pixmaps/teams.png" },
-    { "whatsapp", "/usr/bin/whatsapp-for-linux", "/usr/share/icons/hicolor/32x32/apps/whatsapp-for-linux.png" },
-    { "reaper", "/usr/bin/reaper", "/usr/share/icons/hicolor/256x256/apps/cockos-reaper.png" },
 }
 communicationmenu = {
     { "claws mail", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
@@ -63,11 +30,10 @@ communicationmenu = {
     { "signal", "/usr/bin/signal-desktop-beta", "/usr/share/icons/hicolor/48x48/apps/signal-desktop-beta.png" },
     { "skype", "/usr/bin/skypeforlinux", "/usr/share/pixmaps/skypeforlinux.png" },
     { "teams", "/usr/bin/teams", "/usr/share/pixmaps/teams.png" },
-    { "whatsapp", "/usr/bin/whatsapp-for-linux", "/usr/share/icons/hicolor/32x32/apps/whatsapp-for-linux.png" },
     { "zoom", "/usr/bin/zoom", "/usr/share/pixmaps/application-x-zoom.png" },
 }
 developmentmenu = {
-    --{ "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },--
+    { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/hicolor/64x64/apps/codeblocks.png" },
     { "cmake gui", "/usr/bin/cmake-gui", "/usr/share/icons/hicolor/64x64/apps/cmake.png" },
     { "dbeaver", "/usr/bin/dbeaver", "/usr/share/icons/hicolor/48x48/apps/dbeaver.png" },
@@ -113,6 +79,7 @@ gamesmenu = {
     { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
     { "flightgear", "/usr/bin/fgfs --launcher", "/usr/share/icons/hicolor/scalable/apps/flightgear.svg" },
     { "kobodeluxe", "/usr/bin/kobodl", "/usr/share/icons/hicolor/48x48/apps/kobodl.png" },
+    { "lutris", "/usr/bin/lutris", "/usr/share/icons/hicolor/scalable/apps/lutris.svg" },
     { "neverball", "/usr/bin/neverball", "/usr/share/icons/hicolor/48x48/apps/neverball.png" },
     { "neverputt", "/usr/bin/neverputt", "/usr/share/icons/hicolor/48x48/apps/neverputt.png" },
     { "red eclipse", "/opt/redeclipse/redeclipse.sh", "/usr/share/pixmaps/redeclipse.png" },
@@ -162,6 +129,7 @@ internetmenu = {
     { "qietrss", "/usr/bin/qietrss", "/usr/share/icons/hicolor/48x48/apps/quiterss.png" },
     { "seamonkey", "/usr/bin/seamonkey", "/usr/share/pixmaps/seamonkey.png" },
     { "tor browser", "/usr/bin/tor-browser", "/usr/share/icons/hicolor/scalable/apps/tor-browser.svg" },
+    { "yt-dlg", "/usr/bin/yt-dlg", "/usr/share/icons/hicolor/48x48/apps/youtube-dl-gui.png" },
 }
 multimediamenu = {
     { "acidrip", "/usr/bin/acidrip", "/usr/share/icons/Vimix/scalable/apps/acidrip.svg" },
@@ -242,7 +210,7 @@ videomenu = {
 }
 windowsmenu = {
     { "bottles", "/usr/bin/bottles", "/usr/share/icons/hicolor/scalable/apps/com.usebottles.bottles.svg" },
-    { "control panel", "wine /home/hanez/c/windows/syswow64/control.exe", "" },
+    { "control panel", "wine /home/hanez/.wine/drive_c/windows/syswow64/control.exe", "" },
     { "playonlinux", "/usr/bin/playonlinux", "/usr/share/pixmaps/playonlinux.png" },
     { "wineconsole", "/usr/bin/wineconsole", "" },
     { "winefile", "/usr/bin/winefile", "" },
@@ -270,7 +238,8 @@ mainmenu = awful.menu({ items = {
     { "video", videomenu, "/usr/share/icons/Adwaita/48x48/legacy/camera-video.png" },
     { "wine", windowsmenu, "" },
     { "filemanager", "/usr/bin/nemo", "/usr/share/icons/Adwaita/22x22/legacy/system-file-manager.png" },
-    { "terminal", terminal, "/usr/share/icons/Adwaita/22x22/legacy/utilities-terminal.png" },
+    { "terminal (xterm)", terminal, "/usr/share/icons/Adwaita/22x22/legacy/utilities-terminal.png" },
+    { "terminal (xfce4)", "/usr/bin/xfce4-terminal", "/usr/share/icons/Adwaita/22x22/legacy/utilities-terminal.png" },
     { "configuration", editor_cmd .. " " .. awesome.conffile, "/usr/share/icons/Adwaita/22x22/legacy/preferences-other.png" },
     { "reload", awesome.restart, "/usr/share/icons/Adwaita/22x22/legacy/view-refresh.png" },
     { "suspend", function () awful.util.spawn("/usr/bin/loginctl suspend") end, "/usr/share/icons/Faenza-Dark/apps/48/system-suspend.png" },
