@@ -30,9 +30,11 @@ communicationmenu = {
     { "signal", "/usr/bin/signal-desktop-beta", "/usr/share/icons/hicolor/48x48/apps/signal-desktop-beta.png" },
     { "skype", "/usr/bin/skypeforlinux", "/usr/share/pixmaps/skypeforlinux.png" },
     { "teams", "/usr/bin/teams", "/usr/share/pixmaps/teams.png" },
+    { "telegram", "/usr/bin/telegram-desktop", "/usr/share/icons/hicolor/48x48/apps/telegram.png" },
     { "zoom", "/usr/bin/zoom", "/usr/share/pixmaps/application-x-zoom.png" },
 }
 developmentmenu = {
+    { "android studio", "/usr/bin/android-studio", "/usr/share/pixmaps/android-studio.png" },
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/hicolor/64x64/apps/codeblocks.png" },
     { "cmake gui", "/usr/bin/cmake-gui", "/usr/share/icons/hicolor/64x64/apps/cmake.png" },
@@ -51,7 +53,6 @@ developmentmenu = {
     { "qgit", "/usr/bin/qgit", "/usr/share/icons/hicolor/48x48/apps/qgit.png" },
     { "qtcreator", "/usr/bin/qtcreator", "/usr/share/icons/hicolor/48x48/apps/QtProject-qtcreator.png" },
     { "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
-    { "smartgit", "/usr/bin/smartgit", "/opt/smartgit/bin/smartgit.svg" },
     { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
     { "thonny", "/usr/bin/thonny", "/usr/share/icons/hicolor/48x48/apps/org.thonny.Thonny.png" },
     { "wxformbuilder", "/usr/bin/wxformbuilder", "/usr/share/pixmaps/wxformbuilder.png" },
@@ -118,8 +119,8 @@ internetmenu = {
     { "chrome (incognito)", "/usr/bin/google-chrome-stable", "/usr/share/icons/hicolor/48x48/apps/google-chrome.png" },
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
     { "chromium (incognito)", "/usr/bin/chromium --incognito", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
-    { "edge", "/usr/bin/microsoft-edge-dev", "/usr/share/icons/hicolor/48x48/apps/microsoft-edge-dev.png" },
-    { "edge (private)", "/usr/bin/microsoft-edge-dev --inprivate", "/usr/share/icons/hicolor/48x48/apps/microsoft-edge-dev.png" },
+    { "edge", "/usr/bin/microsoft-edge-stable", "/usr/share/icons/hicolor/48x48/apps/microsoft-edge.png" },
+    { "edge (private)", "/usr/bin/microsoft-edge-stable --inprivate", "/usr/share/icons/hicolor/48x48/apps/microsoft-edge.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "firefox (private)", "/usr/bin/firefox --private-window", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "google earth", "/usr/bin/google-earth-pro", "/opt/google/earth/pro/product_logo_32.xpm" },
@@ -174,7 +175,9 @@ privacymenu = {
     { "seahorse", "/usr/bin/seahorse", "/usr/share/icons/hicolor/scalable/apps/org.gnome.seahorse.Application.svg" },
     { "tor browser", "/usr/bin/tor-browser", "/usr/share/icons/hicolor/scalable/apps/tor-browser.svg" },
     { "veracrypt", "/usr/bin/veracrypt", "/usr/share/icons/hicolor/scalable/apps/tor-browser.svg" },
-    { "yubikey", "/usr/bin/yubikey-personalization-gui", "/usr/share/icons/hicolor/48x48/apps/yubikey-personalization-gui.png" },
+    { "yubikey manager", "/usr/bin/ykman-gui", "/usr/share/pixmaps/ykman.png" },
+    { "yubikey personalization tool", "/usr/bin/yubikey-personalization-gui", "/usr/share/icons/hicolor/48x48/apps/yubikey-personalization-gui.png" },
+    { "yubikey piv manager", "/usr/bin/pivman", "/usr/share/pixmaps/pivman.xpm" },
     { "zulucrypt", "/usr/bin/zuluCrypt-gui", "/usr/share/pixmaps/zuluCrypt.papirus.dark.png" },
 }
 radiomenu = {

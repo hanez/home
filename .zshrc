@@ -6,17 +6,20 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Extend my $PATH to $HOME/bin
-export PATH=$HOME/bin:$HOME/.gem/ruby/3.0.0/bin:$PATH
+export PATH=$HOME/bin:$HOME/.gem/ruby/3.0.0/bin:$HOME/.android/sdk/platform-tools:$PATH
 
 # Java Stuff
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
 # Android / Kivy Development Stuff
 export ANDROID_HOME=/home/hanez/.android/sdk
-export ANDROIDSDK="/opt/android-sdk"
-export ANDROIDNDK="/opt/android-ndk"
-export ANDROIDAPI="19"
-export ANDROIDNDKVER="r16b"
+export ANDROIDSDK="/home/hanez/.android/sdk"
+export ANDROID_SDK_ROOT="/home/hanez/.android/sdk"
+#export ANDROIDNDK="/opt/android-ndk"
+#export ANDROIDAPI="27"
+#export ANDROIDNDKVER="r16b"
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+
 
 # Export the $EDITOR and $TERMINAL
 export BROWSER=/usr/bin/firefox
