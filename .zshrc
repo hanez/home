@@ -13,7 +13,7 @@ fi
 export PATH=$HOME/bin:$HOME/.gem/ruby/3.0.0/bin:$HOME/.android/sdk/platform-tools:$PATH
 
 # Private stuff 
-source /home/hanez/.zsh_private
+source ~/.zsh_private
 
 # Java Stuff
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
