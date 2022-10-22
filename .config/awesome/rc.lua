@@ -76,7 +76,8 @@ end
 
 
 -- This is used later as the default terminal and editor to run.
-terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange  -fa "'..config.font_xterm..'" -fs '..config.font_xterm_size
+terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange -fa "'..config.font_xterm..'" -fs "'..config.font_xterm_size..'"'
+xterminal = "/usr/bin/xfce4-terminal"
 editor = "/usr/bin/vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -383,7 +384,7 @@ globalkeys = gears.table.join(
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
               { description = "open a terminal", group = "launcher"}),
-    awful.key({ modkey, "Control" }, "Return", function () awful.util.spawn("/usr/bin/xfce4-terminal") end,
+    awful.key({ modkey, "Control" }, "Return", function () awful.util.spawn(xterminal) end,
               { description = "open a terminal", group = "launcher"}),
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               { description = "reload awesome", group = "awesome"}),
@@ -585,10 +586,15 @@ awful.rules.rules = {
         }
       }, properties = { floating = true }},
 
-    -- Add titlebars to normal clients and dialogs
-    { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = config.titlebars_enabled }
+    -- Do not add titlebars to normal clients
+    { rule_any = {type = { "normal" }
+      }, properties = { titlebars_enabled = config.titlebars_enabled_normal }
     },
+    -- Add titlebars to dialogs
+    { rule_any = {type = { "dialog" }
+      }, properties = { titlebars_enabled = config.titlebars_enabled_dialog }
+    },
+
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
     -- { rule = { class = "Firefox" },

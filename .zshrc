@@ -5,8 +5,15 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+if [[ -r $HOME/.zsh_functions.zsh ]]; then
+      source $HOME/.zsh_functions.zsh
+fi
+
 # Extend my $PATH to $HOME/bin
 export PATH=$HOME/bin:$HOME/.gem/ruby/3.0.0/bin:$HOME/.android/sdk/platform-tools:$PATH
+
+# Private stuff 
+source /home/hanez/.zsh_private
 
 # Java Stuff
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
@@ -115,7 +122,6 @@ alias ll='ls --color -l'
 alias lla='ls -la --color'
 alias llh='ls -lh --color'
 alias llah='ls -lah --color'
-alias lsd='ls -ld --color'
 alias vi=vim
 alias y=yaourt
 alias xterm=$TERMINAL
@@ -129,13 +135,6 @@ alias gitc='git commit'
 alias gitd='git diff'
 alias gitp='git push'
 alias gits='git status'
-
-# SSH Host aliases
-alias a.systemchaos.org='ssh a.systemchaos.org'
-alias c.systemchaos.org='ssh c.systemchaos.org'
-alias d.systemchaos.org='ssh d.systemchaos.org'
-alias e.systemchaos.org='ssh e.systemchaos.org'
-alias onionpi='ssh onionpi'
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
 case $TERM in

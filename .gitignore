@@ -42,6 +42,7 @@
 !.zsh
 !.zsh/**
 !.zshrc
+!.zsh_functions.zsh
 
 !README.md
 
