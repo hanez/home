@@ -154,8 +154,8 @@ multimediamenu = {
     { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
 }
 networkmenu = {
-    { "breitbandmessung", "/usr/bin/breitbandmessung", "/usr/share/icons/hicolor/48x48/apps/breitbandmessung.png" },
     { "ettercap", "/usr/bin/ettercap -G", "/usr/share/pixmaps/ettercap.svg" },
+    { "fwbuilder", "/usr/bin/fwbuilder", "/usr/share/icons/hicolor/48x48/apps/fwbuilder.png" },
     { "gns3", "/usr/bin/gns3", "/usr/share/icons/hicolor/48x48/apps/gns3.png" },
     { "gufw", "/usr/bin/gufw_fixed", "/usr/share/icons/hicolor/scalable/apps/gufw.svg" },
     { "wireshark", "/usr/bin/wireshark-gtk", "/usr/share/icons/hicolor/48x48/apps/wireshark.png" },
