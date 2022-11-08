@@ -1,6 +1,6 @@
 #!/bin/sh
 
-output="/var/www/localhost/htdocs/stats/"
+output="/var/www/systemchaos.org/www/htdocs/stats/"
 nic="eth0"
 name=$(hostname)
 
