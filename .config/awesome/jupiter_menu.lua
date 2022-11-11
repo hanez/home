@@ -35,6 +35,7 @@ communicationmenu = {
     { "zoom", "/usr/bin/zoom", "/usr/share/pixmaps/application-x-zoom.png" },
 }
 databasemenu = {
+    { "apache directory studio", "/usr/bin/apachedirectorystudio", "/usr/share/pixmaps/apachedirectorystudio.png" },
     { "dbeaver", "/usr/bin/dbeaver", "/usr/share/icons/hicolor/48x48/apps/dbeaver.png" },
     { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
     { "resp.app", "/usr/bin/resp", "/usr/share/pixmaps/resp.png" },
