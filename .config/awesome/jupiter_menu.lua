@@ -17,7 +17,7 @@ accessoriesmenu = {
 }
 audiomenu = {
     { "ableton live 11", "/home/hanez/bin/ableton.sh", "/home/hanez/images/ableton_logo.png" },
-    { "ardour", "/usr/bin/ardour6", "/usr/share/icons/hicolor/48x48/apps/ardour6.png" },
+    { "ardour", "/usr/bin/ardour7", "/usr/share/icons/hicolor/48x48/apps/ardour7.png" },
     { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/48x48/apps/audacity.png" },
     { "mixxx", "/usr/bin/mixxx", "/usr/share/icons/hicolor/scalable/apps/mixxx.svg" },
     { "qjackctl", "/usr/bin/qjackctl", "/usr/share/icons/hicolor/scalable/apps/qjackctl.svg" },
@@ -58,13 +58,14 @@ developmentmenu = {
     { "qgit", "/usr/bin/qgit", "/usr/share/icons/hicolor/48x48/apps/qgit.png" },
     { "qtcreator", "/usr/bin/qtcreator", "/usr/share/icons/hicolor/48x48/apps/QtProject-qtcreator.png" },
     { "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
+    { "smartgit", "/usr/bin/smartgit", "/usr/share/icons/hicolor/48x48/apps/smartgit.png" },
     { "wxformbuilder", "/usr/bin/wxformbuilder", "/usr/share/pixmaps/wxformbuilder.png" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/icons/hicolor/32x32/apps/wxglade.png" },
 }
 engineeringmenu = {
     { "arduino (1.0.5)", "/home/hanez/opt/arduino-1.0.5/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
     { "arduino (1.8.16)", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
-    { "cura", "/usr/bin/cura", "/usr/share/icons/hicolor/128x128/apps/cura-icon.png" },
+    --{ "cura", "/usr/bin/cura", "/usr/share/icons/hicolor/128x128/apps/cura-icon.png" },
     { "eagle", "/home/hanez/bin/eagle.sh", "/usr/share/pixmaps/eagle.png" },
     { "energia", "/usr/bin/energia", "/usr/share/pixmaps/energia.png" },
     { "fritzing", "/usr/bin/Fritzing", "/usr/share/pixmaps/fritzing.png" },
@@ -192,7 +193,10 @@ radiomenu = {
     { "urh", "/usr/bin/urh", "/usr/share/pixmaps/urh.png" },
 }
 sciencemenu = {
+    { "epsilon", "/usr/bin/numworks-epsilon", "/usr/share/pixmaps/numworks-epsilon.png" },
+    { "firebird nspire", "/usr/bin/firebird-emu", "/usr/share/icons/hicolor/512x512/apps/org.firebird-emus.firebird-emu.png" },
     { "gpredict", "/usr/bin/gpredict", "/usr/share/pixmaps/gpredict-icon.png" },
+    { "hp 15c", "/usr/bin/hp15c", "/usr/share/icons/hicolor/48x48/apps/hp15c.png" },
     { "stellarium", "/usr/bin/stellarium", "/usr/share/icons/hicolor/48x48/apps/stellarium.png" },
 }
 systemmenu = {

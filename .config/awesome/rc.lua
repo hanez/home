@@ -579,6 +579,7 @@ awful.rules.rules = {
           "Event Tester",  -- xev.
           "megasync",
           "MEGAsync",
+          "Epsilon",
         },
         role = {
           "AlarmWindow",  -- Thunderbird's calendar.
