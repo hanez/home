@@ -23,24 +23,23 @@ dbmenu = {
     { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
 }
 developmentmenu = {
-    { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "android studio", "/opt/android-studio/bin/studio.sh", "/opt/android-studio/bin/studio.png" },
+    { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "bluegriffon", "/usr/bin/bluegriffon", "/usr/share/icons/hicolor/48x48/apps/bluegriffon.png" },
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/hicolor/64x64/apps/codeblocks.png" },
-    --{ "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
+    { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
     { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
     { "glade", "/usr/bin/glade ", "/usr/share/icons/hicolor/scalable/apps/glade-3.svg" },
     { "intellij", "/usr/bin/idea", "/usr/share/pixmaps/idea.png" },
     { "kdevelop", "/usr/bin/kdevelop", "/usr/share/icons/hicolor/48x48/apps/kdevelop.png" },
-    { "lazarus", "/usr/bin/lazarus", "/usr/lib/lazarus/images/ide_icon48x48.png" },
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
     { "pycharm", "/home/hanez/bin/pycharm.sh", "/usr/share/icons/hicolor/scalable/apps/pycharm.svg" },
     { "qgit", "/usr/bin/qgit", "/usr/share/icons/hicolor/48x48/apps/qgit.png" },
     { "qtcreator", "/usr/bin/qtcreator", "/usr/share/icons/hicolor/48x48/apps/QtProject-qtcreator.png" },
-    --{ "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
+    { "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
     { "smartgit", "/usr/bin/smartgit", "/opt/smartgit/bin/smartgit.svg" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/pixmaps/wxglade.png" },
-    { "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
+    --{ "zbstudio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/48x48/apps/zbstudio.png" },
 }
 engineeringmenu = {
     { "arduino", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
@@ -55,9 +54,9 @@ engineeringmenu = {
     { "qcad", "/usr/bin/qcad", "/usr/share/pixmaps/qcad_icon.png" },
 }
 gamesmenu = {
-    { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
+    --{ "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
     { "retroarch", "/usr/bin/retroarch", "/usr/share/pixmaps/retroarch.svg" },
-    { "steam", "/home/hanez/bin/steam.sh", "/usr/share/pixmaps/steam.png" },
+    --{ "steam", "/home/hanez/bin/steam.sh", "/usr/share/pixmaps/steam.png" },
     --{ "thimbleweed park", "/home/hanez/bin/thimbleweedpark", "/home/hanez/.local/share/Steam/steamapps/common/Thimbleweed Park/Icon32.png" },
 }
 graphicsmenu = {
