@@ -107,6 +107,7 @@ graphicsmenu = {
     { "inkscape", "/usr/bin/inkscape", "/usr/share/icons/hicolor/48x48/apps/org.inkscape.Inkscape.png" },
     { "krita", "/usr/bin/krita", "/usr/share/icons/hicolor/48x48/apps/krita.png" },
     { "mtpaint", "/usr/bin/mtpaint", "/usr/share/pixmaps/mtpaint.png" },
+    { "screenshooter", "/usr/bin/xfce4-screenshooter", "/usr/share/icons/hicolor/scalable/apps/org.xfce.screenshooter.svg" },
     { "scribus", "/usr/bin/scribus", "/usr/share/icons/hicolor/32x32/apps/scribus.png" },
     { "viewnior", "/usr/bin/viewnior", "/usr/share/icons/hicolor/48x48/apps/viewnior.png" },
     { "wacom", "/usr/bin/kde_wacom_tabletfinder", "/usr/share/icons/Vimix/scalable/apps/csd-wacom.svg" },
