@@ -14,6 +14,7 @@ accessoriesmenu = {
     { "regexxer", "/usr/bin/regexxer", "/usr/share/icons/hicolor/48x48/apps/regexxer.png" },
     { "retext", "/usr/bin/retext", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
     { "xarchiver", "xarchiver", "/usr/share/icons/hicolor/48x48/apps/xarchiver.png" },
+    { "xreader", "xreader", "/usr/share/icons/hicolor/scalable/apps/xreader.svg" },
 }
 audiomenu = {
     { "ableton live 11", "/home/hanez/bin/ableton.sh", "/home/hanez/images/ableton_logo.png" },
