@@ -79,6 +79,7 @@ engineeringmenu = {
     { "pulseview", "/usr/bin/pulseview", "/usr/share/icons/hicolor/scalable/apps/pulseview.svg" },
     { "qcad", "/usr/bin/qcad", "/usr/share/pixmaps/qcad_icon.png" },
     { "qtresistors", "/usr/bin/qtResistors", "/usr/share/icons/hicolor/64x64/apps/qtResistors.png" },
+    { "simulide", "/usr/bin/simulide", "/usr/share/icons/hicolor/256x256/simulide.png" },
 }
 gamesmenu = {
     { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
