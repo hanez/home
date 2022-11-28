@@ -138,6 +138,7 @@ internetmenu = {
     { "qietrss", "/usr/bin/qietrss", "/usr/share/icons/hicolor/48x48/apps/quiterss.png" },
     { "seamonkey", "/usr/bin/seamonkey", "/usr/share/pixmaps/seamonkey.png" },
     { "tor browser", "/usr/bin/tor-browser", "/usr/share/icons/hicolor/scalable/apps/tor-browser.svg" },
+    { "transmission", "/usr/bin/transmission-gtk", "/usr/share/icons/hicolor/scalable/apps/transmission.svg" },
     { "viking", "/usr/bin/viking", "/usr/share/icons/hicolor/48x48/apps/viking.png" },
     { "yt-dlg", "/usr/bin/yt-dlg", "/usr/share/icons/hicolor/48x48/apps/youtube-dl-gui.png" },
 }
