@@ -28,6 +28,7 @@ communicationmenu = {
     { "clawsker", "/usr/bin/clawsker", "/usr/share/icons/hicolor/48x48/apps/clawsker.png" },
     { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/scalable/apps/org.gajim.Gajim.svg" },
     { "linphone", "/usr/bin/linphone", "/usr/share/icons/hicolor/scalable/apps/linphone.svg" },
+    { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/scalable/apps/pidgin.svg" },
     { "signal", "/usr/bin/signal-desktop-beta", "/usr/share/icons/hicolor/48x48/apps/signal-desktop-beta.png" },
     { "skype", "/usr/bin/skypeforlinux", "/usr/share/pixmaps/skypeforlinux.png" },
     { "teams", "/usr/bin/teams", "/usr/share/pixmaps/teams.png" },
