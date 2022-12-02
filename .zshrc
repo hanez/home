@@ -10,7 +10,7 @@ if [[ -r $HOME/.zsh_functions.zsh ]]; then
 fi
 
 # Extend my $PATH to $HOME/bin
-export PATH=$HOME/bin:$HOME/.gem/ruby/3.0.0/bin:$HOME/.android/sdk/platform-tools:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin/:$HOME/.gem/ruby/3.0.0/bin:$HOME/.android/sdk/platform-tools:$PATH
 
 # Private stuff 
 source ~/.zsh_private
