@@ -12,6 +12,7 @@ accessoriesmenu = {
     { "regexxer", "/usr/bin/regexxer", "/usr/share/icons/hicolor/48x48/apps/regexxer.png" },
     { "retext", "/usr/bin/retext", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
     { "xarchiver", "xarchiver", "/usr/share/icons/hicolor/48x48/apps/xarchiver.png" },
+    { "xreader", "xreader", "/usr/share/icons/hicolor/scalable/apps/xreader.svg" },
 }
 communicationmenu = {
     { "gajim", "/usr/bin/gajim", "/usr/share/icons/hicolor/scalable/apps/org.gajim.Gajim.svg" },
@@ -70,6 +71,7 @@ graphicsmenu = {
     { "inkscape", "/usr/bin/inkscape", "/usr/share/icons/hicolor/48x48/apps/org.inkscape.Inkscape.png" },
     { "krita", "/usr/bin/krita", "/usr/share/icons/hicolor/48x48/apps/krita.png" },
     { "mtpaint", "/usr/bin/mtpaint", "/usr/share/pixmaps/mtpaint.png" },
+    { "screenshooter", "/usr/bin/xfce4-screenshooter", "/usr/share/icons/hicolor/scalable/apps/org.xfce.screenshooter.svg" },
     { "scribus", "/usr/bin/scribus", "/usr/share/icons/hicolor/32x32/apps/scribus.png" },
     { "sk1", "/usr/bin/sk1", "/usr/share/icons/hicolor/scalable/apps/sk1.svg" },
     { "viewnior", "/usr/bin/viewnior", "/usr/share/icons/hicolor/48x48/apps/viewnior.png" },
