@@ -131,9 +131,11 @@ alias spamup='rsync -avr --delete ~/.bogofilter/* b.systemchaos.org:/var/bogofil
 alias x5musicsync="adb-sync --delete /home/hanez/music/* /sdcard/Music"
 
 # Some Git aliases
+alias gita='git add'
 alias gitc='git commit'
 alias gitd='git diff'
 alias gitp='git push'
+alias gitpp='git pull'
 alias gits='git status'
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
