@@ -37,6 +37,8 @@ export TERMINAL='/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr ora
 # suck in awesome. PyCharm works perfect, Arduino does not!
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+export XDG_RUNTIME_DIR=/run/user/1000
+
 # Path to your oh-my-zsh installation.
 export ZSH=~/.zsh/oh-my-zsh
 
