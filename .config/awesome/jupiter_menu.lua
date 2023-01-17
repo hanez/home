@@ -261,6 +261,7 @@ mainmenu = awful.menu({ items = {
     { "wine", windowsmenu, "" },
     { "filemanager (nemo)", "/usr/bin/nemo", "/usr/share/icons/Adwaita/22x22/legacy/system-file-manager.png" },
     { "filemanager (thunar)", "/usr/bin/thunar", "/usr/share/icons/Adwaita/22x22/legacy/system-file-manager.png" },
+    { "terminal (alacritty)", "/usr/bin/alacritty", "/usr/share/pixmaps/Alacritty.svg" },
     { "terminal (xfce4)", "/usr/bin/xfce4-terminal", "/usr/share/icons/Adwaita/22x22/legacy/utilities-terminal.png" },
     { "terminal (xterm)", terminal, "/usr/share/icons/Adwaita/22x22/legacy/utilities-terminal.png" },
     { "configuration", editor_cmd .. " " .. awesome.conffile, "/usr/share/icons/Adwaita/22x22/legacy/preferences-other.png" },
