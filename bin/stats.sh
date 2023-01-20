@@ -1,7 +1,7 @@
 #!/bin/sh
 
 output="/var/www/systemchaos.org/www/htdocs/stats/"
-outputhanez="/var/www/hanez.org/www/htdocs/stats/"
+outputhanez="/var/www/hanez.org/www/htdocs/statistics/"
 nic="eth0"
 name=$(hostname)
 
