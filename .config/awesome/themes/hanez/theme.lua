@@ -24,7 +24,7 @@ theme.border_marked = "#91231c"
 theme.icon_theme    = "Adwaita"
 theme.icon_size     = "22x22"
 theme.icon_path     = "/usr/share/icons/"..theme.icon_theme.."/"..theme.icon_size.."/legacy/"
-theme.notification_icon_size = 100;
+theme.notification_icon_size = 80;
 
 theme.wallpaper    = os.getenv("HOME").."/.config/awesome/themes/hanez/31c3-saal-3.jpg"
 theme.awesome_icon = os.getenv("HOME").."/.config/awesome/themes/hanez/awesome.png"
@@ -50,8 +50,8 @@ theme.menu_fg_focus     = "#222222"
 -- theme.menu_border_color = "#e95421"
 -- theme.menu_border_width = 1
 theme.menu_submenu_icon = theme.icon_path.."actions/media-playback-start.png"
-theme.menu_height       = 22
-theme.menu_width        = 182
+theme.menu_height       = 30
+theme.menu_width        = 250
 
 -- You can add as many variables as
 -- you wish and access them by using
