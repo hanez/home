@@ -34,7 +34,7 @@ communicationmenu = {
     { "slack", "/usr/bin/slack", "/usr/share/pixmaps/slack.png" },
     { "teams", "/usr/bin/teams", "/usr/share/pixmaps/teams.png" },
     { "telegram", "/usr/bin/telegram-desktop", "/usr/share/icons/hicolor/48x48/apps/telegram.png" },
-    { "webes", "/usr/bin/webex", "/opt/Webex/bin/sparklogosmall.png" },
+    { "webex", "/usr/bin/webex", "/opt/Webex/bin/sparklogosmall.png" },
     { "zoom", "/usr/bin/zoom", "/usr/share/pixmaps/application-x-zoom.png" },
 }
 databasemenu = {
@@ -142,7 +142,6 @@ internetmenu = {
     { "edge (private)", "/usr/bin/microsoft-edge-stable --inprivate", "/usr/share/icons/hicolor/48x48/apps/microsoft-edge.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "firefox (private)", "/usr/bin/firefox --private-window", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
-    { "google earth", "/usr/bin/google-earth-pro", "/opt/google/earth/pro/product_logo_32.xpm" },
     { "mega", "/usr/bin/megasync", "/usr/share/icons/hicolor/48x48/apps/mega.png" },
     { "nextcloud", "/usr/bin/nextcloud", "/usr/share/icons/hicolor/48x48/apps/Nextcloud.png" },
     { "opera", "/usr/bin/opera", "/usr/share/pixmaps/opera.xpm" },
@@ -213,9 +212,11 @@ radiomenu = {
 sciencemenu = {
     { "epsilon", "/usr/bin/numworks-epsilon", "/usr/share/pixmaps/numworks-epsilon.png" },
     { "firebird nspire", "/usr/bin/firebird-emu", "/usr/share/icons/hicolor/512x512/apps/org.firebird-emus.firebird-emu.png" },
+    { "google earth", "/usr/bin/google-earth-pro", "/opt/google/earth/pro/product_logo_32.xpm" },
     { "gpredict", "/usr/bin/gpredict", "/usr/share/pixmaps/gpredict-icon.png" },
     { "hp 15c", "/usr/bin/hp15c", "/usr/share/icons/hicolor/48x48/apps/hp15c.png" },
     { "stellarium", "/usr/bin/stellarium", "/usr/share/icons/hicolor/48x48/apps/stellarium.png" },
+    { "worldwind", "/usr/bin/worldwind", "/usr/share/worldwind/src/images/32x32-icon-earth.png" },
 }
 systemmenu = {
     { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },

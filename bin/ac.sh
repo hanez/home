@@ -20,6 +20,7 @@ cat /etc/acme/mail2.zynk.org/fullchain.cer > /opt/mailcow-dockerized/data/assets
 cat /etc/acme/mail2.zynk.org/mail2.zynk.org.key > /opt/mailcow-dockerized/data/assets/ssl/mail2.zynk.org/key.pem
 
 /etc/init.d/lighttpd restart
+/etc/init.d/nginx restart
 /etc/init.d/prosody restart
 
 cd /opt/mailcow-dockerized
