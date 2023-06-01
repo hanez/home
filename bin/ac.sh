@@ -16,10 +16,11 @@ done
 mv /etc/lighttpd/vhosts.d/systems.findeisen.conf /etc/lighttpd/vhosts.d/systems.findeisen.conf.nossl
 mv /etc/lighttpd/vhosts.d/systems.findeisen.conf.ssl /etc/lighttpd/vhosts.d/systems.findeisen.conf
 
-cat /etc/acme/mail2.zynk.org/fullchain.cer > /opt/mailcow-dockerized/data/assets/ssl/mail2.zynk.org/cert.pem
-cat /etc/acme/mail2.zynk.org/mail2.zynk.org.key > /opt/mailcow-dockerized/data/assets/ssl/mail2.zynk.org/key.pem
+cat /etc/acme/mail.xw3.org/fullchain.cer > /opt/mailcow-dockerized/data/assets/ssl/mail.xw3.org/cert.pem
+cat /etc/acme/mail.xw3.org/mail.xw3.org.key > /opt/mailcow-dockerized/data/assets/ssl/mail.xw3.org/key.pem
 
 /etc/init.d/lighttpd restart
+/etc/init.d/nginx restart
 /etc/init.d/prosody restart
 
 cd /opt/mailcow-dockerized
