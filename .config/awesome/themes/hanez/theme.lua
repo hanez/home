@@ -50,7 +50,7 @@ theme.menu_fg_focus     = "#222222"
 -- theme.menu_border_color = "#e95421"
 -- theme.menu_border_width = 1
 theme.menu_submenu_icon = theme.icon_path.."actions/media-playback-start.png"
-theme.menu_height       = 30
+theme.menu_height       = 26 
 theme.menu_width        = 250
 
 -- You can add as many variables as
