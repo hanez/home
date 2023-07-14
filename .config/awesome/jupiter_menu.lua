@@ -62,6 +62,7 @@ developmentmenu = {
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
     { "meld", "/usr/bin/meld", "/usr/share/icons/hicolor/scalable/apps/org.gnome.meld.svg" },
     { "netbeans", "/usr/bin/netbeans", "/usr/share/pixmaps/netbeans.png" },
+    { "openmv ide", "/usr/bin/openmvide", "/usr/share/pixmaps/openmv-ide.png" },
     { "phpstorm", "/home/hanez/opt/PhpStorm/bin/phpstorm.sh", "/home/hanez/opt/PhpStorm/bin/phpstorm.svg" },
     { "pycharm", "/home/hanez/opt/PyCharm/bin/pycharm.sh", "/home/hanez/opt/PyCharm/bin/pycharm.svg" },
     { "qgit", "/usr/bin/qgit", "/usr/share/icons/hicolor/48x48/apps/qgit.png" },
