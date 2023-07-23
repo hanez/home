@@ -220,6 +220,7 @@ sciencemenu = {
     { "worldwind", "/usr/bin/worldwind", "/usr/share/worldwind/src/images/32x32-icon-earth.png" },
 }
 systemmenu = {
+    { "gnome disks", "/usr/bin/gnome-disks", "/usr/share/icons/hicolor/scalable/apps/org.gnome.DiskUtility.svg" },
     { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
     { "hardinfo", "/usr/bin/hardinfo", "/usr/share/icons/hicolor/48x48/apps/hardinfo.png" },
     { "ksysguard", "/usr/bin/ksysguard", "/usr/share/icons/hicolor/16x16/apps/ksysguardd.png" },
