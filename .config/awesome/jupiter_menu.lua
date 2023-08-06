@@ -222,6 +222,7 @@ sciencemenu = {
 systemmenu = {
     { "gnome disks", "/usr/bin/gnome-disks", "/usr/share/icons/hicolor/scalable/apps/org.gnome.DiskUtility.svg" },
     { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
+    { "gpu viewer", "/usr/bin/gpu-viewer", "/usr/share/icons/hicolor/512x512/apps/io.github.arunsivaramanneo.GPUViewer.png" },
     { "hardinfo", "/usr/bin/hardinfo", "/usr/share/icons/hicolor/48x48/apps/hardinfo.png" },
     { "ksysguard", "/usr/bin/ksysguard", "/usr/share/icons/hicolor/16x16/apps/ksysguardd.png" },
     { "partition manager", "/usr/bin/partitionmanager", "/usr/share/icons/hicolor/scalable/apps/partitionmanager.svg" },
