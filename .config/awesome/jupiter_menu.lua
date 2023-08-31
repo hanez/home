@@ -147,6 +147,7 @@ internetmenu = {
     { "edge (private)", "/usr/bin/microsoft-edge-stable --inprivate", "/usr/share/icons/hicolor/48x48/apps/microsoft-edge.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "firefox (private)", "/usr/bin/firefox --private-window", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
+    { "liferea", "/usr/bin/liferea", "/usr/share/icons/hicolor/scalable/apps/net.sourceforge.liferea.svg" },
     { "mega", "/usr/bin/megasync", "/usr/share/icons/hicolor/48x48/apps/mega.png" },
     { "nextcloud", "/usr/bin/nextcloud", "/usr/share/icons/hicolor/48x48/apps/Nextcloud.png" },
     { "opera", "/usr/bin/opera", "/usr/share/pixmaps/opera.xpm" },
@@ -242,6 +243,7 @@ utilitiesmenu = {
     { "appearance", "/usr/bin/lxappearance", "/usr/share/icons/nuoveXT2/96x96/apps/preferences-desktop-theme.png" },
     { "file search tool", "/usr/bin/gnome-search-tool", "/usr/share/icons/Adwaita/48x48/legacy/system-search.png" },
     { "furiusisomount", "/usr/bin/furiusisomount", "/usr/share/furiusisomount/pix/furiusisomount.png" },
+    { "grsync", "/usr/bin/grsync", "/usr/share/icons/hicolor/128x128/apps/grsync.png" },
     { "raspberry pi imager", "/usr/bin/rpi-imager", "/usr/share/icons/hicolor/128x128/apps/rpi-imager.png" },
 }
 videomenu = {
