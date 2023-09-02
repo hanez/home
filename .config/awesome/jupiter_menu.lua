@@ -48,7 +48,7 @@ databasemenu = {
     { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
 }
 developmentmenu = {
-    { "android studio", "/usr/bin/android-studio", "/usr/share/pixmaps/android-studio.png" },
+    { "android studio", "/home/hanez/opt/android-studio/bin/studio.sh", "/home/hanez/opt/android-studio/bin/studio.svg" },
     { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/hicolor/64x64/apps/codeblocks.png" },
     { "clion", "/home/hanez/opt/CLion/bin/clion.sh", "/home/hanez/opt/CLion/bin/clion.svg" },
