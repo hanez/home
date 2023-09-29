@@ -6,23 +6,25 @@ accessoriesmenu = {
     { "dia", "/usr/bin/dia --integrated", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
     { "engrampa", "/usr/bin/engrampa", "/usr/share/icons/hicolor/32x32/apps/engrampa.png" },
     { "epdfview", "/usr/bin/epdfview", "/usr/share/icons/hicolor/48x48/apps/epdfview.png" },
+    { "evince", "/usr/bin/evince", "/usr/share/help/C/evince/figures/org.gnome.Evince.svg" },
     { "freemind", "/usr/bin/freemind", "/usr/share/icons/hicolor/32x32/apps/freemind.png" },
     { "gscriptor", "/usr/bin/gscriptor", "/usr/share/icons/hicolor/48x48/apps/gcr-smart-card.png" },
     { "gvim", "/usr/bin/gvim", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
-    --{ "lector", "/usr/bin/lector", "/usr/share/icons/hicolor/scalable/apps/Lector.png" },
     { "pluma", "/usr/bin/pluma", "/usr/share/icons/Vimix/scalable/apps/gedit-icon.svg" },
+    { "qpdfview", "/usr/bin/qpdfview", "/usr/share/icons/hicolor/scalable/apps/qpdfview.svg" },
     { "regexxer", "/usr/bin/regexxer", "/usr/share/icons/hicolor/48x48/apps/regexxer.png" },
     { "retext", "/usr/bin/retext", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
     { "xarchiver", "xarchiver", "/usr/share/icons/hicolor/48x48/apps/xarchiver.png" },
     { "xreader", "xreader", "/usr/share/icons/hicolor/scalable/apps/xreader.svg" },
 }
 audiomenu = {
-    { "ableton live 11", "/home/hanez/bin/ableton.sh", "/home/hanez/images/ableton_logo.png" },
     { "ardour", "/usr/bin/ardour7", "/usr/share/icons/hicolor/48x48/apps/ardour7.png" },
-    { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/48x48/apps/audacity.png" },
+    { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/32x32/audacity.png" },
+    { "live", "/home/hanez/bin/ableton.sh", "/home/hanez/.config/awesome/icons/live2.png" },
     { "mixxx", "/usr/bin/mixxx", "/usr/share/icons/hicolor/scalable/apps/mixxx.svg" },
-    { "qjackctl", "/usr/bin/qjackctl", "/usr/share/icons/hicolor/scalable/apps/qjackctl.svg" },
+    { "qjackctl", "/usr/bin/qjackctl", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qjackctl.svg" },
     { "qpwgraph", "/usr/bin/qpwgraph", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qpwgraph.svg" },
+    { "vital", "/usr/bin/Vital", "/home/hanez/.config/awesome/icons/vital.png" },
 }
 communicationmenu = {
     { "claws mail", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
@@ -136,7 +138,7 @@ graphicsmenu = {
 hackingmenu = {
     { "ghidra", "/usr/bin/ghidra", "/usr/share/pixmaps/Ghidra_Logo.png" },
     { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/scalable/apps/org.gnome.GHex.svg" },
-    { "iaito", "/usr/bin/iaito ", "/usr/share/icons/hicolor/scalable/apps/iaito-o.svg" },
+    { "iaito", "/usr/bin/iaito ", "/usr/share/icons/hicolor/scalable/apps/org.radare.iaito.svg" },
 }
 internetmenu = {
     { "chrome", "/usr/bin/google-chrome-stable", "/usr/share/icons/hicolor/48x48/apps/google-chrome.png" },
@@ -151,11 +153,9 @@ internetmenu = {
     { "mega", "/usr/bin/megasync", "/usr/share/icons/hicolor/48x48/apps/mega.png" },
     { "nextcloud", "/usr/bin/nextcloud", "/usr/share/icons/hicolor/48x48/apps/Nextcloud.png" },
     { "opera", "/usr/bin/opera", "/usr/share/pixmaps/opera.xpm" },
-    { "qietrss", "/usr/bin/qietrss", "/usr/share/icons/hicolor/48x48/apps/quiterss.png" },
     { "seamonkey", "/usr/bin/seamonkey", "/usr/share/pixmaps/seamonkey.png" },
     { "tor browser", "/usr/bin/tor-browser", "/usr/share/icons/hicolor/scalable/apps/tor-browser.svg" },
     { "transmission", "/usr/bin/transmission-gtk", "/usr/share/icons/hicolor/scalable/apps/transmission.svg" },
-    { "viking", "/usr/bin/viking", "/usr/share/icons/hicolor/48x48/apps/viking.png" },
     { "yt-dlg", "/usr/bin/yt-dlg", "/usr/share/icons/hicolor/48x48/apps/youtube-dl-gui.png" },
 }
 multimediamenu = {
@@ -222,10 +222,13 @@ sciencemenu = {
     { "gpredict", "/usr/bin/gpredict", "/usr/share/pixmaps/gpredict-icon.png" },
     { "hp 15c", "/usr/bin/hp15c", "/usr/share/icons/hicolor/48x48/apps/hp15c.png" },
     { "stellarium", "/usr/bin/stellarium", "/usr/share/icons/hicolor/48x48/apps/stellarium.png" },
+    { "viking", "/usr/bin/viking", "/usr/share/icons/hicolor/48x48/apps/viking.png" },
     { "worldwind", "/usr/bin/worldwind", "/usr/share/worldwind/src/images/32x32-icon-earth.png" },
 }
 systemmenu = {
+    { "mibbrowser", "/usr/bin/imibrowser", "/usr/share/icons/hicolor/48x48/apps/imibrowser.png" },
     { "gnome disks", "/usr/bin/gnome-disks", "/usr/share/icons/hicolor/scalable/apps/org.gnome.DiskUtility.svg" },
+    { "gnome firmware", "/usr/bin/gnome-firmware", "/usr/share/icons/hicolor/scalable/apps/org.gnome.Firmware.svg" },
     { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
     { "gpu viewer", "/usr/bin/gpu-viewer", "/usr/share/icons/hicolor/512x512/apps/io.github.arunsivaramanneo.GPUViewer.png" },
     { "hardinfo", "/usr/bin/hardinfo", "/usr/share/icons/hicolor/48x48/apps/hardinfo.png" },
@@ -234,16 +237,17 @@ systemmenu = {
     { "printer", "/usr/bin/system-config-printer", "/usr/share/icons/Adwaita/48x48/legacy/printer-printing.png" },
     { "sysmon", "/usr/bin/sysmon", "/home/hanez/.config/awesome/icons/sysmon.png" },
     { "teamviewer", "/usr/bin/teamviewer", "/usr/share/icons/hicolor/48x48/apps/TeamViewer.png" },
-    { "timeshift", "/usr/bin/timeshift-launcher", "/usr/share/icons/hicolor/48x48/apps/timeshift.png" },
     { "virt-manager", "/usr/bin/virt-manager", "/usr/share/icons/hicolor/48x48/apps/virt-manager.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
 }
 utilitiesmenu = {
     { "arandr", "/usr/bin/arandr", "/usr/share/icons/hicolor/scalable/devices/video-television.svg" },
-    { "appearance", "/usr/bin/lxappearance", "/usr/share/icons/nuoveXT2/96x96/apps/preferences-desktop-theme.png" },
     { "file search tool", "/usr/bin/gnome-search-tool", "/usr/share/icons/Adwaita/48x48/legacy/system-search.png" },
     { "furiusisomount", "/usr/bin/furiusisomount", "/usr/share/furiusisomount/pix/furiusisomount.png" },
     { "grsync", "/usr/bin/grsync", "/usr/share/icons/hicolor/128x128/apps/grsync.png" },
+    { "gtk appearance", "/usr/bin/lxappearance", "/usr/share/icons/nuoveXT2/96x96/apps/preferences-desktop-theme.png" },
+    { "qt5 configuration tool", "/usr/bin/qt5ct", "/usr/share/icons/nuoveXT2/96x96/apps/preferences-desktop-theme.png" },
+    { "qt6 configuration tool", "/usr/bin/qt6ct", "/usr/share/icons/nuoveXT2/96x96/apps/preferences-desktop-theme.png" },
     { "raspberry pi imager", "/usr/bin/rpi-imager", "/usr/share/icons/hicolor/128x128/apps/rpi-imager.png" },
 }
 videomenu = {
@@ -266,7 +270,7 @@ mainmenu = awful.menu({ items = {
     { "database", databasemenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-development.png" },
     { "development", developmentmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-development.png" },
     { "engineering", engineeringmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-engineering.png" },
-    { "games", gamesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-games.png" },
+    { "games", gamesmenu, "/home/hanez/.config/awesome/icons/nes.png" },
     { "graphics", graphicsmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-graphics.png" },
     { "hacking", hackingmenu, "/usr/share/icons/Adwaita/22x22/legacy/face-devilish.png" },
     { "internet", internetmenu, icondir.."emblems/globe.png" },
