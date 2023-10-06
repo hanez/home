@@ -98,6 +98,8 @@ engineeringmenu = {
     { "qcad", "/usr/bin/qcad", "/usr/share/pixmaps/qcad_icon.png" },
     { "qtresistors", "/usr/bin/qtResistors", "/usr/share/icons/hicolor/64x64/apps/qtResistors.png" },
     { "simulide", "/usr/bin/simulide", "/usr/share/icons/hicolor/256x256/simulide.png" },
+    { "savvycan", "/usr/bin/SavvyCAN", "/usr/share/icons/icons/hicolor/scalable/apps/SavvyCAN.png" },
+    { "stm32cubemx", "/usr/bin/stm32cubemx", "/usr/share/pixmaps/stm32cubemx.png" },
     { "superslicer", "/usr/bin/superslicer", "/usr/share/icons/SuperSlicer.svg" },
     { "ultimaker cura", "/usr/bin/UltiMaker-Cura", "/usr/share/pixmaps/cura-icon.png" },
 }
