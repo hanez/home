@@ -18,9 +18,10 @@ accessoriesmenu = {
     { "xreader", "xreader", "/usr/share/icons/hicolor/scalable/apps/xreader.svg" },
 }
 audiomenu = {
+    { "ableton live", "/home/hanez/bin/ableton.sh", "/home/hanez/.config/awesome/icons/live2.png" },
     { "ardour", "/usr/bin/ardour7", "/usr/share/icons/hicolor/48x48/apps/ardour7.png" },
     { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/32x32/audacity.png" },
-    { "live", "/home/hanez/bin/ableton.sh", "/home/hanez/.config/awesome/icons/live2.png" },
+    { "bitwig studio", "/home/hanez/bin/bitwigstudio.sh", "/home/hanez/.config/awesome/icons/bitwigstudio.png" },
     { "mixxx", "/usr/bin/mixxx", "/usr/share/icons/hicolor/scalable/apps/mixxx.svg" },
     { "qjackctl", "/usr/bin/qjackctl", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qjackctl.svg" },
     { "qpwgraph", "/usr/bin/qpwgraph", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qpwgraph.svg" },
@@ -260,10 +261,11 @@ windowsmenu = {
     { "bottles", "/usr/bin/bottles", "/usr/share/icons/hicolor/scalable/apps/com.usebottles.bottles.svg" },
     { "control panel", "wine /home/hanez/.wine/drive_c/windows/syswow64/control.exe", "" },
     { "playonlinux", "/usr/bin/playonlinux", "/usr/share/pixmaps/playonlinux.png" },
+    { "regedit", "/usr/bin/regedit", "" },
+    { "uninstaller pro", "wine '/home/hanez/.wine/drive_c/Program Files/VS Revo Group/Revo Uninstaller Pro/RevoUninPro.exe'", "" },
     { "wineconsole", "/usr/bin/wineconsole", "" },
     { "winefile", "/usr/bin/winefile", "" },
     { "winetricks", "/usr/bin/winetricks", "/usr/share/icons/hicolor/scalable/apps/winetricks.svg" },
-    { "regedit", "/usr/bin/regedit", "" },
 }
 mainmenu = awful.menu({ items = {
     { "accessories", accessoriesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-accessories.png" },
