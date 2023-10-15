@@ -21,7 +21,7 @@ audiomenu = {
     { "ableton live", "/home/hanez/bin/ableton.sh", "/home/hanez/.config/awesome/icons/live2.png" },
     { "ardour", "/usr/bin/ardour7", "/usr/share/icons/hicolor/48x48/apps/ardour7.png" },
     { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/32x32/audacity.png" },
-    { "bitwig studio", "/home/hanez/bin/bitwigstudio.sh", "/home/hanez/.config/awesome/icons/bitwigstudio.png" },
+    --{ "bitwig studio", "/home/hanez/bin/bitwigstudio.sh", "/home/hanez/.config/awesome/icons/bitwigstudio.png" },
     { "mixxx", "/usr/bin/mixxx", "/usr/share/icons/hicolor/scalable/apps/mixxx.svg" },
     { "qjackctl", "/usr/bin/qjackctl", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qjackctl.svg" },
     { "qpwgraph", "/usr/bin/qpwgraph", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qpwgraph.svg" },
