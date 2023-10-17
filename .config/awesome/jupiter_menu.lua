@@ -237,6 +237,7 @@ systemmenu = {
     { "hardinfo", "/usr/bin/hardinfo", "/usr/share/icons/hicolor/48x48/apps/hardinfo.png" },
     { "ksysguard", "/usr/bin/ksysguard", "/usr/share/icons/hicolor/16x16/apps/ksysguardd.png" },
     { "partition manager", "/usr/bin/partitionmanager", "/usr/share/icons/hicolor/scalable/apps/partitionmanager.svg" },
+    { "podman desktop", "/usr/bin/podman-desktop", "/usr/share/icons/hicolor/scalable/apps/podman-desktop.svg" },
     { "printer", "/usr/bin/system-config-printer", "/usr/share/icons/Adwaita/48x48/legacy/printer-printing.png" },
     { "sysmon", "/usr/bin/sysmon", "/home/hanez/.config/awesome/icons/sysmon.png" },
     { "teamviewer", "/usr/bin/teamviewer", "/usr/share/icons/hicolor/48x48/apps/TeamViewer.png" },
