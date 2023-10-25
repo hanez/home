@@ -103,6 +103,7 @@ engineeringmenu = {
     { "stm32cubemx", "/usr/bin/stm32cubemx", "/usr/share/pixmaps/stm32cubemx.png" },
     { "superslicer", "/usr/bin/superslicer", "/usr/share/icons/SuperSlicer.svg" },
     { "ultimaker cura", "/usr/bin/UltiMaker-Cura", "/usr/share/pixmaps/cura-icon.png" },
+    { "upyloader", "/usr/bin/upyloader", "/usr/share/pixmaps/upyloader.svg" },
 }
 gamesmenu = {
     { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
