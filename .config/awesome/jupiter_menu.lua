@@ -145,6 +145,7 @@ hackingmenu = {
     { "iaito", "/usr/bin/iaito ", "/usr/share/icons/hicolor/scalable/apps/org.radare.iaito.svg" },
 }
 internetmenu = {
+    { "brave", "/usr/bin/brave", "/usr/share/icons/hicolor/32x32/apps/brave-desktop.png" },
     { "chrome", "/usr/bin/google-chrome-stable", "/usr/share/icons/hicolor/48x48/apps/google-chrome.png" },
     { "chrome (incognito)", "/usr/bin/google-chrome-stable", "/usr/share/icons/hicolor/48x48/apps/google-chrome.png" },
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
