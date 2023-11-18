@@ -113,6 +113,7 @@ for function in ~/.zsh/functions.d/*.sh; do
 done
 
 # Some aliases
+alias c='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -127,10 +128,10 @@ alias llah='ls -lah --color'
 alias vi=vim
 alias y=yaourt
 alias xterm=$TERMINAL
-alias backup_t410='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/t410/'
-alias backup_11s='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/11s/'
-alias spamup='rsync -avr --delete ~/.bogofilter/* b.systemchaos.org:/var/bogofilter'
-alias x5musicsync="adb-sync --delete /home/hanez/music/* /sdcard/Music"
+#alias backup_t410='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/t410/'
+#alias backup_11s='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/11s/'
+#alias spamup='rsync -avr --delete ~/.bogofilter/* b.systemchaos.org:/var/bogofilter'
+#alias x5musicsync="adb-sync --delete /home/hanez/music/* /sdcard/Music"
 
 # Some Git aliases
 alias gita='git add'
