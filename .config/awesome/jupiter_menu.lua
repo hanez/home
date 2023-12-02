@@ -72,6 +72,7 @@ developmentmenu = {
     { "qgit", "/usr/bin/qgit", "/usr/share/icons/hicolor/48x48/apps/qgit.png" },
     { "qtcreator", "/usr/bin/qtcreator", "/usr/share/icons/hicolor/48x48/apps/QtProject-qtcreator.png" },
     { "rider", "/home/hanez/opt/Rider/bin/rider.sh", "/home/hanez/opt/Rider/bin/rider.svg" },
+    { "rstudio", "/usr/lib/rstudio/rstudio", "/usr/share/icons/hicolor/48x48/apps/rstudio.png" },
     { "rubymine", "/home/hanez/opt/RubyMine/bin/rubymine.sh", "/home/hanez/opt/RubyMine/bin/rubymine.svg" },
     { "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
     { "smartgit", "/usr/bin/smartgit", "/usr/share/icons/hicolor/48x48/apps/smartgit.png" },
