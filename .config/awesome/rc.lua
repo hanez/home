@@ -60,8 +60,24 @@ if file_exists(name) then
     beautiful.wallpaper = name
 end
 
+
+-- {{{ Wallpaper
+if beautiful.wallpaper then
+    for s = 1, screen.count() do
+        --gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+        if s < 2 then
+          gears.wallpaper.maximized(os.getenv("HOME").."/.background0.png", s, true)
+        else
+          gears.wallpaper.maximized(os.getenv("HOME").."/.background1.png", s, true)
+        end
+    end
+end
+-- }}}
+
+
 -- This is used later as the default terminal and editor to run.
-terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange  -fa "'..config.font_xterm..'" -fs '..config.font_xterm_size
+terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange -fa "'..config.font_xterm..'" -fs "'..config.font_xterm_size..'"'
+xterminal = "/usr/bin/xfce4-terminal"
 editor = "/usr/bin/vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -111,7 +127,7 @@ local function client_menu_toggle_fn()
             instance:hide()
             instance = nil
         else
-            instance = awful.menu.clients({ theme = { width = 250 } })
+            instance = awful.menu.clients({ theme = { width = 500 } })
         end
     end
 end
@@ -129,26 +145,26 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 batterywidget = wibox.widget.textbox()
 vicious.register(batterywidget, vicious.widgets.bat, "$1$2% / ", 20, config.battery)
 
-netwidget = wibox.widget.textbox()
-vicious.register(netwidget, vicious.widgets.net,
-'<span color="green">⇩${'..config.net_device..' down_kb}</span> / <span color="#C83321">${'..config.net_device..' up_kb}⇧</span> ', 1)
+--netwidget = wibox.widget.textbox()
+--vicious.register(netwidget, vicious.widgets.net,
+--'<span color="green">⇩${'..config.net_device..' down_kb}</span> / <span color="#C83321">${'..config.net_device..' up_kb}⇧</span> ', 1)
 
 thermalwidget  = wibox.widget.textbox()
 vicious.register(thermalwidget, vicious.widgets.thermal, "$1°C ", 20, config.thermal_zone )
 
-myweather = lain.widget.weather({
-    APPID = config.openweather_api_key,
-    city_id = config.cityid,
-    notification_preset = { font = beautiful.font },
-    notification_text_fun = function (wn)
-                                local day = os.date("%a %d", wn["dt"])
-                                local tmin = math.floor(wn["temp"]["min"])
-                                local tmax = math.floor(wn["temp"]["max"])
-                                local desc = wn["weather"][1]["description"]
-                            return string.format("<b>%s</b>: %s, %d°C/%d°C ", day, desc, tmin, tmax)
-    end,
-})
-myweather.attach(myweather.icon)
+--myweather = lain.widget.weather({
+--    APPID = config.openweather_api_key,
+--    city_id = config.cityid,
+--    notification_preset = { font = beautiful.font },
+--    notification_text_fun = function (wn)
+--                                local day = os.date("%a %d", wn["dt"])
+--                                local tmin = math.floor(wn["temp"]["min"])
+--                               local tmax = math.floor(wn["temp"]["max"])
+--                                local desc = wn["weather"][1]["description"]
+--                            return string.format("<b>%s</b>: %s, %d°C/%d°C ", day, desc, tmin, tmax)
+--    end,
+--})
+--myweather.attach(myweather.icon)
 
 cpuwidget = awful.widget.graph()
 cpuwidget:set_width(100)
@@ -205,16 +221,34 @@ tasklist_buttons = gears.table.join(
                                           end))
 
 function set_wallpaper(s)
-    -- Wallpaper
+--    -- Wallpaper
+--    if beautiful.wallpaper then
+--        local wallpaper = beautiful.wallpaper
+--        -- If wallpaper is a function, call it with the screen
+--        if type(wallpaper) == "function" then
+--            wallpaper = wallpaper(s)
+--       end
+--        gears.wallpaper.maximized(wallpaper, s, false)
+--        --gears.wallpaper.centered(wallpaper, s, true)
+--    end
+-- {{{ Wallpaper
     if beautiful.wallpaper then
         local wallpaper = beautiful.wallpaper
         -- If wallpaper is a function, call it with the screen
         if type(wallpaper) == "function" then
             wallpaper = wallpaper(s)
         end
-        gears.wallpaper.maximized(wallpaper, s, false)
-        --gears.wallpaper.centered(wallpaper, s, true)
+
+        for s = 1, screen.count() do
+            --gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+            if s < 2 then
+              gears.wallpaper.maximized(os.getenv("HOME").."/.background0.png", s, true)
+            else
+              gears.wallpaper.maximized(os.getenv("HOME").."/.background1.png", s, true)
+            end
+        end
     end
+-- }}}
 end
 
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
@@ -285,20 +319,26 @@ globalkeys = gears.table.join(
               { description="enable xautolock", group="awesome" }),
 
     -- Some Application shortcuts
+    awful.key({ modkey,           }, "a", function () awful.spawn("/usr/bin/alacritty") end,
+              { description = "open a terminal", group = "launcher"}),
+    awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
+              { description = "open a terminal", group = "launcher"}),
+    awful.key({ modkey, "Control" }, "Return", function () awful.util.spawn(xterminal) end,
+              { description = "open a terminal", group = "launcher"}),
     awful.key({ modkey            }, "e", function() awful.util.spawn("/usr/bin/emulationstation") end,
               { description="start emulationstation", group="awesome" }),
     awful.key({ modkey            }, "v", function() awful.util.spawn("/usr/bin/chromium") end,
               { description="start chromium", group="awesome" }),
     awful.key({ modkey            }, "b", function() awful.util.spawn("/usr/bin/firefox") end,
               { description="start firefox", group="awesome" }),
-    awful.key({ modkey            }, "n", function() awful.util.spawn("/usr/bin/thunderbird") end,
-              { description="start thunderbird", group="awesome" }),
-    awful.key({ modkey            }, "m", function() awful.util.spawn("/usr/bin/claws-mail") end,
+    awful.key({ modkey            }, "m", function() awful.util.spawn("/usr/bin/birdtray") end,
               { description="start claws-mail", group="awesome" }),
     awful.key({ modkey            }, "c", function() awful.util.spawn(editor_cmd .. " " .. awesome.conffile) end,
               { description="edit awesome configuration", group="awesome" }),
     awful.key({ modkey            }, "z", function() awful.util.spawn(editor_cmd .. " " .. os.getenv("HOME") .. "/.zshrc") end,
               { description="edit zsh configuration", group="awesome" }),
+    --awful.key({ modkey            }, "a", function() awful.util.spawn("/usr/bin/nemo") end,
+    --          { description="start nemo", group="awesome"}),
     awful.key({ modkey            }, "y", function() awful.util.spawn("/usr/bin/thunar") end,
               { description="start thunar", group="awesome"}),
     awful.key({ modkey,           }, "u", function() awful.util.spawn("/usr/bin/xdotool click 2") end),
@@ -327,7 +367,7 @@ globalkeys = gears.table.join(
               { description = "focus next by index", group = "client"}),
     awful.key({ modkey,           }, "k", function () awful.client.focus.byidx(-1) end,
               { description = "focus previous by index", group = "client"}),
-    awful.key({ modkey,           }, "w", function () mymainmenu:show() end,
+    awful.key({ modkey,           }, "w", function () mainmenu:show() end,
               { description = "show main menu", group = "awesome"}),
 
     -- Layout manipulation
@@ -349,9 +389,7 @@ globalkeys = gears.table.join(
         end,
         { description = "go back", group = "client"}),
 
-    -- Standard program
-    awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
-              { description = "open a terminal", group = "launcher"}),
+    -- Awesome control
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               { description = "reload awesome", group = "awesome"}),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit,
@@ -528,24 +566,40 @@ awful.rules.rules = {
           "DTA",  -- Firefox addon DownThemAll.
           "copyq",  -- Includes session name in class.
           "galculator",
+          "megasync",
+          "MEGAsync",
+          "qjackctl",
         },
         class = {
           "Arandr",
           "Gpick",
+          "megasync",
+          "MEGAsync",
+          "qjackctl",
         },
         name = {
           "Event Tester",  -- xev.
+          "megasync",
+          "MEGAsync",
+          "Epsilon",
         },
         role = {
           "AlarmWindow",  -- Thunderbird's calendar.
           "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
+          "megasync",
+          "MEGAsync",
         }
       }, properties = { floating = true }},
 
-    -- Add titlebars to normal clients and dialogs
-    { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = config.titlebars_enabled }
+    -- Do not add titlebars to normal clients
+    { rule_any = {type = { "normal" }
+      }, properties = { titlebars_enabled = config.titlebars_enabled_normal }
     },
+    -- Add titlebars to dialogs
+    { rule_any = {type = { "dialog" }
+      }, properties = { titlebars_enabled = config.titlebars_enabled_dialog }
+    },
+
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
     -- { rule = { class = "Firefox" },
