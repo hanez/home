@@ -7,6 +7,7 @@
 !bin/forksync.sh
 !bin/gnucash.sh
 !bin/hanez.org.sh
+!bin/jack.sh
 !bin/steam.sh
 !bin/motd.sh
 !bin/myip.sh
@@ -32,6 +33,7 @@
 
 !.gitignore
 #!.toprc
+!.tmux.conf
 !.vimrc
 !.Xresources
 !.vim
@@ -41,6 +43,7 @@
 !.zsh
 !.zsh/**
 !.zshrc
+!.zsh_functions.zsh
 
 !README.md
 
