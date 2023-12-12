@@ -1,7 +1,6 @@
 #!/bin/bash
 
-mv /etc/lighttpd/vhosts.d/systems.findeisen.conf /etc/lighttpd/vhosts.d/systems.findeisen.conf.ssl
-mv /etc/lighttpd/vhosts.d/systems.findeisen.conf.nossl /etc/lighttpd/vhosts.d/systems.findeisen.conf
+#cat /etc/lighttpd/vhosts.d/systems.findeisen.conf.nossl > /etc/lighttpd/vhosts.d/systems.findeisen.conf
 
 /etc/init.d/lighttpd restart
 
@@ -13,8 +12,7 @@ for host in $(ls /etc/acme | tr '\n' ' '); do
     cat /etc/acme/$host/fullchain.cer >> /etc/acme/$host/$host.pem
 done
 
-mv /etc/lighttpd/vhosts.d/systems.findeisen.conf /etc/lighttpd/vhosts.d/systems.findeisen.conf.nossl
-mv /etc/lighttpd/vhosts.d/systems.findeisen.conf.ssl /etc/lighttpd/vhosts.d/systems.findeisen.conf
+#cat /etc/lighttpd/vhosts.d/systems.findeisen.conf.ssl > /etc/lighttpd/vhosts.d/systems.findeisen.conf
 
 cat /etc/acme/mail.xw3.org/fullchain.cer > /opt/mailcow-dockerized/data/assets/ssl/mail.xw3.org/cert.pem
 cat /etc/acme/mail.xw3.org/mail.xw3.org.key > /opt/mailcow-dockerized/data/assets/ssl/mail.xw3.org/key.pem
