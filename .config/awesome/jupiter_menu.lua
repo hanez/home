@@ -63,6 +63,7 @@ developmentmenu = {
     { "goland", "/home/hanez/opt/GoLand/bin/goland.sh", "/home/hanez/opt/GoLand/bin/goland.svg" },
     { "intellij idea", "/home/hanez/opt/IntelliJIDEA/bin/idea.sh", "/home/hanez/opt/IntelliJIDEA/bin/idea.svg" },
     { "kdevelop", "/usr/bin/kdevelop", "/usr/share/icons/hicolor/48x48/apps/kdevelop.png" },
+    { "lazarus", "/usr/bin/lazarus", "/usr/share/pixmaps/lazarus.png" },
     { "liteide", "/usr/bin/liteide", "/usr/share/pixmaps/liteide.png" },
     { "meld", "/usr/bin/meld", "/usr/share/icons/hicolor/scalable/apps/org.gnome.meld.svg" },
     { "netbeans", "/usr/bin/netbeans", "/usr/share/pixmaps/netbeans.png" },
