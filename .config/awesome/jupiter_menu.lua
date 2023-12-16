@@ -75,6 +75,7 @@ developmentmenu = {
     { "rider", "/home/hanez/opt/Rider/bin/rider.sh", "/home/hanez/opt/Rider/bin/rider.svg" },
     { "rstudio", "/usr/lib/rstudio/rstudio", "/usr/share/icons/hicolor/48x48/apps/rstudio.png" },
     { "rubymine", "/home/hanez/opt/RubyMine/bin/rubymine.sh", "/home/hanez/opt/RubyMine/bin/rubymine.svg" },
+    { "rustrover", "/home/hanez/opt/RustRover/bin/rustrover.sh", "/home/hanez/opt/RustRover/bin/rustrover.svg" },
     { "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
     { "smartgit", "/usr/bin/smartgit", "/usr/share/icons/hicolor/48x48/apps/smartgit.png" },
     { "thonny", "/usr/bin/thonny", "/usr/share/icons/hicolor/48x48/apps/org.thonny.Thonny.png" },
