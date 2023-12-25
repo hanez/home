@@ -269,11 +269,12 @@ videomenu = {
 windowsmenu = {
     { "bottles", "/usr/bin/bottles", "/usr/share/icons/hicolor/scalable/apps/com.usebottles.bottles.svg" },
     { "control panel", "wine /home/hanez/.wine/drive_c/windows/syswow64/control.exe", "" },
-    { "playonlinux", "/usr/bin/playonlinux", "/usr/share/pixmaps/playonlinux.png" },
+    --{ "playonlinux", "/usr/bin/playonlinux", "/usr/share/pixmaps/playonlinux.png" },
     { "regedit", "/usr/bin/regedit", "" },
     { "uninstaller pro", "wine '/home/hanez/.wine/drive_c/Program Files/VS Revo Group/Revo Uninstaller Pro/RevoUninPro.exe'", "" },
     { "wineconsole", "/usr/bin/wineconsole", "" },
     { "winefile", "/usr/bin/winefile", "" },
+    { "winegui", "/usr/bin/winegui", "/usr/share/icons/hicolor/scalable/apps/winegui.svg" },
     { "winetricks", "/usr/bin/winetricks", "/usr/share/icons/hicolor/scalable/apps/winetricks.svg" },
 }
 mainmenu = awful.menu({ items = {
