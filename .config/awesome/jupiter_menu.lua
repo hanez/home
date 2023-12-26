@@ -14,8 +14,9 @@ accessoriesmenu = {
     { "qpdfview", "/usr/bin/qpdfview", "/usr/share/icons/hicolor/scalable/apps/qpdfview.svg" },
     { "regexxer", "/usr/bin/regexxer", "/usr/share/icons/hicolor/48x48/apps/regexxer.png" },
     { "retext", "/usr/bin/retext", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
-    { "xarchiver", "xarchiver", "/usr/share/icons/hicolor/48x48/apps/xarchiver.png" },
-    { "xreader", "xreader", "/usr/share/icons/hicolor/scalable/apps/xreader.svg" },
+    { "xarchiver", "/usr/bin/xarchiver", "/usr/share/icons/hicolor/48x48/apps/xarchiver.png" },
+    { "xpad", "/usr/bin/xpad", "/usr/share/icons/hicolor/scalable/apps/xpad.svg" },
+    { "xreader", "/usr/bin/xreader", "/usr/share/icons/hicolor/scalable/apps/xreader.svg" },
 }
 audiomenu = {
     { "ableton live", "/home/hanez/bin/ableton.sh", "/home/hanez/.config/awesome/icons/live2.png" },
