@@ -53,7 +53,6 @@ databasemenu = {
 }
 developmentmenu = {
     { "android studio", "/home/hanez/opt/android-studio/bin/studio.sh", "/home/hanez/opt/android-studio/bin/studio.svg" },
-    { "anjuta", "/usr/bin/anjuta", "/usr/share/icons/hicolor/48x48/apps/anjuta.png" },
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/hicolor/64x64/apps/codeblocks.png" },
     { "clion", "/home/hanez/opt/CLion/bin/clion.sh", "/home/hanez/opt/CLion/bin/clion.svg" },
     { "cmake gui", "/usr/bin/cmake-gui", "/usr/share/icons/hicolor/64x64/apps/cmake.png" },
@@ -61,6 +60,7 @@ developmentmenu = {
     { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
     { "glade", "/usr/bin/glade ", "/usr/share/icons/hicolor/scalable/apps/glade-3.svg" },
     { "gnat studio", "/home/hanez/bin/gnatstudio.sh", "/home/hanez/opt/GNAT/2021/share/gnatstudio/icons/hicolor/32x32/apps/gnatstudio_logo.png" },
+    { "gnome builder", "/usr/bin/gnome-builder", "/usr/share/gnome-builder/icons/hicolor/scalable/apps/org.gnome.Builder.svg" },
     { "goland", "/home/hanez/opt/GoLand/bin/goland.sh", "/home/hanez/opt/GoLand/bin/goland.svg" },
     { "intellij idea", "/home/hanez/opt/IntelliJIDEA/bin/idea.sh", "/home/hanez/opt/IntelliJIDEA/bin/idea.svg" },
     { "kdevelop", "/usr/bin/kdevelop", "/usr/share/icons/hicolor/48x48/apps/kdevelop.png" },
@@ -247,6 +247,7 @@ systemmenu = {
     { "partition manager", "/usr/bin/partitionmanager", "/usr/share/icons/hicolor/scalable/apps/partitionmanager.svg" },
     { "podman desktop", "/usr/bin/podman-desktop", "/usr/share/icons/hicolor/scalable/apps/podman-desktop.svg" },
     { "printer", "/usr/bin/system-config-printer", "/usr/share/icons/Adwaita/48x48/legacy/printer-printing.png" },
+    { "sysprof", "/usr/bin/sysprof", "/usr/share/icons/hicolor/scalable/apps/org.gnome.Sysprof.svg" },
     { "sysmon", "/usr/bin/sysmon", "/home/hanez/.config/awesome/icons/sysmon.png" },
     { "teamviewer", "/usr/bin/teamviewer", "/usr/share/icons/hicolor/48x48/apps/TeamViewer.png" },
     { "virt-manager", "/usr/bin/virt-manager", "/usr/share/icons/hicolor/48x48/apps/virt-manager.png" },
