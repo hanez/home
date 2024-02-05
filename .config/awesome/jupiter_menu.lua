@@ -54,6 +54,7 @@ developmentmenu = {
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/hicolor/64x64/apps/codeblocks.png" },
     { "cmake gui", "/usr/bin/cmake-gui", "/usr/share/icons/hicolor/64x64/apps/cmake.png" },
     { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
+    { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/32x32/apps/eclipse.png" },
     { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
     { "glade", "/usr/bin/glade ", "/usr/share/icons/hicolor/scalable/apps/glade-3.svg" },
     { "gnat studio", "/home/hanez/bin/gnatstudio.sh", "/home/hanez/opt/GNAT/2021/share/gnatstudio/icons/hicolor/32x32/apps/gnatstudio_logo.png" },
