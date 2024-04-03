@@ -109,6 +109,7 @@ gamesmenu = {
     { "neverputt", "/usr/bin/neverputt", "/usr/share/icons/hicolor/48x48/apps/neverputt.png" },
     { "red eclipse", "/opt/redeclipse/redeclipse.sh", "/usr/share/pixmaps/redeclipse.png" },
     { "retroarch", "/usr/bin/retroarch", "/usr/share/pixmaps/retroarch.svg" },
+    { "ryujinx", "/usr/bin/Ryujinx.sh", "/usr/share/icons/hicolor/scalable/apps/Ryujinx.svg" },
     { "supertux", "/usr/bin/supertux2", "/usr/share/icons/hicolor/scalable/apps/supertux2.svg" },
     { "supertux kart", "/usr/bin/supertuxkart", "/usr/share/icons/hicolor/48x48/apps/supertuxkart.png" },
     { "sauerbraten", "/usr/bin/sauerbraten-client", "/usr/share/pixmaps/sauerbraten.png" },
