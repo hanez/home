@@ -87,6 +87,7 @@ engineeringmenu = {
     { "kingstvis", "/opt/kingstvis/KingstVIS", "/usr/share/icons/hicolor/48x48/KingstVIS.png" },
     { "leocad", "/usr/bin/leocad", "/usr/share/icons/hicolor/scalable/mimetypes/application-vnd.leocad.svg" },
     { "librecad", "/usr/bin/librecad", "/usr/share/icons/hicolor/scalable/apps/librecad.svg" },
+    { "librepcb", "/usr/bin/librepcb", "/usr/share/icons/hicolor/scalable/apps/org.librepcb.LibrePCB.svg" },
     { "openmv", "/usr/bin/openmvide", "/usr/share/pixmaps/openmv-ide.png" },
     { "openscad", "/usr/bin/openscad", "/usr/share/icons/hicolor/48x48/apps/openscad.png" },
     { "processing", "/usr/bin/processing", "/usr/share/pixmaps/processing.png" },
