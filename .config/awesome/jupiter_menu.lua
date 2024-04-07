@@ -56,6 +56,7 @@ developmentmenu = {
     { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/32x32/apps/eclipse.png" },
     { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
+    { "gambas3", "/usr/bin/gambas3 ", "/usr/share/pixmaps/gambas3.png" },
     { "glade", "/usr/bin/glade ", "/usr/share/icons/hicolor/scalable/apps/glade-3.svg" },
     { "gnat studio", "/home/hanez/bin/gnatstudio.sh", "/home/hanez/opt/GNAT/2021/share/gnatstudio/icons/hicolor/32x32/apps/gnatstudio_logo.png" },
     { "gnome builder", "/usr/bin/gnome-builder", "/usr/share/gnome-builder/icons/hicolor/scalable/apps/org.gnome.Builder.svg" },
@@ -109,12 +110,14 @@ gamesmenu = {
     { "neverputt", "/usr/bin/neverputt", "/usr/share/icons/hicolor/48x48/apps/neverputt.png" },
     { "red eclipse", "/opt/redeclipse/redeclipse.sh", "/usr/share/pixmaps/redeclipse.png" },
     { "retroarch", "/usr/bin/retroarch", "/usr/share/pixmaps/retroarch.svg" },
+    { "ryujinx", "/usr/bin/Ryujinx.sh", "/usr/share/icons/hicolor/scalable/apps/Ryujinx.svg" },
     { "supertux", "/usr/bin/supertux2", "/usr/share/icons/hicolor/scalable/apps/supertux2.svg" },
     { "supertux kart", "/usr/bin/supertuxkart", "/usr/share/icons/hicolor/48x48/apps/supertuxkart.png" },
     { "sauerbraten", "/usr/bin/sauerbraten-client", "/usr/share/pixmaps/sauerbraten.png" },
     { "steam", "/home/hanez/bin/steam.sh", "/usr/share/pixmaps/steam.png" },
     --{ "thimbleweed park", "/home/hanez/bin/thimbleweedpark", "/home/hanez/.local/share/Steam/steamapps/common/Thimbleweed Park/Icon32.png" },
     { "warzone 2100", "/usr/bin/warzone2100", "/usr/share/icons/warzone2100.png" },
+    { "widelands", "/usr/bin/widelands", "/usr/share/icons/hicolor/48x48/apps/org.widelands.Widelands.png" },
     { "xgalaga++", "/usr/bin/xgalaga++", "/usr/share/pixmaps/xgalaga++.xpm" },
 }
 graphicsmenu = {
@@ -156,7 +159,6 @@ internetmenu = {
     { "seamonkey", "/usr/bin/seamonkey", "/usr/share/pixmaps/seamonkey.png" },
     { "tor browser", "/usr/bin/tor-browser", "/usr/share/icons/hicolor/scalable/apps/tor-browser.svg" },
     { "transmission", "/usr/bin/transmission-gtk", "/usr/share/icons/hicolor/scalable/apps/transmission.svg" },
-    { "yt-dlg", "/usr/bin/yt-dlg", "/usr/share/icons/hicolor/48x48/apps/youtube-dl-gui.png" },
 }
 multimediamenu = {
     { "acidrip", "/usr/bin/acidrip", "/usr/share/icons/Vimix/scalable/apps/acidrip.svg" },
@@ -174,6 +176,7 @@ multimediamenu = {
     { "sound juicer", "/usr/bin/sound-juicer", "/usr/share/icons/hicolor/48x48/apps/org.gnome.SoundJuicer.png" },
     { "tvbrowser", "/usr/bin/tvbrowser", "/usr/share/icons/hicolor/48x48/apps/tvbrowser.png" },
     { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
+    { "youtube downloader", "/usr/bin/youtube-dl-gui", "/usr/share/icons/hicolor/1024x1024/apps/youtube-dl-gui-bin.png" },
 }
 networkmenu = {
     { "ettercap", "/usr/bin/ettercap -G", "/usr/share/pixmaps/ettercap.svg" },
