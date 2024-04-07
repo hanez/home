@@ -110,11 +110,11 @@ awful.layout.layouts = {
     --awful.layout.suit.max,
     --awful.layout.suit.max.fullscreen,
     --awful.layout.suit.magnifier,
-    awful.layout.suit.floating,
     --lain.layout.cascade,
     --lain.layout.cascade.tile,
     --lain.layout.termfair,
     --lain.layout.termfair.center,
+    awful.layout.suit.floating,
 }
 -- }}}
 
