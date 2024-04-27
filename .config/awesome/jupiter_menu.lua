@@ -237,7 +237,7 @@ systemmenu = {
     { "gparted", "/usr/bin/gparted", "/usr/share/icons/hicolor/48x48/apps/gparted.png" },
     { "gpu viewer", "/usr/bin/gpu-viewer", "/usr/share/icons/hicolor/512x512/apps/io.github.arunsivaramanneo.GPUViewer.png" },
     { "gst", "/usr/bin/gst", "/usr/share/icons/hicolor/32x32@2x/apps/com.leinardi.gst.png" },
-    { "hardinfo", "/usr/bin/hardinfo", "/usr/share/icons/hicolor/48x48/apps/hardinfo.png" },
+    { "hardinfo2", "/usr/bin/hardinfo2", "/usr/share/icons/hicolor/256x256/apps/hardinfo2.png" },
     { "ksysguard", "/usr/bin/ksysguard", "/usr/share/icons/hicolor/16x16/apps/ksysguardd.png" },
     { "partition manager", "/usr/bin/partitionmanager", "/usr/share/icons/hicolor/scalable/apps/partitionmanager.svg" },
     --{ "podman desktop", "/usr/bin/podman-desktop", "/usr/share/icons/hicolor/scalable/apps/podman-desktop.svg" },
