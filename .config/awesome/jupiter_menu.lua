@@ -151,6 +151,7 @@ internetmenu = {
     { "chromium (incognito)", "/usr/bin/chromium --incognito", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
     { "edge", "/usr/bin/microsoft-edge-stable", "/usr/share/icons/hicolor/48x48/apps/microsoft-edge.png" },
     { "edge (private)", "/usr/bin/microsoft-edge-stable --inprivate", "/usr/share/icons/hicolor/48x48/apps/microsoft-edge.png" },
+    { "electrum", "/usr/bin/electrum", "/usr/share/icons/hicolor/128x128/apps/electrum.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "firefox (private)", "/usr/bin/firefox --private-window", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "liferea", "/usr/bin/liferea", "/usr/share/icons/hicolor/scalable/apps/net.sourceforge.liferea.svg" },
