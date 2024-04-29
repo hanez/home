@@ -59,7 +59,7 @@ developmentmenu = {
     { "gambas3", "/usr/bin/gambas3 ", "/usr/share/pixmaps/gambas3.png" },
     { "glade", "/usr/bin/glade ", "/usr/share/icons/hicolor/scalable/apps/glade-3.svg" },
     { "gnat studio", "/home/hanez/bin/gnatstudio.sh", "/home/hanez/opt/GNAT/2021/share/gnatstudio/icons/hicolor/32x32/apps/gnatstudio_logo.png" },
-    { "gnome builder", "/usr/bin/gnome-builder", "/usr/share/gnome-builder/icons/hicolor/scalable/apps/org.gnome.Builder.svg" },
+--    { "gnome builder", "/usr/bin/gnome-builder", "/usr/share/gnome-builder/icons/hicolor/scalable/apps/org.gnome.Builder.svg" },
     { "jetbrains toolbox", "/usr/bin/jetbrains-toolbox", "/usr/share/pixmaps/jetbrains-toolbox.svg" },
     { "kdevelop", "/usr/bin/kdevelop", "/usr/share/icons/hicolor/48x48/apps/kdevelop.png" },
     { "lazarus", "/usr/bin/lazarus", "/usr/share/pixmaps/lazarus.png" },
