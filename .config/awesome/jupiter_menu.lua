@@ -191,6 +191,7 @@ networkmenu = {
 officemenu = {
     --{ "calendar", "/usr/bin/io.elementary.calendar", "/usr/share/icons/elementary/apps/48/office-calendar.svg" },
     { "gimagereader (ocr)", "/usr/bin/gimagereader-gtk", "" },
+    { "grisbi", "/usr/bin/grisbi", "/usr/share/icons/hicolor/scalable/apps/grisbi.svg" },
     { "libreoffice base", "/usr/bin/libreoffice --base", "/usr/share/icons/hicolor/48x48/apps/libreoffice-base.png" },
     { "libreoffice calc", "/usr/bin/libreoffice --calc", "/usr/share/icons/hicolor/48x48/apps/libreoffice-calc.png" },
     { "libreoffice draw", "/usr/bin/libreoffice --draw", "/usr/share/icons/hicolor/48x48/apps/libreoffice-draw.png" },
