@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mv /root/.acme.sh/acme.sh.log /root/.acme.sh/$(date +%s).log 
+
 acme.sh --cron --force --home /root/.acme.sh
 
 for host in $(ls /etc/acme | tr '\n' ' '); do
