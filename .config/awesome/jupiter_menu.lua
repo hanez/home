@@ -40,6 +40,7 @@ communicationmenu = {
     { "telegram", "/usr/bin/telegram-desktop", "/usr/share/icons/hicolor/48x48/apps/telegram.png" },
     { "webex", "/usr/bin/webex", "/opt/Webex/bin/sparklogosmall.png" },
     { "whatsapp", "/usr/bin/whatsapp-for-linux", "/usr/share/icons/hicolor/32x32/apps/whatsapp-for-linux.png" },
+    { "zapzap", "/usr/bin/zapzap", "/usr/share/icons/hicolor/scalable/apps/com.rtosta.zapzap.svg" },
     { "zoom", "/usr/bin/zoom", "/usr/share/pixmaps/application-x-zoom.png" },
 }
 databasemenu = {
@@ -176,6 +177,7 @@ multimediamenu = {
     { "plex", "/usr/bin/plexmediaplayer", "/usr/share/icons/hicolor/scalable/apps/plexmediaplayer.svg" },
     { "spotiflyer", "/opt/spotiflyer/bin/SpotiFlyer", "/opt/spotiflyer/lib/SpotiFlyer.png" },
     { "spotify", "/usr/bin/spotify-tray", "/usr/share/pixmaps/spotify-client.png" },
+    { "spotube", "/usr/bin/spotube", "/usr/share/icons/spotube/spotube-logo.png" },
     { "sound juicer", "/usr/bin/sound-juicer", "/usr/share/icons/hicolor/48x48/apps/org.gnome.SoundJuicer.png" },
     { "tvbrowser", "/usr/bin/tvbrowser", "/usr/share/icons/hicolor/48x48/apps/tvbrowser.png" },
     { "vlc", "/usr/bin/vlc", "/usr/share/icons/hicolor/48x48/apps/vlc.png" },
