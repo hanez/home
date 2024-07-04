@@ -33,6 +33,7 @@
 
 !.gitignore
 #!.toprc
+!.screenrc
 !.tmux.conf
 !.vimrc
 !.Xresources
