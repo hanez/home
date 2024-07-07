@@ -93,9 +93,9 @@ end
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    awful.layout.suit.fair,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
+    awful.layout.suit.fair,
     --awful.layout.suit.fair.horizontal,
     lain.layout.centerwork,
     --lain.layout.centerwork.horizontal,
@@ -272,6 +272,8 @@ globalkeys = gears.table.join(
     -- Dropdown application
     awful.key({ modkey,           }, "q", function () awful.screen.focused().quake:toggle() end,
               {description = "dropdown application", group = "launcher"}),
+    awful.key({ modkey,           }, "a", function() awful.util.spawn("/home/hanez/.cargo/bin/zoha -s") end,
+              { description="set backlight", group="awesome" }),
 
     -- Set backlight
     awful.key({ modkey,           }, "1", function() awful.util.spawn("/usr/bin/xbacklight -set 10") end,

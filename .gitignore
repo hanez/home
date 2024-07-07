@@ -41,6 +41,7 @@
 !.vim/**
 .vim/.netrwhist
 !.xinitrc
+!.zoha.toml
 !.zsh
 !.zsh/**
 !.zshrc
