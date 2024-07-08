@@ -141,7 +141,7 @@ alias gits='git status'
 # I use xterm and this sets a nice title with hostname and cwd in it.
 case $TERM in
     linux)
-        export TERM=linux-16color
+        export TERM=linux
         precmd () {print -Pn "\e]0;%n@%m: %~\a"}
         ;;
     xterm*)
