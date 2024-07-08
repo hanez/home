@@ -2,7 +2,7 @@
 
 [font]
 font = "Source Code Pro"
-size = 16
+size = 14
 
 [keys]
 quit = "Shift-Ctrl-Alt-q"
@@ -27,8 +27,8 @@ tab_expand = false
 tab_title_num_characters = 24
 
 [color]
-#pallet = "Linux"
-pallet = "RXVT"
+pallet = "Linux"
+#pallet = "RXVT"
 #pallet = "Snazzy"
 #pallet = "SolarizedDark"
 #pallet = "SolarizedLight"
@@ -36,7 +36,7 @@ pallet = "RXVT"
 #pallet = "XTerm"
 #pallet = "Zenburn"
 allow_bold = false
-bg = "rgba(0,0,0,0)"
-cursor_blink = truei
-cursor = "rgba(0.98, 0.647 ,0, 0)"
+#bg = "rgba(0,0,0,0)"
+cursor_blink = true
+#cursor = "rgba(0.98, 0.647 ,0, 0)"
 
