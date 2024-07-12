@@ -79,6 +79,7 @@ developmentmenu = {
     { "thonny", "/usr/bin/thonny", "/usr/share/icons/hicolor/48x48/apps/org.thonny.Thonny.png" },
     { "wxformbuilder", "/usr/bin/wxformbuilder", "/usr/share/pixmaps/wxformbuilder.png" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/icons/hicolor/32x32/apps/wxglade.png" },
+    { "zerobrane studio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/32x32/apps/zbstudio.png" },
 }
 engineeringmenu = {
     { "arduino (1.0.5)", "/home/hanez/opt/arduino-1.0.5/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
