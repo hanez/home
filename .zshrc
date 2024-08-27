@@ -5,27 +5,36 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Extend my $PATH to $HOME/bin
-export PATH=$HOME/bin:$HOME/.gem/ruby/3.0.0/bin:$PATH
+if [[ -r $HOME/.zsh_functions.zsh ]]; then
+      source $HOME/.zsh_functions.zsh
+fi
+
+# Private stuff 
+source ~/.zsh_private
 
 # Java Stuff
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
 # Android / Kivy Development Stuff
 export ANDROID_HOME=/home/hanez/.android/sdk
-export ANDROIDSDK="/opt/android-sdk"
-export ANDROIDNDK="/opt/android-ndk"
-export ANDROIDAPI="19"
-export ANDROIDNDKVER="r16b"
+export ANDROIDSDK="/home/hanez/.android/sdk"
+export ANDROID_SDK_ROOT="/home/hanez/.android/sdk"
+#export ANDROIDNDK="/opt/android-ndk"
+#export ANDROIDAPI="27"
+#export ANDROIDNDKVER="r16b"
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+
 
 # Export the $EDITOR and $TERMINAL
 export BROWSER=/usr/bin/firefox
 export EDITOR=/usr/bin/vim
-export TERMINAL='/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange -fa "Noto Mono" -fs 13'
+export TERMINAL='/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange -fa "Source Code Pro" -fs 14'
 
 # Fix to make JAVA applications behave more friendly in awesome. Still many JAVA apps
 # suck in awesome. PyCharm works perfect, Arduino does not!
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+export XDG_RUNTIME_DIR=/run/user/1000
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.zsh/oh-my-zsh
@@ -78,7 +87,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man)
+plugins=(colored-man-pages)
 
 # History settings
 HISTSIZE=100000
@@ -101,6 +110,7 @@ for function in ~/.zsh/functions.d/*.sh; do
 done
 
 # Some aliases
+alias c='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -112,32 +122,26 @@ alias ll='ls --color -l'
 alias lla='ls -la --color'
 alias llh='ls -lh --color'
 alias llah='ls -lah --color'
-alias lsd='ls -ld --color'
 alias vi=vim
 alias y=yaourt
 alias xterm=$TERMINAL
-alias backup_t410='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/t410/'
-alias backup_11s='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/11s/'
-alias spamup='rsync -avr --delete ~/.bogofilter/* b.systemchaos.org:/var/bogofilter'
-alias x5musicsync="adb-sync --delete /home/hanez/music/* /sdcard/Music"
+#alias backup_t410='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/t410/'
+#alias backup_11s='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/11s/'
+#alias spamup='rsync -avr --delete ~/.bogofilter/* b.systemchaos.org:/var/bogofilter'
+#alias x5musicsync="adb-sync --delete /home/hanez/music/* /sdcard/Music"
 
 # Some Git aliases
+alias gita='git add'
 alias gitc='git commit'
 alias gitd='git diff'
 alias gitp='git push'
+alias gitpp='git pull'
 alias gits='git status'
-
-# SSH Host aliases
-alias a.systemchaos.org='ssh a.systemchaos.org'
-alias c.systemchaos.org='ssh c.systemchaos.org'
-alias d.systemchaos.org='ssh d.systemchaos.org'
-alias e.systemchaos.org='ssh e.systemchaos.org'
-alias onionpi='ssh onionpi'
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
 case $TERM in
     linux)
-        export TERM=linux-16color
+        export TERM=linux
         precmd () {print -Pn "\e]0;%n@%m: %~\a"}
         ;;
     xterm*)

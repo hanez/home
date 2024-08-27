@@ -76,7 +76,8 @@ end
 
 
 -- This is used later as the default terminal and editor to run.
-terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange  -fa "'..config.font_xterm..'" -fs '..config.font_xterm_size
+terminal = '/usr/bin/uxterm -bg black -fg grey -sb -leftbar -si -bc -cr orange -fa "'..config.font_xterm..'" -fs "'..config.font_xterm_size..'"'
+xterminal = "/usr/bin/xfce4-terminal"
 editor = "/usr/bin/vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -109,11 +110,11 @@ awful.layout.layouts = {
     --awful.layout.suit.max,
     --awful.layout.suit.max.fullscreen,
     --awful.layout.suit.magnifier,
-    awful.layout.suit.floating,
     --lain.layout.cascade,
     --lain.layout.cascade.tile,
     --lain.layout.termfair,
     --lain.layout.termfair.center,
+    awful.layout.suit.floating,
 }
 -- }}}
 
@@ -126,7 +127,7 @@ local function client_menu_toggle_fn()
             instance:hide()
             instance = nil
         else
-            instance = awful.menu.clients({ theme = { width = 250 } })
+            instance = awful.menu.clients({ theme = { width = 500 } })
         end
     end
 end
@@ -271,6 +272,8 @@ globalkeys = gears.table.join(
     -- Dropdown application
     awful.key({ modkey,           }, "q", function () awful.screen.focused().quake:toggle() end,
               {description = "dropdown application", group = "launcher"}),
+    awful.key({ modkey,           }, "a", function() awful.util.spawn("/home/hanez/.cargo/bin/zoha -s") end,
+              { description="set backlight", group="awesome" }),
 
     -- Set backlight
     awful.key({ modkey,           }, "1", function() awful.util.spawn("/usr/bin/xbacklight -set 10") end,
@@ -318,6 +321,12 @@ globalkeys = gears.table.join(
               { description="enable xautolock", group="awesome" }),
 
     -- Some Application shortcuts
+    awful.key({ modkey,           }, "a", function () awful.spawn("/usr/bin/alacritty") end,
+              { description = "open a terminal", group = "launcher"}),
+    awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
+              { description = "open a terminal", group = "launcher"}),
+    awful.key({ modkey, "Control" }, "Return", function () awful.util.spawn(xterminal) end,
+              { description = "open a terminal", group = "launcher"}),
     awful.key({ modkey            }, "e", function() awful.util.spawn("/usr/bin/emulationstation") end,
               { description="start emulationstation", group="awesome" }),
     awful.key({ modkey            }, "v", function() awful.util.spawn("/usr/bin/chromium") end,
@@ -330,6 +339,8 @@ globalkeys = gears.table.join(
               { description="edit awesome configuration", group="awesome" }),
     awful.key({ modkey            }, "z", function() awful.util.spawn(editor_cmd .. " " .. os.getenv("HOME") .. "/.zshrc") end,
               { description="edit zsh configuration", group="awesome" }),
+    --awful.key({ modkey            }, "a", function() awful.util.spawn("/usr/bin/nemo") end,
+    --          { description="start nemo", group="awesome"}),
     awful.key({ modkey            }, "y", function() awful.util.spawn("/usr/bin/thunar") end,
               { description="start thunar", group="awesome"}),
     awful.key({ modkey,           }, "u", function() awful.util.spawn("/usr/bin/xdotool click 2") end),
@@ -358,7 +369,7 @@ globalkeys = gears.table.join(
               { description = "focus next by index", group = "client"}),
     awful.key({ modkey,           }, "k", function () awful.client.focus.byidx(-1) end,
               { description = "focus previous by index", group = "client"}),
-    awful.key({ modkey,           }, "w", function () mymainmenu:show() end,
+    awful.key({ modkey,           }, "w", function () mainmenu:show() end,
               { description = "show main menu", group = "awesome"}),
 
     -- Layout manipulation
@@ -380,9 +391,7 @@ globalkeys = gears.table.join(
         end,
         { description = "go back", group = "client"}),
 
-    -- Standard program
-    awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
-              { description = "open a terminal", group = "launcher"}),
+    -- Awesome control
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               { description = "reload awesome", group = "awesome"}),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit,
@@ -574,6 +583,7 @@ awful.rules.rules = {
           "Event Tester",  -- xev.
           "megasync",
           "MEGAsync",
+          "Epsilon",
         },
         role = {
           "AlarmWindow",  -- Thunderbird's calendar.
@@ -583,10 +593,15 @@ awful.rules.rules = {
         }
       }, properties = { floating = true }},
 
-    -- Add titlebars to normal clients and dialogs
-    { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = config.titlebars_enabled }
+    -- Do not add titlebars to normal clients
+    { rule_any = {type = { "normal" }
+      }, properties = { titlebars_enabled = config.titlebars_enabled_normal }
     },
+    -- Add titlebars to dialogs
+    { rule_any = {type = { "dialog" }
+      }, properties = { titlebars_enabled = config.titlebars_enabled_dialog }
+    },
+
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
     -- { rule = { class = "Firefox" },

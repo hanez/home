@@ -1,6 +1,7 @@
 #!/bin/sh
 
-output="/var/www/localhost/htdocs/stats/"
+output="/var/www/systemchaos.org/www/htdocs/stats/"
+outputhanez="/var/www/hanez.org/www/_site/statistics/"
 nic="eth0"
 name=$(hostname)
 
@@ -32,10 +33,11 @@ generate_index() {
 }
 
 #if  [ ! -f "$output"/index.html ]; then
-	mkdir -p $output
-	generate_index > "$output"/index.html
+#	mkdir -p $output
+#	generate_index > "$output"/index.html
 #fi
 
 for type in fiveminutes hours hoursgraph days top months years summary hsummary vsummary; do
-    vnstati --${type} -i $nic -o $output/${type}.png
+    #vnstati --${type} -i $nic -o $output/${type}.png
+    vnstati --${type} -i $nic -ne -o $outputhanez/${type}.png
 done
