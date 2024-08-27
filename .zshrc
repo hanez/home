@@ -122,6 +122,7 @@ alias ll='ls --color -l'
 alias lla='ls -la --color'
 alias llh='ls -lh --color'
 alias llah='ls -lah --color'
+alias n='nnn -diUxe'
 alias vi=vim
 alias y=yaourt
 alias xterm=$TERMINAL
