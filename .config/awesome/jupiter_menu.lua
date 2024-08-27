@@ -53,8 +53,10 @@ databasemenu = {
     { "sqlitebrowser", "/usr/bin/sqlitebrowser", "/usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png" },
 }
 developmentmenu = {
-    { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/hicolor/64x64/apps/codeblocks.png" },
+    { "bluefish", "/usr/bin/bluefish", "/usr/share/icons/hicolor/scalable/apps/bluefish-icon.svg" },
     { "cmake gui", "/usr/bin/cmake-gui", "/usr/share/icons/hicolor/64x64/apps/cmake.png" },
+    { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/hicolor/64x64/apps/codeblocks.png" },
+    { "codelite", "/usr/bin/codelite", "/usr/share/icons/hicolor/32x32/apps/codelite.png" },
     { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/32x32/apps/eclipse.png" },
     { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
@@ -77,6 +79,7 @@ developmentmenu = {
     { "thonny", "/usr/bin/thonny", "/usr/share/icons/hicolor/48x48/apps/org.thonny.Thonny.png" },
     { "wxformbuilder", "/usr/bin/wxformbuilder", "/usr/share/pixmaps/wxformbuilder.png" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/icons/hicolor/32x32/apps/wxglade.png" },
+    { "zerobrane studio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/32x32/apps/zbstudio.png" },
 }
 engineeringmenu = {
     { "arduino (1.0.5)", "/home/hanez/opt/arduino-1.0.5/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
