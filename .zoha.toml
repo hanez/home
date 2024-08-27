@@ -1,0 +1,42 @@
+[process]
+
+[font]
+font = "Source Code Pro"
+size = 14
+
+[keys]
+quit = "Shift-Ctrl-Alt-q"
+tab_add = "Shift-Ctrl-t"
+tab_close = "Shift-Ctrl-w"
+
+[display]
+#height_percentage = "80"
+#width_percentage = "80"
+#width = 1800
+#height = 1024
+#x_pos = 380
+#fullscreen = true
+always_on_top = true
+monitor = "0" 
+skip_task_bar = true
+start_hidden = true
+sticky = true
+tab_mode = "Auto"
+scrollbar_position = "Right"
+tab_expand = false 
+tab_title_num_characters = 24
+
+[color]
+pallet = "Linux"
+#pallet = "RXVT"
+#pallet = "Snazzy"
+#pallet = "SolarizedDark"
+#pallet = "SolarizedLight"
+#pallet = "Tango"
+#pallet = "XTerm"
+#pallet = "Zenburn"
+allow_bold = false
+#bg = "rgba(0,0,0,0)"
+cursor_blink = true
+#cursor = "rgba(0.98, 0.647 ,0, 0)"
+

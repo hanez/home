@@ -33,15 +33,19 @@
 
 !.gitignore
 #!.toprc
+!.screenrc
+!.tmux.conf
 !.vimrc
 !.Xresources
 !.vim
 !.vim/**
 .vim/.netrwhist
 !.xinitrc
+!.zoha.toml
 !.zsh
 !.zsh/**
 !.zshrc
+!.zsh_functions.zsh
 
 !README.md
 

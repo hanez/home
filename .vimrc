@@ -51,10 +51,14 @@ set t_Co=256
 set nocompatible
 
 " Code indentation
+syntax enable
 filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+" set number
+filetype indent on
+set autoindent
 
 " Better command-line completion
 set wildmenu
