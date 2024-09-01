@@ -1,8 +1,8 @@
 #!/bin/sh
 
-source /home/hanez/.env
+source $HOME/.env
 
-/home/hanez/.screenlayout/default.sh
+$HOME/.screenlayout/default.sh
 
 if [[ "$1" == "xterm" ]]; then
     shift
