@@ -24,4 +24,3 @@ case $1 in
         exec dbus-launch $DEFAULT_SESSION
     ;;
 esac
-
