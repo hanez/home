@@ -23,7 +23,7 @@ Clone to your $HOME
 
     cd ~
     git init .
-    git remote add -t \* -f origin git@git.unixpeople.org:hanez/home.git
+    git remote add -t \* -f origin git@git.xw3.org:hanez/home.git
     git checkout master
     git submodule update --init --recursive
 
