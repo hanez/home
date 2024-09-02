@@ -1,24 +1,16 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# Source some global/public stuff
+source ~/.env
 
-if [[ -r $HOME/.zsh_functions.zsh ]]; then
-      source $HOME/.zsh_functions.zsh
-fi
-
-# Private stuff 
-source ~/.zsh_private
+# Source some private stuff 
+source ~/.penv
 
 # Java Stuff
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
 # Android / Kivy Development Stuff
-export ANDROID_HOME=/home/hanez/.android/sdk
-export ANDROIDSDK="/home/hanez/.android/sdk"
-export ANDROID_SDK_ROOT="/home/hanez/.android/sdk"
+export ANDROID_HOME=i$HOME/.android/sdk
+export ANDROIDSDK="$HOME/.android/sdk"
+export ANDROID_SDK_ROOT="$HOME/.android/sdk"
 #export ANDROIDNDK="/opt/android-ndk"
 #export ANDROIDAPI="27"
 #export ANDROIDNDKVER="r16b"
@@ -93,16 +85,9 @@ plugins=(colored-man-pages)
 HISTSIZE=100000
 SAVEHIST=100000
 HISTFILE=~/.zsh_history
-# export MANPATH="/usr/local/man:$MANPATH"
 
 # Load oh-my-zsh stuff
 source $ZSH/oh-my-zsh.sh
-
-# Now source some stuff that should not be public
-if [ -e ~/.zshprivate ]
-then
-    source ~/.zshprivate
-fi
 
 # Source some functions
 for function in ~/.zsh/functions.d/*.sh; do
@@ -110,11 +95,17 @@ for function in ~/.zsh/functions.d/*.sh; do
 done
 
 # Some aliases
-alias c='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+alias c='clear'
+alias gita='git add'
+alias gitc='git commit'
+alias gitd='git diff'
+alias gitp='git push'
+alias gitpp='git pull'
+alias gits='git status'
 alias l='ls --color'
 alias ls='ls --color'
 alias lsa='ls -a --color'
@@ -124,20 +115,7 @@ alias llh='ls -lh --color'
 alias llah='ls -lah --color'
 alias n='nnn -diUxe'
 alias vi=vim
-alias y=yaourt
 alias xterm=$TERMINAL
-#alias backup_t410='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/t410/'
-#alias backup_11s='rsync -avr --delete --delete-excluded --exclude=/dev --exclude=/proc --exclude=/sys --exclude=/run / /run/media/hanez/BACKUP1000GB/11s/'
-#alias spamup='rsync -avr --delete ~/.bogofilter/* b.systemchaos.org:/var/bogofilter'
-#alias x5musicsync="adb-sync --delete /home/hanez/music/* /sdcard/Music"
-
-# Some Git aliases
-alias gita='git add'
-alias gitc='git commit'
-alias gitd='git diff'
-alias gitp='git push'
-alias gitpp='git pull'
-alias gits='git status'
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
 case $TERM in

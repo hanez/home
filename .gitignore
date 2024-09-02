@@ -31,6 +31,7 @@
 !.config/user-dirs.dirs
 !.config/user-dirs.locale
 
+!.env
 !.gitignore
 #!.toprc
 !.screenrc
