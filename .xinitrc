@@ -1,6 +1,9 @@
 #!/bin/sh
 
-source $HOME/.env
+source $HOME/env
+
+# Export DEFAULT_SESSION in this file:
+source $HOME/.penv
 
 $HOME/.screenlayout/default.sh
 
