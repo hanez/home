@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
-source $HOME/env
+. /home/hanez/.env
 
 # Export DEFAULT_SESSION in this file:
-source $HOME/.penv
+. /home/hanez/.penv
 
-$HOME/.screenlayout/default.sh
+/home/hanez/.screenlayout/default.sh
 
 if [[ "$1" == "xterm" ]]; then
     shift
