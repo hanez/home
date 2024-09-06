@@ -5,7 +5,9 @@
 # Export DEFAULT_SESSION in this file:
 . /home/hanez/.penv
 
-/home/hanez/.screenlayout/default.sh
+# My Xorg screen configuration is loaded here and looks something like this:
+# xrandr --output DisplayPort-0 --mode 2560x1440 --pos 0x0 --rotate normal --output DisplayPort-1 --primary --mode 2560x1440 --pos 2560x0 --rotate normal --output DisplayPort-2 --mode 2560x1440 --pos 5120x0 --rotate normal --output HDMI-A-0 --off
+/home/hanez/.config/screenlayout.sh
 
 if [[ "$1" == "xterm" ]]; then
     shift
