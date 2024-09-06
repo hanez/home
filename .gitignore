@@ -21,13 +21,14 @@
 !.config/awesome/**
 .config/awesome/config.lua
 
+!.emulationstation
+!.emulationstation/es_systems.cfg
+
 !.p10k.zsh
 !.config/powerline
 !.config/powerline/**
 
-!.emulationstation
-!.emulationstation/es_systems.cfg
-
+!.config/screen.sh
 !.config/user-dirs.dirs
 !.config/user-dirs.locale
 
