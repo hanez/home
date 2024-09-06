@@ -28,7 +28,6 @@
 !.config/powerline
 !.config/powerline/**
 
-!.config/screen.sh
 !.config/user-dirs.dirs
 !.config/user-dirs.locale
 
