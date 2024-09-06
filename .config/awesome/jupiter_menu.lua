@@ -159,6 +159,7 @@ internetmenu = {
     { "electrum", "/usr/bin/electrum", "/usr/share/icons/hicolor/128x128/apps/electrum.png" },
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "firefox (private)", "/usr/bin/firefox --private-window", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
+    { "gftp", "/usr/bin/gftp-gtk", "/usr/share/icons/hicolor/scalable/apps/gftp.svg" },
     { "liferea", "/usr/bin/liferea", "/usr/share/icons/hicolor/scalable/apps/net.sourceforge.liferea.svg" },
     { "mega", "/usr/bin/megasync", "/usr/share/icons/hicolor/48x48/apps/mega.png" },
     { "nextcloud", "/usr/bin/nextcloud", "/usr/share/icons/hicolor/48x48/apps/Nextcloud.png" },
