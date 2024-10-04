@@ -77,6 +77,7 @@ developmentmenu = {
     { "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
     { "smartgit", "/usr/bin/smartgit", "/usr/share/icons/hicolor/48x48/apps/smartgit.png" },
     { "thonny", "/usr/bin/thonny", "/usr/share/icons/hicolor/48x48/apps/org.thonny.Thonny.png" },
+    { "vscode", "/usr/bin/code", "/usr/share/pixmaps/com.visualstudio.code.oss.png" },
     { "wxformbuilder", "/usr/bin/wxformbuilder", "/usr/share/pixmaps/wxformbuilder.png" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/icons/hicolor/32x32/apps/wxglade.png" },
     { "zerobrane studio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/32x32/apps/zbstudio.png" },
