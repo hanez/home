@@ -76,6 +76,7 @@ developmentmenu = {
     { "rstudio", "/usr/lib/rstudio/rstudio", "/usr/share/icons/hicolor/48x48/apps/rstudio.png" },
     { "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
     { "smartgit", "/usr/bin/smartgit", "/usr/share/icons/hicolor/48x48/apps/smartgit.png" },
+    { "theide", "/usr/bin/theide", "/usr/share/pixmaps/theide.png" },
     { "thonny", "/usr/bin/thonny", "/usr/share/icons/hicolor/48x48/apps/org.thonny.Thonny.png" },
     { "vscode", "/usr/bin/code", "/usr/share/pixmaps/com.visualstudio.code.oss.png" },
     { "wxformbuilder", "/usr/bin/wxformbuilder", "/usr/share/pixmaps/wxformbuilder.png" },
@@ -110,6 +111,7 @@ engineeringmenu = {
 }
 gamesmenu = {
     { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
+    { "atomix", "/usr/bin/atomix", "/usr/share/icons/hicolor/symbolic/apps/atomix-symbolic.svg" },
     --{ "flightgear", "/usr/bin/fgfs --launcher", "/usr/share/icons/hicolor/scalable/apps/flightgear.svg" },
     { "kobodeluxe", "/usr/bin/kobodl", "/usr/share/icons/hicolor/48x48/apps/kobodl.png" },
     { "lutris", "/usr/bin/lutris", "/usr/share/icons/hicolor/scalable/apps/lutris.svg" },
