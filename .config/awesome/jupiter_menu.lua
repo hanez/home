@@ -165,14 +165,6 @@ internetmenu = {
     { "gftp", "/usr/bin/gftp-gtk", "/usr/share/icons/hicolor/scalable/apps/gftp.svg" },
     { "librewolf", "/usr/bin/librewolf", "/usr/share/icons/hicolor/48x48/apps/librewolf.png" },
     { "liferea", "/usr/bin/liferea", "/usr/share/icons/hicolor/scalable/apps/net.sourceforge.liferea.svg" },
-<<<<<<< HEAD
-    { "mega", "/usr/bin/megasync", "/usr/share/icons/hicolor/48x48/apps/mega.png" },
-    { "nextcloud", "/usr/bin/nextcloud", "/usr/share/icons/hicolor/48x48/apps/Nextcloud.png" },
-    { "opera", "/usr/bin/opera", "/usr/share/pixmaps/opera.xpm" },
-    { "seamonkey", "/usr/bin/seamonkey", "/usr/share/pixmaps/seamonkey.png" },
-    { "tor browser", "/usr/bin/tor-browser", "/usr/share/icons/hicolor/scalable/apps/tor-browser.svg" },
-    { "transmission", "/usr/bin/transmission-gtk", "/usr/share/icons/hicolor/scalable/apps/transmission.svg" },
-=======
     { "luakit", "/usr/bin/luakit", "/usr/share/pixmaps/luakit.svg" },
     { "mega", "/usr/bin/megasync", "/usr/share/icons/hicolor/48x48/apps/mega.png" },
     { "nextcloud", "/usr/bin/nextcloud", "/usr/share/icons/hicolor/48x48/apps/Nextcloud.png" },
@@ -182,7 +174,6 @@ internetmenu = {
     { "tor browser", "/usr/bin/tor-browser", "/usr/share/icons/hicolor/scalable/apps/tor-browser.svg" },
     { "transmission", "/usr/bin/transmission-gtk", "/usr/share/icons/hicolor/scalable/apps/transmission.svg" },
     { "vimb", "/usr/bin/vimb", "" },
->>>>>>> b644811bfe8eed4b6d98c0c06e0ba99165953109
 }
 multimediamenu = {
     { "acidrip", "/usr/bin/acidrip", "/usr/share/icons/Vimix/scalable/apps/acidrip.svg" },
