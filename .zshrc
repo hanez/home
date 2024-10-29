@@ -8,9 +8,9 @@ source ~/.penv
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
 # Android / Kivy Development Stuff
-export ANDROID_HOME=i$HOME/.android/sdk
-export ANDROIDSDK="$HOME/.android/sdk"
-export ANDROID_SDK_ROOT="$HOME/.android/sdk"
+export ANDROID_HOME=$HOME/android/sdk
+export ANDROIDSDK="$HOME/android/sdk"
+export ANDROID_SDK_ROOT="$HOME/android/sdk"
 #export ANDROIDNDK="/opt/android-ndk"
 #export ANDROIDAPI="27"
 #export ANDROIDNDKVER="r16b"
