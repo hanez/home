@@ -187,6 +187,7 @@ multimediamenu = {
     { "kaffeine", "/usr/bin/kaffeine", "/usr/share/icons/hicolor/scalable/apps/kaffeine.svg" },
     { "mediathekview", "/home/hanez/opt/MediathekView/MediathekView", "/home/hanez/opt/MediathekView/MediathekView.svg" },
     { "plex", "/usr/bin/plexmediaplayer", "/usr/share/icons/hicolor/scalable/apps/plexmediaplayer.svg" },
+    { "shortwave", "/usr/bin/shortwave", "/usr/share/icons/hicolor/scalable/apps/de.haeckerfelix.Shortwave.svg" },
     { "spotiflyer", "/opt/spotiflyer/bin/SpotiFlyer", "/opt/spotiflyer/lib/SpotiFlyer.png" },
     { "spotify", "/usr/bin/spotify-tray", "/usr/share/pixmaps/spotify-client.png" },
     { "spotube", "/usr/bin/spotube", "/usr/share/icons/spotube/spotube-logo.png" },
