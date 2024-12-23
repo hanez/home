@@ -132,6 +132,7 @@ gamesmenu = {
 graphicsmenu = {
     { "aseprite", "/usr/bin/aseprite", "/usr/share/icons/hicolor/48x48/apps/aseprite.png" },
     { "blender", "/usr/bin/blender", "/usr/share/icons/hicolor/scalable/apps/blender.svg" },
+    { "eyedropper", "/usr/bin/eyedropper", "/usr/share/icons/hicolor/scalable/apps/com.github.finefindus.eyedropper.svg" },
     { "font manager", "/usr/bin/font-manager", "/usr/share/icons/gnome/48x48/apps/preferences-desktop-font.png" },
     { "font viewer", "/usr/bin/gnome-font-viewer", "/usr/share/icons/gnome/48x48/apps/preferences-desktop-font.png" },
     { "gimp", "/usr/bin/gimp", "/usr/share/icons/hicolor/48x48/apps/gimp.png" },
@@ -186,6 +187,7 @@ multimediamenu = {
     { "kaffeine", "/usr/bin/kaffeine", "/usr/share/icons/hicolor/scalable/apps/kaffeine.svg" },
     { "mediathekview", "/home/hanez/opt/MediathekView/MediathekView", "/home/hanez/opt/MediathekView/MediathekView.svg" },
     { "plex", "/usr/bin/plexmediaplayer", "/usr/share/icons/hicolor/scalable/apps/plexmediaplayer.svg" },
+    { "shortwave", "/usr/bin/shortwave", "/usr/share/icons/hicolor/scalable/apps/de.haeckerfelix.Shortwave.svg" },
     { "spotiflyer", "/opt/spotiflyer/bin/SpotiFlyer", "/opt/spotiflyer/lib/SpotiFlyer.png" },
     { "spotify", "/usr/bin/spotify-tray", "/usr/share/pixmaps/spotify-client.png" },
     { "spotube", "/usr/bin/spotube", "/usr/share/icons/spotube/spotube-logo.png" },
