@@ -148,6 +148,7 @@ graphicsmenu = {
     { "xsane scanning", "/usr/bin/xsane", "/usr/share/pixmaps/xsane.xpm" },
 }
 hackingmenu = {
+    { "cutter", "/usr/bin/cutter", "/usr/share/icons/hicolor/scalable/apps/cutter.svg" },
     { "ghidra", "/usr/bin/ghidra", "/usr/share/pixmaps/Ghidra_Logo.png" },
     { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/scalable/apps/org.gnome.GHex.svg" },
     { "iaito", "/usr/bin/iaito ", "/usr/share/icons/hicolor/scalable/apps/org.radare.iaito.svg" },
