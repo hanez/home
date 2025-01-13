@@ -84,8 +84,7 @@ developmentmenu = {
     { "zerobrane studio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/32x32/apps/zbstudio.png" },
 }
 engineeringmenu = {
-    { "arduino (1.0.5)", "/home/hanez/opt/arduino-1.0.5/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
-    { "arduino (1.8.16)", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
+    { "arduino", "/usr/bin/arduino-ide", "/usr/share/pixmaps/arduino-ide.png" },
     { "eagle", "/home/hanez/bin/eagle.sh", "/usr/share/pixmaps/eagle.png" },
     { "energia", "/usr/bin/energia", "/usr/share/pixmaps/energia.png" },
     { "fritzing", "/usr/bin/Fritzing", "/usr/share/pixmaps/fritzing.png" },
