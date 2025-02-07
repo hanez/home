@@ -111,6 +111,8 @@ engineeringmenu = {
 gamesmenu = {
     { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
     { "atomix", "/usr/bin/atomix", "/usr/share/icons/hicolor/symbolic/apps/atomix-symbolic.svg" },
+    { "factorio (demo)", "/usr/bin/factorio", "/usr/share/factorio/core/graphics/factorio.png" },
+    { "godot ide", "/usr/bin/godot", "/usr/share/pixmaps/godot.svg" },
     --{ "flightgear", "/usr/bin/fgfs --launcher", "/usr/share/icons/hicolor/scalable/apps/flightgear.svg" },
     { "kobodeluxe", "/usr/bin/kobodl", "/usr/share/icons/hicolor/48x48/apps/kobodl.png" },
     { "lutris", "/usr/bin/lutris", "/usr/share/icons/hicolor/scalable/apps/lutris.svg" },
