@@ -83,9 +83,16 @@ developmentmenu = {
     { "wxglade", "/usr/bin/wxglade", "/usr/share/icons/hicolor/32x32/apps/wxglade.png" },
     { "zerobrane studio", "/usr/bin/zbstudio", "/usr/share/icons/hicolor/32x32/apps/zbstudio.png" },
 }
+emulationmenu = {
+    { "86box", "/usr/bin/86Box", "/usr/share/icons/hicolor/48x48/apps/net.86box.86Box.png" },
+    { "86boxmanager", "/usr/bin/86BoxManager", "/usr/share/icons/hicolor/scalable/apps/86BoxManager.svg" },
+    { "dosbox", "/usr/bin/dosbox", "/usr/share/pixmaps/dosbox.png" },
+    { "virt-manager", "/usr/bin/virt-manager", "/usr/share/icons/hicolor/48x48/apps/virt-manager.png" },
+    { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
+    { "vmware", "/usr/bin/vmware", "/usr/lib/vmware/share/icons/hicolor/32x32/apps/vmware-workstation.png" },
+}
 engineeringmenu = {
-    { "arduino (1.0.5)", "/home/hanez/opt/arduino-1.0.5/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
-    { "arduino (1.8.16)", "/usr/bin/arduino", "/usr/share/icons/hicolor/48x48/apps/arduino.png" },
+    { "arduino", "/usr/bin/arduino-ide", "/usr/share/pixmaps/arduino-ide.png" },
     { "eagle", "/home/hanez/bin/eagle.sh", "/usr/share/pixmaps/eagle.png" },
     { "energia", "/usr/bin/energia", "/usr/share/pixmaps/energia.png" },
     { "fritzing", "/usr/bin/Fritzing", "/usr/share/pixmaps/fritzing.png" },
@@ -112,6 +119,8 @@ engineeringmenu = {
 gamesmenu = {
     { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
     { "atomix", "/usr/bin/atomix", "/usr/share/icons/hicolor/symbolic/apps/atomix-symbolic.svg" },
+    { "factorio (demo)", "/usr/bin/factorio", "/usr/share/factorio/core/graphics/factorio.png" },
+    { "godot ide", "/usr/bin/godot", "/usr/share/pixmaps/godot.svg" },
     --{ "flightgear", "/usr/bin/fgfs --launcher", "/usr/share/icons/hicolor/scalable/apps/flightgear.svg" },
     { "kobodeluxe", "/usr/bin/kobodl", "/usr/share/icons/hicolor/48x48/apps/kobodl.png" },
     { "lutris", "/usr/bin/lutris", "/usr/share/icons/hicolor/scalable/apps/lutris.svg" },
@@ -148,6 +157,7 @@ graphicsmenu = {
     { "xsane scanning", "/usr/bin/xsane", "/usr/share/pixmaps/xsane.xpm" },
 }
 hackingmenu = {
+    { "cutter", "/usr/bin/cutter", "/usr/share/icons/hicolor/scalable/apps/cutter.svg" },
     { "ghidra", "/usr/bin/ghidra", "/usr/share/pixmaps/Ghidra_Logo.png" },
     { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/scalable/apps/org.gnome.GHex.svg" },
     { "iaito", "/usr/bin/iaito ", "/usr/share/icons/hicolor/scalable/apps/org.radare.iaito.svg" },
@@ -263,9 +273,6 @@ systemmenu = {
     { "sysprof", "/usr/bin/sysprof", "/usr/share/icons/hicolor/scalable/apps/org.gnome.Sysprof.svg" },
     { "sysmon", "/usr/bin/sysmon", "/home/hanez/.config/awesome/icons/sysmon.png" },
     { "teamviewer", "/usr/bin/teamviewer", "/usr/share/icons/hicolor/48x48/apps/TeamViewer.png" },
-    { "virt-manager", "/usr/bin/virt-manager", "/usr/share/icons/hicolor/48x48/apps/virt-manager.png" },
-    { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
-    { "vmware", "/usr/bin/vmware", "/usr/lib/vmware/share/icons/hicolor/32x32/apps/vmware-workstation.png" },
 }
 utilitiesmenu = {
     { "arandr", "/usr/bin/arandr", "/usr/share/icons/hicolor/scalable/devices/video-television.svg" },
@@ -298,6 +305,7 @@ mainmenu = awful.menu({ items = {
     { "communication", communicationmenu, icondir.."actions/quote.png" },
     { "database", databasemenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-development.png" },
     { "development", developmentmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-development.png" },
+    { "emulation", emulationmenu, "" },
     { "engineering", engineeringmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-engineering.png" },
     { "games", gamesmenu, "/home/hanez/.config/awesome/icons/nes.png" },
     { "graphics", graphicsmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-graphics.png" },
@@ -312,7 +320,7 @@ mainmenu = awful.menu({ items = {
     { "system", systemmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-system.png" },
     { "utilities", utilitiesmenu, "/usr/share/icons/Adwaita/22x22/legacy/applications-utilities.png" },
     { "video", videomenu, "/usr/share/icons/Adwaita/48x48/legacy/camera-video.png" },
-    { "wine", windowsmenu, "" },
+    { "windows", windowsmenu, "" },
     { "filemanager (nemo)", "/usr/bin/nemo", "/usr/share/icons/Adwaita/22x22/legacy/system-file-manager.png" },
     { "filemanager (thunar)", "/usr/bin/thunar", "/usr/share/icons/Adwaita/22x22/legacy/system-file-manager.png" },
     { "terminal (xfce4)", "/usr/bin/xfce4-terminal", "/usr/share/icons/Adwaita/22x22/legacy/utilities-terminal.png" },

@@ -5,7 +5,7 @@ source ~/.env
 source ~/.penv
 
 # Java Stuff
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+#export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
 # Android / Kivy Development Stuff
 export ANDROID_HOME=$HOME/android/sdk
