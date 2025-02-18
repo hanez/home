@@ -8,13 +8,14 @@
 !bin/gnucash.sh
 !bin/hanez.org.sh
 !bin/jack.sh
-!bin/steam.sh
+!bin/procfiles.sh
 !bin/motd.sh
 !bin/myip.sh
 !bin/nas-boot.sh
 !bin/nas-reboot.sh
 !bin/nas-shutdown.sh
 !bin/stats.sh
+!bin/steam.sh
 
 !.config
 !.config/awesome
