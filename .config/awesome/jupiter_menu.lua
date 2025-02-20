@@ -259,6 +259,7 @@ sciencemenu = {
     { "worldwind", "/usr/bin/worldwind", "/usr/share/worldwind/src/images/32x32-icon-earth.png" },
 }
 systemmenu = {
+    { "baobab", "/usr/bin/baobab", "/usr/share/help/C/baobab/media/org.gnome.baobab.svg" },
     { "mibbrowser", "/usr/bin/imibrowser", "/usr/share/icons/hicolor/48x48/apps/imibrowser.png" },
     { "gnome disks", "/usr/bin/gnome-disks", "/usr/share/icons/hicolor/scalable/apps/org.gnome.DiskUtility.svg" },
     { "gnome firmware", "/usr/bin/gnome-firmware", "/usr/share/icons/hicolor/scalable/apps/org.gnome.Firmware.svg" },
