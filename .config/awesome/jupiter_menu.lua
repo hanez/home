@@ -268,6 +268,7 @@ systemmenu = {
     { "gst", "/usr/bin/gst", "/usr/share/icons/hicolor/32x32@2x/apps/com.leinardi.gst.png" },
     { "hardinfo2", "/usr/bin/hardinfo2", "/usr/share/icons/hicolor/256x256/apps/hardinfo2.png" },
     { "ksysguard", "/usr/bin/ksysguard", "/usr/share/icons/hicolor/16x16/apps/ksysguardd.png" },
+    { "nomachine", "/usr/bin/nomachine-client", "/usr/share/NX/share/icons/48x48/NoMachine-desktop.png" },
     { "partition manager", "/usr/bin/partitionmanager", "/usr/share/icons/hicolor/scalable/apps/partitionmanager.svg" },
     --{ "podman desktop", "/usr/bin/podman-desktop", "/usr/share/icons/hicolor/scalable/apps/podman-desktop.svg" },
     { "printer", "/usr/bin/system-config-printer", "/usr/share/icons/Adwaita/48x48/legacy/printer-printing.png" },
