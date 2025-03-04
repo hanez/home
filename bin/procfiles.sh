@@ -10,7 +10,7 @@ fi
 PROCFILES=$(ps -C $1 -o pid=)
 
 for proc in ${PROCFILES}; do
-    echo $proc
+    echo "/proc/$proc/fd"
     ls -l /proc/$proc/fd
 done
 
