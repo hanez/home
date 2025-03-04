@@ -57,8 +57,13 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 " set number
-filetype indent on
-set autoindent
+" filetype indent on
+" set autoindent
+
+filetype indent off
+set noautoindent
+set nocindent
+set nosmartindent
 
 " Better command-line completion
 set wildmenu
