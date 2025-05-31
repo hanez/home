@@ -185,6 +185,7 @@ internetmenu = {
     { "nextcloud", "/usr/bin/nextcloud", "/usr/share/icons/hicolor/48x48/apps/Nextcloud.png" },
     { "opera", "/usr/bin/opera", "/usr/share/pixmaps/opera.xpm" },
     { "qutebrowser", "/usr/bin/qutebrowser", "/usr/share/icons/hicolor/scalable/apps/qutebrowser.svg" },
+    { "rssguard", "/usr/bin/rssguard", "/usr/share/icons/hicolor/256x256/apps/io.github.martinrotter.rssguard.png" },
     { "seamonkey", "/usr/bin/seamonkey", "/usr/share/pixmaps/seamonkey.png" },
     { "tor browser", "/usr/bin/tor-browser", "/usr/share/icons/hicolor/scalable/apps/tor-browser.svg" },
     { "transmission", "/usr/bin/transmission-gtk", "/usr/share/icons/hicolor/scalable/apps/transmission.svg" },
