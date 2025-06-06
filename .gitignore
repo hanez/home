@@ -23,6 +23,8 @@
 !.config/awesome/**
 .config/awesome/config.lua
 
+!.byobu
+!.byobu/**
 !.config/byobu
 !.config/byobu/**
 
