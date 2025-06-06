@@ -18,9 +18,13 @@
 !bin/steam.sh
 
 !.config
+
 !.config/awesome
 !.config/awesome/**
 .config/awesome/config.lua
+
+!.config/byobu
+!.config/byobu/**
 
 !.emulationstation
 !.emulationstation/es_systems.cfg
