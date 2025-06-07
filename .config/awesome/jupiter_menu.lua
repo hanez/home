@@ -37,7 +37,7 @@ communicationmenu = {
     { "skype", "/usr/bin/skypeforlinux", "/usr/share/pixmaps/skypeforlinux.png" },
     { "slack", "/usr/bin/slack", "/usr/share/pixmaps/slack.png" },
     { "teams", "/usr/bin/teams", "/usr/share/pixmaps/teams.png" },
-    { "telegram", "/usr/bin/telegram-desktop", "/usr/share/icons/hicolor/48x48/apps/telegram.png" },
+    { "telegram", "/usr/bin/Telegram", "/usr/share/icons/hicolor/48x48/apps/telegram.png" },
     { "webex", "/usr/bin/webex", "/opt/Webex/bin/sparklogosmall.png" },
     { "whatsapp", "/usr/bin/whatsapp-for-linux", "/usr/share/icons/hicolor/32x32/apps/whatsapp-for-linux.png" },
     { "zapzap", "/usr/bin/zapzap", "/usr/share/icons/hicolor/scalable/apps/com.rtosta.zapzap.svg" },
