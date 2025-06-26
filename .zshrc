@@ -106,6 +106,7 @@ alias gitd='git diff'
 alias gitp='git push'
 alias gitpp='git pull'
 alias gits='git status'
+alias kubectl="minikube kubectl --"
 alias l='ls --color'
 alias ls='ls --color'
 alias lsa='ls -a --color'
