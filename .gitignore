@@ -16,6 +16,7 @@
 !bin/nas-shutdown.sh
 !bin/stats.sh
 !bin/steam.sh
+!bin/su.sh
 
 !.config
 
