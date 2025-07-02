@@ -6,9 +6,9 @@
 # as the default $HOME for the root user is / on Android devices
 # and we have no write permission for a /root there.
 #
-# /system/bin PATH?
+# Do I need/want /system/bin in $PATH?
 
 su -c "HOME=/data/root \
-       PATH=/data/data/com.termux/files/usr/bin \
+       PATH=/data/data/com.termux/files/usr/bin:/system/bin \
        SHELL=/data/data/com.termux/files/usr/bin/zsh /data/data/com.termux/files/usr/bin/zsh -l && cd /data/root"
 
