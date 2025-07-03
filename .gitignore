@@ -3,6 +3,7 @@
 !bin
 #!bin/**
 !bin/ac.sh
+!bin/cfgxport.sh
 !bin/eagle.sh
 !bin/forksync.sh
 !bin/gnucash.sh
