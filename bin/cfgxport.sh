@@ -29,7 +29,6 @@ rm -f ${TARGET}
 7z a ${TARGET} .zoha.toml
 
 7z a ${TARGET} .zsh*
-7z a ${TARGET} .zsh_functions.zsh
 7z d ${TARGET} .zsh_history
 7z d ${TARGET} .zsh/oh-my-zsh/.git*
 7z d ${TARGET} .zsh/oh-my-zsh/custom/themes/powerlevel10k
