@@ -1,8 +1,3 @@
-# History settings
-HISTSIZE=100000
-SAVEHIST=100000
-HISTFILE=~/.zsh_history
-
 # Source some global/public stuff
 source ~/.env
 
@@ -17,7 +12,7 @@ source ~/.zsh/oh-my-zsh.sh
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
 case $TERM in
-    linux)
+    linux*)
         export TERM=linux
         precmd () {print -Pn "\e]0;%n@%m: %~\a"}
         ;;
@@ -25,7 +20,7 @@ case $TERM in
         export TERM=xterm-256color
         precmd () {print -Pn "\e]0;%n@%m: %~\a"}
         ;;
-    screen)
+    screen*)
         export TERM=screen-256color
         precmd () {print -Pn "\e]0;%n@%m: %~\a"}
         ;;
@@ -47,4 +42,16 @@ esac
 for function in ~/.zsh/functions.d/*.sh; do
     source $function
 done
+
+# Update tmux window title to the current running command
+# In root's .zshrc (or any su-target user)
+if [ -n "$TMUX" ]; then
+  function preexec() {
+    local cmd=${1[(wr)^(*=*|sudo|su|command)]}
+    print -Pn "\e]2;${cmd%% *}\a"
+  }
+  function precmd() {
+    print -Pn "\e]2;zsh\a"
+  }
+fi
 
