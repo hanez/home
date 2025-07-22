@@ -13,11 +13,14 @@ s() {
 
     tmux rename-window "${ssh_host%%.*}"  # short hostname
 
+    # Emit title update BEFORE ssh
+    printf '\033k%s\033\\' "${ssh_host%%.*}"
+
     # Run SSH session
     command ssh "$@"
 
-    # Restore previous tmux window name
-    tmux rename-window "$original_name"
+    # Restore after disconnect
+    printf '\033k%s\033\\' "$original_name"
   else
     command ssh "$@"
   fi
