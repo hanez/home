@@ -139,6 +139,10 @@ if [ -f /usr/bin/shellpic ]; then
     fi
 fi
 
+if [ -n "$TMUX" ]; then
+    printf '\033k%s\033\\' "$(hostname)"
+fi
+
 #source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
