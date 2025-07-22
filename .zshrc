@@ -1,13 +1,13 @@
-# Source some global/public stuff
+# Source some global/public stuff.
 source ~/.env
 
-# Source some private stuff or custom things that are different on my systems
+# Source some private stuff or custom things that are different on my systems.
 source ~/.penv
 
 # Do some exports!
 source ~/.zsh/exports.sh
 
-# Load Oh-my-Zsh
+# Load Oh-my-Zsh.
 source ~/.zsh/oh-my-zsh.sh
 
 # I use xterm and this sets a nice title with hostname and cwd in it.
@@ -43,8 +43,7 @@ for function in ~/.zsh/functions.d/*.sh; do
     source $function
 done
 
-# Update tmux window title to the current running command
-# In root's .zshrc (or any su-target user)
+# Update tmux window title to the current running command.
 if [ -n "$TMUX" ]; then
   function preexec() {
     local cmd=${1[(wr)^(*=*|sudo|su|command)]}
