@@ -1,7 +1,7 @@
 # Source some global/public stuff
 source ~/.env
 
-# Source some private stuff 
+# Source some private stuff
 source ~/.penv
 
 # Java Stuff
@@ -89,11 +89,6 @@ HISTFILE=~/.zsh_history
 # Load oh-my-zsh stuff
 source $ZSH/oh-my-zsh.sh
 
-# Source some functions
-for function in ~/.zsh/functions.d/*.sh; do
-    source $function
-done
-
 # Some aliases
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -134,17 +129,19 @@ case $TERM in
         ;;
 esac
 
-if [ -f /usr/bin/shellpic ]; then 
+if [ -f /usr/bin/shellpic ]; then
     if [ -f ~/images/tux.png ]; then
         /usr/bin/shellpic --shell24 --scale-x 50 ~/images/tux.png
     fi
-fi
-
-if [ -n "$TMUX" ]; then
-    printf '\033k%s\033\\' "$(hostname)"
 fi
 
 #source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Source some functions
+for function in ~/.zsh/functions.d/*.sh; do
+    source $function
+done
+
