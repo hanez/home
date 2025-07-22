@@ -36,12 +36,14 @@ sshr() {
     ssh_host="${ssh_host%%:*}"
     ssh_host="${ssh_host%% *}"
 
-    # Emit title update BEFORE ssh
     printf '\033k%s\033\\' "${ssh_host%%.*}"
+
+    # Set up trap to restore title even if interrupted
+    trap 'printf "\033k%s\033\\n" "$original_name"' EXIT
 
     command ssh "$@"
 
-    # Restore after disconnect
+    trap - EXIT  # cleanup trap if ssh exited normally
     printf '\033k%s\033\\' "$original_name"
   else
     command ssh "$@"
