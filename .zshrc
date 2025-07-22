@@ -2,6 +2,7 @@
 source ~/.env
 
 # Source some private stuff or custom things that are different on my systems.
+# This file is not in the Git repository!
 source ~/.penv
 
 # Do some exports!
