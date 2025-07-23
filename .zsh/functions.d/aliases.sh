@@ -27,6 +27,7 @@ alias n='nnn -diUxe'
 alias ssh='s'
 alias su='us'
 
+alias v=vim
 alias vi=vim
 
 alias xterm=$TERMINAL

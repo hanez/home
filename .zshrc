@@ -1,10 +1,6 @@
 # Source some global/public stuff.
 source ~/.env
 
-# Source some private stuff or custom things that are different on my systems.
-# This file is not in the Git repository!
-source ~/.penv
-
 # Load Oh-my-Zsh.
 source ~/.zsh/oh-my-zsh.sh
 
@@ -24,18 +20,6 @@ case $TERM in
         ;;
 esac
 
-# Obsolete?
-#if [ -f /usr/bin/shellpic ]; then
-#    if [ -f ~/images/tux.png ]; then
-#        /usr/bin/shellpic --shell24 --scale-x 50 ~/images/tux.png
-#    fi
-#fi
-
-# Obsolete?
-#source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # Source some functions
 for function in ~/.zsh/functions.d/*.sh; do
     source $function
@@ -51,4 +35,9 @@ if [ -n "$TMUX" ]; then
     print -Pn "\e]2;zsh\a"
   }
 fi
+
+# Source some private stuff or custom things that are different on my systems.
+# This file is not in the Git repository!
+# Everything in this file overrides configuration settings already loaded.
+source ~/.penv
 
