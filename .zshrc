@@ -5,9 +5,6 @@ source ~/.env
 # This file is not in the Git repository!
 source ~/.penv
 
-# Do some exports!
-source ~/.zsh/exports.sh
-
 # Load Oh-my-Zsh.
 source ~/.zsh/oh-my-zsh.sh
 

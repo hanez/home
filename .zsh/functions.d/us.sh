@@ -14,12 +14,12 @@ us() {
     tmux rename-window "su(${target_user})"
 
     # Use "command su" to bypass the function if it exists
-    command su "$@"
+    command "$SU" "$@"
 
     # Restore original window name after exit
     tmux rename-window "$original_name"
   else
-    command su "$@"
+    command "$SU" "$@"
   fi
 }
 
