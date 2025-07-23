@@ -23,25 +23,3 @@ s() {
   fi
 }
 
-sshr() {
-  if [ -n "$TMUX" ]; then
-    local original_name
-    original_name=$(tmux display-message -p '#W')
-
-    local ssh_host="$1"
-    ssh_host="${ssh_host#*@}"
-    ssh_host="${ssh_host%%:*}"
-    ssh_host="${ssh_host%% *}"
-
-    # Emit title update BEFORE ssh
-    printf '\033k%s\033\\' "${ssh_host%%.*}"
-
-    command ssh "$@"
-
-    # Restore after disconnect
-    printf '\033k%s\033\\' "$original_name"
-  else
-    command ssh "$@"
-  fi
-}
-

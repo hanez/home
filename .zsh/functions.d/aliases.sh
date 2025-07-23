@@ -22,6 +22,8 @@ alias lla='ls -la --color'
 alias llh='ls -lh --color'
 alias llah='ls -lah --color'
 
+alias su='us -'
+
 alias n='nnn -diUxe'
 
 alias vi=vim

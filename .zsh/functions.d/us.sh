@@ -11,7 +11,7 @@ us() {
     fi
 
     # Rename the window before running su
-    tmux rename-window "su-${target_user}"
+    tmux rename-window "su(${target_user})"
 
     # Use "command su" to bypass the function if it exists
     command su "$@"
