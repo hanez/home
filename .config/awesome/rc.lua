@@ -342,6 +342,8 @@ globalkeys = gears.table.join(
     --awful.key({ modkey            }, "a", function() awful.util.spawn("/usr/bin/nemo") end,
     --          { description="start nemo", group="awesome"}),
     awful.key({ modkey            }, "y", function() awful.util.spawn("/usr/bin/thunar") end,
+              { description="start thunar as root", group="awesome"}),
+    awful.key({ modkey            }, "<", function() awful.util.spawn("/usr/bin/gksudo /usr/bin/thunar") end,
               { description="start thunar", group="awesome"}),
     awful.key({ modkey,           }, "u", function() awful.util.spawn("/usr/bin/xdotool click 2") end),
     --awful.key({ modkey, altkey    }, "space", function() awful.util.spawn("/usr/bin/xdotool click 2") end),
