@@ -201,7 +201,7 @@ multimediamenu = {
     { "k9copy", "/usr/bin/k9copy", "/usr/share/icons/hicolor/48x48/actions/k9copy.png" },
     { "kaffeine", "/usr/bin/kaffeine", "/usr/share/icons/hicolor/scalable/apps/kaffeine.svg" },
     { "mediathekview", "/home/hanez/opt/MediathekView/MediathekView", "/home/hanez/opt/MediathekView/MediathekView.svg" },
-    { "plex", "/usr/bin/plexmediaplayer", "/usr/share/icons/hicolor/scalable/apps/plexmediaplayer.svg" },
+    { "plex", "/usr/bin/Plex", "/usr/share/icons/hicolor/256x256/apps/tv.plex.PlexDesktop.png" },
     { "shortwave", "/usr/bin/shortwave", "/usr/share/icons/hicolor/scalable/apps/de.haeckerfelix.Shortwave.svg" },
     { "spotiflyer", "/opt/spotiflyer/bin/SpotiFlyer", "/opt/spotiflyer/lib/SpotiFlyer.png" },
     { "spotify", "/usr/bin/spotify-tray", "/usr/share/pixmaps/spotify-client.png" },
