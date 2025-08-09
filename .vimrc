@@ -1,6 +1,13 @@
+" Managed plugins
+call plug#begin()
+" List your plugins here
+Plug 'tpope/vim-sensible'
+"Plug 'https://github.com/neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
 
 " Execute pathogen
-execute pathogen#infect()
+"execute pathogen#infect()
 
 " Load NERDTree plugin only if opening vim without a file
 "autocmd VimEnter * NERDTree
@@ -8,7 +15,7 @@ execute pathogen#infect()
 "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Open NERDTree with Ctrl+n / Toggle
-map <C-n> :NERDTreeToggle<CR>
+" map <C-n> :NERDTreeToggle<CR>
 
 " close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
@@ -41,7 +48,6 @@ augroup CursorLine
   au InsertEnter * setlocal nocursorline
   au InsertLeave * setlocal cursorline
 augroup END
-
 
 " 256 bit color support
 set t_Co=256
@@ -88,5 +94,4 @@ set ruler
 " Instead of failing a command because of unsaved changes, instead raise a
 " dialogue asking if you wish to save changed files.
 set confirm
-
 
