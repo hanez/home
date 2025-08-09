@@ -7,8 +7,10 @@ Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 Plug 'flazz/vim-colorschemes'
 call plug#end()
 
-" feral gentooish grb256 jellygrass kalt last256 matrix
-colorscheme feral 
+" desert feral gentooish grb256 jellygrass kalt last256 matrix
+colorscheme desert 
+
+set paste
 
 " Load NERDTree plugin only if opening vim without a file
 "autocmd VimEnter * NERDTree
