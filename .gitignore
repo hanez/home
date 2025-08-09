@@ -49,7 +49,7 @@
 !.Xresources
 !.vim
 !.vim/**
-.vim/plugged/*/.git
+.vim/plugged/*
 .vim/.netrwhist
 !.xinitrc
 !.zoha.toml

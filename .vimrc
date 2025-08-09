@@ -3,21 +3,21 @@ call plug#begin()
 " List your plugins here
 Plug 'tpope/vim-sensible'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
+Plug 'flazz/vim-colorschemes'
 call plug#end()
 
-" Execute pathogen
-"execute pathogen#infect()
+" feral gentooish grb256 jellygrass kalt last256 matrix
+colorscheme feral 
 
 " Load NERDTree plugin only if opening vim without a file
 "autocmd VimEnter * NERDTree
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
 " Open NERDTree with Ctrl+n / Toggle
 " map <C-n> :NERDTreeToggle<CR>
-
 " close vim if the only window left open is a NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Remember position in file
 if has("autocmd")
