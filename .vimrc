@@ -10,7 +10,7 @@ call plug#begin()
 call plug#end()
 
 " desert feral gentooish grb256 jellygrass kalt last256 matrix
-colorscheme molokai_dark 
+colorscheme molokai 
 
 " * User Interface
 
