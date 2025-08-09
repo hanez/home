@@ -2,7 +2,6 @@
 call plug#begin()
 " List your plugins here
 Plug 'tpope/vim-sensible'
-"Plug 'https://github.com/neoclide/coc.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
