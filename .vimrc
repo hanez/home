@@ -7,6 +7,7 @@ call plug#begin()
   Plug 'flazz/vim-colorschemes'
   Plug 'vim-python/python-syntax'
   Plug 'preservim/nerdtree'
+  Plug 'preservim/tagbar'
 call plug#end()
 
 " desert feral gentooish grb256 jellygrass kalt last256 matrix
@@ -112,6 +113,8 @@ autocmd cursorhold,bufwritepost * unlet! b:statusline_tab_warning
 map <C-n> :NERDTreeToggle<CR>
 " close vim if the only window left open is a NERDTree
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+nmap <F8> :TagbarToggle<CR>
 
 " Remember position in file
 if has("autocmd")
