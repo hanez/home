@@ -1,7 +1,10 @@
+" Vim configuration from Johannes Findeisen <you@hanez.org>
+
 " Managed plugins
 call plug#begin()
   " List your plugins here
   Plug 'tpope/vim-sensible'
+  Plug 'tpope/vim-eunuch'
   Plug 'tpope/vim-fugitive'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
@@ -15,14 +18,16 @@ call plug#end()
 " desert feral gentooish grb256 jellygrass kalt last256 matrix
 colorscheme molokai 
 
-" * User Interface
-
-" dark background, by default
+" Dark background, by default (is this needed when setting the colorsheme?).
 set background=dark
-" mouse selection
+
+" Mouse selection
+set mouse=
 set selectmode=mouse
+
 " No beeping, please...
 set vb
+
 " Display the current mode and partially-typed commands in the status line
 set showmode
 set showcmd
@@ -49,34 +54,34 @@ set guioptions-=e
 set statusline=
 " filename, relative to cwd
 set statusline+=%f
-" separator
+" Separator
 set statusline+=\ 
 " modified flag
 set statusline+=%#wildmenu#
 set statusline+=%m
 set statusline+=%*
-"Display a warning if file encoding isnt utf-8
+" Display a warning if file encoding isnt utf-8
 set statusline+=%#question#
 set statusline+=%{(&fenc!='utf-8'&&&fenc!='')?'['.&fenc.']':''}
 set statusline+=%*
-"display a warning if fileformat isnt unix
+" Display a warning if fileformat isnt unix
 set statusline+=%#directory#
 set statusline+=%{&ff!='unix'?'['.&ff.']':''}
 set statusline+=%*
-"display a warning if files contains tab chars
+" Display a warning if files contains tab chars
 set statusline+=%#warningmsg#
 set statusline+=%{StatuslineTabWarning()}
 set statusline+=%*
-" read-only
+" Read-only
 set statusline+=%r
 set statusline+=%*
-" right-align
+" Right-align
 set statusline+=%=
-" filetype
+" Filetype
 set statusline+=[%{strlen(&ft)?&ft:'none'}]
-" separator
+" Separator
 set statusline+=\ 
-" current char
+" Current char
 set statusline+=[%b],[0x%02B]
 " separator
 set statusline+=\ 
@@ -140,17 +145,19 @@ set encoding=utf-8
 " Code indentation
 syntax enable
 filetype plugin indent on
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
-" set number
-" filetype indent on
-" set autoindent
+set autoindent
 
-filetype indent off
-set noautoindent
-set nocindent
-set nosmartindent
+"filetype indent off
+"set noautoindent
+"set nocindent
+"set nosmartindent
+
+" Show line number
+"set number
 
 " Better command-line completion
 set wildmenu
@@ -197,16 +204,14 @@ function! XTermPasteBegin()
   return ""
 endfunction
 
-" * Load Additional Settings
-
-" OS-specific configuration loading
+" OS-specific configuration
 let s:os=substitute(system('uname -s'), '\n', '', 'g')
 let s:osfile=$HOME . '/.vim/local/os-' . s:os . '.vim'
 if filereadable(s:osfile)
   execute 'source '. s:osfile
 endif
 
-" host-specific configuration loading
+" host-specific configuration
 let s:hostfile=$HOME . '/.vim/local/host-' . hostname() . '.vim'
 if filereadable(s:hostfile)
   execute 'source '. s:hostfile
