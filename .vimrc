@@ -72,6 +72,12 @@ set confirm
 " Allow hidden buffers
 set hidden
 
+" Set the clipboard so all vim instances share the same copy/paste buffer
+set clipboard=unnamed
+
+" Enable paste mode
+"set paste
+
 " Managed plugins
 call plug#begin()
   " List your plugins here
@@ -79,6 +85,7 @@ call plug#begin()
   Plug 'tpope/vim-eunuch'
   Plug 'tpope/vim-fugitive'
 
+  " Hrhrhr...
   if hostname() == "jupiter"
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
   endif
@@ -87,7 +94,7 @@ call plug#begin()
   Plug 'flazz/vim-colorschemes'
   Plug 'vim-python/python-syntax'
   Plug 'preservim/nerdtree' |
-            \ Plug 'Xuyuanp/nerdtree-git-plugin'
+    \ Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'preservim/tagbar'
 call plug#end()
 
@@ -102,6 +109,7 @@ set cursorline
 set showmode
 set showcmd
 
+" Always show status line
 set laststatus=2
 set showtabline=2
 
@@ -157,8 +165,6 @@ set statusline+=\
 set statusline+=(C:%2c),
 " Current line / lines in file
 set statusline+=[%l/%L]
-" Always show status line
-set laststatus=2
 " Return '[tabs]' if tab chars in file, or empty string
 function! StatuslineTabWarning()
   if !exists("b:statusline_tab_warning")
@@ -185,12 +191,6 @@ map <F8> :TagbarToggle<CR>
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
-
-" Set the clipboard so all vim instances share the same copy/paste buffer
-set clipboard=unnamed
-
-" Enable paste mode
-"set paste
 
 " Automatically enable paste mode when pasting.
 " https://stackoverflow.com/questions/2514445/turning-off-auto-indent-when-pasting-text-into-vim/38258720#38258720
