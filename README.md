@@ -29,7 +29,7 @@ Existing files will not be overwritten!
 Vim setup
 ---------
 
-    Start vim
+    vim
     :PlugInstall
 
 Keep your $HOME up to date
