@@ -36,6 +36,9 @@ set showcmd
 set cursorline 
 
 " Statusline
+set laststatus=2     
+set showtabline=2
+"set statusline=
 "set statusline=%f                          " File name
 "set statusline+=%y                         " File type
 "set statusline+=%m                         " Modified flag [+] if modified
@@ -44,19 +47,17 @@ set cursorline
 "set statusline+=%l/%L                      " Current line / Total lines
 "set statusline+=\ [%p%%]                   " Percentage through the file
 "set statusline+=%c                         " Column number
-set laststatus=2     
-set showtabline=2
 
 " ?
 set guioptions-=e
 
 " Reset statusline
 set statusline=
-" filename, relative to cwd
+" Filename, relative to cwd
 set statusline+=%f
 " Separator
 set statusline+=\ 
-" modified flag
+" Modified flag
 set statusline+=%#wildmenu#
 set statusline+=%m
 set statusline+=%*
@@ -83,26 +84,26 @@ set statusline+=[%{strlen(&ft)?&ft:'none'}]
 set statusline+=\ 
 " Current char
 set statusline+=[%b],[0x%02B]
-" separator
+" Separator
 set statusline+=\ 
-" column,
+" Column,
 set statusline+=(C:%2c),
-" current line / lines in file
+" Current line / lines in file
 set statusline+=[%l/%L]
-" always show status line
+" Always show status line
 set laststatus=2
-" return '[tabs]' if tab chars in file, or empty string
+" Return '[tabs]' if tab chars in file, or empty string
 function! StatuslineTabWarning()
-    if !exists("b:statusline_tab_warning")
-        let tabs = search('^\t', 'nw') != 0
+  if !exists("b:statusline_tab_warning")
+    let tabs = search('^\t', 'nw') != 0
 
-        if tabs
-            let b:statusline_tab_warning = '[tabs]'
-        else
-            let b:statusline_tab_warning = ''
-        endif
+    if tabs
+      let b:statusline_tab_warning = '[tabs]'
+    else
+      let b:statusline_tab_warning = ''
     endif
-    return b:statusline_tab_warning
+  endif
+  return b:statusline_tab_warning
 endfunction
 " Recalculate the tab warning flag when idle and after writing
 autocmd cursorhold,bufwritepost * unlet! b:statusline_tab_warning
