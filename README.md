@@ -29,6 +29,12 @@ Clone to your $HOME
 
 Existing files will not be overwritten!
 
+Vim setup
+---------
+
+  1. Start vim
+  2. :PlugInstall
+
 Keep your $HOME up to date
 --------------------------
 

@@ -2,11 +2,13 @@
 call plug#begin()
   " List your plugins here
   Plug 'tpope/vim-sensible'
+  Plug 'tpope/vim-fugitive'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
   Plug 'flazz/vim-colorschemes'
   Plug 'vim-python/python-syntax'
-  Plug 'preservim/nerdtree'
+  Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'preservim/tagbar'
 call plug#end()
 
@@ -16,25 +18,17 @@ colorscheme molokai
 " * User Interface
 
 " dark background, by default
-"set background=dark
+set background=dark
 " mouse selection
-""set selectmode=mouse
-" no beeping, please...
-""set vb
-" always show status line
-""set laststatus=2
-" display the current mode and partially-typed commands in the status line
-""set showmode
-""set showcmd
-" default or informative status line
-"set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
-""set statusline=%<%f\ %h%w%m%r%y%{exists('g:loaded_fugitive')?fugitive#statusline():''}%=%-16(\ %l,%c%V\ %)%P
-" use '[RO]' for '[readonly]' to save space in the message line
-""set shortmess+=r
-" have command-line completion <Tab> (for filenames, help topics, option names)
-" first list the available options and complete the longest common part, then
-" have further <Tab>s cycle through the possibilities
-""set wildmode=list:longest,full
+set selectmode=mouse
+" No beeping, please...
+set vb
+" Display the current mode and partially-typed commands in the status line
+set showmode
+set showcmd
+
+" Highlight current line and disable highlighting in insert mode
+set cursorline 
 
 " Statusline
 "set statusline=%f                          " File name
@@ -46,6 +40,10 @@ colorscheme molokai
 "set statusline+=\ [%p%%]                   " Percentage through the file
 "set statusline+=%c                         " Column number
 set laststatus=2     
+set showtabline=2
+
+" ?
+set guioptions-=e
 
 " Reset statusline
 set statusline=
@@ -101,20 +99,14 @@ function! StatuslineTabWarning()
     endif
     return b:statusline_tab_warning
 endfunction
-"recalculate the tab warning flag when idle and after writing
+" Recalculate the tab warning flag when idle and after writing
 autocmd cursorhold,bufwritepost * unlet! b:statusline_tab_warning
 
-
-" Load NERDTree plugin only if opening vim without a file
-"autocmd VimEnter * NERDTree
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" Open NERDTree with Ctrl+n / Toggle
+" Map Ctrl+n to :NERDTreeToggle
 map <C-n> :NERDTreeToggle<CR>
-" close vim if the only window left open is a NERDTree
-"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-nmap <F8> :TagbarToggle<CR>
+" Map F8 to :TagbarToggle
+map <F8> :TagbarToggle<CR>
 
 " Remember position in file
 if has("autocmd")
@@ -125,7 +117,7 @@ endif
 set clipboard=unnamed
 
 " Enable paste mode
-set paste
+"set paste
 
 " Enable syntax highlighting
 syntax on
@@ -135,20 +127,7 @@ syntax on
 " Set line number color
 " Get colors here:
 " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
-""highlight LineNr ctermfg=220 guifg=#ffd700
-
-" Highlight current line and disable highlighting in insert mode
-set cursorline 
-""hi CursorLine   cterm=NONE ctermbg=17 ctermfg=white guibg=#00005f guifg=white
-"hi CursorColumn cterm=NONE ctermbg=17 ctermfg=white guibg=#00005f guifg=white
-""augroup CursorLine
-""  au!
-""  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-""  au InsertEnter * setlocal nocursorline
-""  au InsertLeave * setlocal cursorline
-""augroup END
-
-" 256 bit color support
+"highlight LineNr ctermfg=220 guifg=#ffd700
 ""set t_Co=256
 
 " Set 'nocompatible' to ward off unexpected things that your distro might
@@ -175,6 +154,10 @@ set nosmartindent
 
 " Better command-line completion
 set wildmenu
+" have command-line completion <Tab> (for filenames, help topics, option names)
+" first list the available options and complete the longest common part, then
+" have further <Tab>s cycle through the possibilities
+set wildmode=list:longest,full
 
 " Highlight searches (use <C-L> to temporarily turn off highlighting; see the
 " mapping of <C-L> below)
@@ -199,6 +182,20 @@ set confirm
 
 " Allow hidden buffers
 set hidden
+
+" Automatically enable paste mode when pasting.
+" https://stackoverflow.com/questions/2514445/turning-off-auto-indent-when-pasting-text-into-vim/38258720#38258720
+" https://coderwall.com/p/if9mda/automatically-set-paste-mode-in-vim-when-pasting-in-insert-mode
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
 
 " * Load Additional Settings
 
