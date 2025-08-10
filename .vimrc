@@ -6,7 +6,11 @@ call plug#begin()
   Plug 'tpope/vim-sensible'
   Plug 'tpope/vim-eunuch'
   Plug 'tpope/vim-fugitive'
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+  if hostname() == "jupiter"
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  endif
+
   Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
   Plug 'flazz/vim-colorschemes'
   Plug 'vim-python/python-syntax'
