@@ -6,7 +6,8 @@ This repository contains my configuration for awesome, Zsh, Vim, etc.
 It is a special configured repository where every file is ignored in
 .gitignore. Only files I am sharing accross users/systems are "unignored".
 
-This repo is for my personal use only. Feel free to take a look... ;)
+This is basically what I share to all my systems... Even my Android phone is 
+using this dotfiles repository in Termux and proot-distro.
 
 I am using some Git submodules so take care of the licenses of each project.
 
