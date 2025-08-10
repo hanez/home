@@ -1,18 +1,14 @@
 This is my $HOME
 ================
 
-This repository contains my complete configuration for awesome, Zsh, Vim etc.
-
-It is actually a work in progress because I try to migrate stuff used in more
-then 15 years to a new and fresh $HOME setup. Don't wonder why some parts look
-stupid... ;)
+This repository contains my configuration for awesome, Zsh, Vim, etc.
 
 It is a special configured repository where every file is ignored in
 .gitignore. Only files I am sharing accross users/systems are "unignored".
 
 This repo is for my personal use only. Feel free to take a look... ;)
 
-I am using a lot of Git submodules so take care of the licenses of each project.
+I am using some Git submodules so take care of the licenses of each project.
 
 I use a default wallpaper provided by Willi Thiel licensed under CC BY-BC-SA
 2.0 (https://creativecommons.org/licenses/by-nc-sa/2.0/). The source for this
@@ -32,8 +28,8 @@ Existing files will not be overwritten!
 Vim setup
 ---------
 
-  1. Start vim
-  2. :PlugInstall
+    Start vim
+    :PlugInstall
 
 Keep your $HOME up to date
 --------------------------
