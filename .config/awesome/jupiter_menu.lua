@@ -124,6 +124,7 @@ gamesmenu = {
     { "godot ide", "/usr/bin/godot", "/usr/share/pixmaps/godot.svg" },
     --{ "flightgear", "/usr/bin/fgfs --launcher", "/usr/share/icons/hicolor/scalable/apps/flightgear.svg" },
     { "kobodeluxe", "/usr/bin/kobodl", "/usr/share/icons/hicolor/48x48/apps/kobodl.png" },
+    { "luanti", "/usr/bin/luanti", "/usr/share/icons/hicolor/scalable/apps/luanti.svg" },
     { "lutris", "/usr/bin/lutris", "/usr/share/icons/hicolor/scalable/apps/lutris.svg" },
     { "neverball", "/usr/bin/neverball", "/usr/share/icons/hicolor/48x48/apps/neverball.png" },
     { "neverputt", "/usr/bin/neverputt", "/usr/share/icons/hicolor/48x48/apps/neverputt.png" },

@@ -23,6 +23,7 @@ rm -f ${TARGET}
 
 7z a ${TARGET} .vim*
 7z d ${TARGET} .vim/.netrwhist
+7z d ${TARGET} .vim/plugged/*/.git
 
 7z a ${TARGET} .Xresources
 7z a ${TARGET} .xinitrc

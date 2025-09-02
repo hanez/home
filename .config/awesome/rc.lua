@@ -329,7 +329,7 @@ globalkeys = gears.table.join(
               { description = "open a terminal", group = "launcher"}),
     awful.key({ modkey            }, "e", function() awful.util.spawn("/usr/bin/emulationstation") end,
               { description="start emulationstation", group="awesome" }),
-    awful.key({ modkey            }, "v", function() awful.util.spawn("/usr/bin/chromium") end,
+    awful.key({ modkey            }, "v", function() awful.util.spawn("/usr/bin/brave") end,
               { description="start chromium", group="awesome" }),
     awful.key({ modkey            }, "b", function() awful.util.spawn("/usr/bin/firefox") end,
               { description="start firefox", group="awesome" }),
