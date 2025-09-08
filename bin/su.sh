@@ -9,6 +9,6 @@
 # Do I need/want /system/bin in $PATH?
 
 su -c "HOME=/data/root \
-       PATH=/data/data/com.termux/files/usr/bin:/system/bin \
+       PATH=/data/root/bin:/data/data/com.termux/files/usr/bin:/system/bin \
        SHELL=/data/data/com.termux/files/usr/bin/zsh /data/data/com.termux/files/usr/bin/zsh -l && cd /data/root"
 
