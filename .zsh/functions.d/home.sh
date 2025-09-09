@@ -50,7 +50,7 @@ function home() {
               last_update=$(stat -c %Y .lastupdate)
               echo "Last configuration update: $last_update"
               current_date=$(date +%s)
-              echo "Current date: _home_date $current_date"
+              echo "Current date: $current_date"
               time_diff=$(($current_date-$last_update))
               echo "Time difference: $time_diff seconds."
               if (( time_diff > 86400 )) || [ "$2" = "f" ]; then
