@@ -25,6 +25,8 @@ for function in ~/.zsh/functions.d/*.sh; do
     source $function
 done
 
+home up
+
 # Update tmux window title to the current running command.
 if [ -n "$TMUX" ]; then
   function preexec() {
