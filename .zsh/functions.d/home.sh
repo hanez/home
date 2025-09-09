@@ -30,8 +30,20 @@ function home() {
             ;;
         up)
             cd ~
-            git pull
-            git submodule update --init --recursive
+            last_update=$(stat -c %Y .lastupdate)
+            current_date=$(date +%s)
+            time_diff=$(($current_date-$last_update))
+            if (( time_diff > 86400 )); then
+              git pull
+              git submodule update --init --recursive
+            elif
+              echo "/home/hanez was already updated in the last 24 hours."
+              echo "Run this to force updating: home up f"
+              if [ "$2" = "x" ]; then
+                git pull
+                git submodule update --init --recursive
+              fi
+            fi
             ;;
         *)
             echo "command not found!"
