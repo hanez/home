@@ -1,10 +1,10 @@
 function _home_help() {
-    echo "available commands:"
+    echo "Available commands:"
     echo ""
-    echo "help:        show this help text"
-    echo "pull:        execute git pull in $HOME"
-    echo "sub:         update all submodules of $HOME"
-    echo "up:          pull and update submodules in $HOME"
+    echo "help:        Show this help text."
+    echo "pull:        Execute git pull in $HOME."
+    echo "sub:         Update all submodules of $HOME."
+    echo "up:          Pull and update submodules in $HOME."
 }
 
 function home() {
@@ -12,41 +12,47 @@ function home() {
         diff)
             cd ~
             git diff
+            cd $OLDPWD
             ;;
         help)
-            _home_help
+            _foo_help
             ;;
         pull)
             cd ~
             git pull
+            cd $OLDPWD
             ;;
         status)
             cd ~
             git status
+            cd $OLDPWD
             ;;
         sub)
             cd ~
             git submodule update --init --recursive
+            cd $OLDPWD
             ;;
         up)
             cd ~
             last_update=$(stat -c %Y .lastupdate)
+            echo "Last configuration update: $last_update"
             current_date=$(date +%s)
+            echo "Current date: $current_date"
             time_diff=$(($current_date-$last_update))
-            if (( time_diff > 86400 )); then
+            echo "Time difference: $time_diff"
+            if (( time_diff > 86400 )) || [ "$2" = "f" ]; then
+              echo "Doing home up..."
               git pull
               git submodule update --init --recursive
-            elif
+              touch .lastupdate
+            else
               echo "/home/hanez was already updated in the last 24 hours."
               echo "Run this to force updating: home up f"
-              if [ "$2" = "x" ]; then
-                git pull
-                git submodule update --init --recursive
-              fi
             fi
+            cd $OLDPWD
             ;;
         *)
-            echo "command not found!"
+            echo "Command not found!"
             echo ""
             _home_help
             ;;
