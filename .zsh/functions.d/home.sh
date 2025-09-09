@@ -12,8 +12,10 @@ function _home_help() {
     echo "Available commands:"
     echo ""
     echo "help:        Show this help text."
+    echo "diff         Show the file differences."
     echo "pull:        Execute git pull in $HOME."
     echo "sub:         Update all submodules of $HOME."
+    echo "status       Show Git status."
     echo "up:          Pull and update submodules in $HOME."
 }
 
