@@ -47,7 +47,7 @@ function home() {
         up)
             cd ~
             if test -f .lastupdate; then
-              last_update=$(stat -c %Y .lastupdate)
+              last_update=$(date -r .lastupdate +%s)
               echo "Last configuration update: $last_update"
               current_date=$(date +%s)
               echo "Current date: $current_date"
