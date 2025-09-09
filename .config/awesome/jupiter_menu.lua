@@ -26,6 +26,7 @@ audiomenu = {
     { "mixxx", "/usr/bin/mixxx", "/usr/share/icons/hicolor/scalable/apps/mixxx.svg" },
     { "qjackctl", "/usr/bin/qjackctl", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qjackctl.svg" },
     { "qpwgraph", "/usr/bin/qpwgraph", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qpwgraph.svg" },
+    { "vcvrack", "/usr/bin/vcvrack", "/opt/vcvrack/res/icon.png" },
     { "vital", "/usr/bin/Vital", "/home/hanez/.config/awesome/icons/vital.png" },
 }
 communicationmenu = {
