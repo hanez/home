@@ -54,7 +54,8 @@ function home() {
               fi
             else
               echo "~/.lastupdate does not exist!"
-              echo "Running: home up f now..."
+              echo "You need to run the following command to update your"
+              echo "home configuration: home up f"
               touch .lastupdate
             fi
             cd $OLDPWD
