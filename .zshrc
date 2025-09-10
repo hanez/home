@@ -38,8 +38,10 @@ if [ -n "$TMUX" ]; then
   }
 fi
 
-# Source some private stuff or custom things that are different on my systems.
-# This file is not in the Git repository!
-# Everything in this file overrides configuration settings already loaded.
+# Source some private stuff or custom things that are different on my 
+# systems. This file is not in the Git repository! Everything in this 
+# file overrides configuration settings already loaded. Stuff configured 
+# in this file must not be required in any of the above configuration
+# and scripts.
 source ~/.penv
 
