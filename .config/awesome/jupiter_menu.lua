@@ -88,6 +88,7 @@ developmentmenu = {
 emulationmenu = {
     { "86box", "/usr/bin/86Box", "/usr/share/icons/hicolor/48x48/apps/net.86box.86Box.png" },
     { "86boxmanager", "/usr/bin/86BoxManager", "/usr/share/icons/hicolor/scalable/apps/86BoxManager.svg" },
+    { "boxbuddy-rs", "/usr/bin/boxbuddy-rs", "/usr/share/icons/hicolor/scalable/apps/io.github.dvlv.boxbuddyrs.svg" },
     { "dosbox", "/usr/bin/dosbox", "/usr/share/pixmaps/dosbox.png" },
     { "virt-manager", "/usr/bin/virt-manager", "/usr/share/icons/hicolor/48x48/apps/virt-manager.png" },
     { "virtualbox", "/usr/bin/virtualbox", "/usr/share/pixmaps/VBox.png" },
