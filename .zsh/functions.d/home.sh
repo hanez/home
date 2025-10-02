@@ -61,7 +61,7 @@ function home() {
                   fi
                 fi
               else
-                echo "/home/hanez was already updated in the last 24 hours."
+                echo "$HOME was already updated in the last 24 hours."
                 echo "Run this to force updating: home up f"
               fi
             else
