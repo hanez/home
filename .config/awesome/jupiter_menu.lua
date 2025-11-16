@@ -40,7 +40,7 @@ communicationmenu = {
     { "slack", "/usr/bin/slack", "/usr/share/pixmaps/slack.png" },
     { "teams", "/usr/bin/teams", "/usr/share/pixmaps/teams.png" },
     { "telegram", "/usr/bin/Telegram", "/usr/share/icons/hicolor/48x48/apps/telegram.png" },
-    { "webex", "/usr/bin/webex", "/opt/Webex/bin/sparklogosmall.png" },
+    --{ "webex", "/usr/bin/webex", "/opt/Webex/bin/sparklogosmall.png" },
     { "whatsapp", "/usr/bin/whatsapp-for-linux", "/usr/share/icons/hicolor/32x32/apps/whatsapp-for-linux.png" },
     { "zapzap", "/usr/bin/zapzap", "/usr/share/icons/hicolor/scalable/apps/com.rtosta.zapzap.svg" },
     { "zoom", "/usr/bin/zoom", "/usr/share/pixmaps/application-x-zoom.png" },
@@ -120,7 +120,7 @@ engineeringmenu = {
     { "upyloader", "/usr/bin/upyloader", "/usr/share/pixmaps/upyloader.svg" },
 }
 gamesmenu = {
-    { "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
+    --{ "0 a.d.", "/usr/bin/0ad", "/usr/share/pixmaps/0ad.png" },
     { "atomix", "/usr/bin/atomix", "/usr/share/icons/hicolor/symbolic/apps/atomix-symbolic.svg" },
     { "citron", "/usr/bin/citron", "/usr/share/icons/hicolor/scalable/apps/org.citron_emu.citron.svg" },
     { "factorio (demo)", "/usr/bin/factorio", "/usr/share/factorio/core/graphics/factorio.png" },
@@ -136,7 +136,7 @@ gamesmenu = {
     { "ryujinx", "/usr/bin/Ryujinx.sh", "/usr/share/icons/hicolor/scalable/apps/Ryujinx.svg" },
     { "supertux", "/usr/bin/supertux2", "/usr/share/icons/hicolor/scalable/apps/supertux2.svg" },
     { "supertux kart", "/usr/bin/supertuxkart", "/usr/share/icons/hicolor/48x48/apps/supertuxkart.png" },
-    { "sauerbraten", "/usr/bin/sauerbraten-client", "/usr/share/pixmaps/sauerbraten.png" },
+    --"sauerbraten", "/usr/bin/sauerbraten-client", "/usr/share/pixmaps/sauerbraten.png" },
     { "steam", "/home/hanez/bin/steam.sh", "/usr/share/pixmaps/steam.png" },
     --{ "thimbleweed park", "/home/hanez/bin/thimbleweedpark", "/home/hanez/.local/share/Steam/steamapps/common/Thimbleweed Park/Icon32.png" },
     { "warzone 2100", "/usr/bin/warzone2100", "/usr/share/icons/warzone2100.png" },

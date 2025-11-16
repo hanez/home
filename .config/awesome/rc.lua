@@ -266,7 +266,7 @@ root.buttons(gears.table.join(
 ))
 -- }}}
 
--- {{{ Key bindings
+ {{{ Key bindings
 globalkeys = gears.table.join(
 
     -- Dropdown application
@@ -276,27 +276,27 @@ globalkeys = gears.table.join(
               { description="set backlight", group="awesome" }),
 
     -- Set backlight
-    awful.key({ modkey,           }, "1", function() awful.util.spawn("/usr/bin/xbacklight -set 10") end,
-              { description="set backlight", group="awesome" }),
-    awful.key({ modkey,           }, "2", function() awful.util.spawn("/usr/bin/xbacklight -set 20") end,
-              { description="set backlight", group="awesome" }),
-    awful.key({ modkey,           }, "3", function() awful.util.spawn("/usr/bin/xbacklight -set 30") end,
-              { description="set backlight", group="awesome" }),
-    awful.key({ modkey,           }, "4", function() awful.util.spawn("/usr/bin/xbacklight -set 40") end,
-              { description="set backlight", group="awesome" }),
-    awful.key({ modkey,           }, "5", function() awful.util.spawn("/usr/bin/xbacklight -set 50") end,
-              { description="set backlight", group="awesome" }),
-    awful.key({ modkey,           }, "6", function() awful.util.spawn("/usr/bin/xbacklight -set 60") end,
-              { description="set backlight", group="awesome" }),
-    awful.key({ modkey,           }, "7", function() awful.util.spawn("/usr/bin/xbacklight -set 70") end,
-              { description="set backlight", group="awesome" }),
-    awful.key({ modkey,           }, "8", function() awful.util.spawn("/usr/bin/xbacklight -set 80") end,
-              { description="set backlight", group="awesome" }),
-    awful.key({ modkey,           }, "9", function() awful.util.spawn("/usr/bin/xbacklight -set 90") end,
-              { description="set backlight", group="awesome" }),
-    awful.key({ modkey,           }, "0", function() awful.util.spawn("/usr/bin/xbacklight -set 100") end,
-              { description="set backlight", group="awesome" }),
-
+    -- awful.key({ modkey,           }, "1", function() awful.util.spawn("/usr/bin/xbacklight -set 10") end,
+    --           { description="set backlight", group="awesome" }),
+    -- awful.key({ modkey,           }, "2", function() awful.util.spawn("/usr/bin/xbacklight -set 20") end,
+    --           { description="set backlight", group="awesome" }),
+    -- awful.key({ modkey,           }, "3", function() awful.util.spawn("/usr/bin/xbacklight -set 30") end,
+    --           { description="set backlight", group="awesome" }),
+    -- awful.key({ modkey,           }, "4", function() awful.util.spawn("/usr/bin/xbacklight -set 40") end,
+    --           { description="set backlight", group="awesome" }),
+    -- awful.key({ modkey,           }, "5", function() awful.util.spawn("/usr/bin/xbacklight -set 50") end,
+    --           { description="set backlight", group="awesome" }),
+    -- awful.key({ modkey,           }, "6", function() awful.util.spawn("/usr/bin/xbacklight -set 60") end,
+    --           { description="set backlight", group="awesome" }),
+    -- awful.key({ modkey,           }, "7", function() awful.util.spawn("/usr/bin/xbacklight -set 70") end,
+    --           { description="set backlight", group="awesome" }),
+    -- awful.key({ modkey,           }, "8", function() awful.util.spawn("/usr/bin/xbacklight -set 80") end,
+    --           { description="set backlight", group="awesome" }),
+    -- awful.key({ modkey,           }, "9", function() awful.util.spawn("/usr/bin/xbacklight -set 90") end,
+    --           { description="set backlight", group="awesome" }),
+    -- awful.key({ modkey,           }, "0", function() awful.util.spawn("/usr/bin/xbacklight -set 100") end,
+    --           { description="set backlight", group="awesome" }),
+   
     awful.key({ modkey,           }, "o", function()
         local handle = io.popen("/usr/bin/xbacklight -get")
         local result = handle:read("*a")
