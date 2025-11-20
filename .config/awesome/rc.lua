@@ -266,7 +266,7 @@ root.buttons(gears.table.join(
 ))
 -- }}}
 
- {{{ Key bindings
+-- {{{ Key bindings
 globalkeys = gears.table.join(
 
     -- Dropdown application
