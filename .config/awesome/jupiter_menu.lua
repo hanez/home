@@ -20,7 +20,7 @@ accessoriesmenu = {
 }
 audiomenu = {
     { "ableton live", "/home/hanez/bin/ableton.sh", "/home/hanez/.config/awesome/icons/live2.png" },
-    { "ardour", "/usr/bin/ardour7", "/usr/share/icons/hicolor/48x48/apps/ardour7.png" },
+    { "ardour", "/usr/bin/ardour8", "/usr/share/icons/hicolor/48x48/apps/ardour8.png" },
     { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/32x32/audacity.png" },
     --{ "bitwig studio", "/home/hanez/bin/bitwigstudio.sh", "/home/hanez/.config/awesome/icons/bitwigstudio.png" },
     { "mixxx", "/usr/bin/mixxx", "/usr/share/icons/hicolor/scalable/apps/mixxx.svg" },
@@ -39,7 +39,7 @@ communicationmenu = {
     { "skype", "/usr/bin/skypeforlinux", "/usr/share/pixmaps/skypeforlinux.png" },
     { "slack", "/usr/bin/slack", "/usr/share/pixmaps/slack.png" },
     { "teams", "/usr/bin/teams", "/usr/share/pixmaps/teams.png" },
-    { "telegram", "/usr/bin/Telegram", "/usr/share/icons/hicolor/48x48/apps/telegram.png" },
+    { "telegram", "/usr/bin/Telegram", "/usr/share/icons/hicolor/symbolic/apps/org.telegram.desktop-symbolic.svg" },
     --{ "webex", "/usr/bin/webex", "/opt/Webex/bin/sparklogosmall.png" },
     { "whatsapp", "/usr/bin/whatsapp-for-linux", "/usr/share/icons/hicolor/32x32/apps/whatsapp-for-linux.png" },
     { "zapzap", "/usr/bin/zapzap", "/usr/share/icons/hicolor/scalable/apps/com.rtosta.zapzap.svg" },
@@ -47,8 +47,6 @@ communicationmenu = {
 }
 databasemenu = {
     { "apache directory studio", "/usr/bin/apachedirectorystudio", "/usr/share/pixmaps/apachedirectorystudio.png" },
-    { "datagrip", "/home/hanez/opt/DataGrip/bin/datagrip.sh", "/home/hanez/opt/DataGrip/bin/datagrip.svg" },
-    { "dataspell", "/home/hanez/opt/DataSpell/bin/dataspell.sh", "/home/hanez/opt/DataSpell/bin/dataspell.svg" },
     { "dbeaver", "/usr/bin/dbeaver", "/usr/share/icons/hicolor/48x48/apps/dbeaver.png" },
     { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
     { "resp.app", "/usr/bin/resp", "/usr/share/pixmaps/resp.png" },
@@ -155,6 +153,8 @@ graphicsmenu = {
     { "gpick", "/usr/bin/gpick", "/usr/share/icons/hicolor/48x48/apps/gpick.png" },
     { "image scan!", "/usr/bin/iscan", "/usr/share/icons/gnome/48x48/devices/scanner.png" },
     { "inkscape", "/usr/bin/inkscape", "/usr/share/icons/hicolor/48x48/apps/org.inkscape.Inkscape.png" },
+    { "karbon", "/usr/bin/karbon", "/usr/share/icons/hicolor/scalable/apps/org.kde.calligra.karbon.svg" },
+    { "kcolorchooser", "/usr/bin/kcolorchooser", "/usr/share/icons/hicolor/22x22/apps/kcolorchooser.png" },
     { "krita", "/usr/bin/krita", "/usr/share/icons/hicolor/48x48/apps/krita.png" },
     { "mtpaint", "/usr/bin/mtpaint", "/usr/share/pixmaps/mtpaint.png" },
     { "rawtherapee", "/usr/bin/rawtherapee", "/usr/share/icons/hicolor/scalable/apps/rawtherapee.svg" },
@@ -225,6 +225,9 @@ networkmenu = {
 }
 officemenu = {
     --{ "calendar", "/usr/bin/io.elementary.calendar", "/usr/share/icons/elementary/apps/48/office-calendar.svg" },
+    { "calligra sheets", "/usr/bin/calligrsheets", "/usr/share/icons/hicolor/scalable/apps/org.kde.calligra.sheets.svg" },
+    { "calligra stage", "/usr/bin/calligrastage", "/usr/share/icons/hicolor/scalable/apps/org.kde.calligra.stage.svg" },
+    { "calligra words", "/usr/bin/calligrawords", "/usr/share/icons/hicolor/scalable/apps/org.kde.calligra.words.svg" },
     { "gimagereader (ocr)", "/usr/bin/gimagereader-gtk", "" },
     { "grisbi", "/usr/bin/grisbi", "/usr/share/icons/hicolor/scalable/apps/grisbi.svg" },
     { "libreoffice base", "/usr/bin/libreoffice --base", "/usr/share/icons/hicolor/48x48/apps/libreoffice-base.png" },
@@ -233,7 +236,7 @@ officemenu = {
     { "libreoffice impress", "/usr/bin/libreoffice --impress", "/usr/share/icons/hicolor/48x48/apps/libreoffice-impress.png" },
     { "libreoffice math", "/usr/bin/libreoffice --math", "/usr/share/icons/hicolor/48x48/apps/libreoffice-math.png" },
     { "libreoffice writer", "/usr/bin/libreoffice --writer", "/usr/share/icons/hicolor/48x48/apps/libreoffice-writer.png" },
-    { "openboard", "/usr/bin/openboard", "/usr/share/icons/hicolor/64x64/apps/OpenBoard.png" },
+    { "openboard", "/usr/bin/openboard", "/usr/share/icons/hicolor/scalable/mimetypes/ch.openboard.application-ubz.svg" },
     { "pdfslicer", "/usr/bin/pdfslicer", "/usr/share/icons/hicolor/scalable/apps/com.github.junrrein.PDFSlicer.svg" },
 }
 privacymenu = {
