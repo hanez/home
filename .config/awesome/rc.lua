@@ -321,8 +321,8 @@ globalkeys = gears.table.join(
               { description="enable xautolock", group="awesome" }),
 
     -- Some Application shortcuts
-    awful.key({ modkey,           }, "a", function () awful.spawn("/usr/bin/alacritty") end,
-              { description = "open a terminal", group = "launcher"}),
+    --awful.key({ modkey,           }, "a", function () awful.spawn("/usr/bin/alacritty") end,
+    --          { description = "open a terminal", group = "launcher"}),
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
               { description = "open a terminal", group = "launcher"}),
     awful.key({ modkey, "Control" }, "Return", function () awful.util.spawn(xterminal) end,
