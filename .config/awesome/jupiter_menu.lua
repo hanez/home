@@ -100,6 +100,7 @@ engineeringmenu = {
     { "freecad", "/usr/bin/freecad", "/usr/share/icons/hicolor/scalable/apps/freecad.svg" },
     { "kicad", "/usr/bin/kicad", "/usr/share/icons/hicolor/48x48/apps/kicad.png" },
     { "kingstvis", "/opt/kingstvis/KingstVIS", "/usr/share/icons/hicolor/48x48/KingstVIS.png" },
+    { "ldcad", "/usr/bin/LDCad", "/usr/share/LDCad/resources/LDCad-128x128.png" },
     { "leocad", "/usr/bin/leocad", "/usr/share/icons/hicolor/scalable/mimetypes/application-vnd.leocad.svg" },
     { "librecad", "/usr/bin/librecad", "/usr/share/icons/hicolor/scalable/apps/librecad.svg" },
     { "librepcb", "/usr/bin/librepcb", "/usr/share/icons/hicolor/scalable/apps/org.librepcb.LibrePCB.svg" },
