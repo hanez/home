@@ -125,6 +125,7 @@ gamesmenu = {
     { "factorio (demo)", "/usr/bin/factorio", "/usr/share/factorio/core/graphics/factorio.png" },
     { "godot ide", "/usr/bin/godot", "/usr/share/pixmaps/godot.svg" },
     --{ "flightgear", "/usr/bin/fgfs --launcher", "/usr/share/icons/hicolor/scalable/apps/flightgear.svg" },
+    { "kmines", "/usr/bin/kmines", "/usr/share/icons/hicolor/48x48/apps/kmines.png" },
     { "kobodeluxe", "/usr/bin/kobodl", "/usr/share/icons/hicolor/48x48/apps/kobodl.png" },
     { "luanti", "/usr/bin/luanti", "/usr/share/icons/hicolor/scalable/apps/luanti.svg" },
     { "lutris", "/usr/bin/lutris", "/usr/share/icons/hicolor/scalable/apps/lutris.svg" },
