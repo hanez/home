@@ -58,6 +58,7 @@ developmentmenu = {
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/hicolor/64x64/apps/codeblocks.png" },
 --    { "codelite", "/usr/bin/codelite", "/usr/share/icons/hicolor/32x32/apps/codelite.png" },
     { "ddd", "/usr/bin/ddd", "/usr/share/pixmaps/ddd.xpm" },
+    { "doxywizard", "/usr/bin/doxywizard", "" },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/32x32/apps/eclipse.png" },
     { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
     { "gambas3", "/usr/bin/gambas3 ", "/usr/share/pixmaps/gambas3.png" },
