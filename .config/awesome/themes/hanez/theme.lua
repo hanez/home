@@ -44,7 +44,8 @@ theme.taglist_squares_sel   = os.getenv("HOME").."/.config/awesome/themes/hanez/
 theme.taglist_squares_unsel = os.getenv("HOME").."/.config/awesome/themes/hanez/taglist/squarew.png"
 
 -- theme.menu_bg_normal = "#000000"
-theme.menu_bg_focus     = "#F0544C"
+theme.menu_bg_focus     = "#cfd8dc"
+-- theme.menu_bg_focus     = "#717171"
 -- theme.menu_fg_normal =
 theme.menu_fg_focus     = "#222222"
 -- theme.menu_border_color = "#e95421"
