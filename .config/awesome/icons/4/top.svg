@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <rect x="2" y="2" width="44" height="44" rx="9" fill="#c1a0b7"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="24,4 20,16 28,16"/>
+    <line x1="24" y1="16" x2="24" y2="40"/>
+    <ellipse cx="24" cy="40" rx="6" ry="3"/>
+    <ellipse cx="24" cy="28" rx="10" ry="2"/>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF9A9A"/>
+      <stop offset="100%" stop-color="#7d3f3f"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" fill="none">
+    <g stroke="#3e1f1f" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+      <rect x="8" y="18" width="22" height="12" rx="5"/>
+    <rect x="30" y="14" width="10" height="20" rx="5"/>
+    <line x1="15" y1="21" x2="15" y2="27"/>
+    <line x1="12" y1="24" x2="18" y2="24"/>
+    <circle cx="35" cy="19" r="1.5" fill="#607D8B"/>
+    <circle cx="35" cy="29" r="1.5" fill="#607D8B"/>
+    <circle cx="32" cy="24" r="1.5" fill="#607D8B"/>
+    <circle cx="38" cy="24" r="1.5" fill="#607D8B"/>
+    </g>
+    <g stroke="#7d3f3f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+      <rect x="8" y="18" width="22" height="12" rx="5"/>
+    <rect x="30" y="14" width="10" height="20" rx="5"/>
+    <line x1="15" y1="21" x2="15" y2="27"/>
+    <line x1="12" y1="24" x2="18" y2="24"/>
+    <circle cx="35" cy="19" r="1.5" fill="#607D8B"/>
+    <circle cx="35" cy="29" r="1.5" fill="#607D8B"/>
+    <circle cx="32" cy="24" r="1.5" fill="#607D8B"/>
+    <circle cx="38" cy="24" r="1.5" fill="#607D8B"/>
+    </g>
+    <g stroke="url(#iconGrad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="8" y="18" width="22" height="12" rx="5"/>
+    <rect x="30" y="14" width="10" height="20" rx="5"/>
+    <line x1="15" y1="21" x2="15" y2="27"/>
+    <line x1="12" y1="24" x2="18" y2="24"/>
+    <circle cx="35" cy="19" r="1.5" fill="#607D8B"/>
+    <circle cx="35" cy="29" r="1.5" fill="#607D8B"/>
+    <circle cx="32" cy="24" r="1.5" fill="#607D8B"/>
+    <circle cx="38" cy="24" r="1.5" fill="#607D8B"/>
+    </g>
+  </g>
+</svg>

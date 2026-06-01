@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c69ebb"/>
+      <stop offset="100%" stop-color="#200a1a"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" fill="none">
+    <g stroke="#10050d" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+    <ellipse cx="24" cy="24" rx="15" ry="5"/>
+    <path d="M6 22 L2 18 L4 24 L2 30 L6 26"/>
+    <polygon points="36,22 44,20 44,28 36,26"/>
+    <line x1="12" y1="22" x2="12" y2="18 M36 22 L36 18"/>
+    <line x1="8" y1="24" x2="8" y2="30 M16 24 L16 30 M28 24 L28 30"/>
+    </g>
+    <g stroke="#200a1a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+    <ellipse cx="24" cy="24" rx="15" ry="5"/>
+    <path d="M6 22 L2 18 L4 24 L2 30 L6 26"/>
+    <polygon points="36,22 44,20 44,28 36,26"/>
+    <line x1="12" y1="22" x2="12" y2="18 M36 22 L36 18"/>
+    <line x1="8" y1="24" x2="8" y2="30 M16 24 L16 30 M28 24 L28 30"/>
+    </g>
+    <g stroke="url(#g)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="24" cy="24" rx="15" ry="5"/>
+    <path d="M6 22 L2 18 L4 24 L2 30 L6 26"/>
+    <polygon points="36,22 44,20 44,28 36,26"/>
+    <line x1="12" y1="22" x2="12" y2="18 M36 22 L36 18"/>
+    <line x1="8" y1="24" x2="8" y2="30 M16 24 L16 30 M28 24 L28 30"/>
+    </g>
+  </g>
+</svg>

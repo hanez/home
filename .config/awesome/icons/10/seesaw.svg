@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c2c9ad"/>
+      <stop offset="100%" stop-color="#1e2212"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" fill="none">
+    <g stroke="#0f1109" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+    <line x1="6" y1="26" x2="42" y2="26" stroke-width="3"/>
+    <polygon points="24,26 20,44 28,44"/>
+    <circle cx="14" cy="26" r="4"/>
+    <circle cx="34" cy="26" r="4"/>
+    </g>
+    <g stroke="#1e2212" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+    <line x1="6" y1="26" x2="42" y2="26" stroke-width="3"/>
+    <polygon points="24,26 20,44 28,44"/>
+    <circle cx="14" cy="26" r="4"/>
+    <circle cx="34" cy="26" r="4"/>
+    </g>
+    <g stroke="url(#g)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="6" y1="26" x2="42" y2="26" stroke-width="3"/>
+    <polygon points="24,26 20,44 28,44"/>
+    <circle cx="14" cy="26" r="4"/>
+    <circle cx="34" cy="26" r="4"/>
+    </g>
+  </g>
+</svg>

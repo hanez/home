@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <pattern id="px" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <rect width="2" height="2" fill="rgba(0,0,0,0.2)"/>
+    </pattern>
+    <mask id="m">
+      <rect x="0" y="0" width="48" height="48" fill="black"/>
+      <g fill="none" stroke="white" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <circle cx="24" cy="24" r="14"/>
+    <ellipse cx="24" cy="24" rx="14" ry="5"/>
+    <ellipse cx="24" cy="24" rx="14" ry="3" transform="rotate(60 24 24)"/>
+    <circle cx="24" cy="24" r="4" fill="currentColor"/>
+    <ellipse cx="24" cy="24" rx="14" ry="2" transform="rotate(-60 24 24)"/>
+      </g>
+    </mask>
+  </defs>
+  <g fill="none" stroke="#e2b8ae" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <circle cx="24" cy="24" r="14"/>
+    <ellipse cx="24" cy="24" rx="14" ry="5"/>
+    <ellipse cx="24" cy="24" rx="14" ry="3" transform="rotate(60 24 24)"/>
+    <circle cx="24" cy="24" r="4" fill="currentColor"/>
+    <ellipse cx="24" cy="24" rx="14" ry="2" transform="rotate(-60 24 24)"/>
+  </g>
+  <rect x="0" y="0" width="48" height="48" fill="url(#px)" mask="url(#m)" pointer-events="none"/>
+</svg>

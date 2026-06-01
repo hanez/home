@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c8daad"/>
+      <stop offset="100%" stop-color="#212b12"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" fill="none">
+    <g stroke="#101509" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+    <circle cx="24" cy="24" r="16"/>
+    <circle cx="18" cy="20" r="3" fill="currentColor"/>
+    <circle cx="30" cy="20" r="3" fill="currentColor"/>
+    <path d="M16 30 Q24 34 32 30"/>
+    <ellipse cx="12" cy="16" rx="3" ry="5" transform="rotate(-20 12 16)"/>
+    <ellipse cx="36" cy="16" rx="3" ry="5" transform="rotate(20 36 16)"/>
+    </g>
+    <g stroke="#212b12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+    <circle cx="24" cy="24" r="16"/>
+    <circle cx="18" cy="20" r="3" fill="currentColor"/>
+    <circle cx="30" cy="20" r="3" fill="currentColor"/>
+    <path d="M16 30 Q24 34 32 30"/>
+    <ellipse cx="12" cy="16" rx="3" ry="5" transform="rotate(-20 12 16)"/>
+    <ellipse cx="36" cy="16" rx="3" ry="5" transform="rotate(20 36 16)"/>
+    </g>
+    <g stroke="url(#g)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="24" cy="24" r="16"/>
+    <circle cx="18" cy="20" r="3" fill="currentColor"/>
+    <circle cx="30" cy="20" r="3" fill="currentColor"/>
+    <path d="M16 30 Q24 34 32 30"/>
+    <ellipse cx="12" cy="16" rx="3" ry="5" transform="rotate(-20 12 16)"/>
+    <ellipse cx="36" cy="16" rx="3" ry="5" transform="rotate(20 36 16)"/>
+    </g>
+  </g>
+</svg>

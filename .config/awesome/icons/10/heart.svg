@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFCDD2"/>
+      <stop offset="100%" stop-color="#86251E"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" fill="none">
+    <g stroke="#43120F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+      <path d="M24 40 C16 30 4 20 4 12 C4 6 10 4 14 4 C18 4 22 8 24 12 C26 8 30 4 34 4 C38 4 44 6 44 12 C44 20 32 30 24 40 Z"/>
+    </g>
+    <g stroke="#86251E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+      <path d="M24 40 C16 30 4 20 4 12 C4 6 10 4 14 4 C18 4 22 8 24 12 C26 8 30 4 34 4 C38 4 44 6 44 12 C44 20 32 30 24 40 Z"/>
+    </g>
+    <g stroke="url(#iconGrad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M24 40 C16 30 4 20 4 12 C4 6 10 4 14 4 C18 4 22 8 24 12 C26 8 30 4 34 4 C38 4 44 6 44 12 C44 20 32 30 24 40 Z"/>
+    </g>
+  </g>
+</svg>

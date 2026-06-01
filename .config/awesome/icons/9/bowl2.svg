@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <g fill="none">
+    <g stroke="#220f26" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="24" cy="28" rx="16" ry="6"/>
+    <path d="M8 28 L12 38 Q12 42 24 42 Q36 42 36 38 L40 28"/>
+    <ellipse cx="24" cy="28" rx="12" ry="4"/>
+    </g>
+    <g stroke="#c9a8d2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="24" cy="28" rx="16" ry="6"/>
+    <path d="M8 28 L12 38 Q12 42 24 42 Q36 42 36 38 L40 28"/>
+    <ellipse cx="24" cy="28" rx="12" ry="4"/>
+    </g>
+  </g>
+</svg>

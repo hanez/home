@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b7c4ca"/>
+      <stop offset="100%" stop-color="#607D8B"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="blur1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <rect x="16" y="7" width="4" height="4" rx="1"/>
+    <rect x="22" y="7" width="4" height="4" rx="1"/>
+    <rect x="28" y="7" width="4" height="4" rx="1"/>
+    <rect x="10" y="13" width="4" height="4" rx="1"/>
+    <rect x="16" y="13" width="4" height="4" rx="1"/>
+    <rect x="22" y="13" width="4" height="4" rx="1"/>
+    <rect x="28" y="13" width="4" height="4" rx="1"/>
+    <rect x="34" y="13" width="4" height="4" rx="1"/>
+    <rect x="10" y="19" width="4" height="4" rx="1"/>
+    <rect x="16" y="19" width="4" height="4" rx="1"/>
+    <rect x="28" y="19" width="4" height="4" rx="1"/>
+    <rect x="34" y="19" width="4" height="4" rx="1"/>
+    <rect x="10" y="25" width="4" height="4" rx="1"/>
+    <rect x="16" y="25" width="4" height="4" rx="1"/>
+    <rect x="22" y="25" width="4" height="4" rx="1"/>
+    <rect x="28" y="25" width="4" height="4" rx="1"/>
+    <rect x="34" y="25" width="4" height="4" rx="1"/>
+    <rect x="10" y="31" width="4" height="4" rx="1"/>
+    <rect x="16" y="31" width="4" height="4" rx="1"/>
+    <rect x="28" y="31" width="4" height="4" rx="1"/>
+    <rect x="34" y="31" width="4" height="4" rx="1"/>
+    <rect x="10" y="37" width="4" height="4" rx="1"/>
+    <rect x="34" y="37" width="4" height="4" rx="1"/>
+  </g>
+</svg>

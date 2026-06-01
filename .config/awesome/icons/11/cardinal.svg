@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <pattern id="px" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <rect width="2" height="2" fill="rgba(0,0,0,0.2)"/>
+    </pattern>
+    <mask id="m">
+      <rect x="0" y="0" width="48" height="48" fill="black"/>
+      <g fill="none" stroke="white" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <ellipse cx="24" cy="22" rx="7" ry="5"/>
+    <circle cx="24" cy="14" r="4"/>
+    <circle cx="22" cy="12" r="1.5"/>
+    <polygon points="24,2 22,8 26,8"/>
+    <path d="M30 20 Q38 18 42 22 Q38 26 30 24"/>
+    <path d="M22 24 L20 44 M26 24 L28 44"/>
+      </g>
+    </mask>
+  </defs>
+  <g fill="none" stroke="#b29ec3" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <ellipse cx="24" cy="22" rx="7" ry="5"/>
+    <circle cx="24" cy="14" r="4"/>
+    <circle cx="22" cy="12" r="1.5"/>
+    <polygon points="24,2 22,8 26,8"/>
+    <path d="M30 20 Q38 18 42 22 Q38 26 30 24"/>
+    <path d="M22 24 L20 44 M26 24 L28 44"/>
+  </g>
+  <rect x="0" y="0" width="48" height="48" fill="url(#px)" mask="url(#m)" pointer-events="none"/>
+</svg>

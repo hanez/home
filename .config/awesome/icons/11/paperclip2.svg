@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <pattern id="px" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <rect width="2" height="2" fill="rgba(0,0,0,0.2)"/>
+    </pattern>
+    <mask id="m">
+      <rect x="0" y="0" width="48" height="48" fill="black"/>
+      <g fill="none" stroke="white" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <path d="M10 24 L10 38 Q10 44 16 44 Q22 44 22 38 L22 14 Q22 8 28 8 Q34 8 34 14 L34 34 Q34 38 30 38 Q26 38 26 34 L26 20" stroke-width="2.5" fill="none"/>
+      </g>
+    </mask>
+  </defs>
+  <g fill="none" stroke="#c2ace7" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <path d="M10 24 L10 38 Q10 44 16 44 Q22 44 22 38 L22 14 Q22 8 28 8 Q34 8 34 14 L34 34 Q34 38 30 38 Q26 38 26 34 L26 20" stroke-width="2.5" fill="none"/>
+  </g>
+  <rect x="0" y="0" width="48" height="48" fill="url(#px)" mask="url(#m)" pointer-events="none"/>
+</svg>

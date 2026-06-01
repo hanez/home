@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="gg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CFD8DC"/>
+      <stop offset="100%" stop-color="#37474F"/>
+    </linearGradient>
+    <filter id="g3d" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="blur2"/>
+      <feOffset dx="1.5" dy="2.5" in="SourceAlpha" result="offsetAlpha"/>
+      <feGaussianBlur stdDeviation="2" in="offsetAlpha" result="shadowBlur"/>
+      <feFlood flood-color="#1a1a2e" flood-opacity="0.3" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="shadowBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" stroke="url(#gg)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#g3d)">
+    <ellipse cx="24" cy="24" rx="10" ry="14"/>
+    <path d="M14 14 Q24 4 34 14"/>
+    <line x1="18" y1="4" x2="22" y2="12"/>
+    <line x1="30" y1="4" x2="26" y2="12"/>
+    <circle cx="16" cy="22" r="2"/><circle cx="32" cy="22" r="2"/>
+    <circle cx="24" cy="28" r="2"/>
+  </g>
+</svg>

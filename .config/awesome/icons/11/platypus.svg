@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <pattern id="px" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <rect width="2" height="2" fill="rgba(0,0,0,0.2)"/>
+    </pattern>
+    <mask id="m">
+      <rect x="0" y="0" width="48" height="48" fill="black"/>
+      <g fill="none" stroke="white" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <ellipse cx="24" cy="24" rx="8" ry="6"/>
+    <circle cx="24" cy="16" r="5"/>
+    <circle cx="22" cy="14" r="1.5"/>
+    <ellipse cx="12" cy="24" rx="6" ry="2"/>
+    <path d="M24 28 L24 42 M24 42 L20 44 M24 42 L28 44"/>
+    <path d="M32 24 L36 22 L38 26 Z"/>
+      </g>
+    </mask>
+  </defs>
+  <g fill="none" stroke="#c2bfd8" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <ellipse cx="24" cy="24" rx="8" ry="6"/>
+    <circle cx="24" cy="16" r="5"/>
+    <circle cx="22" cy="14" r="1.5"/>
+    <ellipse cx="12" cy="24" rx="6" ry="2"/>
+    <path d="M24 28 L24 42 M24 42 L20 44 M24 42 L28 44"/>
+    <path d="M32 24 L36 22 L38 26 Z"/>
+  </g>
+  <rect x="0" y="0" width="48" height="48" fill="url(#px)" mask="url(#m)" pointer-events="none"/>
+</svg>

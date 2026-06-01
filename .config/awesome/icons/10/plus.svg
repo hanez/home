@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#81C784"/>
+      <stop offset="100%" stop-color="#1A4620"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#sh)" fill="none">
+    <g stroke="#0D2310" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+    <circle cx="24" cy="24" r="17"/>
+        <line x1="14" y1="24" x2="34" y2="24"/>
+        <line x1="24" y1="14" x2="24" y2="34"/>
+    </g>
+    <g stroke="#1A4620" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+    <circle cx="24" cy="24" r="17"/>
+        <line x1="14" y1="24" x2="34" y2="24"/>
+        <line x1="24" y1="14" x2="24" y2="34"/>
+    </g>
+    <g stroke="url(#g)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="24" cy="24" r="17"/>
+        <line x1="14" y1="24" x2="34" y2="24"/>
+        <line x1="24" y1="14" x2="24" y2="34"/>
+    </g>
+  </g>
+</svg>

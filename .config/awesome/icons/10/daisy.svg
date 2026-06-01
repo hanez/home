@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b1a8c1"/>
+      <stop offset="100%" stop-color="#140f1d"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" fill="none">
+    <g stroke="#0a070e" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+    <circle cx="24" cy="24" r="4" fill="currentColor"/>
+    <ellipse cx="24" cy="12" rx="3" ry="6"/>
+    <ellipse cx="24" cy="36" rx="3" ry="6"/>
+    <ellipse cx="12" cy="24" rx="6" ry="3"/>
+    <ellipse cx="36" cy="24" rx="6" ry="3"/>
+    <ellipse cx="14" cy="14" rx="4" ry="6" transform="rotate(45 14 14)"/>
+    <ellipse cx="34" cy="34" rx="4" ry="6" transform="rotate(45 34 34)"/>
+    <ellipse cx="34" cy="14" rx="4" ry="6" transform="rotate(-45 34 14)"/>
+    <ellipse cx="14" cy="34" rx="4" ry="6" transform="rotate(-45 14 34)"/>
+    </g>
+    <g stroke="#140f1d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+    <circle cx="24" cy="24" r="4" fill="currentColor"/>
+    <ellipse cx="24" cy="12" rx="3" ry="6"/>
+    <ellipse cx="24" cy="36" rx="3" ry="6"/>
+    <ellipse cx="12" cy="24" rx="6" ry="3"/>
+    <ellipse cx="36" cy="24" rx="6" ry="3"/>
+    <ellipse cx="14" cy="14" rx="4" ry="6" transform="rotate(45 14 14)"/>
+    <ellipse cx="34" cy="34" rx="4" ry="6" transform="rotate(45 34 34)"/>
+    <ellipse cx="34" cy="14" rx="4" ry="6" transform="rotate(-45 34 14)"/>
+    <ellipse cx="14" cy="34" rx="4" ry="6" transform="rotate(-45 14 34)"/>
+    </g>
+    <g stroke="url(#g)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="24" cy="24" r="4" fill="currentColor"/>
+    <ellipse cx="24" cy="12" rx="3" ry="6"/>
+    <ellipse cx="24" cy="36" rx="3" ry="6"/>
+    <ellipse cx="12" cy="24" rx="6" ry="3"/>
+    <ellipse cx="36" cy="24" rx="6" ry="3"/>
+    <ellipse cx="14" cy="14" rx="4" ry="6" transform="rotate(45 14 14)"/>
+    <ellipse cx="34" cy="34" rx="4" ry="6" transform="rotate(45 34 34)"/>
+    <ellipse cx="34" cy="14" rx="4" ry="6" transform="rotate(-45 34 14)"/>
+    <ellipse cx="14" cy="34" rx="4" ry="6" transform="rotate(-45 14 34)"/>
+    </g>
+  </g>
+</svg>

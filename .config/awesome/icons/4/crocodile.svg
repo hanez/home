@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <rect x="2" y="2" width="44" height="44" rx="9" fill="#c69ebb"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="24" cy="24" rx="15" ry="5"/>
+    <path d="M6 22 L2 18 L4 24 L2 30 L6 26"/>
+    <polygon points="36,22 44,20 44,28 36,26"/>
+    <line x1="12" y1="22" x2="12" y2="18 M36 22 L36 18"/>
+    <line x1="8" y1="24" x2="8" y2="30 M16 24 L16 30 M28 24 L28 30"/>
+  </g>
+</svg>

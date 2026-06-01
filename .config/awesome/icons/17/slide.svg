@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="gg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CFD8DC"/>
+      <stop offset="100%" stop-color="#37474F"/>
+    </linearGradient>
+    <filter id="g3d" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="blur2"/>
+      <feOffset dx="1.5" dy="2.5" in="SourceAlpha" result="offsetAlpha"/>
+      <feGaussianBlur stdDeviation="2" in="offsetAlpha" result="shadowBlur"/>
+      <feFlood flood-color="#1a1a2e" flood-opacity="0.3" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="shadowBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" stroke="url(#gg)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#g3d)">
+    <line x1="8" y1="6" x2="40" y2="6"/>
+    <polygon points="30,6 10,44 20,44 36,10"/>
+    <line x1="10" y1="44" x2="20" y2="44"/>
+    <rect x="18" y="24" width="12" height="4" rx="2"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A65"/>
+      <stop offset="100%" stop-color="#6D1E06"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#sh)" fill="none">
+    <g stroke="#360F03" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+    <path d="M20 4 L20 14 L8 14 L8 34 L20 34 L20 44"/>
+        <line x1="14" y1="24" x2="44" y2="24"/>
+        <polyline points="34,14 44,24 34,34"/>
+    </g>
+    <g stroke="#6D1E06" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+    <path d="M20 4 L20 14 L8 14 L8 34 L20 34 L20 44"/>
+        <line x1="14" y1="24" x2="44" y2="24"/>
+        <polyline points="34,14 44,24 34,34"/>
+    </g>
+    <g stroke="url(#g)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 4 L20 14 L8 14 L8 34 L20 34 L20 44"/>
+        <line x1="14" y1="24" x2="44" y2="24"/>
+        <polyline points="34,14 44,24 34,34"/>
+    </g>
+  </g>
+</svg>

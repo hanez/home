@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#81C784"/>
+      <stop offset="100%" stop-color="#38663a"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" fill="none">
+    <g stroke="#1c331d" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+      <rect x="12" y="16" width="24" height="22" rx="2"/>
+    <path d="M38 12l4-4"/>
+    <path d="M38 12h3"/>
+    <path d="M41 12v3"/>
+    <path d="M10 36l-4 4"/>
+    <path d="M10 36H7"/>
+    <path d="M7 36v-3"/>
+    </g>
+    <g stroke="#38663a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+      <rect x="12" y="16" width="24" height="22" rx="2"/>
+    <path d="M38 12l4-4"/>
+    <path d="M38 12h3"/>
+    <path d="M41 12v3"/>
+    <path d="M10 36l-4 4"/>
+    <path d="M10 36H7"/>
+    <path d="M7 36v-3"/>
+    </g>
+    <g stroke="url(#iconGrad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="12" y="16" width="24" height="22" rx="2"/>
+    <path d="M38 12l4-4"/>
+    <path d="M38 12h3"/>
+    <path d="M41 12v3"/>
+    <path d="M10 36l-4 4"/>
+    <path d="M10 36H7"/>
+    <path d="M7 36v-3"/>
+    </g>
+  </g>
+</svg>

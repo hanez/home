@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c8d6a2"/>
+      <stop offset="100%" stop-color="#21290c"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" fill="none">
+    <g stroke="#101406" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+    <ellipse cx="24" cy="20" rx="8" ry="6"/>
+    <circle cx="24" cy="12" r="5"/>
+    <circle cx="21" cy="10" r="1.5"/>
+    <circle cx="27" cy="10" r="1.5"/>
+    <path d="M20 6 L16 2 L18 8 M28 6 L32 2 L30 8"/>
+    <path d="M20 16 L28 16 M22 20 L26 20"/>
+    <line x1="24" y1="20" x2="24" y2="44"/>
+    </g>
+    <g stroke="#21290c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+    <ellipse cx="24" cy="20" rx="8" ry="6"/>
+    <circle cx="24" cy="12" r="5"/>
+    <circle cx="21" cy="10" r="1.5"/>
+    <circle cx="27" cy="10" r="1.5"/>
+    <path d="M20 6 L16 2 L18 8 M28 6 L32 2 L30 8"/>
+    <path d="M20 16 L28 16 M22 20 L26 20"/>
+    <line x1="24" y1="20" x2="24" y2="44"/>
+    </g>
+    <g stroke="url(#g)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="24" cy="20" rx="8" ry="6"/>
+    <circle cx="24" cy="12" r="5"/>
+    <circle cx="21" cy="10" r="1.5"/>
+    <circle cx="27" cy="10" r="1.5"/>
+    <path d="M20 6 L16 2 L18 8 M28 6 L32 2 L30 8"/>
+    <path d="M20 16 L28 16 M22 20 L26 20"/>
+    <line x1="24" y1="20" x2="24" y2="44"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9b7b7"/>
+      <stop offset="100%" stop-color="#221817"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" fill="none">
+    <g stroke="#110c0b" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+    <path d="M4 24 Q12 12 24 16 Q36 12 44 24 Q36 30 24 28 Q12 30 4 24 Z"/>
+    <path d="M24 16 L24 8 M24 28 L24 36"/>
+    <line x1="10" y1="22" x2="6" y2="18 M38 22 L42 18"/>
+    </g>
+    <g stroke="#221817" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+    <path d="M4 24 Q12 12 24 16 Q36 12 44 24 Q36 30 24 28 Q12 30 4 24 Z"/>
+    <path d="M24 16 L24 8 M24 28 L24 36"/>
+    <line x1="10" y1="22" x2="6" y2="18 M38 22 L42 18"/>
+    </g>
+    <g stroke="url(#g)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 24 Q12 12 24 16 Q36 12 44 24 Q36 30 24 28 Q12 30 4 24 Z"/>
+    <path d="M24 16 L24 8 M24 28 L24 36"/>
+    <line x1="10" y1="22" x2="6" y2="18 M38 22 L42 18"/>
+    </g>
+  </g>
+</svg>

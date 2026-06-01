@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#afb6c6"/>
+      <stop offset="100%" stop-color="#131720"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" fill="none">
+    <g stroke="#090b10" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+    <ellipse cx="24" cy="26" rx="12" ry="15"/>
+    <ellipse cx="18" cy="20" rx="4" ry="5"/>
+    <ellipse cx="30" cy="20" rx="4" ry="5"/>
+    <circle cx="18" cy="20" r="2"/>
+    <circle cx="30" cy="20" r="2"/>
+    <path d="M24 26 L24 34 M20 30 Q24 36 28 30"/>
+    </g>
+    <g stroke="#131720" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+    <ellipse cx="24" cy="26" rx="12" ry="15"/>
+    <ellipse cx="18" cy="20" rx="4" ry="5"/>
+    <ellipse cx="30" cy="20" rx="4" ry="5"/>
+    <circle cx="18" cy="20" r="2"/>
+    <circle cx="30" cy="20" r="2"/>
+    <path d="M24 26 L24 34 M20 30 Q24 36 28 30"/>
+    </g>
+    <g stroke="url(#g)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="24" cy="26" rx="12" ry="15"/>
+    <ellipse cx="18" cy="20" rx="4" ry="5"/>
+    <ellipse cx="30" cy="20" rx="4" ry="5"/>
+    <circle cx="18" cy="20" r="2"/>
+    <circle cx="30" cy="20" r="2"/>
+    <path d="M24 26 L24 34 M20 30 Q24 36 28 30"/>
+    </g>
+  </g>
+</svg>

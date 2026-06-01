@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A5D6A7"/>
+      <stop offset="100%" stop-color="#2A602C"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" fill="none">
+    <g stroke="#153016" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+      <path d="M16 12 C28 10 28 18 20 20 C12 22 12 26 20 28 C28 30 28 38 28 36"/>
+      <line x1="20" y1="8" x2="20" y2="40"/>
+    </g>
+    <g stroke="#2A602C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+      <path d="M16 12 C28 10 28 18 20 20 C12 22 12 26 20 28 C28 30 28 38 28 36"/>
+      <line x1="20" y1="8" x2="20" y2="40"/>
+    </g>
+    <g stroke="url(#iconGrad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 12 C28 10 28 18 20 20 C12 22 12 26 20 28 C28 30 28 38 28 36"/>
+      <line x1="20" y1="8" x2="20" y2="40"/>
+    </g>
+  </g>
+</svg>

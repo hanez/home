@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <pattern id="px" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <rect width="2" height="2" fill="rgba(0,0,0,0.2)"/>
+    </pattern>
+    <mask id="m">
+      <rect x="0" y="0" width="48" height="48" fill="black"/>
+      <g fill="none" stroke="white" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <ellipse cx="12" cy="26" rx="6" ry="10"/>
+    <line x1="18" y1="22" x2="36" y2="14"/>
+    <line x1="18" y1="26" x2="38" y2="26"/>
+    <line x1="36" y1="14" x2="42" y2="10"/>
+    <ellipse cx="38" cy="26" rx="4" ry="6"/>
+      </g>
+    </mask>
+  </defs>
+  <g fill="none" stroke="#cba5e2" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <ellipse cx="12" cy="26" rx="6" ry="10"/>
+    <line x1="18" y1="22" x2="36" y2="14"/>
+    <line x1="18" y1="26" x2="38" y2="26"/>
+    <line x1="36" y1="14" x2="42" y2="10"/>
+    <ellipse cx="38" cy="26" rx="4" ry="6"/>
+  </g>
+  <rect x="0" y="0" width="48" height="48" fill="url(#px)" mask="url(#m)" pointer-events="none"/>
+</svg>

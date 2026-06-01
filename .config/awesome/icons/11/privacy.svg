@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <pattern id="px" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <rect width="2" height="2" fill="rgba(0,0,0,0.2)"/>
+    </pattern>
+    <mask id="m">
+      <rect x="0" y="0" width="48" height="48" fill="black"/>
+      <g fill="none" stroke="white" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <path d="M24 8l-14 6v8c0 8.4 5.6 16.2 14 19 8.4-2.8 14-10.6 14-19v-8l-14-6z"/>
+    <rect x="20" y="22" width="8" height="6" rx="1.5" fill="white"/>
+    <path d="M20 22v-3a4 4 0 018 0v3"/>
+      </g>
+    </mask>
+  </defs>
+  <g fill="none" stroke="#AED581" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <path d="M24 8l-14 6v8c0 8.4 5.6 16.2 14 19 8.4-2.8 14-10.6 14-19v-8l-14-6z"/>
+    <rect x="20" y="22" width="8" height="6" rx="1.5" fill="#AED581"/>
+    <path d="M20 22v-3a4 4 0 018 0v3"/>
+  </g>
+  <rect x="0" y="0" width="48" height="48" fill="url(#px)" mask="url(#m)" pointer-events="none"/>
+</svg>

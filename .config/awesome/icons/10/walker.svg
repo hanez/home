@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bcb5e0"/>
+      <stop offset="100%" stop-color="#1b172f"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" fill="none">
+    <g stroke="#0d0b17" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+    <line x1="12" y1="8" x2="12" y2="44"/>
+    <line x1="36" y1="8" x2="36" y2="44"/>
+    <line x1="8" y1="8" x2="40" y2="8"/>
+    <line x1="14" y1="38" x2="34" y2="38"/>
+    <line x1="12" y1="8" x2="12" y2="12 M36 8 L36 12"/>
+    </g>
+    <g stroke="#1b172f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+    <line x1="12" y1="8" x2="12" y2="44"/>
+    <line x1="36" y1="8" x2="36" y2="44"/>
+    <line x1="8" y1="8" x2="40" y2="8"/>
+    <line x1="14" y1="38" x2="34" y2="38"/>
+    <line x1="12" y1="8" x2="12" y2="12 M36 8 L36 12"/>
+    </g>
+    <g stroke="url(#g)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="12" y1="8" x2="12" y2="44"/>
+    <line x1="36" y1="8" x2="36" y2="44"/>
+    <line x1="8" y1="8" x2="40" y2="8"/>
+    <line x1="14" y1="38" x2="34" y2="38"/>
+    <line x1="12" y1="8" x2="12" y2="12 M36 8 L36 12"/>
+    </g>
+  </g>
+</svg>

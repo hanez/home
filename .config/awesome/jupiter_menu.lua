@@ -1,4 +1,4 @@
-local icondir = os.getenv("HOME") .. "/.config/awesome/icons/"
+local icondir = os.getenv("HOME") .. "/.config/awesome/icons/15/"
 local appicon = icondir .. "application.svg"
 
 accessoriesmenu = {
@@ -321,13 +321,13 @@ windowsmenu = {
 }
 mainmenu = awful.menu({ items = {
     { "accessories >", accessoriesmenu, icondir .. "accessories.svg" },
-    { "audio >", audiomenu, icondir .. "audio.svg" },
+    { "audio >", audiomenu, icondir .. "synthesizer.svg" },
     { "communication >", communicationmenu, icondir .. "communication.svg" },
     { "database >", databasemenu, icondir .. "database.svg" },
     { "development >", developmentmenu, icondir .. "development.svg" },
     { "emulation >", emulationmenu, icondir .. "emulation.svg" },
     { "engineering >", engineeringmenu, icondir .. "engineering.svg" },
-    { "games >", gamesmenu, icondir .. "games.svg"},
+    { "games >", gamesmenu, icondir .. "joystick.svg"},
     { "graphics >", graphicsmenu, icondir .. "graphics.svg" },
     { "hacking >", hackingmenu, icondir .. "hacking.svg" },
     { "internet >", internetmenu, icondir .. "internet.svg" },
@@ -347,7 +347,7 @@ mainmenu = awful.menu({ items = {
     { "filemanager (thunar su)", "/usr/bin/gksudo /usr/bin/thunar", icondir .. "filemanager.svg" },
     { "terminal (xfce4)", "/usr/bin/xfce4-terminal", icondir .. "terminal.svg" },
     { "terminal (xterm)", terminal, icondir .. "terminal.svg" },
-    { "configuration", editor_cmd .. " " .. awesome.conffile, icondir .. "desktop-config.svg" },
+    { "configuration", editor_cmd .. " " .. awesome.conffile, icondir .. "configuration.svg" },
     { "reload", awesome.restart, icondir .. "reload.svg" },
     { "suspend", function () awful.util.spawn("/usr/bin/loginctl suspend") end, icondir .. "suspend.svg"  },
     { "quit", function() awesome.quit() end, icondir .. "quit.svg"  }

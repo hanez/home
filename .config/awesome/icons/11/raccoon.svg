@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <pattern id="px" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <rect width="2" height="2" fill="rgba(0,0,0,0.2)"/>
+    </pattern>
+    <mask id="m">
+      <rect x="0" y="0" width="48" height="48" fill="black"/>
+      <g fill="none" stroke="white" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <ellipse cx="24" cy="24" rx="11" ry="9"/>
+    <circle cx="24" cy="18" r="6"/>
+    <ellipse cx="18" cy="18" rx="3" ry="2.5"/>
+    <ellipse cx="30" cy="18" rx="3" ry="2.5"/>
+    <circle cx="18" cy="18" r="1.5"/>
+    <circle cx="30" cy="18" r="1.5"/>
+    <path d="M24 24 L24 26 M20 26 L28 26"/>
+      </g>
+    </mask>
+  </defs>
+  <g fill="none" stroke="#a2c1b2" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <ellipse cx="24" cy="24" rx="11" ry="9"/>
+    <circle cx="24" cy="18" r="6"/>
+    <ellipse cx="18" cy="18" rx="3" ry="2.5"/>
+    <ellipse cx="30" cy="18" rx="3" ry="2.5"/>
+    <circle cx="18" cy="18" r="1.5"/>
+    <circle cx="30" cy="18" r="1.5"/>
+    <path d="M24 24 L24 26 M20 26 L28 26"/>
+  </g>
+  <rect x="0" y="0" width="48" height="48" fill="url(#px)" mask="url(#m)" pointer-events="none"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <pattern id="px" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <rect width="2" height="2" fill="rgba(0,0,0,0.2)"/>
+    </pattern>
+    <mask id="m">
+      <rect x="0" y="0" width="48" height="48" fill="black"/>
+      <g fill="none" stroke="white" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+<rect x="6" y="8" width="36" height="28" rx="3"/><circle cx="14" cy="22" r="5"/><circle cx="34" cy="22" r="5"/><circle cx="14" cy="22" r="2.5"/><circle cx="34" cy="22" r="2.5"/><rect x="18" y="18" width="12" height="8" rx="2"/><line x1="18" y1="8" x2="18" y2="14"/><line x1="30" y1="8" x2="30" y2="14"/>
+      </g>
+    </mask>
+  </defs>
+  <g fill="none" stroke="#7a7a34" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+<rect x="6" y="8" width="36" height="28" rx="3"/><circle cx="14" cy="22" r="5"/><circle cx="34" cy="22" r="5"/><circle cx="14" cy="22" r="2.5"/><circle cx="34" cy="22" r="2.5"/><rect x="18" y="18" width="12" height="8" rx="2"/><line x1="18" y1="8" x2="18" y2="14"/><line x1="30" y1="8" x2="30" y2="14"/>
+  </g>
+  <rect x="0" y="0" width="48" height="48" fill="url(#px)" mask="url(#m)" pointer-events="none"/>
+</svg>

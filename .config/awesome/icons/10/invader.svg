@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8E6C9"/>
+      <stop offset="100%" stop-color="#1E4E21"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#sh)" fill="none">
+    <g stroke="#0F2711" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+        <rect x="16" y="7" width="4" height="4" rx="1"/>
+        <rect x="22" y="7" width="4" height="4" rx="1"/>
+        <rect x="28" y="7" width="4" height="4" rx="1"/>
+        <rect x="10" y="13" width="4" height="4" rx="1"/>
+        <rect x="16" y="13" width="4" height="4" rx="1"/>
+        <rect x="22" y="13" width="4" height="4" rx="1"/>
+        <rect x="28" y="13" width="4" height="4" rx="1"/>
+        <rect x="34" y="13" width="4" height="4" rx="1"/>
+        <rect x="10" y="19" width="4" height="4" rx="1"/>
+        <rect x="16" y="19" width="4" height="4" rx="1"/>
+        <rect x="28" y="19" width="4" height="4" rx="1"/>
+        <rect x="34" y="19" width="4" height="4" rx="1"/>
+        <rect x="10" y="25" width="4" height="4" rx="1"/>
+        <rect x="16" y="25" width="4" height="4" rx="1"/>
+        <rect x="22" y="25" width="4" height="4" rx="1"/>
+        <rect x="28" y="25" width="4" height="4" rx="1"/>
+        <rect x="34" y="25" width="4" height="4" rx="1"/>
+        <rect x="10" y="31" width="4" height="4" rx="1"/>
+        <rect x="16" y="31" width="4" height="4" rx="1"/>
+        <rect x="28" y="31" width="4" height="4" rx="1"/>
+        <rect x="34" y="31" width="4" height="4" rx="1"/>
+        <rect x="10" y="37" width="4" height="4" rx="1"/>
+        <rect x="34" y="37" width="4" height="4" rx="1"/>
+    </g>
+    <g stroke="#1E4E21" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+        <rect x="16" y="7" width="4" height="4" rx="1"/>
+        <rect x="22" y="7" width="4" height="4" rx="1"/>
+        <rect x="28" y="7" width="4" height="4" rx="1"/>
+        <rect x="10" y="13" width="4" height="4" rx="1"/>
+        <rect x="16" y="13" width="4" height="4" rx="1"/>
+        <rect x="22" y="13" width="4" height="4" rx="1"/>
+        <rect x="28" y="13" width="4" height="4" rx="1"/>
+        <rect x="34" y="13" width="4" height="4" rx="1"/>
+        <rect x="10" y="19" width="4" height="4" rx="1"/>
+        <rect x="16" y="19" width="4" height="4" rx="1"/>
+        <rect x="28" y="19" width="4" height="4" rx="1"/>
+        <rect x="34" y="19" width="4" height="4" rx="1"/>
+        <rect x="10" y="25" width="4" height="4" rx="1"/>
+        <rect x="16" y="25" width="4" height="4" rx="1"/>
+        <rect x="22" y="25" width="4" height="4" rx="1"/>
+        <rect x="28" y="25" width="4" height="4" rx="1"/>
+        <rect x="34" y="25" width="4" height="4" rx="1"/>
+        <rect x="10" y="31" width="4" height="4" rx="1"/>
+        <rect x="16" y="31" width="4" height="4" rx="1"/>
+        <rect x="28" y="31" width="4" height="4" rx="1"/>
+        <rect x="34" y="31" width="4" height="4" rx="1"/>
+        <rect x="10" y="37" width="4" height="4" rx="1"/>
+        <rect x="34" y="37" width="4" height="4" rx="1"/>
+    </g>
+    <g stroke="url(#g)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="16" y="7" width="4" height="4" rx="1"/>
+        <rect x="22" y="7" width="4" height="4" rx="1"/>
+        <rect x="28" y="7" width="4" height="4" rx="1"/>
+        <rect x="10" y="13" width="4" height="4" rx="1"/>
+        <rect x="16" y="13" width="4" height="4" rx="1"/>
+        <rect x="22" y="13" width="4" height="4" rx="1"/>
+        <rect x="28" y="13" width="4" height="4" rx="1"/>
+        <rect x="34" y="13" width="4" height="4" rx="1"/>
+        <rect x="10" y="19" width="4" height="4" rx="1"/>
+        <rect x="16" y="19" width="4" height="4" rx="1"/>
+        <rect x="28" y="19" width="4" height="4" rx="1"/>
+        <rect x="34" y="19" width="4" height="4" rx="1"/>
+        <rect x="10" y="25" width="4" height="4" rx="1"/>
+        <rect x="16" y="25" width="4" height="4" rx="1"/>
+        <rect x="22" y="25" width="4" height="4" rx="1"/>
+        <rect x="28" y="25" width="4" height="4" rx="1"/>
+        <rect x="34" y="25" width="4" height="4" rx="1"/>
+        <rect x="10" y="31" width="4" height="4" rx="1"/>
+        <rect x="16" y="31" width="4" height="4" rx="1"/>
+        <rect x="28" y="31" width="4" height="4" rx="1"/>
+        <rect x="34" y="31" width="4" height="4" rx="1"/>
+        <rect x="10" y="37" width="4" height="4" rx="1"/>
+        <rect x="34" y="37" width="4" height="4" rx="1"/>
+    </g>
+  </g>
+</svg>

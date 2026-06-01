@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6c5cd"/>
+      <stop offset="100%" stop-color="#c98090"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="blur1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+<circle cx="24" cy="22" r="6"/><circle cx="24" cy="22" r="3"/><line x1="24" y1="16" x2="24" y2="8"/><line x1="24" y1="28" x2="24" y2="36"/><line x1="18" y1="22" x2="10" y2="22"/><line x1="30" y1="22" x2="38" y2="22"/><line x1="19" y1="17" x2="13" y2="11"/><line x1="29" y1="17" x2="35" y2="11"/><line x1="19" y1="27" x2="13" y2="33"/><line x1="29" y1="27" x2="35" y2="33"/><line x1="24" y1="36" x2="24" y2="42"/>
+  </g>
+</svg>

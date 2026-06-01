@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <pattern id="px" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <rect width="2" height="2" fill="rgba(0,0,0,0.2)"/>
+    </pattern>
+    <mask id="m">
+      <rect x="0" y="0" width="48" height="48" fill="black"/>
+      <g fill="none" stroke="white" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <circle cx="24" cy="24" r="16"/>
+    <circle cx="18" cy="18" r="3" fill="currentColor"/>
+    <circle cx="30" cy="18" r="3" fill="currentColor"/>
+    <path d="M16 30 Q24 36 32 30"/>
+    <polygon points="10,8 11,11 14,11 12,13 13,16 10,14 7,16 8,13 6,11 9,11"/>
+    <polygon points="38,8 39,11 42,11 40,13 41,16 38,14 35,16 36,13 34,11 37,11"/>
+      </g>
+    </mask>
+  </defs>
+  <g fill="none" stroke="#d6a6d3" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <circle cx="24" cy="24" r="16"/>
+    <circle cx="18" cy="18" r="3" fill="currentColor"/>
+    <circle cx="30" cy="18" r="3" fill="currentColor"/>
+    <path d="M16 30 Q24 36 32 30"/>
+    <polygon points="10,8 11,11 14,11 12,13 13,16 10,14 7,16 8,13 6,11 9,11"/>
+    <polygon points="38,8 39,11 42,11 40,13 41,16 38,14 35,16 36,13 34,11 37,11"/>
+  </g>
+  <rect x="0" y="0" width="48" height="48" fill="url(#px)" mask="url(#m)" pointer-events="none"/>
+</svg>

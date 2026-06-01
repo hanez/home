@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <pattern id="px" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <rect width="2" height="2" fill="rgba(0,0,0,0.2)"/>
+    </pattern>
+    <mask id="m">
+      <rect x="0" y="0" width="48" height="48" fill="black"/>
+      <g fill="none" stroke="white" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <rect x="4" y="24" width="40" height="8" rx="4"/>
+    <path d="M4 24 Q4 12 24 12 Q44 12 44 24"/>
+    <line x1="4" y1="32" x2="44" y2="32"/>
+    <rect x="18" y="28" width="12" height="12" rx="3"/>
+      </g>
+    </mask>
+  </defs>
+  <g fill="none" stroke="#aecdb7" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+    <rect x="4" y="24" width="40" height="8" rx="4"/>
+    <path d="M4 24 Q4 12 24 12 Q44 12 44 24"/>
+    <line x1="4" y1="32" x2="44" y2="32"/>
+    <rect x="18" y="28" width="12" height="12" rx="3"/>
+  </g>
+  <rect x="0" y="0" width="48" height="48" fill="url(#px)" mask="url(#m)" pointer-events="none"/>
+</svg>

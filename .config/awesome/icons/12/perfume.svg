@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <pattern id="grid" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M 8 0 L 0 0 0 8" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#deafe6"/>
+      <stop offset="100%" stop-color="#2d1332"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="blur1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="2" y="2" width="44" height="44" rx="10" fill="#0d0d1a" opacity="0.92"/>
+  <rect x="2" y="2" width="44" height="44" rx="10" fill="url(#grid)"/>
+  <g fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <rect x="14" y="6" width="20" height="24" rx="6"/>
+    <rect x="16" y="4" width="16" height="6" rx="2"/>
+    <line x1="16" y1="10" x2="32" y2="10"/>
+    <ellipse cx="24" cy="20" rx="4" ry="6"/>
+    <circle cx="24" cy="20" r="2" fill="currentColor"/>
+  </g>
+</svg>

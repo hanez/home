@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a1cea9"/>
+      <stop offset="100%" stop-color="#0c2410"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="3" flood-color="#1a1a2e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" fill="none">
+    <g stroke="#061208" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2,2)">
+    <path d="M6 20 L20 18 L20 10 L30 18 L42 20 L30 22 L20 30 L20 22 Z"/>
+    <line x1="20" y1="18" x2="20" y2="22"/>
+    <line x1="6" y1="20" x2="42" y2="20"/>
+    </g>
+    <g stroke="#0c2410" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(1,1)">
+    <path d="M6 20 L20 18 L20 10 L30 18 L42 20 L30 22 L20 30 L20 22 Z"/>
+    <line x1="20" y1="18" x2="20" y2="22"/>
+    <line x1="6" y1="20" x2="42" y2="20"/>
+    </g>
+    <g stroke="url(#g)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 20 L20 18 L20 10 L30 18 L42 20 L30 22 L20 30 L20 22 Z"/>
+    <line x1="20" y1="18" x2="20" y2="22"/>
+    <line x1="6" y1="20" x2="42" y2="20"/>
+    </g>
+  </g>
+</svg>
