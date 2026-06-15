@@ -21,6 +21,7 @@ audiomenu = {
     { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/32x32/audacity.png" },
     --{ "bitwig studio", "/home/hanez/bin/bitwigstudio.sh", "/home/hanez/.config/awesome/icons/bitwigstudio.png" },
     { "mixxx", "/usr/bin/mixxx", "/usr/share/icons/hicolor/scalable/apps/mixxx.svg" },
+    { "musescore", "/usr/bin/mscore", "/usr/share/icons/hicolor/48x48/apps/mscore.png" },
     { "qjackctl", "/usr/bin/qjackctl", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qjackctl.svg" },
     { "qpwgraph", "/usr/bin/qpwgraph", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qpwgraph.svg" },
     { "rtcqs", "/usr/bin/rtcqs_gui", "/usr/share/icons/hicolor/scalable/apps/rtcqs.svg" },
