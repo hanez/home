@@ -79,7 +79,7 @@ developmentmenu = {
     { "sasm", "/usr/bin/sasm", "/usr/share/sasm/sasm.png" },
     { "smartgit", "/usr/bin/smartgit", "/usr/share/icons/hicolor/48x48/apps/smartgit.png" },
     { "theide", "/usr/bin/theide", "/usr/share/pixmaps/theide.png" },
-    { "thonny", "/usr/bin/thonny", "/usr/share/icons/hicolor/48x48/apps/org.thonny.Thonny.png" },
+--    { "thonny", "/usr/bin/thonny", "/usr/share/icons/hicolor/48x48/apps/org.thonny.Thonny.png" },
     { "vscode", "/usr/bin/code", "/usr/share/pixmaps/com.visualstudio.code.oss.png" },
     { "wxformbuilder", "/usr/bin/wxformbuilder", "/usr/share/icons/hicolor/48x48/apps/org.wxformbuilder.wxFormBuilder.png" },
     { "wxglade", "/usr/bin/wxglade", "/usr/share/icons/hicolor/32x32/apps/wxGlade.png" },
