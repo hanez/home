@@ -20,6 +20,7 @@ audiomenu = {
     { "ardour", "/usr/bin/ardour8", "/usr/share/icons/hicolor/48x48/apps/ardour9.png" },
     { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/32x32/audacity.png" },
     --{ "bitwig studio", "/home/hanez/bin/bitwigstudio.sh", "/home/hanez/.config/awesome/icons/bitwigstudio.png" },
+    { "fasttracker", "/usr/bin/ft2-clone", "/usr/share/icons/hicolor/512x512/apps/ft2-clone.png" },
     { "qmidictl", "/usr/bin/qmidictl", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qmidictl.svg" },
     { "qmidinet", "/usr/bin/qmidinet", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qmidinet.svg" },
     { "qmidiroute", "/usr/bin/qmidiroute", "/usr/share/icons/hicolor/scalable/apps/qmidiroute.svg" },
