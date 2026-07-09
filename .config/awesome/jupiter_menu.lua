@@ -38,7 +38,6 @@ communicationmenu = {
     { "linphone", "/usr/bin/linphone", "/usr/share/icons/hicolor/scalable/apps/linphone.svg" },
     { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/scalable/apps/pidgin.svg" },
     { "signal", "/usr/bin/signal-desktop-beta", "/usr/share/icons/hicolor/48x48/apps/signal-desktop-beta.png" },
-    { "skype", "/usr/bin/skypeforlinux", "/usr/share/pixmaps/skypeforlinux.png" },
     { "slack", "/usr/bin/slack", "/usr/share/pixmaps/slack.png" },
     { "teams", "/opt/teams-for-linux/teams-for-linux", "/usr/share/icons/hicolor/48x48/apps/teams-for-linux.png" },
     { "telegram", "/usr/bin/Telegram", "/usr/share/icons/hicolor/symbolic/apps/org.telegram.desktop-symbolic.svg" },
