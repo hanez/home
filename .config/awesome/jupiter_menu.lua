@@ -40,10 +40,10 @@ communicationmenu = {
     { "signal", "/usr/bin/signal-desktop-beta", "/usr/share/icons/hicolor/48x48/apps/signal-desktop-beta.png" },
     { "skype", "/usr/bin/skypeforlinux", "/usr/share/pixmaps/skypeforlinux.png" },
     { "slack", "/usr/bin/slack", "/usr/share/pixmaps/slack.png" },
-    { "teams", "/usr/bin/teams", "/usr/share/pixmaps/teams.png" },
+    { "teams", "/opt/teams-for-linux/teams-for-linux", "/usr/share/icons/hicolor/48x48/apps/teams-for-linux.png" },
     { "telegram", "/usr/bin/Telegram", "/usr/share/icons/hicolor/symbolic/apps/org.telegram.desktop-symbolic.svg" },
     --{ "webex", "/usr/bin/webex", "/opt/Webex/bin/sparklogosmall.png" },
-    { "whatsapp", "/usr/bin/whatsapp-for-linux", "/usr/share/icons/hicolor/32x32/apps/whatsapp-for-linux.png" },
+    --{ "whatsapp", "/usr/bin/whatsapp-for-linux", "/usr/share/icons/hicolor/32x32/apps/whatsapp-for-linux.png" },
     { "zapzap", "/usr/bin/zapzap", "/usr/share/icons/hicolor/scalable/apps/com.rtosta.zapzap.svg" },
     { "zoom", "/usr/bin/zoom", "/usr/share/pixmaps/application-x-zoom.png" },
 }
@@ -97,7 +97,7 @@ emulationmenu = {
     { "vmware", "/usr/bin/vmware", "/usr/lib/vmware/share/icons/hicolor/32x32/apps/vmware-workstation.png" },
 }
 engineeringmenu = {
-    { "arduino", "/usr/bin/arduino-ide", "/usr/share/pixmaps/arduino-ide.png" },
+    { "arduino", "/usr/bin/arduino-ide", "/usr/share/icons/hicolor/512x512/apps/arduino-ide-v2.png" },
     { "eagle", "/home/hanez/bin/eagle.sh", "/usr/share/pixmaps/eagle.png" },
     { "energia", "/usr/bin/energia", "/usr/share/pixmaps/energia.png" },
     { "fritzing", "/usr/bin/Fritzing", "/usr/share/pixmaps/fritzing.png" },
@@ -261,6 +261,7 @@ privacymenu = {
 }
 radiomenu = {
     { "gnuradio", "/usr/bin/gnuradio-companion", icondir .. "radio.svg" },
+    { "gpredict", "/usr/bin/gpredict", "/usr/share/icons/hicolor/scalable/apps/gpredict.svg" },
     { "gqrx", "/usr/bin/gqrx", "/usr/share/icons/hicolor/scalable/apps/gqrx.svg" },
     { "urh", "/usr/bin/urh", "/usr/share/pixmaps/urh.png" },
 }
@@ -268,7 +269,6 @@ sciencemenu = {
     { "epsilon", "/usr/bin/numworks-epsilon", "/usr/share/pixmaps/numworks-epsilon.png" },
     { "firebird nspire", "/usr/bin/firebird-emu", "/usr/local/share/icons/hicolor/512x512/apps/org.firebird-emus.firebird-emu.png" },
     { "google earth", "/usr/bin/google-earth-pro", "/opt/google/earth/pro/product_logo_32.xpm" },
-    { "gpredict", "/usr/bin/gpredict", "/usr/share/icons/hicolor/scalable/apps/gpredict.svg" },
     { "hp 15c", "/usr/bin/hp15c", "/usr/share/icons/hicolor/48x48/apps/hp15c.png" },
     { "stellarium", "/usr/bin/stellarium", "/usr/share/icons/hicolor/48x48/apps/stellarium.png" },
     { "viking", "/usr/bin/viking", "/usr/share/icons/hicolor/48x48/apps/viking.png" },
