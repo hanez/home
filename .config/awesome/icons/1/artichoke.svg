@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <g fill="none" stroke="#774a5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-    <ellipse cx="24" cy="28" rx="10" ry="8"/>
-    <ellipse cx="24" cy="16" rx="8" ry="6"/>
-    <polygon points="24,2 20,10 28,10"/>
-    <path d="M14 12 L6 8 M34 12 L42 8 M18 8 L12 4 M30 8 L36 4"/>
-    <path d="M16 20 L14 16 M32 20 L34 16"/>
-  </g>
-</svg>

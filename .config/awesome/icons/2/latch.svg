@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <g fill="none" stroke="#cce6c1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="4" y="16" width="28" height="8" rx="3"/>
-    <rect x="32" y="14" width="10" height="16" rx="2"/>
-    <circle cx="37" cy="22" r="3" fill="currentColor"/>
-    <circle cx="12" cy="20" r="2" fill="currentColor"/>
-  </g>
-</svg>

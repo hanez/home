@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <rect x="2" y="2" width="44" height="44" rx="9" fill="#548c89"/>
-  <g fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-<line x1="24" y1="10" x2="24" y2="42"/><path d="M24 10 Q14 6 8 12"/><path d="M24 10 Q34 6 40 12"/><path d="M24 14 Q12 12 6 18"/><path d="M24 14 Q36 12 42 18"/><path d="M24 18 Q14 18 8 24"/><path d="M24 18 Q34 18 40 24"/><circle cx="24" cy="10" r="2"/>
-  </g>
-</svg>
