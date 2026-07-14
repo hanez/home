@@ -17,7 +17,7 @@ accessoriesmenu = {
 }
 audiomenu = {
     { "ableton live", "/home/hanez/bin/ableton.sh", "/home/hanez/.config/awesome/icons/live2.png" },
-    { "ardour", "/usr/bin/ardour8", "/usr/share/icons/hicolor/48x48/apps/ardour9.png" },
+    { "ardour", "/usr/bin/ardour9", "/usr/share/icons/hicolor/48x48/apps/ardour9.png" },
     { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/32x32/audacity.png" },
     --{ "bitwig studio", "/home/hanez/bin/bitwigstudio.sh", "/home/hanez/.config/awesome/icons/bitwigstudio.png" },
     { "fasttracker", "/usr/bin/ft2-clone", "/usr/share/icons/hicolor/512x512/apps/ft2-clone.png" },
