@@ -45,5 +45,4 @@ fi
 # and scripts.
 source ~/.penv
 
-
 export PATH="$HOME/.local/bin:$PATH"
