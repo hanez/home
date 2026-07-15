@@ -276,6 +276,8 @@ globalkeys = gears.table.join(
               { description="zoha", group="awesome" }),
     awful.key({ modkey,           }, "e", function() awful.util.spawn("/usr/bin/claws-mail") end,
               { description="claws-mail", group="awesome" }),
+    awful.key({ modkey,           }, "m", function() awful.util.spawn("/usr/bin/xfce4-terminal") end,
+              { description="xfce4-terminal", group="awesome" }),
 
     -- Set backlight
     -- awful.key({ modkey,           }, "1", function() awful.util.spawn("/usr/bin/xbacklight -set 10") end,

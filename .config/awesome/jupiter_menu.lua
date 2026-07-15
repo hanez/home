@@ -12,6 +12,7 @@ accessoriesmenu = {
     { "pluma", "/usr/bin/pluma", appicon },
     { "qpdfview", "/usr/bin/qpdfview", "/usr/share/icons/hicolor/scalable/apps/qpdfview.svg" },
     { "retext", "/usr/bin/retext", "/usr/share/icons/hicolor/48x48/apps/retext.png" },
+    { "screenshotter", "/usr/bin/xfce4-screenshooter", "/usr/share/icons/hicolor/scalable/apps/org.xfce.screenshooter.svg" },
     { "xpad", "/usr/bin/xpad", "/usr/share/icons/hicolor/scalable/apps/xpad.svg" },
     { "xreader", "/usr/bin/xreader", "/usr/share/icons/hicolor/scalable/apps/xreader.svg" },
 }
@@ -35,6 +36,7 @@ audiomenu = {
 communicationmenu = {
     { "claws mail", "/usr/bin/claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
     { "clawsker", "/usr/bin/clawsker", "/usr/share/icons/hicolor/48x48/apps/clawsker.png" },
+    { "discord", "/usr/bin/discord", "/usr/share/icons/hicolor/256x256/apps/discord.png" },
     { "linphone", "/usr/bin/linphone", "/usr/share/icons/hicolor/scalable/apps/linphone.svg" },
     { "pidgin", "/usr/bin/pidgin", "/usr/share/icons/hicolor/scalable/apps/pidgin.svg" },
     { "signal", "/usr/bin/signal-desktop-beta", "/usr/share/icons/hicolor/48x48/apps/signal-desktop-beta.png" },
