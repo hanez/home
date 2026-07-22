@@ -347,6 +347,7 @@ mainmenu = awful.menu({ items = {
     { "video >", videomenu, icondir .. "video.svg" },
     { "windows >", windowsmenu, icondir .. "windows.svg" },
     { "filemanager (nemo)", "/usr/bin/nemo", icondir .. "filemanager.svg" },
+    { "filemanager (nemo su)", "/usr/bin/gksuso /usr/bin/nemo", icondir .. "filemanager.svg" },
     { "filemanager (thunar)", "/usr/bin/thunar", icondir .. "filemanager.svg" },
     { "filemanager (thunar su)", "/usr/bin/gksudo /usr/bin/thunar", icondir .. "filemanager.svg" },
     { "terminal (xfce4)", "/usr/bin/xfce4-terminal", icondir .. "terminal.svg" },
