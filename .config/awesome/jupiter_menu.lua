@@ -25,6 +25,7 @@ audiomenu = {
     { "qmidinet", "/usr/bin/qmidinet", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qmidinet.svg" },
     { "qmidiroute", "/usr/bin/qmidiroute", "/usr/share/icons/hicolor/scalable/apps/qmidiroute.svg" },
     { "mixxx", "/usr/bin/mixxx", "/usr/share/icons/hicolor/scalable/apps/mixxx.svg" },
+    { "muse", "/usr/bin/muse4", "/usr/share/icons/hicolor/64x64/apps/muse.png" },
     { "musescore", "/usr/bin/mscore", "/usr/share/icons/hicolor/48x48/apps/mscore.png" },
     { "qjackctl", "/usr/bin/qjackctl", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qjackctl.svg" },
     { "qpwgraph", "/usr/bin/qpwgraph", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qpwgraph.svg" },
