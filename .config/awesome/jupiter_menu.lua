@@ -58,6 +58,7 @@ databasemenu = {
 developmentmenu = {
     { "android studio", "/home/hanez/bin/studio", "/home/hanez/opt/JetBrains/android-studio/bin/studio.svg" },
     { "bluefish", "/usr/bin/bluefish", "/usr/share/icons/hicolor/scalable/apps/bluefish-icon.svg" },
+    { "cambalache", "/usr/bin/cambalache", "/usr/share/icons/hicolor/symbolic/apps/ar.xjuan.Cambalache-symbolic.svg" },
     { "clion", "/home/hanez/bin/clion", "/home/hanez/opt/JetBrains/clion-2022.3.3/bin/clion.svg" },
     { "cmake gui", "/usr/bin/cmake-gui", "/usr/share/icons/hicolor/64x64/apps/cmake.png" },
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/hicolor/64x64/apps/codeblocks.png" },
