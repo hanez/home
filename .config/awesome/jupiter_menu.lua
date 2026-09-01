@@ -206,6 +206,7 @@ internetmenu = {
     { "tor browser", "/usr/bin/tor-browser", "/usr/share/icons/hicolor/scalable/apps/tor-browser.svg" },
     { "transmission", "/usr/bin/transmission-gtk", "/usr/share/icons/hicolor/scalable/apps/transmission-gtk.svg" },
     { "vimb", "/usr/bin/vimb", appicon },
+    { "vivaldi", "/usr/bin//vivaldi", "/usr/share/icons/hicolor/scalable/vivaldi.svg" },
 }
 multimediamenu = {
     { "acidrip", "/usr/bin/acidrip", "/usr/share/pixmaps/acidrip.png" },
