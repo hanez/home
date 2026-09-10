@@ -52,7 +52,8 @@ function home() {
               current_date=$(date +%s)
               echo "Current date: $current_date"
               time_diff=$(($current_date-$last_update))
-              echo "Time difference: $time_diff seconds."
+              time_diff=$(($time_diff / 60 ))
+              echo "Time difference: $time_diff minutes."
               if (( time_diff > 86400 )) || [ "$2" = "f" ]; then
                 echo "Updating home configuration..."
                 if git pull; then
