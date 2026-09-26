@@ -54,7 +54,7 @@ function home() {
               time_diff=$(($current_date-$last_update))
               time_diff=$(($time_diff / 60 ))
               echo "Time difference: $time_diff minutes."
-              if (( time_diff > 86400 )) || [ "$2" = "f" ]; then
+              if (( time_diff > 1440 )) || [ "$2" = "f" ]; then
                 echo "Updating home configuration..."
                 if git pull; then
                   if git submodule update --init --recursive; then

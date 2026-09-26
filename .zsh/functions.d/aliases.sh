@@ -4,6 +4,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 alias c='clear'
+alias cat='bat'
 
 alias gita='git add'
 alias gitc='git commit'
@@ -16,11 +17,11 @@ alias kubectl="minikube kubectl --"
 
 alias l='ls --color'
 alias ls='ls --color'
-alias lsa='ls -a --color'
+alias lsa='ls --color -a'
 alias ll='ls --color -l'
-alias lla='ls -la --color'
-alias llh='ls -lh --color'
-alias llah='ls -lah --color'
+alias lla='ls --color -la'
+alias llh='ls --color -lh'
+alias llah='ls --color -lah'
 
 alias n='nnn -diUxe'
 
