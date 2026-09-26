@@ -4,7 +4,12 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 alias c='clear'
-alias cat='bat'
+
+if [ -e "/usr/bin/bat" ]; then
+  alias cat='bat'
+elif [ -e "/usr/bin/batcat" ]; then
+  alias cat='batcat'
+fi
 
 alias gita='git add'
 alias gitc='git commit'
