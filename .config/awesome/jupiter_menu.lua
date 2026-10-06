@@ -256,7 +256,7 @@ officemenu = {
     { "xsane scanning", "/usr/bin/xsane", "/usr/share/icons/nitrux-icon-theme/apps/48/xsane.svg" },
 }
 privacymenu = {
----    { "ausweisapp 2", "/usr/bin/AusweisApp2", "/usr/share/icons/hicolor/scalable/apps/AusweisApp2.svg" },
+    { "ausweisapp", "/usr/bin/AusweisApp", "/usr/share/icons/hicolor/scalable/apps/AusweisApp.svg" },
     { "cryptomator", "/usr/bin/cryptomator", "/usr/share/icons/hicolor/512x512/apps/org.cryptomator.Cryptomator.svg" },
 ---    { "gnu privacy agent", "/usr/bin/gpa", "/usr/share/pixmaps/gpa.png" },
     { "keepassxc", "/usr/bin/keepassxc", "/usr/share/icons/hicolor/scalable/apps/keepassxc.svg" },
