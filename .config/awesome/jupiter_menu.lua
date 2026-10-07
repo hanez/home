@@ -158,6 +158,7 @@ gamesmenu = {
 graphicsmenu = {
     { "aseprite", "/usr/bin/aseprite", "/usr/share/icons/hicolor/48x48/apps/aseprite.png" },
     { "blender", "/usr/bin/blender", "/usr/share/icons/hicolor/scalable/apps/blender.svg" },
+    { "cheese", "/usr/bin/cheese", "/usr/share/icons/hicolor/scalable/apps/org.gnome.Cheese.svg" },
     { "darktable", "/usr/bin/darktable", "/usr/share/darktable/pixmaps/dt_logo_128x128.png" },
     { "eyedropper", "/usr/bin/eyedropper", "/usr/share/icons/hicolor/scalable/apps/com.github.finefindus.eyedropper.svg" },
     { "font manager", "/usr/bin/font-manager", "/usr/share/icons/gnome/48x48/apps/preferences-desktop-font.png" },
