@@ -288,6 +288,7 @@ sciencemenu = {
 }
 systemmenu = {
     { "baobab", "/usr/bin/baobab", "/usr/share/help/C/baobab/media/org.gnome.baobab.svg" },
+    { "bustle", "/usr/bin/bustle", "/usr/share/icons/hicolor/scalable/apps/org.freedesktop.Bustle.svg" },
 ---    { "mibbrowser", "/usr/bin/imibrowser", "/usr/share/icons/hicolor/48x48/apps/imibrowser.png" },
     { "gnome disks", "/usr/bin/gnome-disks", "/usr/share/icons/hicolor/scalable/apps/org.gnome.DiskUtility.svg" },
     { "gnome firmware", "/usr/bin/gnome-firmware", "/usr/share/icons/hicolor/scalable/apps/org.gnome.Firmware.svg" },
