@@ -171,6 +171,7 @@ graphicsmenu = {
     { "kcolorchooser", "/usr/bin/kcolorchooser", "/usr/share/icons/hicolor/22x22/apps/kcolorchooser.png" },
     { "krita", "/usr/bin/krita", "/usr/share/icons/hicolor/48x48/apps/krita.png" },
     { "mtpaint", "/usr/bin/mtpaint", "/usr/share/pixmaps/mtpaint.png" },
+    { "photocraft", "/usr/bin/photocraft", "/usr/share/icons/hicolor/scalable/apps/ai.storyteller.photocraft.svg" },
     { "rawtherapee", "/usr/bin/rawtherapee", "/usr/share/icons/hicolor/scalable/apps/rawtherapee.svg" },
     { "screenshooter", "/usr/bin/xfce4-screenshooter", "/usr/share/icons/hicolor/scalable/apps/org.xfce.screenshooter.svg" },
     { "scribus", "/usr/bin/scribus", "/usr/share/icons/hicolor/32x32/apps/scribus.png" },
