@@ -179,6 +179,7 @@ graphicsmenu = {
     { "wacom", "/usr/bin/kde_wacom_tabletfinder", appicon },
 }
 hackingmenu = {
+    { "binary ninja", "/opt/binaryninja-free/binaryninja", "/usr/share/icons/binaryninja-free.png" },
     { "cutter", "/usr/bin/cutter", "/usr/share/icons/hicolor/scalable/apps/cutter.svg" },
     { "ghidra", "/usr/bin/ghidra", "/usr/share/pixmaps/Ghidra_Logo.png" },
     { "ghex", "/usr/bin/ghex ", "/usr/share/icons/hicolor/scalable/apps/org.gnome.GHex.svg" },
