@@ -30,6 +30,7 @@ audiomenu = {
     { "qjackctl", "/usr/bin/qjackctl", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qjackctl.svg" },
     { "qpwgraph", "/usr/bin/qpwgraph", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qpwgraph.svg" },
     { "rtcqs", "/usr/bin/rtcqs_gui", "/usr/share/icons/hicolor/scalable/apps/rtcqs.svg" },
+    { "tus plugin manager", "/home/hanez/bin/TUS_Plugin_Manager", appicon },
     { "vcvrack", "/usr/bin/vcvrack", "/opt/vcvrack/res/icon.png" },
     { "vital", "/usr/bin/Vital", "/home/hanez/.config/awesome/icons/vital.png" },
 }
