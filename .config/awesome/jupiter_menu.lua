@@ -192,6 +192,7 @@ internetmenu = {
     { "chrome (incognito)", "/usr/bin/google-chrome-stable", "/usr/share/icons/hicolor/48x48/apps/google-chrome.png" },
     { "chromium", "/usr/bin/chromium", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
     { "chromium (incognito)", "/usr/bin/chromium --incognito", "/usr/share/icons/hicolor/48x48/apps/chromium.png" },
+    { "dillo", "/usr/bin/dillo", "/usr/share/pixmaps/dillo.png" },
     { "edge", "/usr/bin/microsoft-edge-stable", "/usr/share/icons/hicolor/48x48/apps/microsoft-edge.png" },
     { "edge (private)", "/usr/bin/microsoft-edge-stable --inprivate", "/usr/share/icons/hicolor/48x48/apps/microsoft-edge.png" },
     { "electrum", "/usr/bin/electrum", "/usr/share/pixmaps/electrum.png" },

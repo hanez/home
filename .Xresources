@@ -1,1 +1,2 @@
 xterm*termName: xterm-256color
+XTerm*disallowedWindowOps: 20,21,SetXprop
