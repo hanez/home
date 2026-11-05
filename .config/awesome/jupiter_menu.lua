@@ -52,6 +52,7 @@ communicationmenu = {
 }
 databasemenu = {
     { "apache directory studio", "/usr/bin/apachedirectorystudio", "/usr/share/pixmaps/apachedirectorystudio.png" },
+    { "datagrip", "/home/hanez/bin/datagrip", "/home/hanez/opt/JetBrains/datagrip/bin/datagrip.svg" },
     { "dbeaver", "/usr/bin/dbeaver", "/usr/share/icons/hicolor/48x48/apps/dbeaver.png" },
     { "mysql workbench", "/usr/bin/mysql-workbench", "/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png" },
     --{ "resp.app", "/usr/bin/resp", "/usr/share/pixmaps/resp.png" },
@@ -66,7 +67,6 @@ developmentmenu = {
     { "codeblocks", "/usr/bin/codeblocks", "/usr/share/icons/hicolor/64x64/apps/codeblocks.png" },
     --{ "codelite", "/usr/bin/codelite", "/usr/share/icons/hicolor/32x32/apps/codelite.png" },
     --{ "ddd", "/usr/bin/ddd", appicon },
-    { "datagrip", "/home/hanez/bin/datagrip", "/home/hanez/opt/JetBrains/datagrip/bin/datagrip.svg" },
     { "doxywizard", "/usr/bin/doxywizard", appicon },
     { "eclipse", "/usr/bin/eclipse", "/usr/share/icons/hicolor/32x32/apps/eclipse.png" },
     { "fluid", "/usr/bin/fluid", "/usr/share/icons/hicolor/48x48/apps/fluid.png" },
