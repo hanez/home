@@ -28,7 +28,7 @@ alias lla='ls --color -la'
 alias llh='ls --color -lh'
 alias llah='ls --color -lah'
 
-alias m='moerx'
+alias m='moerx -p C-x'
 
 alias n='nnn -diUxe'
 
