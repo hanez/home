@@ -28,6 +28,8 @@ alias lla='ls --color -la'
 alias llh='ls --color -lh'
 alias llah='ls --color -lah'
 
+alias m='moerx'
+
 alias n='nnn -diUxe'
 
 alias ssh='s'
