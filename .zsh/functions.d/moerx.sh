@@ -3,6 +3,13 @@ if [[ -n $SSH_CONNECTION ]]; then
     moerx_ssh_title() {
         local program=${1:t}
         printf '\033]2;%s:%s\007' "${HOST%%.*}" "$program"
+        local directory=$PWD
+        if [[ $directory == "$HOME" ]]; then
+            directory='~'
+        elif [[ $directory == "$HOME/"* ]]; then
+            directory="~/${directory#"$HOME/"}"
+        fi
+        printf '\033]777;moerx-cwd;%s\007' "$directory"
     }
     moerx_ssh_preexec() {
         local -a words
