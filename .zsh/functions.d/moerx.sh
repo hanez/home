@@ -1,8 +1,6 @@
-if [[ -n $SSH_CONNECTION ]]; then
+if [[ -o interactive && ( -n $SSH_CONNECTION || $TERM == screen-256color ) ]]; then
     autoload -Uz add-zsh-hook
     moerx_ssh_title() {
-        emulate -L zsh
-        setopt typesetsilent
         local program=${1:t}
         printf '\033]2;%s:%s\007' "${HOST%%.*}" "$program"
         local directory=$PWD
@@ -12,14 +10,15 @@ if [[ -n $SSH_CONNECTION ]]; then
             directory="~/${directory#"$HOME/"}"
         fi
         printf '\033]777;moerx-cwd;%s\007' "$directory"
+        printf '\033]777;moerx-root;%s\007' "$((EUID == 0))"
     }
     moerx_ssh_preexec() {
-        emulate -L zsh
-        setopt typesetsilent
-        local -a command_words=(${(z)1})
-        moerx_ssh_title "${(Q)command_words[1]}"
+        local -a words
+        words=(${(z)1})
+        moerx_ssh_title "${(Q)words[1]}"
     }
     moerx_ssh_precmd() { moerx_ssh_title zsh; }
     add-zsh-hook preexec moerx_ssh_preexec
     add-zsh-hook precmd moerx_ssh_precmd
 fi
+
