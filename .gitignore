@@ -40,6 +40,7 @@
 !.config/user-dirs.dirs
 !.config/user-dirs.locale
 
+!.bashrc
 !.env
 !.gitignore
 #!.toprc
