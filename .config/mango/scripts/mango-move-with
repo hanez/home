@@ -1,0 +1,20 @@
+#!/bin/bash
+
+usage() {
+    echo "Usage: $(basename "$0") {prev|next}"
+    exit 1
+}
+
+[ $# -eq 1 ] || usage
+
+case "$1" in
+    prev)
+        mmsg dispatch tagtoleft
+        ;;
+    next)
+        mmsg dispatch tagtoright
+        ;;
+    *)
+        usage
+        ;;
+esac

@@ -1,0 +1,14 @@
+#!/bin/bash
+set -x
+dir=${1:-next}
+f=/tmp/mango-layout-idx
+idx=0
+[[ -f $f ]] && idx=$(<$f)
+layouts=(tile scroller monocle grid deck center_tile vertical_tile right_tile vertical_scroller vertical_grid vertical_deck dwindle fair vertical_fair)
+if [[ "$dir" == "prev" ]]; then
+  idx=$(( (idx - 1 + ${#layouts[@]}) % ${#layouts[@]} ))
+else
+  idx=$(( (idx + 1) % ${#layouts[@]} ))
+fi
+mmsg dispatch setlayout,${layouts[$idx]} && echo "$idx" > "$f"
+

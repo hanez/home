@@ -25,6 +25,9 @@
 !.config/awesome/**
 .config/awesome/config.lua
 
+!.config/mango
+!.config/mango/**
+
 !.byobu
 #!.byobu/**
 !.config/byobu
