@@ -1,0 +1,4 @@
+#!/bin/bash
+# Adjust volume via pipewire/pulseaudio
+delta=${1:-+5}
+pactl set-sink-volume @DEFAULT_SINK@ "$delta"%

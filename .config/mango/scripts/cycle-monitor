@@ -1,0 +1,11 @@
+#!/bin/bash
+monitors=($(mmsg get all-monitors | jq -r '.monitors[].name'))
+total=${#monitors[@]}
+[[ $total -le 1 ]] && exit 0
+cur=$(mmsg get all-monitors | jq -r '.monitors[] | select(.active == true) | .name')
+idx=0
+for i in "${!monitors[@]}"; do
+  [[ "${monitors[$i]}" == "$cur" ]] && idx=$i && break
+done
+idx=$(( (idx + 1) % total ))
+mmsg dispatch focusmon,"${monitors[$idx]}"
