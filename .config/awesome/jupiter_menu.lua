@@ -20,6 +20,7 @@ audiomenu = {
     { "ardour", "/usr/bin/ardour9", "/usr/share/icons/hicolor/48x48/apps/ardour9.png" },
     { "audacity", "/usr/bin/audacity", "/usr/share/icons/hicolor/32x32/audacity.png" },
     { "bitwig studio", "/opt/bitwig-studio/BitwigStudio", "/usr/share/icons/hicolor/scalable/apps/com.bitwig.BitwigStudio.svg" },
+    { "easyeffects", "/usr/bin/easyeffects", "/usr/share/icons/hicolor/scalable/apps/com.github.wwmm.easyeffects.svg" },
     { "fasttracker", "/usr/bin/ft2-clone", "/usr/share/icons/hicolor/512x512/apps/ft2-clone.png" },
     { "qmidictl", "/usr/bin/qmidictl", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qmidictl.svg" },
     { "qmidinet", "/usr/bin/qmidinet", "/usr/share/icons/hicolor/scalable/apps/org.rncbc.qmidinet.svg" },
