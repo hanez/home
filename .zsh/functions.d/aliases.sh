@@ -28,7 +28,7 @@ alias lla='ls --color -la'
 alias llh='ls --color -lh'
 alias llah='ls --color -lah'
 
-alias m='murx --prefix x --status bottom --clock --cwd --hostname --color 191a1c'
+alias m='murx --prefix x --status bottom --clock --cwd --hostname --color 191a1c --hide-pane-titles'
 
 alias n='nnn -diUxe'
 
