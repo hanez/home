@@ -201,6 +201,7 @@ internetmenu = {
     { "firefox", "/usr/bin/firefox", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "firefox (private)", "/usr/bin/firefox --private-window", "/usr/share/icons/hicolor/48x48/apps/firefox.png" },
     { "gftp", "/usr/bin/gftp-gtk", "/usr/share/icons/hicolor/scalable/apps/gftp.svg" },
+    { "ladybird", "/usr/bin/ladybird", "/usr/share/icons/hicolor/scalable/apps/org.ladybird.Ladybird.svg" },
     { "librewolf", "/usr/bin/librewolf", "/usr/share/icons/hicolor/48x48/apps/librewolf.png" },
     { "liferea", "/usr/bin/liferea", "/usr/share/icons/hicolor/scalable/apps/net.sourceforge.liferea.svg" },
     { "luakit", "/usr/bin/luakit", "/usr/share/pixmaps/luakit.svg" },
