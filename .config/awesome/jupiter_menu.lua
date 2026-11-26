@@ -4,7 +4,7 @@ local appicon = icondir .. "application.svg"
 accessoriesmenu = {
     { "calculator", "/usr/bin/galculator", "/usr/share/icons/hicolor/48x48/apps/galculator.png" },
     { "calibre", "/usr/bin/calibre", "/usr/share/icons/hicolor/48x48/apps/calibre-gui.png" },
-    { "dia", "/usr/bin/dia --integrated", "/usr/share/icons/hicolor/48x48/apps/dia.png" },
+    { "dia", "/usr/bin/dia", "/usr/share/icons/hicolor/scalable/apps/org.gnome.Dia.svg" },
     { "epdfview", "/usr/bin/epdfview", "/usr/share/icons/hicolor/48x48/apps/epdfview.png" },
     { "evince", "/usr/bin/evince", "/usr/share/help/C/evince/figures/org.gnome.Evince.svg" },
     { "freemind", "/usr/bin/freemind", "/usr/share/icons/hicolor/32x32/apps/freemind.png" },
