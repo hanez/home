@@ -18,6 +18,8 @@ alias gitp='git push'
 alias gitpp='git pull'
 alias gits='git status'
 
+alias i='irc9 -s -c ff8800'
+
 alias kubectl="minikube kubectl --"
 
 alias l='ls --color'
